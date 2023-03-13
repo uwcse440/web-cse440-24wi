@@ -1,0 +1,532 @@
+{/* CSE 440 Project Post Template
+  *
+  * This template aims to guide you in how to use the supported syntax.
+  *
+  * You should refer to the assignment description for details on what content is expected.
+  *
+  * If you delete or modify template content that you later find you need,
+  * the original template can also be found in `/src/projects/template/project_post.mdx`.
+  *
+  * Note this template's use of comment syntax.
+  * Curly brackets delineate a code block, within which you can then initiate a comment.
+  * The column of `*` characters has no effect and is included only for readability.
+*/}
+
+{/* Tool Documentation
+  *
+  * This post is primarily formatted in Markdown.
+  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
+  *
+  * The post then uses [MDX](https://mdxjs.com/) to embedded JDX components.
+  * You are not expected to fully understand these components,
+  * but can just embed them in your Markdown like you would any HTML tag.
+*/}
+
+{/* Project Imports
+  *
+  * These import components for use in your post.
+  * You could inspect those components, but this template is intended to be sufficient.
+  *
+  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
+  * but we do not expect or recommend you will need or want additional components.
+  * If you find the provided components insufficient, we encourage you to check in with the course staff.
+*/}
+
+import ProjectImageBlock from "src/components/project/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/project/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/project/ProjectSubtitle";
+import TeamMemberGallery from "src/components/project/TeamMemberGallery";
+
+{/* Image Imports
+  *
+  * Every image must be imported via its relative path.
+  * - Only `.jpg` and `.png` file extensions are supported.
+  * - If an import is not working, double-check that you have the correct file extension.
+*/}
+
+{/* Team Gallery Images
+  *
+  * - Give your images meaningful names.
+  * - Images will be rendered 150px wide.
+  *   - Be sure all images are already scaled to be 150x wide.
+  *   - Be sure all images are the same height.
+*/}
+
+import nancyImage from "./assets/team/nancy.jpg";
+import rachelImage from "./assets/team/rachel.jpg";
+import zephyrImage from "./assets/team/zephyr.png";
+import clarisImage from "./assets/team/claris.png";
+
+import imagePlaceholder300x600 from "./assets/post/300x600.png";
+import imagePlaceholder400x400 from "./assets/post/400x400.png";
+import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+
+import mirrorMain from "./assets/post/mirror-main.png";
+import initialPrototype from "./assets/post/initial-prototype.png";
+import sketches from "./assets/post/sketches.png";
+import storyboard from "./assets/post/storyboard.png";
+import navigation from "./assets/post/navigation.png";
+import progressPhoto from "./assets/post/progress-photo.png";
+import discouragement from "./assets/post/discouragement.png";
+import homepage from "./assets/post/homepage.png";
+import remote from "./assets/post/remote.png";
+import account from "./assets/post/account.png";
+import mirrorMenu from "./assets/post/mirror-menu.png";
+import reminders from "./assets/post/reminders_app.png";
+import addReminder from "./assets/post/reminder_add.png";
+import lifestyle from "./assets/post/tracker.png";
+import addLifestyle from "./assets/post/lifestyle_add.png";
+import routineWeek from "./assets/post/routine-week.png";
+import routineMonth from "./assets/post/routine-month.png";
+import addRoutine from "./assets/post/add-routine.png";
+import gallerySetup from "./assets/post/gallery_setup.png";
+import galleryApp from "./assets/post/gallery_app.png";
+import galleryToggleHelp from "./assets/post/toggle_help.png";
+import galleryPimpleClick from "./assets/post/pimple_click.png";
+import mirrorReminder from "./assets/post/mirror-reminder.png";
+import mirrorRoutine from "./assets/post/mirror-routine.png";
+import mirrorGallery from "./assets/post/mirror-gallery.png";
+import mirrorProgressPic from "./assets/post/mirror-progress-pic.png";
+
+import preNavbar from "./assets/post/pre_navbar.png";
+import postNavbar from "./assets/post/post_navbar.png";
+import preMirrorNav from "./assets/post/pre_mirrornav.png";
+import postMirrorNav from "./assets/post/post_mirrornav.png";
+import preHome from "./assets/post/pre_homepage.png";
+import postHome from "./assets/post/pre_homepage.png";
+import preProgress from "./assets/post/pre_progressbutton.png";
+import postProgress from "./assets/post/post_progressbutton.png";
+import thumbnail from "./assets/post/project_thumb.png";
+
+# Tracne
+
+<ProjectSubtitle>Promoting healthy skincare habits</ProjectSubtitle>
+
+<TeamMemberGallery members={[
+    {
+        name: "",
+        photo: thumbnail,
+    }
+]} />
+
+
+## Team
+
+<TeamMemberGallery members={[
+    {
+        name: "Nancy Jimenez-Garcia",
+        photo: nancyImage,
+    },
+    {
+        name: "Zephyr Tao",
+        photo: zephyrImage,
+    },
+    {
+        name: "Claris Winston",
+        photo: clarisImage,
+    },
+    {
+        name: "Rachel Alwan",
+        photo: rachelImage,
+    },
+]} />
+
+## Problem and Design Overview
+
+
+{/* A ProjectImageBlock displays text with an associated image.
+  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
+  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
+  * - In a small browser window, the image will be rendered below the text.
+  * - In a large browser window, the image will be rendered on the right.
+  *   - The width property controls how much of the grid is assigned to the image column.
+  *     Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
+  *
+  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
+*/}
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: mirrorMain,
+            caption: "Prototype of the smart mirror, the primary component in our design.",
+        },
+        {
+            src: homepage,
+            caption: "Prototype of the home page on the mobile app.",
+        },
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"400px"}
+>
+
+According to [Yale Medicine](https://www.yalemedicine.org/conditions/acne), 85% of people face acne through adolescence (ages 12 to 24) and into adulthood. Acne has both physical and emotional effects: it causes pain and infections while making people insecure about their appearance. Everyone’s skin reacts differently to treatments, so treating acne can be challenging. Even if a strict treatment routine is followed, it may require an extended time frame to see results, which can discourage people.
+
+Our design is a smart mirror with a corresponding mobile app, which will help people build consistency with their acne treatment routine and understand what might be causing changes in their acne. The mirror provides a well-lit space for the person to complete their skincare routine, and it has a built-in camera to take progress photos of their face. A built-in screen on the mirror has the same functionalities as the mobile app. These features include a place for the person to record their routine components and consistency, log aspects of their lifestyle that may affect acne, view their gallery of progress photos, and receive reminders to complete their routine.
+
+</ProjectImagesBlock>
+
+## Design Research Process and Key Insights
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: sketches,
+            caption: "Initial sketch of our design.",
+        },
+        {
+            src: storyboard,
+            caption: "Storyboard showing how a person might use our design.",
+        },
+    ]}
+    direction={"column"}
+    width={8}
+    maxHeight={"400px"}
+>
+
+While we have all experienced acne before, we did not know everything we needed to know about the topic. From the perspective of someone struggling with acne, we wanted to learn what people’s routines looked like, what may impact their motivation to stick to a routine, how they determine what treatments to use, and how acne affects them (physically or mentally). From a dermatologist's perspective, we aimed to understand the patient’s skin better, precisely through how one’s skin is evaluated, how treatments are developed, what misconceptions exist about treating acne, other factors that impact acne, and what kinds of technology would be feasible to assist with the acne treatment process.
+
+We conducted interviews with three dermatologists at the UW Clinic and four separate UW students treating acne (two have seen a dermatologist before, and two have not). We initially tried incorporating a diary study into our process. However, we quickly realized that the project timeline constrained the useful information we could receive from a diary study of 3-4 days, especially since acne is frequently more of a long-term journey.
+
+In order to create a design that was well-informed about different acne experiences and contained useful tracking information, we wanted to understand the topic both from the perspective of those who have acne, and from professionals who help them treat their acne. This is why we conducted two types of interviews, one with each group of interest. After trying other methods like the diary study, we realized that interviews were the best way to obtain a large amount of information in a short amount of time.
+
+</ProjectImagesBlock>
+
+### Motivation Through Visual Results
+
+People are motivated to stay consistent with their acne treatment routine because of the visual results. The familiar saying “out of sight, out of mind” also applies when we take its opposite: people are more likely to have something on their mind when something is in sight. Visible results during participants’ acne journey keep it at the forefront of their minds. When we interviewed people currently undergoing acne treatment, most of the interviewees noted how they are encouraged to continue with their routine when they start visually seeing results. Additionally, when we were interviewing dermatologists, one obstacle to acne treatment that they all mentioned was how dermatologists can prescribe medications and topical creams, but it will not do anything if the patients do not consistently follow the treatment.
+
+### One Size Does Not Fit All
+
+There is not a single set of triggers or “one size fits all” to everyone’s acne. By hearing people’s stories through our design research, we learned that there’s not a single set of factors that affect acne. For example, one person said that the climate they’re in has a significant impact on their acne, while another person explained how stress and lifestyle factors (e.g. washing their pillowcase) is the main thing that triggers their acne. Additionally, people have different skin tendencies and other skin conditions, so there is not a single set of treatments for a particular kind of acne that will work for everyone.
+
+### Misinformation On Social Media
+
+Social media and online forums are commonly-used platforms to learn about acne treatment but can spread misinformation. Another common theme that emerged through our design research was the impact social media can have on how people choose to treat their acne. Many of the people we interviewed mentioned how information they consumed on social media (e.g. TikTok) impacted their skincare habits and changed the products they use. At the same time, some of the people and dermatologists we spoke with mentioned how much misinformation has spread about skincare and products on social media, such as the notion that products need to be harsh to be effective. They emphasized the importance of looking at the product’s active ingredients instead of the branding. One of our initial designs aimed to tackle this by having an online browser extension that detected potential misinformation or factors to be cautious about when browsing skincare and makeup products. Ultimately, after critique and discussion, we realized that it would be difficult to ensure that our design would also not be an additional source of misinformation.
+
+## Iterative Design Process and Key Insights
+
+<ProjectImageBlock
+    image={{
+        src: initialPrototype,
+    }}
+    caption={
+        "Overview of paper prototype with the different frames laid out."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Narrowing down our different design ideas, we found that a more individual-focused design would be better for helping people with their acne journey. From this, we decided to hone in on two tasks for our iterative design: (1) stay consistent with your acne treatment routine, and (2) determine what specific factors may be causing changes in your skin, and track the progress over time.
+
+After developing the initial paper prototype, we ran an inspection-based heuristic test where we laid out all the frames of the prototype and asked peers in class to identify violations of Nielsen's 10 heuristics. We improved on the initial paper prototype to address immediate concerns, such as lack of navigation between app screens. Then, we ran three usability tests, where we improved the prototype between tests. For the usability test, we laid out all frames of the paper prototype and made sure the participant could visibly see all images. We then asked the participant to perform the two tasks and kept the instructions general. However, this approach led us to determine that laying out all the app frames side by side did not work since it was overwhelming for the participant to see all the screens. For future usability tests, we stacked related frames on top of each other so the participant could focus on one app screen at a time and then the “human computer” would switch to the next screen once “clicked on.” After making finishing touches to the paper prototype, we crafted our digital mockup in Figma, with different pages for the mobile app, mirror screen displays, and the mirror itself.
+
+</ProjectImageBlock>
+
+### Improving Navigation
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: preNavbar,
+            caption: "Before"
+        },
+        {
+            src:postNavbar,
+            caption: "After"
+        }
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"400px"}
+>
+
+In the inspection-based heuristic test, the participant noted that the mobile app and mirror screen did not have clear ways to navigate between different displays. To address this significant problem, we created tabs for the main categories of displays and put a constant navigation bar at the bottom of the app. We added dot navigation indicators at the bottom of the mirror screen to indicate that the person can swipe left and right to switch between displays.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: preMirrorNav,
+            caption: "Before"
+        },
+        {
+            src:postMirrorNav,
+            caption: "After"
+        }
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"400px"}
+>
+
+Beyond simple navigation, one participant noted that it was a lot to monitor the Routine Tracker and Lifestyle Log on different tabs, and it would be helpful to view them side-by-side. This was a great point, since acne is the result of a combination of factors, including someone’s routine consistency and lifestyle habits/occurrences. Because of this, we decided to combine the Routine Tracker and Lifestyle Log into one tab, generalized to Tracker. This would allow the person to view potentially correlated information in one place.
+
+</ProjectImagesBlock>
+
+
+### Taking Progress Photos
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: preProgress,
+            caption: "Before"
+        },
+        {
+            src:postProgress,
+            caption: "After"
+        }, 
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"400px"}
+>
+
+In the usability tests, when the participant was asked to take a progress photo on the mirror, they were unsure how to take the photo and if the photo was even taken. Our original idea was that the photo would be automatically taken once the person positioned themselves correctly, but this may present itself as a hidden affordance. As a result, we added a progress photo button on the mirror screen to capture the photo and also added a screen to confirm that the photo was successfully saved.
+
+</ProjectImagesBlock>
+
+### Reducing Confusion and Discouragement
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: preHome,
+            caption: "Before"
+        },
+        {
+            src:postHome,
+            caption: "After"
+        }
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"400px"}
+>
+
+On the homepage of the mobile app, we initially had a graph on acne frequency and metrics about both acne and routine consistency. During the usability tests, we found that multiple participants were unsure about what the graph was about and why it mattered. People were also confused about what the metrics meant, such as acne going down by 80%. Since it’s difficult to quantify increases or decreases in acne and we also do not want to discourage people when their acne gets worse due to factors that they cannot control, we took out the miscellaneous metrics and switched the graph to be about routine consistency (with clearer labels).
+
+We also initially had a streak for how many days people had fully completed their routine, and it would be reset whenever people stopped their routine for a day. Taking feedback from class staff and participants, we realized that this streak could actually discourage people from building habit consistency. So, we switched the streak to a count that keeps track of how many total days a person has completed their routine to encourage them to keep going. The maximum streak count only goes up, so people are encouraged to use the app.
+
+</ProjectImagesBlock>
+
+## Resulting Design
+
+### Home Screen and Settings
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: homepage,
+        },
+        {
+            src: remote,
+        },
+        {
+            src: account,
+        },
+        // {
+        //    src: imagePlaceholder300x600,
+        //},
+    ]}
+    direction={"row"}
+    caption={
+        "Home screen and settings pages on the mobile app."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+Our final design consists of two main components. The smart mirror takes progress photos and allows someone to easily complete and view their routine. The corresponding mobile app is mainly for logging factors and routine completion, and finding connections between changes in one’s skin.
+
+The remote button on the settings page and the home page allows people to control things on the smart mirror (e.g., power on/ off, taking a photo) from the app. This is intended to make our design more accessible to people who may not be able to reach/press the physical buttons.
+
+</ProjectImagesBlock>
+
+### Mirror Menu
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: mirrorMenu,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "Menu on the smart mirror."
+    }
+    width={8}
+    maxHeight={"300px"}
+>
+
+This is the drop-down menu on the screen on the mirror. From left to right, the logos represent: pairing to a mobile device via bluetooth, connecting the mirror to wifi, decreasing the brightness of the mirror (on a scale of 1-10), increasing the brightness of the mirror, and a help option for further information.
+
+</ProjectImagesBlock>
+
+### Task 1: Stay consistent with your acne treatment routine.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: reminders,
+        },
+        {
+            src: addReminder,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Screens on the mobile app for addings and modifying reminders."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+People can add custom reminders that will nudge them at specified times to complete their routine. This will help them stay on top of their treatments in case they forget. These notifications can be seen on both people’s phones and the smart mirror display.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: routineWeek,
+        },
+        {
+            src: routineMonth,
+        },
+        {
+            src: addRoutine,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Frames showing the routine part of the tracker page on the mobile app."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+To help with staying consistent with one's routine, people can track the completion of
+their skincare routine(s) on the tracker page of the mobile app, where the routine for the current day can be viewed and marked as complete,
+and additional routines can be added/modified. Routine completion from previous days of the month
+can also be viewed.  
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: mirrorReminder,
+        },
+        {
+            src: mirrorRoutine,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Frames showing the reminders on the screen on the mirror."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+The reminders to complete the skincare routine(s), and steps for the upcoming routine is also shown on the mirror screen.
+
+</ProjectImagesBlock>
+### Task 2: Determine what specific factors may be causing changes in your skin, and track the progress over time.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: lifestyle,
+        },
+        {
+            src: addLifestyle,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Frames on the mobile app for the lifestyle log."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+In order to determine factors affecting one's skin, people can log lifestyle factors of their choice in the tracker page, and monitor 
+them by either answering the same question(s) about it at a set frequency, 
+or they can add their own notes about it.
+
+</ProjectImagesBlock>
+
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: gallerySetup,
+        },
+        {
+            src: galleryApp,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Frames showing the gallery page on the mobile app."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+The gallery of progress photos can be viewed on the mobile app. Preferences for 
+how often to remind to take progress photos can also be changed. The corresponding trackers for the past week
+can also be viewed in the photos to more easily correlate routine completion and lifestyle factors with changes to one's skin. 
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: galleryToggleHelp,
+        },
+        {
+            src: galleryPimpleClick,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Frames showing the toggle for viewing gallery photos with and without the model."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+We added a toggle for viewing the photos in the gallery with and without the toggle, and 
+added a help button in case people are confused about what the model means. One can also hover 
+over acne on their skin and see information about what that might mean. 
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: mirrorGallery,
+        },
+        {
+            src: mirrorProgressPic,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Frames showing the gallery on the mirror screen."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+The mirror screen can display the person’s gallery of past acne. People can also toggle between actual photos of their face and the generic facial model with acne indicated on it.
+
+When the person is taking the photo on the mirror, they can click the camera button to take a photo. This screen can be accessed through either a notification or from the menu at the top of the screen.
+
+</ProjectImagesBlock>

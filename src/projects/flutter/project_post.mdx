@@ -1,0 +1,442 @@
+{/* CSE 440 Project Post Template
+  *
+  * This template aims to guide you in how to use the supported syntax.
+  *
+  * You should refer to the assignment description for details on what content is expected.
+  *
+  * If you delete or modify template content that you later find you need,
+  * the original template can also be found in `/src/projects/template/project_post.mdx`.
+  *
+  * Note this template's use of comment syntax.
+  * Curly brackets delineate a code block, within which you can then initiate a comment.
+  * The column of `*` characters has no effect and is included only for readability.
+*/}
+
+{/* Tool Documentation
+  *
+  * This post is primarily formatted in Markdown.
+  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
+  *
+  * The post then uses [MDX](https://mdxjs.com/) to embedded JDX components.
+  * You are not expected to fully understand these components,
+  * but can just embed them in your Markdown like you would any HTML tag.
+*/}
+
+{/* Project Imports
+  *
+  * These import components for use in your post.
+  * You could inspect those components, but this template is intended to be sufficient.
+  *
+  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
+  * but we do not expect or recommend you will need or want additional components.
+  * If you find the provided components insufficient, we encourage you to check in with the course staff.
+*/}
+
+import ProjectImageBlock from "src/components/project/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/project/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/project/ProjectSubtitle";
+import TeamMemberGallery from "src/components/project/TeamMemberGallery";
+
+{/* Image Imports
+  *
+  * Every image must be imported via its relative path.
+  * - Only `.jpg` and `.png` file extensions are supported.
+  * - If an import is not working, double-check that you have the correct file extension.
+*/}
+
+{/* Team Gallery Images
+  *
+  * - Give your images meaningful names.
+  * - Images will be rendered 150px wide.
+  *   - Be sure all images are already scaled to be 150x wide.
+  *   - Be sure all images are the same height.
+*/}
+
+import imageTeamPerson1 from "./assets/team/elora.png";
+import imageTeamPerson2 from "./assets/team/sangwon.png";
+import imageTeamPerson3 from "./assets/team/ally.png";
+import imageTeamPerson4 from "./assets/team/manoj.png";
+
+import imagePlaceholder300x600 from "./assets/post/300x600.png";
+import imagePlaceholder400x400 from "./assets/post/400x400.png";
+
+import hairPulling from "./assets/post/hair-pulling.png";
+import initialSketch from "./assets/post/sketch.png";
+
+import paperMobile from "./assets/post/prototype-mobile.png";
+import paperWatch from "./assets/post/prototype-watch.png";
+import digitalMobile from "./assets/post/digital-mobile.png";
+import digitalWatch from "./assets/post/digital-watch.png";
+
+import insight1Before1 from "./assets/post/insight1-before1.png";
+import insight1Before2 from "./assets/post/insight1-before2.png";
+import insight1After1 from "./assets/post/insight1-after1.png";
+import insight1After2 from "./assets/post/insight1-after2.png";
+import insight2Before from "./assets/post/insight2-before.png";
+import insight2After from "./assets/post/insight2-after.png";
+import insight3Before from "./assets/post/insight3-before.png";
+import insight3After from "./assets/post/insight3-after.png";
+
+import mobileTaskOne1 from "./assets/post/mobile-task1-1.png";
+import mobileTaskOne2 from "./assets/post/mobile-task1-2.png";
+import mobileTaskOne3 from "./assets/post/mobile-task1-3.png";
+
+import smartwatchTaskOne1 from "./assets/post/smartwatch-task1-1.png";
+import smartwatchTaskOne2 from "./assets/post/smartwatch-task1-2.png";
+
+import mobileTaskTwo1 from "./assets/post/mobile-task2-1.png";
+import mobileTaskTwo2 from "./assets/post/mobile-task2-2.png";
+import mobileTaskTwo3 from "./assets/post/mobile-task2-3.png";
+import mobileTaskTwo4 from "./assets/post/mobile-task2-4.png";
+import mobileTaskTwo5 from "./assets/post/mobile-task2-5.png";
+
+import smartwatchTaskTwo1 from "./assets/post/smartwatch-task2-1.png";
+import smartwatchTaskTwo2 from "./assets/post/smartwatch-task2-2.png";
+import smartwatchTaskTwo3 from "./assets/post/smartwatch-task2-3.png";
+import smartwatchTaskTwo4 from "./assets/post/smartwatch-task2-4.png";
+
+# Flutter
+
+<ProjectSubtitle>Transform your habits, one Flutter at a time.</ProjectSubtitle>
+
+## Team
+
+<TeamMemberGallery members={[
+    {
+        name: "Elora Hoberecht",
+        photo: imageTeamPerson1,
+    },
+    {
+        name: "Sangwon Kim",
+        photo: imageTeamPerson2,
+    },
+    {
+        name: "Ally Feng",
+        photo: imageTeamPerson3,
+    },
+    {
+        name: "Manoj Sarathy",
+        photo: imageTeamPerson4,
+    },
+]} />
+
+## Problem and Design Overview
+
+{/* A ProjectImageBlock displays text with an associated image.
+  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
+  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
+  * - In a small browser window, the image will be rendered below the text.
+  * - In a large browser window, the image will be rendered on the right.
+  *   - The width property controls how much of the grid is assigned to the image column.
+  *     Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
+  *
+  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
+*/}
+
+<ProjectImageBlock
+    image={{
+        src: hairPulling,
+    }}
+    caption={
+        "A girl struggling with her hair-pulling BFRB."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Body-Focused Repetitive Behaviors (BFRBs) are a group of disorders
+characterized by compulsive and repetitive self-grooming behaviors.
+BFRBs affect approximately 1 in 20 people–hair pulling alone is thought
+to impact over 10 million people in the United States.
+Also commonly referred to as “bad habits”, BFRBs include nail-biting,
+hair-pulling, skin-picking, etc. and can have long-lasting health
+consequences that negatively impact social, physical, and mental
+well-being. Our design aims to help individuals track and break these
+behaviors to improve their quality of life.
+
+</ProjectImageBlock>
+
+## Design Research Process and Key Insights
+
+To enhance our understanding of BFRBs and learn which aspects need the most help so that we can design our solution tailored to the needs, we interviewed both potential users and stakeholders.
+- We interviewed a 21-year-old female college student who has been biting her nails for 15 years to learn more about the details of engaging in a BFRB, such as how often and long they engage in a BFRB and factors that contribute to triggering the behavior.
+- We also interviewed a therapist specializing in anxiety and related disorders to gain insights into expert opinions on how to approach solving BFRBs.
+- Finally, we posted a survey on online communities on BFRBs to learn perspectives of people from various backgrounds who engage in BFRBs, focussing on the effectiveness of existing solutions.
+
+### Staying Positive
+
+A key insight we learned was that our design should not shame or cause more anxiety in an individual, which may lead to engaging in the BFRB even more. We found that engagement of BFRBs could often be triggered from situations when the individual felt stressed or anxious, and being shamed for the behaviors might push them towards increased engagement. For example, one participant from our survey wrote: “Pretty much any punishment and reward based behavior system. [The] pressure made the stakes too high to perform, increased [my] base anxiety too much”. Thus, we needed to be careful with our design to ensure that none of our features would cause the individual anxiety, and instead keep it positive and create a safe environment for them to grow. Keeping this in mind, we focused on using positive and neutral terms in our design, and chose to design a system with no punishment features, to prevent the consumer from feeling discouraged.
+
+### Situational Awareness
+
+We found that although concrete interventions that restrict the use of hands (such as entirely preventing the behavior through wearing gloves or acrylic nails; replacing with similar behavior that doesn’t cause harms, such as playing with fidget toys or scratching a piece of velcro) were most effective, it is important to be aware that users can be in various situations when they engage in BFRBs and it may require them to use their hands. Our approach should not distract them from their work or daily lives, and provide options for the individual to suit their needs in different settings. We decided to continue suggesting alternative activities to the consumer, while additionally providing the option to choose a different activity if the suggested activity could not be performed in their current situation.
+
+### Keeping Discreet
+
+<ProjectImageBlock
+    image={{
+        src: initialSketch,
+    }}
+    caption={
+        "Sketch of smartwatch application using motion detection."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+We also discovered that many of the participants in our research expressed feeling embarrassed for engaging in BFRBs. They mentioned trying to hide engagement from people around them, and not feeling comfortable talking about the behavior with others. Many noted that they would not use a design that could attract attention or allow others to discover that they had a BFRB. We originally based our design around a new wristwatch similar to a FitBit designed specifically to detect BFRBs, but we learned that it was important that our design be as discreet as possible to allow customers to feel comfortable using it. We ultimately decided to switch our design to an application on an existing smartwatch such as an Apple smartwatch, as it would allow for the consumer to keep their habit as private as possible.
+
+</ProjectImageBlock>
+
+## Iterative Design Process and Key Insights
+
+We decided to focus on the following two tasks:
+- Teaching healthy alternative behaviors that can replace BFRBs so that we can provide them with a practical way to stop the behaviors.
+- Logging engagements whenever they engage in BFRBs so that we can identify patterns or triggers helpful to finding the root cause of the behaviors.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: paperMobile,
+        },
+        {
+            src: paperWatch,
+        },
+    ]}
+    direction={"column"}
+    caption={
+        "Sequence diagrams for mobile and smartwatch paper prototypes."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+As part of the iterative design process, we first brainstormed and sketched different ideas such as a CBT-based mobile game application, implanted tracking device, and a motion-detecting smartwatch application. We eventually agreed on a mobile application that tracks a person’s engagements in BFRBs, through manual logging and optional automatic motion detection through a smartwatch, and teaches therapy techniques to help them learn healthy and effective coping mechanisms.
+
+Based on the selected tasks and design, we built an initial paper prototype, which inspection and usability testing revealed many small and big issues. For example, a participant attempted to submit a log but the page was missing the submit button. The participant was also confused by inconsistent back buttons, one represented by “X” at the top right corner while the other represented by a back arrow at the top left corner.
+
+</ProjectImagesBlock>
+
+Addressing these issues, we finalized our paper prototype by adding a tutorial page to clear up any confusions in navigating the app, adding missing buttons that blocked participants from proceeding, and reducing unnecessary pages and details that diverted their attention.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: digitalMobile,
+        },
+        {
+            src: digitalWatch,
+        },
+    ]}
+    direction={"column"}
+    caption={
+        "Digital mockups for mobile and smartwatch designs."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+Based on the final paper prototype, we created the following digital mockup:
+
+</ProjectImagesBlock>
+
+### Redirecting Inaccessible Smartwatch Functionalities to Mobile Application
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: insight1Before1,
+        },
+        {
+            src: insight1Before2,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Before"
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+The usability testing revealed our assumption that smartwatch devices could share the majority of UI structure and layout with a mobile app design. In particular, the participants communicated their concerns on the pages for logging in and signing up as they require typing on a small screen, which can lead to inaccuracy and frustration. Following the feedback, we simplified our smartwatch layout by prompting participants to sign in or create an account through their mobile device. We further simplified the smartwatch feature by shifting the focus to the mobile application and keeping the smartwatch as an optional extension. To achieve this, we removed the ability for participants to navigate to other tabs (which would otherwise be available on the mobile application), and have limited the participants’ abilities to just tracking, practicing skills, and quickly checking their avatar’s growth on the home screen.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: insight1After1,
+        },
+        {
+            src: insight1After2,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "After"
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+### Promoting Accessibility
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: insight2Before,
+            caption: "Before"
+        },
+        {
+            src: insight2After,
+            caption: "After"
+        },
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+>
+
+While creating a digital mockup during section, a TA pointed out that our color scheme may not be accessible due to low contrast. It brought accessibility into our attention and made us realize that we made assumptions that everyone using our app could perceive information and stimuli exactly as we can. We unconsciously applied an ableist perspective to our design and made no adjustments for those who have disability or neurodivergent challenges. We have attempted to resolve this by including an accessibility tab in the settings section of the user profile, with potential options for utilizing a screen reader, adjusting colors and intensity, changing font sizes, and adjusting speed/sounds of app animations.
+
+</ProjectImagesBlock>
+
+### Improving Visibility of Functions Through Labels
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: insight3Before,
+            caption: "Before"
+        },
+        {
+            src: insight3After,
+            caption: "After"
+        }
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+>
+
+During the usability testing, multiple participants reported confusion in functions of the buttons in the page after a skill wheel chooses a skill to engage in. Originally, the buttons were only represented by icons–a check mark to indicate accept, a circular arrow to indicate respin to choose another skill, and an “X” mark to indicate reject. However, we realized that the icons alone may not be clear enough, especially for new users. To address this problem, we labeled each button with their function to make them more visible and intuitive.
+
+</ProjectImagesBlock>
+
+## Resulting Design
+
+For our final design, we had an application with the following main features:
+- User can earn (and never lose) points and grow their “pet” by engaging in “skills”, or alternative behaviors
+- User can learn new “skills”
+- User can manually log on the mobile application and opt-in to automatic motion detection and logging through the smartwatch application
+- User can view statistics of the tracked behaviors either daily, weekly, or monthly
+
+Our two primary tasks appeared as follows:
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: mobileTaskOne1,
+        },
+        {
+            src: mobileTaskOne2,
+        },
+        {
+            src: mobileTaskOne3,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Task 1: Logging engagement in BFRBs with the mobile application."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+### Task 1 (Mobile)
+Upon navigating to the home screen on the mobile application, the user can manually log a new engagement by selecting the “+” button in the center of the taskbar. The individual can fill in information about their engagement, such as the specific habit they engaged in, date, location, as well as the specific time, or they can simply select that the engagement is happening now. The individual can view their engagement logs by clicking the graph icon in the taskbar, which leads to the Stats page.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: smartwatchTaskOne1,
+        },
+        {
+            src: smartwatchTaskOne2,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Task 1: Logging engagement in BFRBs with the smartwatch application."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+### Task 1 (Smartwatch)
+On the smartwatch, an engagement in BFRBs is automatically logged through motion detection. If the smartwatch detects that the individual is engaging in the registered behavior, a pop-up will appear on the screen, inquiring whether the behavior was correctly detected to ensure that it doesn’t incorrectly log engagement. If the user selects “yes,” the second frame will appear on screen, asking if the user would like to engage in an alternative behavior, request professional support, or exit.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: mobileTaskTwo1,
+        },
+        {
+            src: mobileTaskTwo2,
+        },
+        {
+            src: mobileTaskTwo3,
+        },
+        {
+            src: mobileTaskTwo4,
+        },
+        {
+            src: mobileTaskTwo5,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Task 2: Suggesting alternative behaviors to BFRBs in the mobile application."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+### Task 2 (Mobile)
+To engage in a new skill, the user can select the book icon in the taskbar, which will show the user the skills they’ve learned, new skills to learn, their progress, and the option to spin the skill wheel to practice skills. Upon selecting to spin the wheel, the user has an option to spin the wheel or select an active skill from their skillbook. If the user chooses to spin the wheel, the selected skill will appear on the screen, while allowing the user to either engage in the suggested skill or respin the wheel. The user may choose to accept or reject the skill, and they will earn points if they accept the skill. If they reject the skill, they will be redirected to the skills page.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: smartwatchTaskTwo1,
+        },
+        {
+            src: smartwatchTaskTwo2,
+        },
+        {
+            src: smartwatchTaskTwo3,
+        },
+        {
+            src: smartwatchTaskTwo4,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Task 2: Suggesting alternative behaviors to BFRBs in the smartwatch application."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+### Task 2 (Smartwatch)
+On the smartwatch, upon pressing the skill wheel button when an engagement is detected, the wheel will spin and choose a skill to engage in. The user can choose to either accept, respin, or reject the skill, similar to the mobile application, and earn points should they choose to accept the suggested skill.
+
+</ProjectImagesBlock>

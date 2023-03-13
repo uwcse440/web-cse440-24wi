@@ -1,0 +1,492 @@
+import ProjectImageBlock from "src/components/project/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/project/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/project/ProjectSubtitle";
+import TeamMemberGallery from "src/components/project/TeamMemberGallery";
+
+import imageTeamMaia from "./assets/team/pfp_maia.jpg";
+import imageTeamCJ from "./assets/team/pfp_cj.jpg";
+import imageTeamKatherine from "./assets/team/pfp_katherine.jpg";
+import imageTeamHelen from "./assets/team/pfp_helen.jpg";
+
+import imageRestaurantInfoMrWest from "./assets/post/restaurant-info-mr-west.png";
+import imageFoodPartyVotingButtons from "./assets/post/food-party-voting.png";
+import imageLeaveButtonsMarked from "./assets/post/prototype-leave-buttons-marked.png";
+import imageAddedHistoryText from "./assets/post/prototype-added-to-history-help-text.png";
+import imageVotingExplainer from "./assets/post/digital-voting-explainer.png";
+import imagePrototypeAll from "./assets/post/prototype-all.png";
+import imagePrototypeVoting from "./assets/post/prototype-voting.png";
+import imageDigitalOnboard from "./assets/post/digital-onboard.png";
+import imageDigitalParty1 from "./assets/post/digital-party-1.png";
+import imageDigitalParty2 from "./assets/post/digital-party-2.png";
+import imageDigitalParty3 from "./assets/post/digital-party-3.png";
+import imageDigitalParty4 from "./assets/post/digital-party-4.png";
+import imageDigitalParty5 from "./assets/post/digital-party-5.png";
+import imageDigitalFlag from "./assets/post/digital-flag.png";
+import imageDigitalProfile from "./assets/post/digital-profile.png";
+
+# NomNom
+
+<ProjectSubtitle>
+  Inclusive restaurant tracking and discovery for groups and individuals
+</ProjectSubtitle>
+
+## Team
+{/* The "alt fields" are for accessibility. They are only shown to screenreaders
+  * for people who have trouble seeing.
+  * They do not show up on the browser screen.
+  */}
+<TeamMemberGallery
+  members={[
+    {
+      name: "Chongjiu",
+      photo: imageTeamCJ,
+      alt:
+        "Headshot of Chongjiu standing next to a drum lamp shade."
+    },
+    {
+      name: "Helen",
+      photo: imageTeamHelen,
+      alt: "Headshot of Helen smiling, taken in front of an off-white background."
+    },
+    {
+      name: "Katherine",
+      photo: imageTeamKatherine,
+      alt:
+        "Headshot of Katherine, who is wearing UW hoodie in " +
+        "front of red-flowering bush."
+    },
+    {
+      name: "Maia",
+      photo: imageTeamMaia,
+      alt:
+        "Side shot of Maia, who is sitting on the bus next to the window."
+    },
+  ]}
+/>
+
+## Problem and Design Overview
+
+<ProjectImageBlock
+    image={{
+        src: imageRestaurantInfoMrWest,
+        alt: "A screen on our app showing information about the restaurant Mr. West. " +
+             "There is a listing of the menu items. The ones you can eat are closer to the top, " +
+             "like avocado toast in this example, marked with a green checkmark."
+    }}
+    caption={
+        "NomNom shows you user-contributed data, but it also has features that " + 
+        "make sure your own experiences count."
+    }
+    width={6}
+    maxHeight={"300px"}
+>
+
+NomNom is an app that helps you find restaurants for yourself or a group, while
+taking into account your dietary restrictions and preferences.
+
+Dietary restrictions are common in the US.
+More than half of Americans report some form of dietary restrictions, whether due to
+allergies, religious or cultural practices, or personal preference.
+But people can be hesitant to ask for accommodations
+or assert what they actually want to eat in a group setting.
+We are dedicated to the
+proposition that your dietary needs do not have to either be deadly or written
+off as an afterthought.
+
+NomNom's design attempts to simplify the process of documenting dietary restrictions,
+while facilitating the discovery of new restaurants that meet these requirements.
+In a group setting, we also want to make it easy for your group to find food that
+meets everybody's needs. Either way, your own voice and experiences should always
+be valued and respected.
+
+</ProjectImageBlock>
+
+## Design Research Process and Key Insights
+
+People with different dietary restrictions can have different relationships with food.
+Depending on how well they are accommodated, they might also navigate the
+restaurant selection process differently.
+Because there are so many kinds of dietary restrictions, our design research
+needs to account for this diversity.
+Then, by learning about our participants' most pressing needs, we can determine
+what priorities require our attention.
+
+We conducted semi-structured qualitative interviews
+to understand how our participants select restaurants, how they navigate group dining if they have
+dietary restrictions, and how they accommodate other people with these restrictions.
+The semi-structured format allowed our participants to tell us what they feel is notable and
+allowed us to follow-up with questions about their decision-making process. Afterwards, we 
+performed coding for common experiences, and those codes became our research insights.
+
+We interviewed four people who we know are food lovers, but they have different dietary restrictions
+and follow those restrictions with varying strictness.
+Our participants vary in stages of life and restaurant dining frequencies.
+They also cover all of the types of dietary restrictions we know of—diagnosed allergies, religious
+practices, adopted diets, and no dietary restrictions at all—and
+and we wanted to be intentional about diversifying our participant pool in this respect.
+
+### Eating with a group is the most pressing, unresolved problem
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePrototypeVoting,
+            alt: "A paper prototype of our voting screen, with restaurant info and Yes, Meh, and Veto buttons."
+        },
+        {
+            src: imageFoodPartyVotingButtons,
+            alt: "Three voting buttons, all of different colors: Yes, Meh, and Veto. There is also a cancel button. "
+        },
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"350px"}
+    caption="In our paper and digital prototypes, the Food Party feature was designed in response to our participants' frustrations in group settings."
+>
+> Usually, we are brainstorming places as a group that might fit my food needs. Then 
+> I have the final say as to whether or not they will work out.
+>
+> —<cite>Participant 5, Assignment 2d</cite>
+
+> We wouldn't go to somewhere that's great, like a Korean place... it makes it 
+> less likely for us to go there [because of what people perceive of the entire cuisine].
+>
+> —<cite>Participant 4, Assignment 2d</cite>
+
+Our research shows that dining with a group is often the most challenging and unresolved
+issue for our participants. 
+
+This is a complex process, from each person having to share their dietary restrictions, to
+people suffering from indecision or just hating to be the person to decide for a group. As the number of group
+members increases, this frustration also grows exponentially.
+
+### Restaurant discovery should be a first-class task
+
+> I use DoorDash exclusively, because it has my top restaurants [...] and
+> I like it creates an algorithm for me.
+>
+> —<cite>Participant 1, Assignment 2c</cite>
+
+We found that people are in fact eager to explore and share new restaurants,
+even if they do not consistently have the opportunity to do so.
+
+Our participants shared that they all maintain a list of “safe restaurants” that
+they frequently revisit if they do not know where to eat.
+However, they also all expressed a desire to try new places, as long as that process
+feels safe and not exhausting.
+
+</ProjectImagesBlock>
+
+### The ability to self-track-and-report matters, because third-party data alone can not be trusted
+
+> I prefer not to eat meat at all, unless it comes from a restaurant that I know cooks
+> their meat completely through.
+>
+> —<cite>Participant 1, Assignment 2c</cite>
+
+We found that being able to self-track
+and report dietary restrictions and restaurant experiences is an important need.
+
+
+Even if a restaurant claims to be accommodating to a specific dietary restriction, there may
+still be cross-contamination issues in the kitchen. And many issues such as poor service
+or bad communication cannot be predicted by third-party data sources and require “actual suffering”.
+
+Relying solely on business-provided data alone, as modern map apps typically do,
+is not enough to keep people safe.
+Our product must allow users to track their own experiences in some way.
+Even at the prototype stage,
+it is just inconceivable that there is a perfect external data source that we can 100% rely on without
+the chance for user input.
+
+## Iterative Design Process and Key Insights
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePrototypeAll,
+            caption: `Our initial paper prototype consists of phone-sized paper cutouts.`,
+            alt: "A set of hand-drawn paper cut outs of iPhone screens, each containing a screen of our app. " +
+                 "They all depict a rough sketch of what will become the digital prototype of our app."
+        },
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"500px"}
+>
+
+After creating tasks based on our design research and finalizing the mobile app format
+to design for, we narrowed our scenarios down to:
+
+- Finding a restaurant for everyone when you dine with a group for the first time.
+- “Red-flagging” a restaurant after having a disappointing experience.
+
+Our design process began with creating an initial paper prototype. For that, we included the necessary
+features for our tasks. We then conducted heuristic evaluations and usability testing on the paper
+prototype:
+- First, we invited two other groups in CSE 440 to give us
+feedback on the design based on [Jakob Nielsen's usability heuristics](http://web.archive.org/web/20201130102822/https://www.nngroup.com/articles/ten-usability-heuristics/).
+- Then, we invited four additional participants, who are not in this class, to participate
+in a usability study.
+
+After each round of feedback, we made revisions to improve the design, and those revisions
+would flow downstream to our digital prototype.
+
+</ProjectImagesBlock>
+
+### Designing against the abusive ex-partner
+
+<ProjectImageBlock
+    image={{
+        src: imageLeaveButtonsMarked,
+        alt: "The paper prototype's New Group screen. There is a list of members, and at the corner " +
+             "of each entry, there is now an 'X' mark that we highlight with a red rectangle. There is also " +
+             "a cancel button, also highlighted similarly."
+    }}
+    caption={
+        "We retroactively added features to kick out a member and to leave a "
+        + "group in a Food Party."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Designing for
+vulnerable populations should not be an afterthought, but when creating our initial prototype,
+we did not account for potential issues related to online safety.
+In our usability testing, some participants tried to look for escape hatches but could not find them.
+
+For example, in our group Food Party feature, once a user gets invited by somebody, they would be forced to
+finish the entire restaurant selection workflow—which requires everybody else's consensus—and had no
+easy way to leave the process early.
+For one participant, the _lack_ of an escape feature was noticeable and almost seemed confusing. For
+this particular case, we added a way to leave a group, among other similar features
+(such as being able to remove someone from a group).
+
+</ProjectImageBlock>
+
+### Internal state changes are not obvious to everyone
+
+<ProjectImageBlock
+    image={{
+        src: imageAddedHistoryText,
+        alt: "A paper prototype screen with text, Congrats, you're going to: Restaurant Name. The restaurant title " +
+             "is layered on top of a picture of the food. Notably, there is a small help message " +
+             "at the very bottom that tells you this restaurant has been added to your history."
+    }}
+    caption={
+        "Messages like this one explicitly describe changes in internal state."
+    }
+    width={6}
+    maxHeight={"300px"}
+>
+
+During our design process, we made an unintentional assumption that all users
+would be familiar with the concept of our "History" tab, and that they would understand
+how a restaurant might end up there. This tab displays both red flagged and visited restaurants,
+including restaurants selected from the group Food Party feature.
+
+During usability testing, however, it became apparent people can have different degrees of understanding
+depending on their prior background with technology.
+To partially address this issue, we began adding help text that describes changes in internal state
+(e.g., “we also added this restaurant to your history!”).
+
+</ProjectImageBlock>
+
+### When we invent word usages, we have to define them
+
+<ProjectImageBlock
+    image={{
+        src: imageVotingExplainer,
+        alt: "A tutorial screen with text: We’ll only propose restaurants that we think works for everyone, " +
+             "but just to be safe, please vote either:" +
+             "Yes: I want to eat here! Meh: I feel ambivalent. Veto: I can’t eat here at all!" +
+             "The buttons are all different colors."
+        
+    }}
+    caption={
+        "We added explanations for our terms, especially if a feature is "
+        + "used for the first time."
+    }
+    width={6}
+    maxHeight={"300px"}
+>
+
+We received a lot of positive feedback about the voting process designed for
+the group Food Party feature.
+However, some participants did not find the option names (“Yes!”, “Meh”, and “Veto”) to be immediately
+intuitive. We soon realized that their understanding of the features depended on the order with
+which we prescribed our tasks in usability testing.
+
+We cannot expect that our users would use our app in some specific order, so it is our job to make
+sure our design allows anyone to understand our app, no matter their background.
+We created an overall onboarding page that explains the features of the app before the sign-in screen.
+If it is the first time that someone votes, we will also explicitly
+explain how the restaurants were selected for this process and what their voting options would do.
+
+</ProjectImageBlock>
+
+## Resulting Design
+
+After completing our usability testing process and drafting revisions on our paper prototype, 
+we created a high-fidelity digital mockup using Figma.
+
+- You can create a group with your friends.
+- You and your group can decide on a restaurant to go to through the process of voting.
+- You can document your dietary restrictions and preferences.
+- You can record, rate, or flag restaurants you have previously visited.
+
+### Onboarding
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageDigitalOnboard,
+            alt: "A pink onboarding screen that suggests you to scroll left and right. " + 
+            "Slide 1: The NomNom logo with two people standing and a bubble in front of them. The NomNom word mark. " +
+            "Slide 2: Close-up line art of two people, one person embracing and one person has a heart. " + 
+            "Text: Find restaurants for you and the people you love. " + 
+            "Slide 3: Line art of utensils that are crossed out in a circle. " +
+            "Text: Document your dietary restrictions and preferences" + 
+            "Slide 4: Comic question bubble with a sketch of a list within. Text: Remember the places you love (or don't love)." +
+            "Then, a prominent button with the text of 'start my food journey.'"
+            
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "The onboarding screen is displayed before the user enters their credentials or " + 
+        "creates an account."
+    }
+    width={8}
+    maxHeight={"600px"}>
+
+    You will see an onboarding screen the first time that use this app.
+    Instead of our default landing page, you will also be directed to Profile tab to
+    set your dietary restrictions.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageDigitalProfile,
+            alt: "On the left, there is a login screen with optional social media sign-in. " +
+                 "On the right is the app's profile tab. There is a set of labels that denote your dietary restrictions, " +
+                 "like 'nut-free', 'A1 milk', and 'crustacean shellfish', with a small 'Add' button to modify it. " +
+                 "There is also another section on privacy settings."
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "After creating your account, you will also be asked to select your initial dietary " +
+        "restrictions. You can always come back and edit this."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+</ProjectImagesBlock>
+
+### Restaurant information and red flagging
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageDigitalFlag,
+            alt: "Three screens. Left: a list of restaurants, each with their images, names, " + 
+                 "and tags like '4.5', two dollar signs, and 'Mexican'. " +
+                 "Middle: The restaurant information page with menu items, a My Notes section, and a red flag button. " +
+                 "Right: A pop up entitled 'What Happened' with options like 'Violated restriction: shellfish'."
+
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "On a restaurant's information page, you can find menu items that work for you. " +
+        "You can also record a bad experience with that restaurant by “red flagging” it."
+    }
+    width={8}
+    maxHeight={"600px"}>
+
+    Our default landing page is a listing of the restaurants that meet your dietary
+    restrictions. You can click on an entry to find out more about their menu.
+
+    On the
+    restaurant's own information page, you can also record other structured information,
+    such as tags for yourself or to “red flag” the business—one of our major tasks.
+
+</ProjectImagesBlock>
+
+### Food Party
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageDigitalParty1,
+            alt: "Three screens. Left and right: group listing to show a group was created. " +
+            "Middle: A screen to add group members, with a list of people already added, a button to add member, "
+            + "buttons 'done' and 'leave party'."
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "To begin, you would create a new group and start a food party with them."
+    }
+    width={8}
+    maxHeight={"600px"}
+>
+
+One of our main tasks involves eating out with a group and making sure that
+the restaurant selected would work for everybody. The Food Party is
+a major feature in our app that is designed for that task.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+  images={[
+    {
+      src: imageDigitalParty2,
+      alt: "A screen with 'how to vote' instructions, same tutorial text as earlier."
+    },
+    {
+      src: imageDigitalParty3,
+      alt: "A voting screen that is a mash up of the restaurant info page and the voting " +
+           "buttons from earlier."
+    },
+    {
+      src: imageDigitalParty4,
+      alt: "The digital version of our Congratulations screen. Text: Your group will be going to: Mr. West. Picture of the restaurant. " + 
+           "Buttons: See Full Menu and Open in Maps. A tooltip text at the bottom says " +
+           "'We have added this restaurant to your visit history.'"
+    },
+  ]}
+  direction={"row"}
+  caption={
+    "In this case, your might have voted 'Yes' or 'Meh'. " +
+    "Your group was still able to reach consensus with only one round."
+  }
+  width={8}
+  maxHeight={"600px"}
+></ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageDigitalParty5,
+            alt: "Three screens. Left: a pop up that says, We'll need another round. " +
+                 "The restaurant has been meh'd by a majority of the group or vetoed. " +
+                 "Then the next two screens show the same restaurant voting screen for another " +
+                 "restaurant called Buddah Bruddah."
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "But a few rounds of voting may be needed to complete the restaurant selection, " +
+        "which can happen if someone needs to 'Veto' a choice altogether. " + 
+        "The app lets you know if that needs to happen."
+    }
+    width={8}
+    maxHeight={"600px"}>
+
+</ProjectImagesBlock>
