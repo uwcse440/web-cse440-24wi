@@ -1,0 +1,427 @@
+{/* CSE 440 Project Post Template
+  *
+  * This template aims to guide you in how to use the supported syntax.
+  *
+  * You should refer to the assignment description for details on what content is expected.
+  *
+  * If you delete or modify template content that you later find you need,
+  * the original template can also be found in `/src/projects/template/project_post.mdx`.
+  *
+  * Note this template's use of comment syntax.
+  * Curly brackets delineate a code block, within which you can then initiate a comment.
+  * The column of `*` characters has no effect and is included only for readability.
+*/}
+
+{/* Tool Documentation
+  *
+  * This post is primarily formatted in Markdown.
+  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
+  *
+  * The post then uses [MDX](https://mdxjs.com/) to embedded JDX components.
+  * You are not expected to fully understand these components,
+  * but can just embed them in your Markdown like you would any HTML tag.
+*/}
+
+{/* Project Imports
+  *
+  * These import components for use in your post.
+  * You could inspect those components, but this template is intended to be sufficient.
+  *
+  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
+  * but we do not expect or recommend you will need or want additional components.
+  * If you find the provided components insufficient, we encourage you to check in with the course staff.
+*/}
+
+import ProjectImageBlock from "src/components/project/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/project/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/project/ProjectSubtitle";
+import TeamMemberGallery from "src/components/project/TeamMemberGallery";
+
+{/* Image Imports
+  *
+  * Every image must be imported via its relative path.
+  * - Only `.jpg` and `.png` file extensions are supported.
+  * - If an import is not working, double-check that you have the correct file extension.
+*/}
+
+{/* Team Gallery Images
+  *
+  * - Give your images meaningful names.
+  * - Images will be rendered 150px wide.
+  *   - Be sure all images are already scaled to be 150x wide.
+  *   - Be sure all images are the same height.
+*/}
+
+import Judy from "./assets/team/Judy.png";
+import Sabrina from "./assets/team/Sabrina.png";
+import Simon from "./assets/team/Simon.png";
+import Wendi from "./assets/team/Wendi.jpg";
+
+import imagePlaceholder300x600 from "./assets/post/300x600.png";
+import imagePlaceholder400x400 from "./assets/post/400x400.png";
+import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+
+import AddressUserConfusion from "./assets/post/AddressUserConfusion.png";
+import UserContFlex from "./assets/post/UserContFlex.png";
+import RewardsSystem from "./assets/post/RewardsSystem.png";
+import task1_1 from "./assets/post/task1_1.png";
+import task1_2 from "./assets/post/task1_2.png";
+import task1_3 from "./assets/post/task1_3.png";
+import task1_4 from "./assets/post/task1_4.png";
+import task1_5 from "./assets/post/task1_5.png";
+import task2_1 from "./assets/post/task2_1.png";
+import task2_2 from "./assets/post/task2_2.png";
+import task2_3 from "./assets/post/task2_3.png";
+import initialDesign from "./assets/post/initialDesign.png";
+import storyboard from "./assets/post/storyboard.png";
+import storyboard2 from "./assets/post/storyboard2.png";
+import cover from "./assets/post/cover.png";
+import keyFeatures from "./assets/post/keyFeatures.png";
+
+# Emotiverse
+
+<ProjectSubtitle>An innovative solution to improving mood and productivity</ProjectSubtitle>
+
+## Team
+
+<TeamMemberGallery members={[
+    {
+        name: "Sabrina Hsu",
+        photo: Sabrina,
+    },
+    {
+        name: "Judy Fu",
+        photo: Judy,
+    },
+    {
+        name: "Simon Studen",
+        photo: Simon,
+    },
+    {
+        name: "Wendi Ma",
+        photo: Wendi,
+    },
+]} />
+
+## Problem and Design Overview
+
+{/* A ProjectImageBlock displays text with an associated image.
+  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
+  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
+  * - In a small browser window, the image will be rendered below the text.
+  * - In a large browser window, the image will be rendered on the right.
+  *   - The width property controls how much of the grid is assigned to the image column.
+  *     Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
+  *
+  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
+*/}
+
+<ProjectImageBlock
+    image={{
+        src: cover,
+    }}
+    caption={
+        "Emotiverse uses music to create a social and productive environment."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Music has been used for centuries by ancient cultures to improve well-being and
+happiness. Research has shown that listening to music has significant health
+benefits by reducing anxiety, which can lower the risk of various health problems
+such as depression. University students often confront high levels of stress and
+anxiety from academic pressures and personal experiences, which adversely affect
+their mental and physical health. Despite the awareness of these negative emotions,
+they often struggle to find healthy coping mechanisms to manage and alleviate these
+unwanted feelings.
+
+To address this issue, we offer a unique approach that includes
+music, social interaction, and mood tracking within a metaverse. Our mood tracking
+system helps users identify and reflect on their emotions, while simultaneously
+use to generate personalized playlists to improve or maintain their emotions.
+Additional features, like avatar customization and engaging with other users,
+create an extraordinary experience that will further help regulate emotions and
+increase productivity among college students.
+
+</ProjectImageBlock>
+
+## Design Research Process and Key Insights
+
+<ProjectImageBlock
+    image={{
+        src: initialDesign,
+    }}
+    caption={
+        "Our initial sketches of " +
+        "a metaverse-like mobile application and " +
+        "a remote controlled Bluetooth display speaker."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+The goal of our design research aimed to understand how people engage with music
+and their experience with existing music applications. We conducted semi-structured
+interviews with four college students who interact with existing music applications
+regularly. This method allowed us to gather data on their music listening habits,
+preferences, and experiences. Additionally, we conducted secondary research to
+better understand the current market and its existing applications. Our goal was
+to gather insights and find commonalities among functions the participants find
+useful or need improvements. Then, use these commonalities to help us design a
+new application that combines music and mood that better meets our audiences needs
+and desires.
+
+</ProjectImageBlock>
+
+### Immersive Design to Improve Concentration
+
+The insight emerged from a synthesis of our partcipants habits and preferences,
+combined with what we found in secondary research. From the interviews, we discovered
+many common habits and preferences when listening to music, such as they tend to
+listen to music when they want to be productive or to feel relaxed. However, for
+some participants, music with lyrics and phone notifications can be distracting.
+This insight shows that current music streaming apps often don't make recommendations
+based on the listeners current needs nor provide environments to maximize the effect
+of music. To address this, we aim to design a music app that creates an immersive
+environment where it will help listeners maintain their focus and productivity.
+We plan to achieve this by recommending various types of personalized playlists
+based on the listeners goal, such as upbeat music to maintain a cheerful mood or
+non-lyrical music or white noise to create a conducive environment for concentration.
+To further enhance the immersive experience, we plan to design a Bluetooth speaker
+that will display various types of animations to help reduce possible distractions.
+
+### Simplifying Music Sharing
+
+This insight emerged from user feedback and secondary research on social interaction
+and music discovery. We found that our participants like to share music but existing
+app features for sharing are cumbersome. For example, the sync share feature, which
+allows users to listen to music together, is not widely used due to the complexity
+of setting it up and learning how to use it. We aim to simplify sharing with an
+intuitive, user-friendly feature that encourages social interaction and music discovery.
+
+### Personalization and Recommendation
+
+
+The insight came from user feedback and secondary research on the importance of
+personalization and recommendation in music applications. Our interviews revealed
+that participants create playlists for various moods and occasions. They discover
+new music mainly through app recommendations and friends suggestions. This insight
+shows the importance of well designed personalization and recommendation features
+of a music app. Our music app prioritizes these features, allowing users to create
+personalized playlists, and receive recommendations based on their mood, music
+history, and preferences.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: storyboard2,
+        },
+        {
+            src: storyboard,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "Storyboards of Lily and Sandy using Emotiverse in various ways."
+    }
+    maxHeight={"400px"}
+>
+
+</ProjectImagesBlock>
+
+## Iterative Design Process and Key Insights
+
+Our iterative design process focused on getting our idea out on paper through
+the paper prototype and making the application easy to use through many inspections
+and usability tests. We began our design process by paper prototyping to quickly
+explore ideas and gather feedback from users. Next, we conducted heuristic evaluation
+and usability testing on our paper prototypes to identify any usability issues to
+overall improve our design. With the feedback we received, we iterated upon our
+design and created a digital mockup using Figma. Our design focused on two main
+tasks: improve productivity through music and study with friends and improve mood
+through daily tracking.
+
+### Addressing User Confusion
+
+<ProjectImageBlock
+    image={{
+        src: AddressUserConfusion,
+    }}
+    caption={
+        "Addressing the confusion of accessing the recommended playlist"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Our heuristics evaluation and usability testing revealed participants confusions
+about the location of the generated playlist based on their mood, as it was originally
+placed on the mood tracking screen instead of the music screen where many participants
+expected it to be. Due to this placement, many participants were confused as to
+what the playlist was at all. To resolve this, the playlist was moved to the music
+screen and a shortcut was added to access this generated playlist through the
+homepage via a button. Furthermore, a participant pointed out that swiping left
+and right was inconvenient to find a specific playlist, especially if they have
+a lot of different playlists. As a result, the screen layout was redesigned to
+improve accessibility. The buttons within our entire app are also labeled for clarity.
+
+</ProjectImageBlock>
+
+### Enhancing User Control and Flexibility
+
+<ProjectImageBlock
+    image={{
+        src: RewardsSystem,
+    }}
+    caption={
+        "The process of connecting to speaker."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+In our usability testing, the feedback revealed users wanted more control and
+flexibility with the process of entering speaker and study mode. Our original
+design combined the connecting process of both the speaker and study mode to be
+within the same screen, which restricted the useability for participants who
+wanted to only connect to the speaker or study mode and not both. To improve
+this, we separated the process of connecting to the speaker and study mode into
+different screens, while adding shortcuts to the other within each screen.
+For example, adding the option to connect to the speaker within study mode.
+This also allowed us to add shortcuts on the home screen for an easier process
+of connecting to the speaker or enter study mode. Another problem found by our
+participants was regarding the process of connecting to the speaker. Initially,
+we designed this process to give the user the flexibility of selecting a different
+background and animation for the character every time. However, from the feedback
+we received, this process can be troublesome and become a distraction. To address
+this issue, we give the option for the user to set a default background and animation
+on the setting page and remove the prompt to customize the speaker display when connecting.
+This insight enhanced user control and flexibility, while providing a more seamless user experience.
+
+</ProjectImageBlock>
+
+### Adding a Rewards System
+
+<ProjectImageBlock
+    image={{
+        src: UserContFlex,
+    }}
+    caption={
+        "Incentives that can be used for customization"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Our final key insight highlighted the importance of incentives. Usability testing
+and class critique feedback revealed adding a rewards system can motivate the users
+to continue using our application. To address this issue, we added a currency-based
+rewards system for inputting mood or studying for a set amount of period. Users
+can spend this currency to buy customization for their avatars and rooms, such as
+hairstyles, clothes, furniture, and more. This addition improved engagement and
+made the application more enjoyable to use.
+
+</ProjectImageBlock>
+
+## Resulting Design
+
+<ProjectImageBlock
+    image={{
+        src: keyFeatures,
+    }}
+    caption={
+        "The key features of Emotiverse."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+### Overall Design
+Emotiverse is primarily a music and social network mobile application with
+inspirations from the Metaverse. The incorporation of a Bluetooth speaker
+provides a way for our users to relax and enjoy music or focus on important tasks,
+distraction-free. The display of the speaker is designed to help create a more
+immersive environment when using our mobile applications. Our goal for Emotiverse
+is to provide a solution for university students to become more conscious of
+their emotions and help manage them through features such as personalized music,
+mood tracker, and various ways of interacting with other users.
+
+</ProjectImageBlock>
+
+### Improve Productivity Through Music and Studying With Friends
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1_1,
+        },
+        {
+            src: task1_2,
+        },
+        {
+            src: task1_3,
+        },
+    ]}
+    direction={"row"}
+    maxHeight={"400px"}
+>
+
+To Enter Listening Mode:
+
+1. Turn on speaker and make sure Bluetooth is on too.
+2. On the top left corner of the homepage of the app, click on the speaker button.
+3. Toggle "show animation" based on preference, then click on "Connect" to confirm.
+4. Select a playlist and song to start listening!
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1_1,
+        },
+        {
+            src: task1_4,
+        },
+        {
+            src: task1_5,
+        },
+    ]}
+    direction={"row"}
+    maxHeight={"400px"}
+>
+
+To Enter Study Mode:
+
+1. Turn on speaker and make sure Bluetooth is on too.
+2. On the top left corner of the homepage of the app, click on the book button.
+3. Adjust preference and click on "Start Study" to enter study mode. Once in study mode, all notifications will be blocked.
+
+</ProjectImagesBlock>
+
+### Manage Stress and Reduce Negative Emotions Through Daily Mood Tracking
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2_1,
+        },
+        {
+            src: task2_2,
+        },
+        {
+            src: task2_3,
+        },
+    ]}
+    direction={"row"}
+    maxHeight={"400px"}
+>
+
+1. On the homepage of the app, click on the mood button at the bottom of the screen.
+2. Select a facial expression that best represents the mood for the day. To make customization expression click on the blue plus button.
+3. Once a mood has been recordered for the day, a “gift” (personalized playlist
+based on that mood) will apear on the homepage.
+4. To look back on previous moods and playlists, click on the same mood button from step 1.
+
+</ProjectImagesBlock>
