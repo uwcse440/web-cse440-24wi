@@ -9,7 +9,7 @@ Requires Node.js and the Yarn package manager.
 - [Node.js](https://nodejs.org/)
 
   Installers: <https://nodejs.org/en/download/>
-  
+
   Development requires version 20.x.  
   This requirement can be relaxed by removing `engines` from `package.json`.
 
@@ -24,6 +24,7 @@ Requires Node.js and the Yarn package manager.
 ```shell
 yarn install
 ```
+
 Install dependencies from `yarn.lock`.
 
 ## Yarn Commands
@@ -31,14 +32,23 @@ Install dependencies from `yarn.lock`.
 ```shell
 yarn run
 ```
+
 List available commands.
 
 ```shell
 yarn dev
 ```
+
 Serve a debug build on `http://localhost:3000`, with hot reloading.
 
 ```shell
 yarn export
 ```
+
 Build a production bundle and create static deployment files in `dist`.
+
+```shell
+yarn format
+```
+
+Apply code formatting.
