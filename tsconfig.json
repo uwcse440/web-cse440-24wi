@@ -1,34 +1,36 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "experimentalDecorators": true,
-        "importHelpers": true,
-        "jsx": "react",
-        "lib": ["es6", "dom"],
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "noImplicitThis": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "paths": {
-            "src/*": ["src/*"]
-        },
-        "preserveConstEnums": true,
-        "removeComments": true,
-        "sourceMap": true,
-        "strictNullChecks": true,
-        "target": "es6"
-    },
-    "include": [
-        "src/client/**/*",
-        "src/common/**/*",
-        "src/components/**/*",
-        "src/content/**/*",
-        "src/pages/**/*",
-        "src/stores/**/*",
-        "src/types/**/*"
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
     ],
-    "exclude": [
-        "node_modules"
-    ]
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "dist/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
 }
