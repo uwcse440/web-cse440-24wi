@@ -15,7 +15,7 @@ export const SiteLinks = {
     anchor: "Assignment 0",
   },
   assignmentsAssignment1Top: {
-    href: "/assignments/assignment0/#assignment-1",
+    href: "/assignments/assignment1/#assignment-1",
     anchor: "Assignment 1",
   },
   assignmentsAssignment2Top: {
@@ -27,7 +27,7 @@ export const SiteLinks = {
     anchor: "Assignment 3",
   },
   assignmentsAssignment4Top: {
-    href: "/assignments/assignment3/#assignment-4",
+    href: "/assignments/assignment4/#assignment-4",
     anchor: "Assignment 4",
   },
   assignmentsExamTop: {
