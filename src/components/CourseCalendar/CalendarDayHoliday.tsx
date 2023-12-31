@@ -16,7 +16,7 @@ export const CalendarDayHoliday: React.FunctionComponent<{
     (itemCurrent, indexCurrent): React.ReactElement => {
       return (
         <Grid key={indexCurrent} item xs={12}>
-          {`Holiday: ${itemCurrent.title}`}
+          {itemCurrent.title}
         </Grid>
       );
     },
