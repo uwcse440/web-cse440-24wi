@@ -10,12 +10,20 @@ export const SiteLinks = {
     href: "/assignments/#assignments",
     anchor: "Assignments",
   },
+  assignmentsClarityAndPresentation: {
+    href: "/assignments/#clarity-and-presentation",
+    anchor: "Clarity and Presentation",
+  },
+  assignmentsContributionStatements: {
+    href: "/assignments/#contribution-statements",
+    anchor: "Contribution Statements",
+  },
   assignmentsAssignment0Top: {
     href: "/assignments/assignment0/#assignment-0-introduction-slide",
     anchor: "Assignment 0",
   },
   assignmentsAssignment1Top: {
-    href: "/assignments/assignment1/#assignment-1",
+    href: "/assignments/assignment1/#assignment-1-project-proposal",
     anchor: "Assignment 1",
   },
   assignmentsAssignment2Top: {
@@ -29,10 +37,6 @@ export const SiteLinks = {
   assignmentsAssignment4Top: {
     href: "/assignments/assignment4/#assignment-4",
     anchor: "Assignment 4",
-  },
-  assignmentsExamTop: {
-    href: "/assignments/exam/#exam",
-    anchor: "Exam",
   },
 
   calendarTop: {
