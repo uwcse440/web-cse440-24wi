@@ -1,61 +1,44 @@
-import {
-    observer
-} from "mobx-react-lite";
-
-import {
-    Stack,
-} from "@mui/material";
-
 import * as React from "react";
 
-import {
-    CollapseWithHeader
-} from 'src/common/CollapseWithHeader';
-
-import {
-    anchorText
-} from 'src/common/GeneratedAnchor';
-
-import {
-    AssignmentDueText
-} from "src/components/AssignmentDueText";
-
-import {
-    assertAssignmentMilestoneKey,
-    AssignmentMilestoneKey
-} from "src/types/AssignmentStore";
-import {getAppStore} from "src/stores/AppStore";
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { CollapseWithHeader } from "@/components/CollapseWithHeader";
+import { AssignmentCalendarItem } from "@/types/CalendarData";
+import { idAnchorText } from "@/utils/idAnchorText";
+import { Stack } from "@mui/material";
 
 //
 // Properties
 //
 interface CollapseProjectMilestoneProps extends React.PropsWithChildren<{}> {
-    milestone: AssignmentMilestoneKey,
-    revisionMilestone?: AssignmentMilestoneKey,
+  assignment: AssignmentCalendarItem;
+  revisionAssignment?: AssignmentCalendarItem;
 }
 
 /**
  */
-export const CollapseProjectMilestone: React.FunctionComponent<CollapseProjectMilestoneProps> = observer((props: CollapseProjectMilestoneProps) => {
-    // Validate props, TypeScript does not validate in MDX
-    assertAssignmentMilestoneKey(props.milestone);
-    if(props.revisionMilestone) {
-        assertAssignmentMilestoneKey(props.revisionMilestone);
-    }
+export const CollapseProjectMilestone: React.FunctionComponent<
+  CollapseProjectMilestoneProps
+> = (props: CollapseProjectMilestoneProps) => {
+  const collapseTitle = props.assignment.title;
 
-    const assignmentStore = getAppStore().courseDataStore.assignmentStore;
-
-    const collapseTitle = assignmentStore.milestones[props.milestone].title;
-
-    return <CollapseWithHeader header={
+  return (
+    <CollapseWithHeader
+      header={
         <Stack>
-            <h3 id={anchorText(collapseTitle)}>{collapseTitle}</h3>
-            <p><AssignmentDueText milestone={props.milestone} /></p>
-            {!!props.revisionMilestone && (
-                <p>Revision: <AssignmentDueText milestone={props.revisionMilestone} /></p>
-            )}
+          <h3 id={idAnchorText(collapseTitle)}>{collapseTitle}</h3>
+          <p>
+            Due: <AssignmentDueDateTime assignmentKey={props.assignment} />
+          </p>
+          {!!props.revisionAssignment && (
+            <p>
+              {"Revision Due: "}
+              <AssignmentDueDateTime assignmentKey={props.revisionAssignment} />
+            </p>
+          )}
         </Stack>
-    }>
-        {props.children}
+      }
+    >
+      {props.children}
     </CollapseWithHeader>
-});
+  );
+};

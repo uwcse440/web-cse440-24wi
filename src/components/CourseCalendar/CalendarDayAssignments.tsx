@@ -1,12 +1,12 @@
 import * as React from "react";
 
-import { CalendarItemTimeAndLocations } from "@/components/CourseCalendar/CalendarItemTimeAndLocations";
+import { CalendarItemAssignmentCanvasDueTime } from "@/components/CourseCalendar/CalendarItemAssignmentCanvasDueTime";
 import { AppLink } from "@/components/links/AppLink";
 import {
   CalendarItem,
   filterAssignmentCalendarItems,
 } from "@/types/CalendarData";
-import { Alert, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 
 export const CalendarDayAssignments: React.FunctionComponent<{
   calendarItems: CalendarItem[];
@@ -21,18 +21,20 @@ export const CalendarDayAssignments: React.FunctionComponent<{
     (itemCurrent, indexCurrent): React.ReactElement => {
       return (
         <Grid key={indexCurrent} item xs={12}>
-          {/*<Alert severity="info" sx={{ marginTop: 1 }}>*/}
-          {/*  Assignment:{" "}*/}
-            {((): React.ReactNode => {
-              if (itemCurrent.link) {
-                return (
+          {((): React.ReactNode => {
+            if (itemCurrent.link) {
+              return (
+                <React.Fragment>
                   <AppLink href={itemCurrent.link}>{itemCurrent.title}</AppLink>
-                );
-              } else {
-                return itemCurrent.title;
-              }
-            })()}
-          {/*</Alert>*/}
+                  <CalendarItemAssignmentCanvasDueTime
+                    calendarItem={itemCurrent}
+                  />
+                </React.Fragment>
+              );
+            } else {
+              return itemCurrent.title;
+            }
+          })()}
         </Grid>
       );
     },

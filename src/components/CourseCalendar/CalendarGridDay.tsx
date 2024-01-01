@@ -56,7 +56,7 @@ export const CalendarGridDay: React.FunctionComponent<{
             },
             "& > .MuiGrid-item": {
               marginBottom: 2,
-            }
+            },
           }}
         >
           <CalendarDayHoliday calendarItems={calendarItems} />

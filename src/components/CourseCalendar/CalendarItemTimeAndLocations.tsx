@@ -16,16 +16,17 @@ export const CalendarItemTimeAndLocations: React.FunctionComponent<{
     }
   })();
 
-  return (
-    calendarItemTimeAndLocations &&
-    calendarItemTimeAndLocations.map(
-      (timeAndLocationCurrent, indexCurrent): React.ReactElement => {
-        return (
-          <Box key={indexCurrent} sx={{ fontSize: "0.875rem" }}>
-            {`${timeAndLocationCurrent.time}, ${timeAndLocationCurrent.location}`}
-          </Box>
-        );
-      },
-    )
+  if (!calendarItemTimeAndLocations) {
+    return null;
+  }
+
+  return calendarItemTimeAndLocations.map(
+    (timeAndLocationCurrent, indexCurrent): React.ReactElement => {
+      return (
+        <Box key={indexCurrent} sx={{ fontSize: "0.875rem" }}>
+          {`${timeAndLocationCurrent.time}, ${timeAndLocationCurrent.location}`}
+        </Box>
+      );
+    },
   );
 };
