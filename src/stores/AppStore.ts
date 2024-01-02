@@ -1,62 +1,21 @@
-import { CourseDataStore } from './CourseDataStore';
+import CourseStoreImpl from "@/stores/CourseStore";
+import AppStore, { AppStoreData } from "@/types/AppStore";
+import CourseStore, { CourseStoreData } from "@/types/CourseStore";
+import { computed, makeObservable, observable } from "mobx";
 
-import { BrowserHistory } from "history";
-import { RouterStore } from 'mobx-react-router';
-
-/**
- * Interface of the application store.
- */
-export interface AppStore {
-    courseDataStore: CourseDataStore;
-    publicPath: string;
-    routerStore: RouterStore;
-}
-
-/**
- * Implementation of the application store.
- */
 class AppStoreImpl implements AppStore {
-    public courseDataStore: CourseDataStore;
-    public publicPath: string;
-    public routerStore: RouterStore;
+  @observable courseStore: CourseStore;
 
-    constructor(browserHistory: BrowserHistory, publicPath: string) {
-        // Initialize our state
-        this.courseDataStore = new CourseDataStore();
+  constructor(initialData: AppStoreData) {
+    this.courseStore = new CourseStoreImpl(initialData.courseStoreData);
 
-        // Initialize our router state
-        this.publicPath = publicPath;
-        this.routerStore = new RouterStore(browserHistory);
-    }
+    makeObservable(this);
+  }
+
+  @computed
+  get courseStoreData(): CourseStoreData {
+    return this.courseStore;
+  }
 }
 
-/**
- * Singleton which holds the application store.
- */
-let INSTANCE: AppStore | null = null;
-
-/**
- * Create the application store.
- *
- * Enforces a singleton constraint.
- */
-export function createAppStore(browserHistory: BrowserHistory, publicPath: string): AppStore {
-    if (INSTANCE) {
-        throw new Error('AppStore is a singleton.');
-    }
-
-    INSTANCE = new AppStoreImpl(browserHistory, publicPath);
-
-    return getAppStore();
-}
-
-/**
- * Obtain the application store.
- */
-export function getAppStore(): AppStore {
-    if (INSTANCE === null) {
-        throw new Error('AppStore not created.');
-    }
-
-    return INSTANCE;
-}
+export default AppStoreImpl;

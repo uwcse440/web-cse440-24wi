@@ -4,7 +4,6 @@ export type CourseStoreLinkHREF = string;
 
 const CourseStoreLinkKeyValues = [
   "linkCanvas",
-  "linkCanvasDiscussion",
   "linkGitHub",
   "linkUniversitySyllabusGuidelines",
 ] as const;
@@ -25,7 +24,6 @@ export interface CourseStoreData {
 }
 
 export interface CourseStore extends CourseStoreData {
-  linkCanvasDiscussion?: CourseStoreLinkHREF;
 }
 
 export default CourseStore;
