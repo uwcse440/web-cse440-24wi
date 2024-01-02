@@ -43,10 +43,6 @@ export default function Page(): React.ReactElement {
             href: "#participation-and-covid-19-safety",
           },
           {
-            anchor: "Late Policy",
-            href: "#late-policy",
-          },
-          {
             anchor: "Accommodations and University Policies",
             href: "#accommodations-and-university-policies",
           },

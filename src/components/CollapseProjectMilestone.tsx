@@ -28,13 +28,14 @@ export const CollapseProjectMilestone: React.FunctionComponent<
           <h3 id={idAnchorText(collapseTitle)}>{collapseTitle}</h3>
           <p>
             Due: <AssignmentDueDateTime assignmentKey={props.assignment} />
-          </p>
           {!!props.revisionAssignment && (
-            <p>
+            <React.Fragment>
+              <br />
               {"Revision Due: "}
               <AssignmentDueDateTime assignmentKey={props.revisionAssignment} />
-            </p>
+            </React.Fragment>
           )}
+          </p>
         </Stack>
       }
     >
