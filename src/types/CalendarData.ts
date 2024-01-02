@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import { Reading } from "@/types/Reading";
-
 /**
  * Type for links.
  */
@@ -88,24 +86,16 @@ export type AssignmentCalendarItem = {
 } & BaseCalendarItemDate &
   AssignmentCalendarItemSubmission;
 
+export type EventCalendarItem = {
+  type: "event";
+  title: string;
+} & BaseCalendarItemDates &
+  BaseCalendarItemTimeAndLocations;
+
 export type HolidayCalendarItem = {
   type: "holiday";
   title: string;
 } & BaseCalendarItemDates;
-
-export type LectureCalendarItemContent =
-  | {}
-  | { contentNonstandard: React.ReactNode }
-  | {
-      readingsStandard: {
-        framing: Reading;
-        instances: Reading[];
-      };
-    };
-
-export type LectureCalendarItemAdditionalResourceReadings =
-  | {}
-  | { additionalResourceReadings: Reading[] };
 
 export type LectureCalendarItem = {
   type: "lecture";
@@ -113,9 +103,7 @@ export type LectureCalendarItem = {
   slides?: LinkHREF;
 } & BaseCalendarItemDates &
   BaseCalendarItemGuests &
-  BaseCalendarItemTimeAndLocations &
-  LectureCalendarItemContent &
-  LectureCalendarItemAdditionalResourceReadings;
+  BaseCalendarItemTimeAndLocations;
 
 export type StudioCalendarItem = {
   type: "studio";
@@ -126,6 +114,7 @@ export type StudioCalendarItem = {
 
 export type CalendarItem =
   | AssignmentCalendarItem
+  | EventCalendarItem
   | HolidayCalendarItem
   | LectureCalendarItem
   | StudioCalendarItem;
@@ -136,6 +125,14 @@ export function filterAssignmentCalendarItems(
   return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
     return calendarItemCurrent.type === "assignment";
   }) as AssignmentCalendarItem[];
+}
+
+export function filterEventCalendarItems(
+  calendarItems: CalendarItem[],
+): EventCalendarItem[] {
+  return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
+    return calendarItemCurrent.type === "event";
+  }) as EventCalendarItem[];
 }
 
 export function filterHolidayCalendarItems(
