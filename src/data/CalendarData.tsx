@@ -604,10 +604,10 @@ export const calendarData: {
       timeAndLocations: SECTION_TIME_AND_LOCATIONS,
     },
     {
-        type: 'event',
-        title: 'Poster Session',
+      type: "event",
+      title: "Poster Session",
       date: verifyCalendarDate("2024-03-11", "Mon"),
-        timeAndLocation: POSTER_SESSION_TIME_AND_LOCATION,
+      timeAndLocation: POSTER_SESSION_TIME_AND_LOCATION,
     },
   ],
 };
