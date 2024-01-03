@@ -23,7 +23,6 @@ export interface CourseStoreData {
   linkUniversitySyllabusGuidelines?: CourseStoreLinkHREF;
 }
 
-export interface CourseStore extends CourseStoreData {
-}
+export interface CourseStore extends CourseStoreData {}
 
 export default CourseStore;
