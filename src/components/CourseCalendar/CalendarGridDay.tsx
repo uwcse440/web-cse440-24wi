@@ -31,7 +31,13 @@ export const CalendarGridDay: React.FunctionComponent<{
 
   return (
     <Grid item xs={12}>
-      <Grid container sx={{ marginTop: 2 }}>
+      <Grid
+        id={idAnchorText(
+          formatCalendarDate(calendarDate, CALENDAR_DATE_FORMAT),
+        )}
+        container
+        sx={{ marginTop: 2 }}
+      >
         <Grid
           item
           xs={2}
