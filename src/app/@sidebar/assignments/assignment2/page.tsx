@@ -24,7 +24,11 @@ export default function Page(): React.ReactElement {
           },
           {
             anchor: "2c - Design Research Check-In",
-            href: "#assignment-2b-design-research-check-in",
+            href: "#assignment-2c-design-research-check-in",
+          },
+          {
+            anchor: "2d - Design Research Review",
+            href: "#assignment-2d-design-research-review",
           },
         ],
       ]}
