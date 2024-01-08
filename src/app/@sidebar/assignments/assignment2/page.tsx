@@ -18,6 +18,10 @@ export default function Page(): React.ReactElement {
             anchor: "2a - Project Ideation",
             href: "#assignment-2a-project-ideation",
           },
+          {
+            anchor: "2b - Design Research Plan",
+            href: "#assignment-2b-design-research-plan",
+          },
         ],
       ]}
     />

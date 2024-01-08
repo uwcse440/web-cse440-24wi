@@ -393,8 +393,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-01-18", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1695984/assignments/8938951",
     },
     assignment2c: {
       type: "assignment",
