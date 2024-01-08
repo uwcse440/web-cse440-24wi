@@ -351,7 +351,7 @@ export const calendarData: {
       link: SiteLinks.assignmentsAssignment1Top.href,
       date: verifyCalendarDate("2024-01-08", "Mon"),
       submission: "canvas",
-      submitCanvasTime: "3:00pm",
+      submitCanvasTime: "8:00pm",
       submitCanvasLink:
         "https://canvas.uw.edu/courses/1695984/assignments/8938948",
     },
