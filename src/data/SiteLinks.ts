@@ -27,7 +27,7 @@ export const SiteLinks = {
     anchor: "Assignment 1",
   },
   assignmentsAssignment2Top: {
-    href: "/assignments/assignment2/#assignment-2",
+    href: "/assignments/assignment2/#assignment-2-getting-the-right-design",
     anchor: "Assignment 2",
   },
   assignmentsAssignment3Top: {

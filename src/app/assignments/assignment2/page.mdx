@@ -1,9 +1,68 @@
-import { UnderDevelopment } from "@/components/UnderDevelopment";
+import * as React from "react";
 
-# Assignment 2
+import { CollapseProjectMilestone } from "@/components/CollapseProjectMilestone";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as InformalDrawingTool } from '@/contentcomponents/InformalDrawingTool.mdx';
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { calendarData } from "@/data/CalendarData";
+
+{/* TODO: import path2pPresentationStaffForm from 'public/assignments/2p-presentation-staff-form.pdf'; */}
+
+# Assignment 2: Getting the Right Design
 
 <UnderDevelopment display={true} />
 
-Until this page is updated, you may want to review the previous offering:
+## Overview
 
-[https://courses.cs.washington.edu/courses/cse440/23wi/assignments/assignment2](https://courses.cs.washington.edu/courses/cse440/23wi/assignments/assignment2)
+Even when a problem is well-motivated, understanding that problem and choosing a design to pursue is a difficult process.
+This group assignment, spanning multiple weeks of the course, tackles the problem of selecting the right design through
+__design research__, __task development__, __generating multiple potential designs__, and finally __selecting a design__ to pursue.
+
+## Milestones and Deliverables
+
+This is a group assignment, consisting of eight milestones.
+
+{/*
+  *
+  * ASSIGNMENT 2A
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment2a}>
+
+The goal of this milestone is to begin thinking about how to plan effective design research to inform your design process.
+
+Generate 5 to 10 different ideas related to each of the following aspects of your project proposal:
+
+- Forms: types of technology on which a design might be developed (e.g., wearable sensors, watch/phone/tablet, desktop, appliances or other artifacts in the environment).
+- Data: types of data a design might track or help a person track.
+- Tasks: what a person might accomplish with a design.
+- Features: a specific capability a design might have.
+- Social Interactions: types of social interactions and situations a design might engage or support.
+
+We will provide large sheets of paper. Divide a large sheet of paper into 32 squares, each approximately 2in by 2in.
+Sketch your ideas, one in each square. Each idea should be either a quick doodle with a caption or a one-sentence idea.
+A person familiar with your project but not in your group should be able to understand the idea each sketch conveys.
+
+The goal is to begin exploring the space of possibilities, not attempting to polish some individual possibility.
+Focus on the quantity of ideas, not the quality of any one idea.
+You may include ideas from existing products, but no two ideas should be alike.
+When you get stuck, find a context to inspire new ideas.
+
+After this brainstorming, you will have a broad space of possible directions.
+Your project will soon need to gather information on how to generate and consider ideas in these directions.
+Following up on the above, additionally brainstorm:
+
+- People: types of people you might work with to learn more about problems and opportunities.
+- Focus: what parts of the problems and opportunities you might focus on learning more about.
+- Method: how you might engage those people to learn more about problems and opportunities.
+
+#### Submission and Grading
+
+There is no submission for this milestone.
+
+</CollapseProjectMilestone>

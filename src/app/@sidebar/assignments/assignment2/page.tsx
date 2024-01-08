@@ -13,6 +13,12 @@ export default function Page(): React.ReactElement {
           anchor: "Assignment 2",
           href: "#assignment-2",
         },
+        [
+          {
+            anchor: "2a - Project Ideation",
+            href: "#assignment-2a-project-ideation",
+          },
+        ],
       ]}
     />
   );
