@@ -42,6 +42,10 @@ export default function Page(): React.ReactElement {
             anchor: "2g - Design Review",
             href: "#assignment-2g-design-review",
           },
+          {
+            anchor: "2p - Presentation",
+            href: "#assignment-2p-presentation",
+          },
         ],
       ]}
     />
