@@ -38,6 +38,10 @@ export default function Page(): React.ReactElement {
             anchor: "2f - Design Check-In",
             href: "#assignment-2f-design-check-in",
           },
+          {
+            anchor: "2g - Design Review",
+            href: "#assignment-2g-design-review",
+          },
         ],
       ]}
     />
