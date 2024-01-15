@@ -1,9 +1,9 @@
 import * as React from "react";
 
+import { CalendarItemSlides } from "@/components/CourseCalendar/CalendarItemSlides";
 import { CalendarItemTimeAndLocations } from "@/components/CourseCalendar/CalendarItemTimeAndLocations";
 import { CalendarItem, filterStudioCalendarItems } from "@/types/CalendarData";
 import { Grid } from "@mui/material";
-import {CalendarItemSlides} from "@/components/CourseCalendar/CalendarItemSlides";
 
 export const CalendarDayStudio: React.FunctionComponent<{
   calendarItems: CalendarItem[];

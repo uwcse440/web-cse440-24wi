@@ -17,7 +17,9 @@ export const CalendarDayEvent: React.FunctionComponent<{
     (itemCurrent, indexCurrent): React.ReactElement => {
       return (
         <Grid
-            key={indexCurrent} item xs={12}
+          key={indexCurrent}
+          item
+          xs={12}
           sx={{
             borderLeftColor: "lavender",
             borderLeftStyle: "solid",

@@ -15,7 +15,10 @@ export const CalendarDayHoliday: React.FunctionComponent<{
   return holidayCalendarItems.map(
     (itemCurrent, indexCurrent): React.ReactElement => {
       return (
-        <Grid key={indexCurrent} item xs={12}
+        <Grid
+          key={indexCurrent}
+          item
+          xs={12}
           sx={{
             borderLeftColor: "orange",
             borderLeftStyle: "solid",
