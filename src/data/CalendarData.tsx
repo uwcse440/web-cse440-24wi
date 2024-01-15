@@ -199,13 +199,6 @@ export const calendarData: {
     },
     {
       type: "lecture",
-      date: verifyCalendarDate("2024-01-09", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
-      title: "Introduction to Critique",
-      slides: "https://canvas.uw.edu/files/114608770/",
-    },
-    {
-      type: "lecture",
       date: verifyCalendarDate("2024-01-11", "Thu"),
       timeAndLocation: LECTURE_TIME_AND_LOCATION,
       title: "Design Diamond",
@@ -262,13 +255,6 @@ export const calendarData: {
     },
     {
       type: "lecture",
-      date: verifyCalendarDate("2024-02-13", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
-      title: "Inspection",
-      // slides: 'https://canvas.uw.edu/files/102112566/',
-    },
-    {
-      type: "lecture",
       date: verifyCalendarDate("2024-02-15", "Thu"),
       timeAndLocation: LECTURE_TIME_AND_LOCATION,
       title: "Patterns and Interface Implementation",
@@ -291,6 +277,20 @@ export const calendarData: {
   ],
 
   studios: [
+    {
+      type: "studio",
+      date: verifyCalendarDate("2024-01-09", "Tue"),
+      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      title: "Introduction to Critique",
+      slides: "https://canvas.uw.edu/files/114608770/",
+    },
+    {
+      type: "studio",
+      date: verifyCalendarDate("2024-02-13", "Tue"),
+      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      title: "Inspection",
+      // slides: 'https://canvas.uw.edu/files/102112566/',
+    },
     {
       type: "studio",
       dates: [

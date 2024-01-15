@@ -20,7 +20,17 @@ export const CalendarDayAssignments: React.FunctionComponent<{
   return assignmentCalendarItems.map(
     (itemCurrent, indexCurrent): React.ReactElement => {
       return (
-        <Grid key={indexCurrent} item xs={12}>
+        <Grid
+          key={indexCurrent}
+          item
+          xs={12}
+          sx={{
+            borderLeftColor: "lightgreen",
+            borderLeftStyle: "solid",
+            borderLeftWidth: 5,
+            paddingLeft: 1,
+          }}
+        >
           {((): React.ReactNode => {
             if (itemCurrent.link) {
               return (

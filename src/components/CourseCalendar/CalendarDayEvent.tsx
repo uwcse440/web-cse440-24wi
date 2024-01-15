@@ -16,7 +16,15 @@ export const CalendarDayEvent: React.FunctionComponent<{
   return eventCalendarItems.map(
     (itemCurrent, indexCurrent): React.ReactElement => {
       return (
-        <Grid key={indexCurrent} item xs={12}>
+        <Grid
+            key={indexCurrent} item xs={12}
+          sx={{
+            borderLeftColor: "lavender",
+            borderLeftStyle: "solid",
+            borderLeftWidth: 5,
+            paddingLeft: 1,
+          }}
+        >
           <b>{`${itemCurrent.title}`}</b>
           <CalendarItemTimeAndLocations calendarItem={itemCurrent} />
         </Grid>
