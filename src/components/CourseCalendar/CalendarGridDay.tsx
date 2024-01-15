@@ -6,6 +6,7 @@ import { CalendarDayAssignments } from "@/components/CourseCalendar/CalendarDayA
 import { CalendarDayEvent } from "@/components/CourseCalendar/CalendarDayEvent";
 import { CalendarDayHoliday } from "@/components/CourseCalendar/CalendarDayHoliday";
 import { CalendarDayLecture } from "@/components/CourseCalendar/CalendarDayLecture";
+import { CalendarDayOfficeHour } from "@/components/CourseCalendar/CalendarDayOfficeHour";
 import { CalendarDayStudio } from "@/components/CourseCalendar/CalendarDayStudio";
 import { formatCalendarDate, parseCalendarDate } from "@/data/CalendarData";
 import {
@@ -71,6 +72,7 @@ export const CalendarGridDay: React.FunctionComponent<{
           <CalendarDayEvent calendarItems={calendarItems} />
           <CalendarDayLecture calendarItems={calendarItems} />
           <CalendarDayStudio calendarItems={calendarItems} />
+          <CalendarDayOfficeHour calendarItems={calendarItems} />
 
           <CalendarDayAssignments calendarItems={calendarItems} />
         </Grid>

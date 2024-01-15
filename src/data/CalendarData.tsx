@@ -12,6 +12,7 @@ import {
   EventCalendarItem,
   HolidayCalendarItem,
   LectureCalendarItem,
+  OfficeHourCalendarItem,
   StudioCalendarItem,
 } from "@/types/CalendarData";
 import {
@@ -35,12 +36,12 @@ const dayOfWeekValues = [
 ] as const;
 type dayOfWeek = (typeof dayOfWeekValues)[number];
 
-const LECTURE_TIME_AND_LOCATION = {
+const TIME_AND_LOCATION_LECTURE = {
   time: "10:00 to 11:20",
   location: "CSE2 G10",
 };
 
-const SECTION_TIME_AND_LOCATIONS = [
+const TIME_AND_LOCATIONS_SECTION = [
   {
     time: "10:30 - 11:20",
     location: "MGH 295",
@@ -59,9 +60,19 @@ const SECTION_TIME_AND_LOCATIONS = [
   },
 ];
 
-const POSTER_SESSION_TIME_AND_LOCATION = {
+const TIME_AND_LOCATION_POSTER_SESSION = {
   time: "11:00 to 12:00",
   location: "CSE Atrium",
+};
+
+const TIME_AND_LOCATION_OFFICE_HOUR_JESSE = {
+  time: "11:00 to 12:00",
+  location: "CSE2 151",
+};
+
+const TIME_AND_LOCATION_OFFICE_HOUR_SIMONA = {
+  time: "12:00 to 1:00",
+  location: "CSE2 150",
 };
 
 export function parseCalendarDate(calendarDate: CalendarDate): Date {
@@ -116,6 +127,7 @@ export function calendarItems(): CalendarItem[] {
     ...calendarData.events,
     ...calendarData.holidays,
     ...calendarData.lectures,
+    ...calendarData.officeHours,
     ...calendarData.studios,
   ];
 }
@@ -158,8 +170,9 @@ export const calendarData: {
   holidays: HolidayCalendarItem[];
   lectures: LectureCalendarItem[];
   studios: StudioCalendarItem[];
-  assignments: { [key: string]: AssignmentCalendarItem };
   events: EventCalendarItem[];
+  officeHours: OfficeHourCalendarItem[];
+  assignments: { [key: string]: AssignmentCalendarItem };
 } = {
   datesOfInstruction: {
     start: verifyCalendarDate("2024-01-01", "Mon"),
@@ -193,84 +206,84 @@ export const calendarData: {
     {
       type: "lecture",
       date: verifyCalendarDate("2024-01-04", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Introduction and Overview",
       slides: "https://canvas.uw.edu/files/114335438/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-01-11", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design Diamond",
       slides: "https://canvas.uw.edu/files/114707434/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-01-16", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design Research",
       // slides: 'https://canvas.uw.edu/files/100693807/',
     },
     // {
     //     type: 'lecture',
     //     date: DateTime.fromISO('2023-01-17'),
-    //     timeAndLocation: LECTURE_TIME_AND_LOCATION,
+    //     timeAndLocation: TIME_AND_LOCATION_LECTURE,
     //     title: 'Design of Everyday Things',
     //     // slides: 'https://canvas.uw.edu/files/100847593/',
     // },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-01-18", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design of Everyday Things",
       // slides: 'https://canvas.uw.edu/files/100847593/',
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-01-23", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Task Analysis",
       // slides: 'https://canvas.uw.edu/files/101151132/',
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-01-25", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Models and Human Performance",
       // slides: 'https://canvas.uw.edu/files/102115599/',
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-01-30", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Storyboarding, Paper Prototyping, and Testing",
       // slides: 'https://canvas.uw.edu/files/101474158/',
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-02-06", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Effective Presentations",
       // slides: 'https://canvas.uw.edu/files/101784235/',
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-02-15", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Patterns and Interface Implementation",
       // slides: 'https://canvas.uw.edu/files/102112518/',
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-02-22", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Designing for Diverse Needs",
       // slides: 'https://canvas.uw.edu/files/102516490/',
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-02-27", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "History",
       // slides: 'https://canvas.uw.edu/files/102772743/',
     },
@@ -280,14 +293,14 @@ export const calendarData: {
     {
       type: "studio",
       date: verifyCalendarDate("2024-01-09", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Introduction to Critique",
       slides: "https://canvas.uw.edu/files/114608770/",
     },
     {
       type: "studio",
       date: verifyCalendarDate("2024-02-13", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Inspection",
       // slides: 'https://canvas.uw.edu/files/102112566/',
     },
@@ -303,7 +316,7 @@ export const calendarData: {
         verifyCalendarDate("2024-02-23", "Fri"),
         verifyCalendarDate("2024-03-08", "Fri"),
       ],
-      timeAndLocations: SECTION_TIME_AND_LOCATIONS,
+      timeAndLocations: TIME_AND_LOCATIONS_SECTION,
       title: "Studio",
     },
     {
@@ -313,8 +326,47 @@ export const calendarData: {
         verifyCalendarDate("2024-03-05", "Tue"),
         verifyCalendarDate("2024-03-07", "Thu"),
       ],
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Studio",
+    },
+  ],
+
+  events: [
+    {
+      type: "event",
+      title: "Presentations",
+      date: verifyCalendarDate("2024-02-08", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+    },
+    {
+      type: "event",
+      title: "Presentations",
+      date: verifyCalendarDate("2024-02-09", "Fri"),
+      timeAndLocations: TIME_AND_LOCATIONS_SECTION,
+    },
+    {
+      type: "event",
+      title: "Exam",
+      date: verifyCalendarDate("2024-02-20", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+    },
+    {
+      type: "event",
+      title: "Presentations",
+      date: verifyCalendarDate("2024-02-29", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+    },
+    {
+      type: "event",
+      title: "Presentations",
+      date: verifyCalendarDate("2024-03-01", "Fri"),
+      timeAndLocations: TIME_AND_LOCATIONS_SECTION,
+    },
+    {
+      type: "event",
+      title: "Poster Session",
+      date: verifyCalendarDate("2024-03-11", "Mon"),
+      timeAndLocation: TIME_AND_LOCATION_POSTER_SESSION,
     },
   ],
 
@@ -571,43 +623,4 @@ export const calendarData: {
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
     },
   },
-
-  events: [
-    {
-      type: "event",
-      title: "Presentations",
-      date: verifyCalendarDate("2024-02-08", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
-    },
-    {
-      type: "event",
-      title: "Presentations",
-      date: verifyCalendarDate("2024-02-09", "Fri"),
-      timeAndLocations: SECTION_TIME_AND_LOCATIONS,
-    },
-    {
-      type: "event",
-      title: "Exam",
-      date: verifyCalendarDate("2024-02-20", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
-    },
-    {
-      type: "event",
-      title: "Presentations",
-      date: verifyCalendarDate("2024-02-29", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
-    },
-    {
-      type: "event",
-      title: "Presentations",
-      date: verifyCalendarDate("2024-03-01", "Fri"),
-      timeAndLocations: SECTION_TIME_AND_LOCATIONS,
-    },
-    {
-      type: "event",
-      title: "Poster Session",
-      date: verifyCalendarDate("2024-03-11", "Mon"),
-      timeAndLocation: POSTER_SESSION_TIME_AND_LOCATION,
-    },
-  ],
 };

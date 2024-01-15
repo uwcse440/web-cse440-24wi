@@ -105,6 +105,12 @@ export type LectureCalendarItem = {
   BaseCalendarItemGuests &
   BaseCalendarItemTimeAndLocations;
 
+export type OfficeHourCalendarItem = {
+  type: "officeHour";
+  title: string;
+} & BaseCalendarItemDates &
+  BaseCalendarItemTimeAndLocations;
+
 export type StudioCalendarItem = {
   type: "studio";
   title: string;
@@ -117,6 +123,7 @@ export type CalendarItem =
   | EventCalendarItem
   | HolidayCalendarItem
   | LectureCalendarItem
+  | OfficeHourCalendarItem
   | StudioCalendarItem;
 
 export function filterAssignmentCalendarItems(
@@ -149,6 +156,14 @@ export function filterLectureCalendarItems(
   return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
     return calendarItemCurrent.type === "lecture";
   }) as LectureCalendarItem[];
+}
+
+export function filterOfficeHourCalendarItems(
+  calendarItems: CalendarItem[],
+): OfficeHourCalendarItem[] {
+  return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
+    return calendarItemCurrent.type === "officeHour";
+  }) as OfficeHourCalendarItem[];
 }
 
 export function filterStudioCalendarItems(
