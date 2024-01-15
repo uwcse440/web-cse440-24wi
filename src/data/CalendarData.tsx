@@ -370,6 +370,41 @@ export const calendarData: {
     },
   ],
 
+  officeHours: [
+    {
+      type: "officeHour",
+      title: "Office Hour: Jesse",
+      timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_JESSE,
+      dates: [
+        verifyCalendarDate("2024-01-10", "Wed"),
+        verifyCalendarDate("2024-01-17", "Wed"),
+        verifyCalendarDate("2024-01-24", "Wed"),
+        verifyCalendarDate("2024-01-31", "Wed"),
+        verifyCalendarDate("2024-02-07", "Wed"),
+        verifyCalendarDate("2024-02-14", "Wed"),
+        verifyCalendarDate("2024-02-21", "Wed"),
+        verifyCalendarDate("2024-02-28", "Wed"),
+        verifyCalendarDate("2024-03-06", "Wed"),
+      ],
+    },
+    {
+      type: "officeHour",
+      title: "Office Hour: Simona",
+      timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_SIMONA,
+      dates: [
+        verifyCalendarDate("2024-01-11", "Thu"),
+        verifyCalendarDate("2024-01-18", "Thu"),
+        verifyCalendarDate("2024-01-25", "Thu"),
+        verifyCalendarDate("2024-02-01", "Thu"),
+        verifyCalendarDate("2024-02-08", "Thu"),
+        verifyCalendarDate("2024-02-15", "Thu"),
+        verifyCalendarDate("2024-02-22", "Thu"),
+        verifyCalendarDate("2024-02-29", "Thu"),
+        verifyCalendarDate("2024-03-07", "Thu"),
+      ],
+    },
+  ],
+
   assignments: {
     //
     // Assignment 0
