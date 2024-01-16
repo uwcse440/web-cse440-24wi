@@ -219,20 +219,6 @@ export const calendarData: {
     },
     {
       type: "lecture",
-      date: verifyCalendarDate("2024-01-16", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Design Research",
-      // slides: 'https://canvas.uw.edu/files/100693807/',
-    },
-    // {
-    //     type: 'lecture',
-    //     date: DateTime.fromISO('2023-01-17'),
-    //     timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //     title: 'Design of Everyday Things',
-    //     // slides: 'https://canvas.uw.edu/files/100847593/',
-    // },
-    {
-      type: "lecture",
       date: verifyCalendarDate("2024-01-18", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design of Everyday Things",
@@ -296,6 +282,13 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Introduction to Critique",
       slides: "https://canvas.uw.edu/files/114608770/",
+    },
+    {
+      type: "studio",
+      date: verifyCalendarDate("2024-01-16", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      title: "Design Research",
+      slides: "https://canvas.uw.edu/files/114855192/",
     },
     {
       type: "studio",
