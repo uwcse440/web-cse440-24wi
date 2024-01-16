@@ -3,11 +3,12 @@
 import * as React from "react";
 
 import { CalendarGridDay } from "@/components/CourseCalendar/CalendarGridDay";
-import { calendarItemsForDate } from "@/data/CalendarData";
+import { calendarItemsForDate, parseCalendarDate } from "@/data/CalendarData";
 import { CalendarWeek } from "@/types/CalendarData";
 import { idAnchorText } from "@/utils/idAnchorText";
 import { ExpandCircleDownOutlined } from "@mui/icons-material";
 import { Box, Collapse, Grid, Paper, Typography } from "@mui/material";
+import { differenceInCalendarDays } from "date-fns";
 
 export const CalendarGridWeek: React.FunctionComponent<{
   labelWeek: string;
@@ -19,13 +20,14 @@ export const CalendarGridWeek: React.FunctionComponent<{
 }) => {
   const [expanded, setExpanded] = React.useState<boolean>(
     ((): boolean => {
-      // TODO: Logic for default collapsing prior weeks
-      // const dateCalendar = parseCalendarDate(calendarDate);
-      // const dateNow = Date.now();
-      //
-      // return differenceInCalendarDays(dateCalendar, dateNow) >= 0;
+      const dateNow = Date.now();
 
-      return true;
+      return (
+        differenceInCalendarDays(
+          parseCalendarDate(calendarWeek.startDate),
+          dateNow,
+        ) >= -6
+      );
     })(),
   );
 
