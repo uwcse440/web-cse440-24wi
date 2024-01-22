@@ -650,5 +650,13 @@ export const calendarData: {
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
     },
+    assignment4poster_session: {
+      type: "assignment",
+      title: "Assignment 4poster_session - Poster Session",
+      link: SiteLinks.assignmentsAssignment4Top.href,
+      date: verifyCalendarDate("2024-03-11", "Mon"),
+      // submission: 'other',
+      // submitText: 'Attend and participate.',
+    },
   },
 };

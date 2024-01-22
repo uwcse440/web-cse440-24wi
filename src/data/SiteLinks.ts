@@ -43,4 +43,9 @@ export const SiteLinks = {
     href: "/calendar/#calendar",
     anchor: "Calendar",
   },
+
+  projectsTop: {
+    href: "/projects/#projects",
+    anchor: "Projects",
+  }
 } as const;
