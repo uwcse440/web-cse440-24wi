@@ -47,5 +47,5 @@ export const SiteLinks = {
   projectsTop: {
     href: "/projects/#projects",
     anchor: "Projects",
-  }
+  },
 } as const;
