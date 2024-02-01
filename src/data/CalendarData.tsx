@@ -243,7 +243,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-01-30", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Storyboarding, Paper Prototyping, and Testing",
-      slides: "https://canvas.uw.edu/files/115505605/",
+      slides: "https://canvas.uw.edu/files/115610379/",
     },
     {
       type: "lecture",
