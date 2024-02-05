@@ -46,8 +46,5 @@
     "rimraf": "5.x",
     "typescript": "5.x",
     "webpack": "5.x"
-  },
-  "engines": {
-    "node": "20.x"
   }
 }
