@@ -16,3 +16,5 @@ RewriteRule ^assignments/assignment3[/]?$ assignments/assignment3.html
 RewriteRule ^assignments/assignment4[/]?$ assignments/assignment4.html
 RewriteRule ^assignments/exam[/]?$ assignments/exam.html
 RewriteRule ^calendar[/]?$ calendar.html
+RewriteRule ^projects[/]?$ projects.html
+RewriteRule ^projects/project01[/]?$ projects/project01.html
