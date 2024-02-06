@@ -250,7 +250,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-02-06", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Effective Presentations",
-      // slides: 'https://canvas.uw.edu/files/101784235/',
+      slides: "https://canvas.uw.edu/files/115846965/",
     },
     {
       type: "lecture",
