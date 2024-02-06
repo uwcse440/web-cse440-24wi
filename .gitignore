@@ -14,3 +14,5 @@
 /public/images/next-image-export-optimizer-hashes.json
 /public/**/images-optimized/
 
+# Temporary build file.
+next-env.d.ts
