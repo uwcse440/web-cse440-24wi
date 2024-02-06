@@ -16,6 +16,7 @@ import { default as ContributionStatementReference } from "@/contentcomponents/C
 import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
 import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
 import { calendarData } from "@/data/CalendarData";
+import { Paths } from "@/paths";
 
 export const path4posterTemplate = '/assignments/poster_template.pptx';
 
@@ -323,7 +324,7 @@ Your poster should emphasize images and include limited amounts of text.
 For consistency and ease of display, it should be 32"x40" (i.e., portrait, vertical).
 A PowerPoint template is available here:
 
-<p><a href={path4posterTemplate}>poster_template.pptx</a></p>
+<p><a href={Paths.basePath + path4posterTemplate}>poster_template.pptx</a></p>
 
 You should heavily modify the template to be unique and represent your project.
 

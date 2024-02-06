@@ -10,6 +10,7 @@ import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.
 import { default as InformalDrawingTool } from '@/contentcomponents/InformalDrawingTool.mdx';
 import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
 import { calendarData } from "@/data/CalendarData";
+import { Paths } from "@/paths";
 
 export const path3bNielsenHeuristics = '/assignments/3b-nielsen-heuristics.pdf';
 export const path3pPresentationStaffForm = '/assignments/3p-presentation-staff-form.pdf';
@@ -115,7 +116,7 @@ Each team will therefore conduct and receive one heuristic evaluation.
 
 We will provide a worksheet with Nielsen's heuristics:
 
-<p><a href={path3bNielsenHeuristics}>3b-nielsen-heuristics.pdf</a></p>
+<p><a href={Paths.basePath + path3bNielsenHeuristics}>3b-nielsen-heuristics.pdf</a></p>
 
 For each issue identified in evaluation, record:
 - The heuristic that is violated.
@@ -558,7 +559,7 @@ Submit via Canvas here:
 
 The course staff will have a grading form they keep during your presentation:
 
-<p><a href={path3pPresentationStaffForm}>3p-presentation-staff-form.pdf</a></p>
+<p><a href={Paths.basePath + path3pPresentationStaffForm}>3p-presentation-staff-form.pdf</a></p>
 
 The content of this presentation will be graded on a scale of __16 points__:
 
