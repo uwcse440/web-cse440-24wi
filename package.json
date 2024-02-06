@@ -46,5 +46,14 @@
     "rimraf": "5.x",
     "typescript": "5.x",
     "webpack": "5.x"
-  }
+  },
+  "@comment scripts": [
+    "clean - Clean caches and temporary files.",
+    "dev - Dynamically serve for development with hot updating.",
+    "export - Export a full build to 'dist'.",
+    "format - Apply code formatting.",
+    "format:check - Preview code formatting.",
+    "lint - Apply linting.",
+    "serve - Serve a build from 'dist'."
+  ]
 }

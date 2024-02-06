@@ -10,8 +10,8 @@ Requires Node.js and the Yarn package manager.
 
   Installers: <https://nodejs.org/en/download/>
 
-  Development requires version 20.x.  
-  This requirement can be relaxed by removing `engines` from `package.json`.
+  Development has used version 20.x.  
+  This could be enforced through addition of `engines` to `package.json`.
 
 - [Yarn](https://yarnpkg.com/)
 
