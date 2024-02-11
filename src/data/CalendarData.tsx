@@ -257,7 +257,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-02-15", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Patterns and Interface Implementation",
-      // slides: 'https://canvas.uw.edu/files/102112518/',
+      slides: "https://canvas.uw.edu/files/116098646/",
     },
     {
       type: "lecture",
@@ -302,7 +302,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-02-13", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Inspection",
-      // slides: 'https://canvas.uw.edu/files/102112566/',
+      slides: "https://canvas.uw.edu/files/116098443/",
     },
     {
       type: "studio",
