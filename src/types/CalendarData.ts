@@ -89,6 +89,7 @@ export type AssignmentCalendarItem = {
 export type EventCalendarItem = {
   type: "event";
   title: string;
+  slides?: LinkHREF;
 } & BaseCalendarItemDates &
   BaseCalendarItemTimeAndLocations;
 

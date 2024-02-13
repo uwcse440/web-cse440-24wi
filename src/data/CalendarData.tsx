@@ -60,6 +60,11 @@ const TIME_AND_LOCATIONS_SECTION = [
   },
 ];
 
+const TIME_AND_LOCATION_EXAM_QA = {
+  time: "4:00 to 5:00",
+  location: "Zoom",
+};
+
 const TIME_AND_LOCATION_POSTER_SESSION = {
   time: "11:00 to 12:00",
   location: "CSE Atrium",
@@ -342,6 +347,13 @@ export const calendarData: {
       title: "Presentations",
       date: verifyCalendarDate("2024-02-09", "Fri"),
       timeAndLocations: TIME_AND_LOCATIONS_SECTION,
+    },
+    {
+      type: "event",
+      title: "Exam Q&A",
+      date: verifyCalendarDate("2024-02-19", "Mon"),
+      timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
+      slides: "https://canvas.uw.edu/files/116100598/",
     },
     {
       type: "event",
