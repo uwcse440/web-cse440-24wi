@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import { CalendarItemSlides } from "@/components/CourseCalendar/CalendarItemSlides";
 import { CalendarItemTimeAndLocations } from "@/components/CourseCalendar/CalendarItemTimeAndLocations";
 import { CalendarItem, filterEventCalendarItems } from "@/types/CalendarData";
 import { Grid } from "@mui/material";
@@ -29,6 +30,7 @@ export const CalendarDayEvent: React.FunctionComponent<{
         >
           <b>{`${itemCurrent.title}`}</b>
           <CalendarItemTimeAndLocations calendarItem={itemCurrent} />
+          <CalendarItemSlides calendarItem={itemCurrent} />
         </Grid>
       );
     },

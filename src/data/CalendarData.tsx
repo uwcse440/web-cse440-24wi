@@ -60,6 +60,11 @@ const TIME_AND_LOCATIONS_SECTION = [
   },
 ];
 
+const TIME_AND_LOCATION_EXAM_QA = {
+  time: "4:00 to 5:00",
+  location: "Zoom",
+};
+
 const TIME_AND_LOCATION_POSTER_SESSION = {
   time: "11:00 to 12:00",
   location: "CSE Atrium",
@@ -250,14 +255,14 @@ export const calendarData: {
       date: verifyCalendarDate("2024-02-06", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Effective Presentations",
-      // slides: 'https://canvas.uw.edu/files/101784235/',
+      slides: "https://canvas.uw.edu/files/115846965/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2024-02-15", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Patterns and Interface Implementation",
-      // slides: 'https://canvas.uw.edu/files/102112518/',
+      slides: "https://canvas.uw.edu/files/116098646/",
     },
     {
       type: "lecture",
@@ -302,7 +307,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-02-13", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Inspection",
-      // slides: 'https://canvas.uw.edu/files/102112566/',
+      slides: "https://canvas.uw.edu/files/116098443/",
     },
     {
       type: "studio",
@@ -342,6 +347,13 @@ export const calendarData: {
       title: "Presentations",
       date: verifyCalendarDate("2024-02-09", "Fri"),
       timeAndLocations: TIME_AND_LOCATIONS_SECTION,
+    },
+    {
+      type: "event",
+      title: "Exam Q&A",
+      date: verifyCalendarDate("2024-02-19", "Mon"),
+      timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
+      slides: "https://canvas.uw.edu/files/116100598/",
     },
     {
       type: "event",
