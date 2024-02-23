@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { Sidebar } from "@/components/Sidebar";
 
-import { SITE_LINKS } from "../sitelinks";
+import { SITE_LINKS } from "../../sitelinks";
 
 export default function Page(): React.ReactElement {
   return (
@@ -11,7 +11,7 @@ export default function Page(): React.ReactElement {
       pageLinks={[
         {
           anchor: "Projects",
-          href: "#calendar",
+          href: "/projects#projects",
         },
         [
           {

@@ -11,4 +11,5 @@ export const SITE_LINKS = [
     SiteLinks.assignmentsAssignment4Top,
   ],
   SiteLinks.calendarTop,
+  SiteLinks.projectsTop,
 ];
