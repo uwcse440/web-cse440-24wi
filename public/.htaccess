@@ -31,3 +31,4 @@ RewriteRule ^projects/musicbox[/]?$ projects/musicbox.html
 RewriteRule ^projects/puppals[/]?$ projects/puppals.html
 RewriteRule ^projects/reeltalk[/]?$ projects/reeltalk.html
 RewriteRule ^projects/restpad[/]?$ projects/restpad.html
+RewriteRule ^projects/template[/]?$ projects/template.html
