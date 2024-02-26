@@ -2,7 +2,7 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 
 import { Paths } from "@/paths.mjs";
-import { Grid, Paper, Stack } from "@mui/material";
+import { Box, Grid, Paper, Stack } from "@mui/material";
 import Image from "next-image-export-optimizer";
 
 interface ProjectTeamMemberProps {
@@ -38,20 +38,24 @@ export const ProjectTeamGallery: FunctionComponent<ProjectTeamGalleryProps> = (
                 }}
               >
                 <Stack spacing={1}>
-                  {teamMemberProps.name.map((nameEntry, index) => {
-                    if (index === 0) {
-                      return (
-                        <React.Fragment key={index}>{nameEntry}</React.Fragment>
-                      );
-                    } else {
-                      return (
-                        <React.Fragment key={index}>
-                          <br />
-                          {nameEntry}
-                        </React.Fragment>
-                      );
-                    }
-                  })}
+                  <Box>
+                    {teamMemberProps.name.map((nameEntry, index) => {
+                      if (index === 0) {
+                        return (
+                          <React.Fragment key={index}>
+                            {nameEntry}
+                          </React.Fragment>
+                        );
+                      } else {
+                        return (
+                          <React.Fragment key={index}>
+                            <br />
+                            {nameEntry}
+                          </React.Fragment>
+                        );
+                      }
+                    })}
+                  </Box>
                   <Image
                     basePath={Paths.basePath}
                     src={teamMemberProps.photo}
