@@ -276,7 +276,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-02-27", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "History",
-      // slides: 'https://canvas.uw.edu/files/102772743/',
+      slides: "https://canvas.uw.edu/files/116782784/",
     },
   ],
 
