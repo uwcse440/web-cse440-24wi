@@ -61,9 +61,10 @@ Re-make images as necessary to ensure this
 (e.g., by taking new photos in better lighting, by instead using a scanner,
 by re-creating a piece of a paper prototype using ink that will create a better image).
 
-Be sure that your post takes a tone of "presenting" and "reflecting" on your project.
+Remember that audience is important in storytelling,
+and be sure your post takes a tone of "presenting" and "reflecting" on your project.
 You are not "selling" the resulting design, but are instead "sharing" your work with an interested audience.
-You can and should express enthusiasm, but do not let that enthusiasm undermine the substance of your content.
+You can express enthusiasm, but do not let that enthusiasm undermine the substance of your content.
 
 Your post should follow the outline below.
 It will be authored using Markdown and provided components for including images.
@@ -80,7 +81,7 @@ Be sure to inspect and understand the template text provided in your project dir
    Provide a concise statement of the problem you are addressing and a brief introduction of your design.
 
    This might be a single paragraph or two short paragraphs.
-   You should likely include an image from or of your design to help build interest.
+   You should likely include an image to help build interest.
    Your goal is to set a context and then to motivate a reader to want to continue to learn about your work.
 
 3. __Design Research Process and Key Insights__:
@@ -105,14 +106,14 @@ Be sure to inspect and understand the template text provided in your project dir
    - For each insight, discuss how the insight emerged
      (e.g., how your understanding was shaped by design research,
      how your understanding was shaped by critique or feedback).
-     Use specific evidence whenever possible
+   - Use specific evidence whenever possible
      (e.g., quotes or stories from participants,
      pictures captured during observations,
      pivots in your approach or thinking that resulted from critique or feedback,
      key reasons you chose one design over alternatives,
      key reasons you combined ideas from multiple design alternatives).
-   - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3"),
-     but instead give them a descriptive title (e.g., "Minimizing Burden", "Creating Social Connections")
+   - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3").
+     Instead give them a descriptive title (e.g., "Minimizing Burden", "Creating Social Connections")
      or consider that each paragraph could begin with a single bolded sentence summarizing the insight.
    - Use images as appropriate for conveying the insight (e.g., images from your design sketches or storyboards).
 
@@ -145,8 +146,8 @@ Be sure to inspect and understand the template text provided in your project dir
      (e.g., showing a design element before and after an iteration).
    - Use specific evidence whenever possible
      (e.g., quotes from or observations of participants).
-   - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3"),
-     but instead give them a descriptive title (e.g., "Simplifying Data Collection", "Improving Legibility", "Removing Gender Assumptions")
+   - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3").
+     Instead give them a descriptive title (e.g., "Simplifying Data Collection", "Improving Legibility", "Removing Gender Assumptions")
      or consider that each paragraph could begin with a single bolded sentence summarizing the insight.
    - Use images as appropriate for conveying the insight (e.g., images from your paper prototyping or digital mockup).
 
@@ -186,21 +187,24 @@ Submit your post as a pull request against the course website GitHub repository:
   make and commit your edits, then eventually open a pull request to the course website,
   which we will then merge and publish.
 
-- See the repository README.md for basic guidance on using `yarn dev_serve` to run a local build of the website.
-  This will dynamically update as you modify your content.
+- See the repository README.md for guidance on using `yarn dev` to run a local build of the website.
+  Served at `localhost:3000`, this will dynamically update as you modify your content.
 
 - Prior to opening your pull request, use `yarn export` to ensure that your code builds without errors.
 
 - All edits included in your pull request should be contained within your provided project directory:
 
-  - Edit the provided `project_post.mdx` file with the contents of your post.
+  - Each project has a directory within `src/app/projects`.
+  - Edit the provided `page.mdx` with the contents of your post.
   - Place images in the provided `assets` directories (i.e., for pictures of your team and for pictures used in your post).
+    Remove the provided placeholder images when they are no longer needed.
   - Replace the provided `project_thumb.png` with a 150x150 PNG to be used in linking to your project page.
 
 - You may submit multiple pull requests as you work on your post, and we will merge them as quickly as possible.
 
 - If a change is needed in the overall projects page or in the location of your project directory
   (e.g., because you have changed your project name), contact and coordinate with the course staff.
+  Do not attempt this yourself, as the current website implementation is relatively fragile.
 
 - In an emergency where you are unable to submit your content via a pull request,
   you may document the status of your post by emailing the staff a Zip archive of your project directory.
