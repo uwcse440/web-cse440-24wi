@@ -32,5 +32,3 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = (props) => {
     </Card>
   );
 };
-
-export default ProjectCard;
