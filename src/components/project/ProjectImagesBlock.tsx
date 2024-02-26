@@ -59,6 +59,7 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                       marginTop: 2,
                       padding: 1,
                       paddingBottom: "4px", // Minus border radius
+                      width: "auto",
                     }}
                   >
                     <Image
@@ -70,7 +71,6 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                           props.maxHeight === undefined
                             ? "400px"
                             : props.maxHeight,
-                        width: "auto",
                         maxWidth: "100%",
                       }}
                       alt={projectImage.alt}
