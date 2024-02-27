@@ -8,8 +8,10 @@ import { CollapseProjectMilestone } from "@/components/CollapseProjectMilestone"
 import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { CourseStoreLink } from "@/components/links/CourseStoreLink";
 import { SiteLink } from "@/components/links/SiteLink";
+import { courseData } from "@/data/CourseData";
 import { SiteLinks} from "@/data/SiteLinks";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
 import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
@@ -18,11 +20,13 @@ import { default as ParticipantAnonymity } from '@/contentcomponents/Participant
 import { calendarData } from "@/data/CalendarData";
 import { Paths } from "@/paths";
 
-export const path4posterTemplate = '/assignments/poster_template.pptx';
+export const pathPosterTemplateA = '/assignments/poster-template-a-32x40.pptx';
+export const pathPosterTemplateB = '/assignments/poster-template-b-32x40.pptx';
+export const pathPosterTemplateC = '/assignments/poster-template-c-32x40.pptx';
 
 # Assignment 4: Communicating Your Design
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
 
 ## Overview
 
@@ -300,7 +304,7 @@ The content for this post will be graded on a scale of __32 points__:
 9.  __Clarity and Presentation__: (4 points)
 10. __Preparation and Process__: (4 points)
     - Original post was sufficient to support critique and feedback.
-    - Appropriately act upon feedback to improve final poster.
+    - Appropriately act upon feedback to improve final post.
 
 </CollapseProjectMilestone>
 
@@ -327,9 +331,13 @@ Your poster should include:
 
 Your poster should emphasize images and include limited amounts of text.
 For consistency and ease of display, it should be 32"x40" (i.e., portrait, vertical).
-A PowerPoint template is available here:
 
-<p><a href={Paths.basePath + path4posterTemplate}>poster_template.pptx</a></p>
+The staff have assembled several templates you can use as a starting point:
+
+<CourseDataLink linkKey={courseData.linkFigmaPosterTemplates} outerComponent="p"/>
+<p><a href={Paths.basePath + pathPosterTemplateA}>Powerpoint Template A</a></p>
+<p><a href={Paths.basePath + pathPosterTemplateB}>Powerpoint Template B</a></p>
+<p><a href={Paths.basePath + pathPosterTemplateC}>Powerpoint Template C</a></p>
 
 You should heavily modify the template to be unique and represent your project.
 
@@ -347,7 +355,7 @@ This pitch should convince an audience that your problem was worth investigating
 Due to challenges that frequently arise in printing, submit both:
 
 - A PDF of your poster.
-- The source file for your poster (e.g., PPT, PPTX).
+- The source file for your poster (e.g., a PPTX file, a text file containing a Figma link with edit access).
 
 Be sure:
 
@@ -398,7 +406,7 @@ This pitch should convince an audience that your problem was worth investigating
 Due to challenges that frequently arise in printing, submit both:
 
 - A PDF of your poster.
-- The source file for your poster (e.g., PPT, PPTX).
+- The source file for your poster (e.g., a PPTX file, a text file containing a Figma link with edit access).
 
 Be sure:
 

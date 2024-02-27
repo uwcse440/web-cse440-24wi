@@ -11,13 +11,9 @@ export default function Page(): React.ReactElement {
       pageLinks={[
         {
           anchor: "Projects",
-          href: "#calendar",
+          href: "/projects#projects",
         },
         [
-          {
-            anchor: "AudioCanvas",
-            href: "/projects/audiocanvas",
-          },
           {
             anchor: "AutoPilot",
             href: "/projects/autopilot",
@@ -41,6 +37,10 @@ export default function Page(): React.ReactElement {
           {
             anchor: "Home Hub Board",
             href: "/projects/homehubboard",
+          },
+          {
+            anchor: "Language Lab",
+            href: "/projects/languagelab",
           },
           {
             anchor: "MessageMinder",

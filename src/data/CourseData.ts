@@ -8,8 +8,8 @@ export type CourseDataLinkKey = {
 };
 
 export const courseData = {
-  linkAccessiblePresentations: {
-    href: "https://interactions.acm.org/archive/view/july-august-2017/making-your-presentation-accessible",
-    anchor: "Guidance on Making Your Presentation Accessible",
+  linkFigmaPosterTemplates: {
+    href: "https://www.figma.com/file/fK3x9CC0ZGXxjvvSfHg2t9/CSE440-Poster-Example-%26-Template?type=design&node-id=0%3A1&mode=design&t=4hrUv6ue9a5HxeXn-1",
+    anchor: "Figma Templates"
   },
 } as const;
