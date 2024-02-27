@@ -17,13 +17,13 @@ RewriteRule ^assignments/assignment4[/]?$ assignments/assignment4.html
 RewriteRule ^assignments/exam[/]?$ assignments/exam.html
 RewriteRule ^calendar[/]?$ calendar.html
 RewriteRule ^projects[/]?$ projects.html
-RewriteRule ^projects/audiocanvas[/]?$ projects/audiocanvas.html
 RewriteRule ^projects/autopilot[/]?$ projects/autopilot.html
 RewriteRule ^projects/bakesmart[/]?$ projects/bakesmart.html
 RewriteRule ^projects/cookease[/]?$ projects/cookease.html
 RewriteRule ^projects/dapperdany[/]?$ projects/dapperdany.html
 RewriteRule ^projects/fitquest[/]?$ projects/fitquest.html
 RewriteRule ^projects/homehubboard[/]?$ projects/homehubboard.html
+RewriteRule ^projects/languagelab[/]?$ projects/languagelab.html
 RewriteRule ^projects/messageminder[/]?$ projects/messageminder.html
 RewriteRule ^projects/mindmii[/]?$ projects/mindmii.html
 RewriteRule ^projects/mindshift[/]?$ projects/mindshift.html
