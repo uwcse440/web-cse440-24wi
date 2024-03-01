@@ -35,10 +35,6 @@ export default function Page(): React.ReactElement {
             href: "/projects/fitquest",
           },
           {
-            anchor: "Home Hub Board",
-            href: "/projects/homehubboard",
-          },
-          {
             anchor: "Language Lab",
             href: "/projects/languagelab",
           },
@@ -57,6 +53,10 @@ export default function Page(): React.ReactElement {
           {
             anchor: "Music Box",
             href: "/projects/musicbox",
+          },
+          {
+            anchor: "OrcaPod",
+            href: "/projects/orcapod",
           },
           {
             anchor: "PupPals",
