@@ -63,9 +63,12 @@ import imagePlaceholder400x400 from "public/images/projects/template/post/400x40
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
+import evaliuimage from "public/images/projects/dapperdany/team/evaliuimage.jpg";
+import overview from "public/images/projects/dapperdany/post/overview.png";
+
 # Dapper Dany
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>The sustainable way to track your clothing usage.</ProjectSubtitle>
 
 ## Team
 
@@ -75,8 +78,9 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   */}
 <ProjectTeamGallery members={[
     {
-        name: ["Team", "Person 1"],
-        photo: imageTeamPerson1,
+        name: ["Team", "Eva Liu"],
+        photo: evaliuimage,
+        alt: "Photo of Eva Liu."
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
@@ -116,46 +120,52 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: overview,
         alt: "Every image requires alt text. This should describe the content of that image."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "An overview image of three highlighted features on the mirror and app of our design: " +
+        "points and sticker prizes for donating, brand sustainability information and " +
+        "an intuitive step by step process for donating unused clothing."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
-
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+[E]very year, people in the United States throw out more than
+34 billion pounds of used textiles.(BU - Lundberg and Devoy)
+The recycling of clothing is rare as well. [O]nly 15% of used textiles are theoretically ‘recycled’, 
+and of those, up to half are simply shipped abroad to other countries, largely in the Global South 
+where they land in landfills.(BU - Lundberg and Devoy)
+If people gained the capability to track which clothes they wore the least and were incentivized
+in some way to donate them, we could significantly reduce the number of clothes wasted every year. <br/> <br/>
+This leads us to our design, Dapper Dany, the smart mirror paired with a phone app used to assist people
+in keeping track of clothes worn regularly, promoting donating unused clothes and learning about
+brand sustainability practices. Our design has many features which streamlines the process of reducing
+waste for the average person. Some including: line charts displaying monthly statistics of the percentage
+of clothes worn in a wardrobe and clothes donated, clothing brand sustainability information on the 
+mirror when clothes are worn in front of the mirror, incentivizing donating clothes by giving points
+to people to use for decorating their mirror when unused clothes are donated and many more.
 
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+We restricted our research to target people around the ages of 18-25 since people around
+these ages are more interested in fashion and are more influenced by social media and
+trends regarding fashion. There has also been more consumption of clothes in the past decade 
+due to social media promoting fast fashion. There are many videos online about clothing 
+hauls from fast fashion brands like Shein where people promote and unbox large amounts 
+of cheap clothing they buy from these brands. Due to how prevalent fast fashion is becoming in
+social media and how much waste fast fashion promotes, the 18-25 age demographic is best
+to target in our goal of creating a design focused on reducing textile waste. <br/> <br/>
+We designed two surveys which asked questions about demographic information 
+(age, college status, and gender), clothing usage (only included in the second survey) 
+and purchasing habits, brand knowledge, personal sustainability habits and interest 
+regarding clothing usage tracking (only included in the second survey). The surveys
+were distributed to friends, Ed Stem, UW discord servers, a r/SampleSize reddit thread and
+the UW Fashion RSO Mesh. We received 28 responses for the first survey and 52 responses for 
+the second survey.
 
 ### Title for an Insight
 
@@ -375,3 +385,7 @@ turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
 semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
 
 </ProjectImagesBlock>
+
+## Cited Sources
+
+https://www.bu.edu/sph/news/articles/2022/the-aftermath-of-fast-fashion-how-discarded-clothes-impact-public-health-and-the-environment/ 
