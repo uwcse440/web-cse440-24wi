@@ -83,7 +83,10 @@ import aiComposeResponse from "public/images/projects/mindmii/post/compose_respo
 import popup from "public/images/projects/mindmii/post/popup.png";
 import toneCheck from "public/images/projects/mindmii/post/tone_check.png";
 import reply from "public/images/projects/mindmii/post/reply.png";
+import finalResponse from "public/images/projects/mindmii/post/final_response.png";
+import watch from "public/images/projects/mindmii/post/watch.png";
 
+{/* Placeholders */}
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
@@ -305,28 +308,28 @@ The app's message response management interface focused on replying without offe
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: mainScreen,
+            alt: "The main screen of the MindMii app, showing a list of texting conversations marked as urgent, unresponded, or responded.",
             caption: "Step 1: Mobile app is opened.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: messages,
+            alt: "An open texting conversation in the MindMii app, showing the featured taskbar with special AI integration.",
             caption: "Step 2: Missed message selected.",
         },
                 {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: aiComposePrompt,
+            alt: "A popup on the screen asking how MindMii can help with AI assist.",
             caption: "Step 3: Unsure how to reply, so AI message selected.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: aiComposeResponse,
+            alt: "The popup has minimized to the bottom of the screen with a suggested texting reply selected.",
             caption: "Step 4: AI offers a suggested message reply.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: finalResponse,
+            alt: "Returns to the message conversation, now showing a reply message.",
             caption: "Step 5: Suggestion is selected, populates to text.",
         },
     ]}
@@ -352,65 +355,17 @@ at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
 sit amet consectetur adipiscing elit ut aliquam.
 
 ### Respond to a Message in an Appropriate Amount of Time
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Notification of an urgent message from earlier that soon needs reply.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Person snoozes notification due to other priorities.",
-        },
-                {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "AI observes message has a sensitive response deadline.  Snooze ends after five minutes.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "The person recognizes this urgency as well due to the re-prompt after snooze.",
-        },
-    ]}
-    direction={"row"}
-    width={100}
+<ProjectImageBlock
+    image={{
+        src: watch,
+        alt: "The MindMii watch face showing the screens for the steps described in the caption.",
+    }}
+    caption={
+        "Let's walk through a watch interaction: Notification of an urgent message from earlier that soon needs reply. -> Person snoozes notification due to other priorities. -> AI observes message has a sensitive response deadline.  Snooze ends after five minutes. The person recognizes this urgency as well due to the re-prompt after snooze. -> The person taps the contact icon on the notification to open the message. -> When they enter into reply mode, suggestive AI mode appears as an option. -> The person composes a message using the keyboard. -> Pressing send delivers the response to the messaging platform the message was from."
+    }
+    width={8}
     maxHeight={"400px"}
 >
-
-</ProjectImagesBlock>
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "The person taps the contact icon on the notification to open the message.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "When they enter into reply mode, suggestive AI mode appears as an option.",
-        },
-                {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "The person composes a message using the keyboard.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Pressing send delivers the response to the messaging platform the message was from.",
-        },
-    ]}
-    direction={"row"}
-    width={100}
-    maxHeight={"400px"}
->
-
-</ProjectImagesBlock>
 
 A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
 ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
@@ -424,3 +379,5 @@ Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
 volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
 turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
 semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+
+</ProjectImageBlock>
