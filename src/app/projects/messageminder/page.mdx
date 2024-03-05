@@ -53,10 +53,21 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import faraz from "public/images/projects/messageminder/team/faraz.png";
+import lillian from "public/images/projects/messageminder/team/lillian.png";
+import hugh from "public/images/projects/messageminder/team/hugh.png";
+import tim from "public/images/projects/messageminder/team/tim.png";
+import overview from "public/images/projects/messageminder/post/summary.png";
+import analytics from "public/images/projects/messageminder/post/contactAnalytics.png"
+import reminder from "public/images/projects/messageminder/post/reminderSetting.png"
+import contact from "public/images/projects/messageminder/post/contact.png"
+import tim_vo_reminder from "public/images/projects/messageminder/post/tim_vo_reminder.png";
+import set_reminder from "public/images/projects/messageminder/post/set_reminder.png";
+import response_generated from "public/images/projects/messageminder/post/response_generated.png";
+import reply_screen from "public/images/projects/messageminder/post/reply_screeen.png";
+import add_new from "public/images/projects/messageminder/post/add_new.png";
+import generate_reply from "public/images/projects/messageminder/post/generate_reply.png";
+import logo from "public/images/projects/messageminder/post/messageminder-logo.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -65,7 +76,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 # MessageMinder
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>Stay mindful with MessageMinder</ProjectSubtitle>
 
 ## Team
 
@@ -75,23 +86,23 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   */}
 <ProjectTeamGallery members={[
     {
-        name: ["Team", "Person 1"],
-        photo: imageTeamPerson1,
+        name: ["Faraz", "Qureshi"],
+        photo: faraz,
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
-        name: ["Team", "Person 2"],
-        photo: imageTeamPerson2,
+        name: ["Lillian", "Zhu"],
+        photo: lillian,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["Team", "Person 3"],
-        photo: imageTeamPerson3,
+        name: ["Tim", "Vo"],
+        photo: tim,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["Team", "Person 4"],
-        photo: imageTeamPerson4,
+        name: ["Hugh", "March"],
+        photo: hugh,
         alt: "Photo of Team Person 4, looking cool with their additional image description."
     },
 ]} />
@@ -114,264 +125,210 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+### Keeping Up in a Fast-Paced Digital Conversation
+
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: logo,
         alt: "Every image requires alt text. This should describe the content of that image."
     }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
+ 
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
-
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+In an era where rapid online communication is vital, it's surprisingly easy to overlook replying to messages. 
+Studies reveal that while 50% of electronic replies occur within an hour, the remainder can extend to days, 
+leading to unintentional neglect. In the case of loved ones and close friends this can then start to 
+strain relationships. Our project, Mindful Messenger, aims to address this issue by helping users 
+become more aware of their response times, thereby improving their communication habits and reducing the stress 
+of digital interactions.
 
 </ProjectImageBlock>
 
-## Design Research Process and Key Insights
+## Design Research Process
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+### Unraveling Texting Habits: A Study at the University of Washington
 
-### Title for an Insight
+We embarked on a comprehensive study involving interviews and surveys with computer science students, aiming to delve
+into the underlying reasons behind poor texting habits. This approach provided both qualitative insights from interviews
+and quantitative data from surveys, helping to validate initial observations and uncover patterns in texting behavior.
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+### Key Insights
 
-### Title for an Insight
+#### Understanding Response Times
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
+Through our participant interviews, we found that there are several factors that influence someone's response time:
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+1. *Urgency* - We found that the urgency of the message was the biggest factor in determining response time. Two of our participants mentioned prioritizing responses if the texts were about making plans.
+2. *Location* - We found that our participants would catch up on texting people back in certain locations, from work bathrooms and public transport to home.
+3. *Who's Texting* - Our participants had diverse answers for who they prioritize. One of our participants prioritized responding to close friends and family, while another prioritized responding quickly to new acquaintances. Regardless, all of our participants prioritized responding quickly to a select few people.
+4. *Messaging Platform* - All participants we interviewed primarily used one messaging platform such as iMessage or WhatsApp, where they prioritized responding to the most, while not so much prioritizing other platforms such as Discord, Instagram, or Snapchat.
 
-</ProjectImagesBlock>
+Surprisingly, through our survey results, how busy someone was had little effect on their texting habits or response
+time. The majority of participants had a response time of less than 5 hours, and those who had a much longer response
+time weren't working more hours or taking more credits than average.
 
-### Title for an Insight
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+<img src="/images/projects/messageminder/post/infographic.png" alt="Contacts edit" style={{ width: "75%" }} />
 
-## Iterative Design Process and Key Insights
+#### Diverse Reactions to Response Times
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+When participants were asked in a survey "How does being on the receiving end of slower response
+times make you feel?" responses varied greatly:
 
-### Title for an Insight
+* "If it's something urgent, I feel frustrated. If it's something not so urgent but I sent it to a close friend, I might feel a little irritated. If it's just an acquaintance and the content of the message isn't important, I don't really care"
+* "if it's someone i'm super close to i don't care, but if not then not the best"
+* "I don't mind that much usually, but from certain people it does make me feel bad"
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+We found that participants feel anxiety over slow response times if the message content is important, or if they are messaging
+someone important. This expressed a need for our app to distinguish urgent messages and also allow people to track response times
+with certain people individually.
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+#### Technology as an Aid
 
-</ProjectImageBlock>
+Some participants utilized message tracking features in their apps, highlighting a need for more sophisticated
+solutions. For instance, one of our participants used the Google Pixel's native message app's functionality to keep
+track of people they needed to respond to, as people they need to follow-up on float to the top of their messages list.
 
-### Title for an Insight
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+------------------
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+## Iterative Design Process
 
-</ProjectImageBlock>
+### Design Focus
 
-### Title for an Insight
+We wanted to design an app that allows students to be mindful about response times and maintain meaningful connections
+with friends and family through text. We found the best way to execute this was through mobile integration, since it
+supports both of our tasks well and our app will be in close proximity to where students communicate via text. The
+primary tasks our app supports are:
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+1. Tracking message response times in a conversation with a new acquaintance
+2. Getting advice for specific responses to a difficult conversation topic
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+### Process
 
-</ProjectImageBlock>
+We drafted our initial design on a paper prototype. We performed multiple iterations of heuristic analysis and usability testing.
+Our design was tested by three Allen School students or graduates, where we identified key issues with design heuristics,
+iterating on our paper prototype until we arrived at our final digital mockup.
+
+### Key Insights
+
+#### Streamlined Bulk Usability
+
+During the initial rounds of the paper prototype testing process, our participants posed the question:
+How can I add multiple contacts? This lack of functionality in our feature space was hugely overlooked during
+our rapid design process, and this realization drove the development of a significant amount of new pages and
+components that leaned into the flexibility and efficiency of use heuristics. Additionally, during the second
+round of paper prototype usability testing, a similar idea was mentioned that individually customizing the
+reminder setting thresholds for each new contact would be inefficient. From this, we added our bulk select,
+group reminder setting editing, and editing features that are pieces of functionality that are now core to our design.
+
+<img src="/images/projects/messageminder/post/bulkadd.png" alt="Contacts edit" style={{ width: "25%" }} />
+
+
+#### Clarity of the Reply Space
+
+Another uncovered aspect when conducting the second round of paper prototype testing was a lack of clarity
+in how one can access and view existing messages that are in need of responses. One of our participants voiced
+confusion about where the actual response generation button was, and also how to even navigate to the specific
+message in the first place. Initially, we only had four main app page tabs, yet after careful ideation when
+iterating our design into the digital mockup form, we realized that adding another page that housed solely the
+replies created a stronger clarity towards the reply generation feature for users.
+
+<img src="/images/projects/messageminder/post/reply_screeen.png" alt="Key Findings Infographic" style={{ width: "25%" }} />
+
+
+#### Technology Context Integration
+
+We were solely focused on developing the reply generation process during our initial iterations that we overlooked
+the notion that our users may simply need an opportunity to navigate from a reply message into the native messaging
+application. This "Go To Message" functionality in conjunction with the core generation feature was a suggestion
+that one of our paper prototype usability testing participants suggested, and it felt like such a clear and meaningful
+addition to our design. This idea leans into the notion of MessageMinder functioning more as a tool that empowers
+users to navigate to responding to messages at a consistent level, and it was interesting to discover how we
+overlooked this core idea in our initial design.
+
+<img src="/images/projects/messageminder/post/response_generated.png" alt="Key Findings Infographic" style={{ width: "25%" }} />
 
 ## Resulting Design
 
+
+
+### MessageMinder: A Tool for Effective Digital Communication
+
+Our final design includes two key tasks:
+
+- **Feature 1 (Mobile)**: Tracking message response times in a conversation with a new acquaintance
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: overview,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder300x600,
+            src: contact,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
+        {
+            src: add_new,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: set_reminder,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: tim_vo_reminder,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        }
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block spans the set of images."
+        "Taken from MessageMinder figma prototype"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"250px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+Users are able to view a dashboard of their analytics and set goals for their response times. The app will then track their progress and provide reminders to respond to messages.
+As we see in the images to the right, the user can first view their dashboard, click on the analytics widget to track their stats. They can then choose to add a contact.
+After adding a contact they can then configure a reminder for that contact and then view their analytics with that person. 
 
 </ProjectImagesBlock>
+
+
+
+- **Feature 2 (Mobile)**: Automated advice for crafting appropriate responses in complex conversations.
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
+            src: reply_screen,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
         },
         {
-            src: imagePlaceholder600x300,
+            src: generate_reply,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
         },
+        {
+            src: response_generated,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        }
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    caption={
+        "Taken from MessageMinder figma prototype"
+    }
+    width={12}
+    maxHeight={"500px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+Oftentimes users do not want to respond since the conversation requires too much thinking activation power to overcome. This 
+task is designed to enable users to generate a response to a difficult conversation topic. As we see in the images to the right, 
+users can view the conversation they want to respond to, click on the reply button, see what type of response they want to use, and then 
+generate a response to that conversation. If they don't like it they can refresh until they are satisfied. 
 
 </ProjectImagesBlock>
+
