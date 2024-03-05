@@ -66,15 +66,22 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 import evaliuimage from "public/images/projects/dapperdany/team/evaliuimage.jpg";
 import timdillonimage from "public/images/projects/dapperdany/team/timdillonimage.jpeg";
 import michellevuimage from "public/images/projects/dapperdany/team/michellevuimage.jpg";
+import richardleimage from "public/images/projects/dapperdany/team/richardleimage.jpeg";
 import overview from "public/images/projects/dapperdany/post/overview.png";
 import howmuchwaste from "public/images/projects/dapperdany/post/howmuchwaste.png";
 import toomuchwork from "public/images/projects/dapperdany/post/toomuchwork.png";
 import mirrortransition from "public/images/projects/dapperdany/post/mirrortransition.png";
+import donate_clothes_screen from "public/images/projects/dapperdany/post/donate_clothes_screen.png";
+import functionality_explanations from "public/images/projects/dapperdany/post/functionality_explanations.png";
+import outfit_select from "public/images/projects/dapperdany/post/outfit_select.png";
+import outfit_sustainability from "public/images/projects/dapperdany/post/outfit_sustainability.png";
+import donate_pre from "public/images/projects/dapperdany/post/donate_pre.png";
+import donate_post from "public/images/projects/dapperdany/post/donate_post.png";
 
 
 # Dapper Dany
 
-<ProjectSubtitle>The sustainable way to track your clothing usage.</ProjectSubtitle>
+<ProjectSubtitle>Your sustainability-focused closet clean-up companion.</ProjectSubtitle>
 
 ## Team
 
@@ -101,8 +108,8 @@ import mirrortransition from "public/images/projects/dapperdany/post/mirrortrans
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["Team", "Person 4"],
-        photo: imageTeamPerson4,
+        name: ["Team", "Richard Le"],
+        photo: richardleimage,
         alt: "Photo of Team Person 4, looking cool with their additional image description."
     },
 ]} />
@@ -189,7 +196,7 @@ responses showed our team that information about textile waste is not widely kno
 information seek out on their own. This insight helped us understand that it was important to spread this fact
 and more about sustainability issues to the people involved with our design.
 
-### Efficieny Is Key
+### Efficiency Is Key
 
 <ProjectImagesBlock
     images={[
@@ -252,7 +259,7 @@ the most convenient donation center to donate clothes to. Combining all three de
 convenient, efficient and informative way to assist users in tracking and bettering their clothing
 usage habits.
 
-### Consistency And Transitions Between The App And The Mirror Are Paramount
+### Ensuring Consistency And Clear Transitions Between App And Mirror
 
 <ProjectImageBlock
     image={{
@@ -266,115 +273,114 @@ usage habits.
     maxHeight={"400px"}
 >
 
-Initially, after clicking the donating button on the mirror, new funcions would be available within the app without notifiying 
+Initially, after clicking the donating button on the mirror, new functions would be available within the app without notifiying 
 the user of the change. After performing our usability tests, our participants noted that this was a bit of a clunky interaction
-and likely wouldn't have understood it had we not placed the new phone prototype in front of them. Additionally, for a a person
-inexperienced with our design it could be could be confusing to click the donation button on the mirror with little feedback to
+and likely wouldn't have understood it had we not placed the new phone prototype in front of them. Additionally, for a person
+inexperienced with our design it could be confusing to click the donation button on the mirror with little feedback to
 confirm to them that the process has begun. To resolve this issue, we made sure to clearly label where the next step would take
-place and help coach the user along the way through popups and alerts in both the app and the mirror interface. In the end, the
+place and help coach the user along the way through pop-ups and alerts in both the app and the mirror interface. In the end, the
 transition makes a lot more sense and will be more friendly to people new and expert with the design.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Streamlining Selection Confirmation in Process Flows
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: donate_clothes_screen,
+        alt: "Original and updated phone app screens depicting clothing donation confirmation.",
     }}
-    caption={
-        "This is a caption."
+    caption={ 
+        "Before and After refactoring to streamline donation process."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+In our original design of the donation process, we showed participants a list of recommended items to donate on the app, 
+but didn't allow interaction with clothing during this step. We only had them select the clothing they donated after the fact. This was a poor design 
+choice, as it forced participants to recall specific clothes that they already parted with. Usability testers recommended 
+the ability to select clothes to donate before beginning to navigate to a donation center. They said that this
+would feel more intuitive and "flow better". We took this feedback into account and implemented the change in our
+following designs. Now, individuals will choose the items they plan to donate while they're at home and gathering the
+clothes. Then, after donating, their previous selection will be pre-populated on the confirmation screen. The 
+individual need only recognize that their selection was accurate and confirm to earn points. This is a much more intuitive implementation
+of confirmation selection.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Laying Out Key Functionality For Newcomers
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: functionality_explanations,
+        alt: "Image of the original points earning screen to the left of an arrow pointing right towards the updated points screen and sticker store pop-up, both of which have explanation messages",
     }}
     caption={
-        "This is a caption."
+        "Before and After updating points screen to include points explanation message. Stickers explanation is newly added as well."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+In our initial prototype, there was a points screen when earning points after donating that only
+displayed the amount of points you just earned. There was no indication of what these points were
+used for, or where they were meant to be used. One usability tester made a comment on the points screen that they had
+no idea what the points they just earned were for, which led to our realization that we had a large
+hole in functionality clarity. We, as the designers, had inadvertently assumed that the purpose of the points 
+was clear. This prompted us to update the points screen with an explanation of the points' purpose. We also added the
+ability to hide the message, for experienced users who already understand the feature. This same principle was applied to the sticker 
+store on the mirror as well.
 
 </ProjectImageBlock>
 
 ## Resulting Design
 
+Our final design of Dapper Dany is a mirror and phone app combination. The mirror allows for effortless tracking of 
+clothes usage and outfit history. By simply standing in front of it, you will have your clothing choices scanned and analyzed
+by a camera on the mirror. Information about the sustainability paractices of the brands you wear are easily accessible through
+the mirror, to encourage informed consumption of clothing. The app will display key metrics like percentage of total clothes worn,
+as well as highlight your most and least worn items. Both components work together to facilitate the donation of rarely-used 
+clothing items that are taking up space in your closet.
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: outfit_select,
+            alt: "An individual wearing a UNIQLO shirt and SHEIN pants standing in front of a mirror.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: outfit_sustainability,
+            alt: "A mirror with a pop-up about SHEIN's sustainability practices.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block spans the set of images."
+        "You can put on clothes in front of the mirror and learn about that brand's sustainability practices."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+### Task 1: Bring awareness to the sustainability of clothing brands in your closet.
+When you stand in front of the mirror, it will scan the clothes you're wearing and identify their brands.
+Buttons with the identified brands will pop up and display a window with information about the brand's
+sustainability practices. There is also an outfit sustainability scale in the top-left corner that scores
+the overall sustainability of your outfit. 
 
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
+            src: donate_pre,
+            alt: "Four phone screens. The first one is an iphone lock screen with a notification from Dapper Dany. The second is a screen suggesting clothing to donate. The third depicts user-selected boxes of clothing to donate. The fourth is a screen directing the user to a nearby donation center.",
+            caption: "The donation process from receiving the notification up to navigating to a donation center and donating."
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
+            src: donate_post,
+            alt: "Three images. On the left is a confirmation screen on the phone app of clothing donated. In the middle is an app screen depicting points earned and explaining their usage. On the right is a mirror with a store interface pop-up of purchaseable stickers.",
+            caption: "After donating and confirming your donations, you earn points that can be traded for digital stickers on your mirror."
         },
     ]}
     direction={"column"}
@@ -382,18 +388,17 @@ sit amet consectetur adipiscing elit ut aliquam.
     maxHeight={"200px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+### Task 2: Facilitate the donation of rarely-used and unwanted clothes.
+When the mirror detects that you have clothes you haven't worn in a while, it will alert you and 
+direct you to the phone app. Here, you are shown a list of recommended clothing items to donate and 
+prompted to select the ones you plan on donating. Then, the app will assist you in navigating to a
+nearby donation center of your choice. 
+
+After you've donated your items, you will be prompted to confirm the items you've donated. Your 
+previous selection is pre-populated, so you simply have to confirm that everything looks right.
+Then, you earn points for completing the donation process, which you use to purchase digital stickers
+on your mirror's store. These stickers are purely aesthetic and can used to spruce up selfies. These
+serve as rewards and recognition for your sustainability efforts!
 
 </ProjectImagesBlock>
 
