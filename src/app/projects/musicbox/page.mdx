@@ -1,78 +1,51 @@
-{/* CSE 440 Project Post Template
-  *
-  * This template aims to guide you in how to use the supported syntax.
-  *
-  * You should refer to the assignment description for details on what content is expected.
-  *
-  * If you delete or modify template content that you later find you need,
-  * the original template can also be found in `/src/app/projects/template/page.mdx`.
-  *
-  * Note this template's use of comment syntax.
-  * Curly brackets delineate a code block, within which you can then initiate a comment.
-  * The column of `*` characters has no effect and is included only for readability.
-  */}
-
-{/* Tool Documentation
-  *
-  * This post is primarily formatted in Markdown.
-  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
-  *
-  * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
-  * You are not expected to fully understand these components,
-  * but can just embed them in your Markdown like you would any HTML tag.
-  */}
-
-{/* Project Imports
-  *
-  * These import components for use in your post.
-  * You could inspect those components, but this template is intended to be sufficient.
-  *
-  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
-  * but we do not expect or recommend you will need or want additional components.
-  * If you find the provided components insufficient, we encourage you to check in with the course staff.
-  */}
+﻿
 
 import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
 import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
 import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
 import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
-{/* Image Imports
-  *
-  * Every image should be imported via its path in your `images` directory.
-  * - Note that directory is within `public/images/projects`.
-  * - These imports all reference the `template` project, you will reference your own project directory.
-  * - Only `.jpg` and `.png` file extensions are supported.
-  * - If an import is not working, double-check that you have the correct file extension.
-  */}
-
-{/* Team Gallery Images
-  *
-  * - Give your images meaningful names (e.g., "james.png").
-  * - Images will be rendered 125px wide.
-  *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
-  */}
 
 import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
 import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
 import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
 
-import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
-import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
-import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import mockup from "public/images/projects/musicbox/post/3d_mockup.png";
+import connected from "public/images/projects/musicbox/post/connected.png";
+import copy_persona from "public/images/projects/musicbox/post/copy_persona.png";
+import different_personas from "public/images/projects/musicbox/post/different_personas.png";
+import icon from "public/images/projects/musicbox/post/icon.png";
+import illustrator_rendition from "public/images/projects/musicbox/post/illustrator_rendition.png";
+import like from "public/images/projects/musicbox/post/like.png";
+import link_option from "public/images/projects/musicbox/post/link_option.png";
+import link_request from "public/images/projects/musicbox/post/link_request.png";
+import linked from "public/images/projects/musicbox/post/linked.png";
+import linked_2 from "public/images/projects/musicbox/post/linked_2.png";
+import new_button_layout from "public/images/projects/musicbox/post/new_button_layout.jpg";
+import new_iconography from "public/images/projects/musicbox/post/new_iconography.png";
+import new_share_icon from "public/images/projects/musicbox/post/new_share_icon.png";
+import old_button_layout from "public/images/projects/musicbox/post/old_button_layout.jpg";
+import old_iconography from "public/images/projects/musicbox/post/old_iconography.png";
+import old_share_icon from "public/images/projects/musicbox/post/old_share_icon.png";
+import physical_3d from "public/images/projects/musicbox/post/physical_3d.png";
+import play from "public/images/projects/musicbox/post/play.png";
+import play_2 from "public/images/projects/musicbox/post/play_2.png";
+import save from "public/images/projects/musicbox/post/save.png";
+import saved from "public/images/projects/musicbox/post/saved.png";
+import select_button from "public/images/projects/musicbox/post/select_button.png";
 
+
+<ProjectImageBlock
+    image={{
+        src: icon,
+        alt: "Our project logo, a phonograph."
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
 # Music Box
-
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
-
+</ProjectImageBlock>
 ## Team
-
-{/* The ProjectTeamGallery displays names and images of your project team.
-  * - As above, crop and scale your images to be the size of the placeholder.
-  *   This consistent image size provides a cleaner gallery.
-  */}
 <ProjectTeamGallery members={[
     {
         name: ["Team", "Person 1"],
@@ -89,289 +62,309 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
         photo: imageTeamPerson3,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
-    {
-        name: ["Team", "Person 4"],
-        photo: imageTeamPerson4,
-        alt: "Photo of Team Person 4, looking cool with their additional image description."
-    },
 ]} />
 
 ## Problem and Design Overview
 
-{/* A ProjectImageBlock displays text with an associated image.
-  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
-  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
-  * - In a small browser window, the image will be rendered below the text.
-  * - In a large browser window, the image will be rendered on the right.
-  *
-  * - The width property controls how much of the grid is assigned to the image column.
-  *   Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
-  *
-  * - The maxHeight property controls the rendered height of an image.
-  *   Although the image here is 1200x800, maxHeight limits its rendered height to 400px.
-  *   If not specified, the default maxHeight is 400px.
-  *
-  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
-*/}
+The problem we set out to address was a lack of understanding on the part of music recommendation algorithms. They assume each person has just one music taste, but from our research there are many more factors that determine the types of music people like to listen to, as well as why they listen to it. People’s music taste is highly dependent on what they are doing and how they are feeling, as well as the general “mood” of the environment they’re in. For example, my recommender (Spotify) always eventually begins recommending lo-fi because I listen to hours of it everyday, but I don’t always want to listen to lo-fi.
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
+Our solution was to design a system that stored several recommendation algorithms for each person, called “Personas”. Each persona would observe the music one likes to listen to when performing certain tasks, like driving, working out, or relaxing, and provide appropriate song recommendations that gradually become more accurate to each persona as time goes on. We find this additional input by the listener to be important in recommending songs that they actually want to hear.
+
+## Design Research Process and Key Insights:
+
+### Design Research Process
+
+The goals of our research were mainly two-fold. First we needed to understand how listeners were currently finding new music. This would help us tailor our design for the ways that heavy listeners already find music. Secondly, we wanted to figure out if people were happy with the recommendations they were getting from music apps. We as a team thought the recommendations were sub-pair, but we needed to know if this was a common problem.
+
+We conducted our design research primarily through interviewing participants and secondarily through a contextual analysis of their process of choosing and listening to music.
+
+Our design research had three primary participants:
+
+ - Luke; Once a member of his high school’s jazz band, he now plays the banjo and guitar. Luke's musical tastes are nebulous and rather irregular, making it somewhat difficult for him to describe. Hence we’ve determined him to be a primary case study for the problem we are trying to solve. He primarily listens to music via Apple Music while cooking and doing other regular tasks around the home.
+ - Randy; A member of many of his high school bands, having even started one of his own, and now an electronic dance musician. He very often uses Spotify to listen to music while carrying out many different tasks in his day-to-day life. He listens via a smart speaker most of the time. Randy’s relationship to music is very personal and his tastes are very diverse, so we believe he is a perfect case study to explore our problem.
+ - Kevin; A vinyl record collector, indie rock enthusiast, and heavy listener. Kevin uses Spotify and their vinyl records to listen to music. They use corded headphones a majority of the time, but on occasion will use a stationary Bluetooth speaker to share music. While their musical tastes are very diverse, Kevin focuses on rock-adjacent artists when they listen. Kevin’s dedication to listening to music makes them an ideal participant for self tracking but their usage of physical media makes digital tracking somewhat difficult.
+
+These participants were chosen for their enthusiasm with music, frequency of listening, and overall thoughtfulness about their listening habits. We interviewed them to gather a “baseline” musical evaluation for each person. This lets us compare and contrast interview answers between each one. The contextual inquiry was the main portion of our research. The inquiries gave us first hand experience with how heavy listeners navigate the landscape of music.
+
+### 3 Key Insights
+- **Myopic Algorithms:** All three of our participants expressed dissatisfaction with current music recommendation systems in applications such as Spotify and Apple Music as they suggest songs to listen to based almost solely off of what users have previously listened to, when they’ve listened to it, and for how long. What we’ve discovered is that current music recommendation programs don’t factor in the social aspects of music listening and discovery, such as setting, mood, and suggestions from other people. For example, Kevin’s interest in indie rock on vinyl records came from numerous listening sessions in music stores in his youth, something that current algorithms are unable to factor in.
+
+- **Social Discovery:** All participants mentioned the importance of family, friends, or influencers in their music discovery process. One participant said “[The genres I like] each have a person in my life that represents them” and another specifically called out several influencers that he discovers new music through. All three participants mentioned a primary way they have of music discovery is asking others what they listen to.
+
+- **Constant Clutter:** Two out of three participants mentioned that there were huge parts of their listening applications that they ignored. “I always ignore that” and “I scroll past this boilerplate nonsense to get to…” are two quotes that set us on to the fact that current commonly-used listening apps and services simply have too many features that go unused.
+
+## Iterative Design Process and Key Insights:
+
+### Iterative Design Process
+
+We chose to focus on creating and sharing personas for our first task. These personas would be chosen by the person using the device and trained via a like and dislike button. Second we chose to focus on a linking process. Linking two personas allows people to listen to songs they both want to hear based on both of their chosen personas.
+
+Our process was to iterate first via a paper prototype. Our first paper prototype was glued and in full 3D to mimic the design of the device. This turned out to be too high a fidelity level for our paper prototype, as it was too difficult to modify as we identified shortcomings in our design. We then shifted to a simpler 2D paper prototype after inspection revealed some shortcomings in our initial prototype. This 2D version was the prototype we used for usability testing. After several iterations of inspection and usability testing we moved to a digital mock-up via Adobe Illustrator.
+
+### 3 Key Insights
+<ProjectImagesBlock
+    images={[
+        {
+            src: old_button_layout,
+            alt: "A paper prototype with 7 cardboard buttons glued to it.",
+            caption: "Our initial button layout.",
+        },
+        {
+            src: new_button_layout,
+            alt: "A paper prototype with a different layout of seven different buttons on the face.",
+            caption: "Our second iteration on the button layout.",
+        },
+    ]}
+    direction={"row"}
+    width={5}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+- **Simplifying Button Layout:** Our initial prototype was designed for all actions to be performed by pressing physical buttons on the body of the device. This resulted in us having a lot of buttons that we had to place somewhere on the design. During heuristic analysis it was noted that less commonly used controls related to connecting devices were placed prominently on the front of the design while actual media control buttons were on the side of the device despite being central to the devices primary purpose. After this we rearranged all the controls, removing some unnecessary ones, to more prominently display the controls that were most useful on the front face of the device.
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+</ProjectImagesBlock><ProjectImagesBlock
+    images={[
+        {
+            src: old_iconography,
+            alt: "A paper prototype with 7 cardboard buttons glued to it.",
+            caption: "Three cardboard buttons",
+        },
+        {
+            src: new_iconography,
+            alt: "a grod of 8 squares with 5 icons in them.",
+            caption: "The menu icons that replaced them.",
+        },
+    ]}
+    direction={"column"}
+    width={4}
+    maxHeight={"400px"}
+>
 
-</ProjectImageBlock>
+- **Making Menus Navigable:** Our initial completely physical button interaction method had other issues as well. One of these issues was that as the buttons were always available to be pressed even in states where they had no function we needed robust error handling states to communicate with a user why the button had no function in this instance. This was noted in heuristic analysis as a violation of the “Error Handling” heuristic. Another issue with this design looked very cluttered to the students who were inspecting it and they did not find the uses of the different buttons clear. We fixed both of these issues by removing several buttons and moving that functionality into a scrollable menu that showed up on the screen when the persona was selected. This meant that we could simply not show these option when they were not available, and that testers were not overloaded with too many options all at once.
 
-## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
-
-### Title for an Insight
-
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
-
-### Title for an Insight
+</ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
+            src: old_share_icon,
+            alt: "A sketch of a rectangle with an arrow pointing up out of it.",
+            caption: "Our original share icon.",
         },
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
+            src: new_share_icon,
+            alt: "An icon of a arrow facing right, with the word share written below it",
+            caption: "Our updated share icon",
         },
     ]}
     direction={"row"}
-    width={8}
+    width={4}
     maxHeight={"400px"}
 >
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+- **Tweaking Iconography:** Even with a menu added, we discovered that our testing participants didn’t realize that it was indeed a scrollable menu they were looking at; furthermore, several participants called the “select” button the “share” button as “Share had been the first option presented when they pushed it. We attempted to remedy this situation by adding arrows to the menu icons and then increasing their size both on-screen and on the physical buttons of the device.
 
 </ProjectImagesBlock>
 
-### Title for an Insight
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
 
-## Iterative Design Process and Key Insights
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
-
-</ProjectImageBlock>
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
-
-</ProjectImageBlock>
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-</ProjectImageBlock>
 
 ## Resulting Design
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: mockup,
+            alt: "a blender model of a rectangular device with buttons and a screen",
+            caption: "3D design mockup in blender.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: physical_3d,
+            alt: "3D printed rectangular device with buttons and a indentation representing a screen",
+            caption: "3D printed mockup.",
         },
     ]}
     direction={"row"}
-    caption={
-        "This caption for the entire block spans the set of images."
-    }
+    width={12}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
+<ProjectImageBlock
+    image={{
+		src: illustrator_rendition,
+		alt: "a digital mockup of our design with two copis of the device and a 4x4 grid of possible screens"
+    }}
+	caption={
+		"Our final digital mockup"
+	}
+    width={12}
+    maxHeight={"500px"}
+>
+
+The final design rendered in adobe illustrator. The screens on the right are all of the menu and persona screens someone might encounter on the device.
+</ProjectImageBlock>
+
+
+### Task 1: Listening to Music with Others
+<ProjectImageBlock
+    image={{
+		src: different_personas,
+		alt: "Two copies of our mockup with differnt screens showing."
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+Here we start with two speakers listening to different personas, but already connected (not shown).
+</ProjectImageBlock>
+
+
+
+<ProjectImageBlock
+    image={{
+		src: select_button,
+		alt: "one screen now shows share."
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+Next we click the select button on one of the speakers to open the menu for the current persona.
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+		src: link_option,
+		alt: "the screen that showed sahre now shows link"
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+Next we scroll to the link option.
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+		src: link_request,
+		alt: "The link is being requested"
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+When we hit the select button on the link option we enter a requesting link mode. The connected speaker gets a link request.
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+		src: linked,
+		alt: "Both devices show a linked persona on the screen."
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+Now after hitting select on the connected speaker, the two personas are linked.
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+		src: play,
+		alt: "The device is now playing music."
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+We hit play on either of the devices to play both.
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+		src: save,
+		alt: "One of the devices now shows a save option."
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+We can hit select on either device to have the option to save the merged persona.
+</ProjectImageBlock>
+
+## Task 2. Share algorithm and listen to it
+<ProjectImagesBlock
+    images={[
+        {
+            src: play_2,
+            alt: "A mockop of our device with the driving icon showing."
+        },
+        {
+            src: like,
+            alt: "driving is replaced with a thumbs up icon"
+        },
+    ]}
+    direction={"row"}
     width={6}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+A single device listens to a driving persona and trains it via the like and dislike buttons to play music that they enjoy in this circumstance. When a like or dislike button is pressed a thumbs up or thumbs down flashes on the screen.
 
 </ProjectImagesBlock>
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
-        },
-    ]}
-    direction={"column"}
+<ProjectImageBlock
+    image={{
+		src: copy_persona,
+		alt: "one device shows a persona symbol while the other shows a share icon."
+    }}
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"500px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+A second person expresses interest in copying the persona, so the first device selects the persona. The first option shown is share because the two devices are paired (not shown).
 
-</ProjectImagesBlock>
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+		src: linked_2,
+		alt: "Both screens show a driving icon, one also has a satelite symbol in the corner of the screen."
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+Now that the persona has been shared it appears in the other device’s list of persona, but with the external persona indicator in the top right.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+		src: connected,
+		alt: "the device with the satelite symbol device now has a song title on the screen as it is playing music"
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+The second device is free to play the persona as long as they are connected to the other device.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+		src: saved,
+		alt: "The device that had the satellite symbol now has a save icon on it."
+    }}
+    width={6}
+    maxHeight={"500px"}
+>
+
+The second device is also free to save the persona by selecting the persona and selecting save. This allows them to continue using it and to modify it to better suit their own tastes by liking or disliking songs.
+
+
+</ProjectImageBlock>
