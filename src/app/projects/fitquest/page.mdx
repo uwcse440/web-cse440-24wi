@@ -58,6 +58,17 @@ import imageTeamPerson2 from "public/images/projects/fitquest/team/karim.jpeg";
 import imageTeamPerson3 from "public/images/projects/fitquest/team/majid.jpeg";
 import imageTeamPerson4 from "public/images/projects/fitquest/team/arjan.png";
 
+import imagePlaceholder1 from "public/images/projects/fitquest/post/goalpage.jpeg";
+import imagePlaceholder2 from "public/images/projects/fitquest/post/part1.png";
+import imagePlaceholder3 from "public/images/projects/fitquest/post/part2.png";
+import imagePlaceholder4 from "public/images/projects/fitquest/post/workout page.jpeg";
+import imagePlaceholder5 from "public/images/projects/fitquest/post/planpage.jpeg";
+import imagePlaceholder6 from "public/images/projects/fitquest/post/feedback.jpeg";
+import imagePlaceholder7 from "public/images/projects/fitquest/post/watch_prototype.png";
+import imagePlaceholder8 from "public/images/projects/fitquest/post/detached.png";
+import imagePlaceholder9 from "public/images/projects/fitquest/post/watch_prototype.png";
+import imagePlaceholder10 from "public/images/projects/fitquest/post/detached.png";
+
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
@@ -114,14 +125,16 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: imagePlaceholder1,
         alt: "Every image requires alt text. This should describe the content of that image."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+
+        "Our initial measurements for the generating pre workout, " +
+        "workout, and post workout routines."
     }
     width={6}
     maxHeight={"400px"}
@@ -129,7 +142,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 Many individuals, particularly those new to the gym, often lack knowledge of effective and safe training methods that are key to avoiding injuries at the gym. This lack of knowledge can lead to major injuries if someone is exercising in bad form and can be a limiting factor that prevents someone from going to the gym. Many people turn to fitness experts like personal trainers to help make a routine for them and teach them the correct form. This is a solution to the lack of knowledge but is very costly and adds another barrier to the gym.  We asked ourselves, how can we put the knowledge of a personal trainer into the hands of everyone?
 
-FitQuest is an all-in-one fitness application that designs a workout plan around your goals and helps you stay safe at the gym. We wanted to incorporate AI to replace a personal trainer that could give real-time feedback on your exercise. With our accompanying wearable sensor, you can analyze each repetition and know if you are having bad form. A user can see their bar and, for example, how well they perform squats. Also, FitQuest helps maximize one's potential by generating a workout plan based on personal goals and availability. 
+FitQuest is an all-in-one fitness application that designs a workout plan around your goals and helps you stay safe at the gym. We wanted to incorporate AI to replace a personal trainer that could give real-time feedback on your exercise. With our accompanying wearable sensor, you can analyze each repetition and know if you are having bad form. A person can see their bar and, for example, how well they perform squats. Also, FitQuest helps maximize one's potential by generating a workout plan based on personal goals and availability. 
 
 </ProjectImageBlock>
 
@@ -147,14 +160,14 @@ We found that warm-up routines were not common knowledge for our beginner partic
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
+            src: imagePlaceholder2,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
+            caption: "Our initial sketches for the nutrition plan and goal tracker #1",
         },
-        {
-            src: imagePlaceholder400x400,
+        { 
+            src: imagePlaceholder3,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
+            caption: "Our initial sketches for the nutrition plan and goal tracker #2",
         },
     ]}
     direction={"row"}
@@ -175,24 +188,24 @@ After we considered our goals for our product, we chose to focus on two tasks.
 1. Understanding Personal Goals  
 2. Sharing and Teaching Proper Exercise Forms and Techniques for Safe and Effective Workouts. 
 
-In the design process, paper prototyping initially helped visualize the app's features and layout. Through heuristic evaluations and usability testing, potential usability issues were identified and addressed, leading to significant revisions such as adding educational content and improving goal-setting flexibility. Finally, digital mockups were created to refine the app's design, incorporating user feedback for a more user-centered approach. 
+In the design process, paper prototyping initially helped visualize the app's features and layout. Through heuristic evaluations and usability testing, potential usability issues were identified and addressed, leading to significant revisions such as adding educational content and improving goal-setting flexibility. Finally, digital mockups were created to refine the app's design, incorporating peoples feedback for a more human-centered approach. 
 
 
 ### Lack of Education
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: imagePlaceholder4,
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "Personalized workout plan with education on movement."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-There is a strong need for educational content. In our initial concepts and designs, we thought the sensor and bar tracking would be enough to help the people with their forms. However participants, especially beginners expressed that they needed to know how to perform the exercise or the sensor wouldn't help. Initially, the app had minimal instructional content, assuming users had a basic understanding of gym exercises, we needed to remove this assumption. Our design lacked what the beginners needed, more feedback showed us that the people using the apps wanted guidance on proper form to prevent injuries while getting feedback on if they were performing it well. We used this to incorporate detailed exercise demonstrations. Videos, step-by-step instructions, and feedback.
+There is a strong need for educational content. In our initial concepts and designs, we thought the sensor and bar tracking would be enough to help the people with their forms. However participants, especially beginners expressed that they needed to know how to perform the exercise or the sensor wouldn't help. Initially, the app had minimal instructional content, assuming people had a basic understanding of gym exercises, we needed to remove this assumption. Our design lacked what the beginners needed, more feedback showed us that the people using the apps wanted guidance on proper form to prevent injuries while getting feedback on if they were performing it well. We used this to incorporate detailed exercise demonstrations. Videos, step-by-step instructions, and feedback.
 
 </ProjectImageBlock>
 
@@ -200,11 +213,11 @@ There is a strong need for educational content. In our initial concepts and desi
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: imagePlaceholder5,
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "Workout plan with ability to change days."
     }
     width={6}
     maxHeight={"400px"}
@@ -218,11 +231,11 @@ Feedback from the iterative design process showed us the importance of freedom w
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: imagePlaceholder6,
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "Feedback based on movement."
     }
     width={6}
     maxHeight={"400px"}
@@ -263,32 +276,19 @@ The second task focuses on imparting knowledge about proper exercise forms and t
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
+            src: imagePlaceholder9,
+            alt: "",
+            caption: "Sensor to track bar path to ensure good form and ideal weight movement relative to your body."
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
+            src: imagePlaceholder10,
+            alt: "",
+            caption: "Detached for certain movements(dumbbell, squats, etc)"
         },
     ]}
     direction={"column"}
     width={6}
     maxHeight={"200px"}
 >
-
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
 
 </ProjectImagesBlock>
