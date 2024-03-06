@@ -68,6 +68,8 @@ import reply_screen from "public/images/projects/messageminder/post/reply_screee
 import add_new from "public/images/projects/messageminder/post/add_new.png";
 import generate_reply from "public/images/projects/messageminder/post/generate_reply.png";
 import logo from "public/images/projects/messageminder/post/messageminder-logo.png";
+import infographic from "public/images/projects/messageminder/post/infographic.png";
+import bulkadd  from "public/images/projects/messageminder/post/bulkadd.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -130,7 +132,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 <ProjectImageBlock
     image={{
         src: logo,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        alt: "MessageMinder logo: brain/chat bubble"
     }}
  
     width={6}
@@ -165,12 +167,18 @@ Through our participant interviews, we found that there are several factors that
 3. *Who's Texting* - Our participants had diverse answers for who they prioritize. One of our participants prioritized responding to close friends and family, while another prioritized responding quickly to new acquaintances. Regardless, all of our participants prioritized responding quickly to a select few people.
 4. *Messaging Platform* - All participants we interviewed primarily used one messaging platform such as iMessage or WhatsApp, where they prioritized responding to the most, while not so much prioritizing other platforms such as Discord, Instagram, or Snapchat.
 
+<ProjectImageBlock
+    image={{
+      src: infographic,
+      alt: "Hours worked per week vs. response time. Hours worked has no significant effect on response time."
+    }}
+
+    width={6}
+>
 Surprisingly, through our survey results, how busy someone was had little effect on their texting habits or response
 time. The majority of participants had a response time of less than 5 hours, and those who had a much longer response
 time weren't working more hours or taking more credits than average.
-
-
-<img src="/images/projects/messageminder/post/infographic.png" alt="Contacts edit" style={{ width: "75%" }} />
+</ProjectImageBlock>
 
 #### Diverse Reactions to Response Times
 
@@ -216,6 +224,14 @@ iterating on our paper prototype until we arrived at our final digital mockup.
 
 #### Streamlined Bulk Usability
 
+<ProjectImageBlock
+    image={{
+      src: bulkadd,
+      alt: "Contact multi-select feature. Users can select multiple contacts."
+    }}
+
+    width={3}
+>
 During the initial rounds of the paper prototype testing process, our participants posed the question:
 How can I add multiple contacts? This lack of functionality in our feature space was hugely overlooked during
 our rapid design process, and this realization drove the development of a significant amount of new pages and
@@ -223,24 +239,42 @@ components that leaned into the flexibility and efficiency of use heuristics. Ad
 round of paper prototype usability testing, a similar idea was mentioned that individually customizing the
 reminder setting thresholds for each new contact would be inefficient. From this, we added our bulk select,
 group reminder setting editing, and editing features that are pieces of functionality that are now core to our design.
+</ProjectImageBlock>
 
-<img src="/images/projects/messageminder/post/bulkadd.png" alt="Contacts edit" style={{ width: "25%" }} />
+{/* <img src="/images/projects/messageminder/post/bulkadd.png" alt="Contacts edit" style={{ width: "25%" }} /> */}
 
 
 #### Clarity of the Reply Space
 
+<ProjectImageBlock
+    image={{
+      src: reply_screen,
+      alt: "List of replies to respond to. Urgent text messages are at the top."
+    }}
+
+    width={3}
+>
 Another uncovered aspect when conducting the second round of paper prototype testing was a lack of clarity
 in how one can access and view existing messages that are in need of responses. One of our participants voiced
 confusion about where the actual response generation button was, and also how to even navigate to the specific
 message in the first place. Initially, we only had four main app page tabs, yet after careful ideation when
 iterating our design into the digital mockup form, we realized that adding another page that housed solely the
 replies created a stronger clarity towards the reply generation feature for users.
+</ProjectImageBlock>
 
-<img src="/images/projects/messageminder/post/reply_screeen.png" alt="Key Findings Infographic" style={{ width: "25%" }} />
+{/* <img src="/images/projects/messageminder/post/reply_screeen.png" alt="Key Findings Infographic" style={{ width: "25%" }} /> */}
 
 
 #### Technology Context Integration
 
+<ProjectImageBlock
+    image={{
+      src: response_generated,
+      alt: "Response generation feature. Generates a suggested response based on user input."
+    }}
+
+    width={3}
+>
 We were solely focused on developing the reply generation process during our initial iterations that we overlooked
 the notion that our users may simply need an opportunity to navigate from a reply message into the native messaging
 application. This "Go To Message" functionality in conjunction with the core generation feature was a suggestion
@@ -248,8 +282,9 @@ that one of our paper prototype usability testing participants suggested, and it
 addition to our design. This idea leans into the notion of MessageMinder functioning more as a tool that empowers
 users to navigate to responding to messages at a consistent level, and it was interesting to discover how we
 overlooked this core idea in our initial design.
+</ProjectImageBlock>
 
-<img src="/images/projects/messageminder/post/response_generated.png" alt="Key Findings Infographic" style={{ width: "25%" }} />
+{/* <img src="/images/projects/messageminder/post/response_generated.png" alt="Key Findings Infographic" style={{ width: "25%" }} /> */}
 
 ## Resulting Design
 
@@ -265,23 +300,23 @@ Our final design includes two key tasks:
     images={[
         {
             src: overview,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Overview page. Summary of analytics and messages to respond to.",
         },
         {
             src: contact,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "List of contacts page. Favorite contacts are starred.",
         },
         {
             src: add_new,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Add new contact page. Enter name and phone number.",
         },
         {
             src: set_reminder,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Set reminders for new contact. Enter reminder time and vibrate and sound patterns.",
         },
         {
             src: tim_vo_reminder,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Contact-specific analytics and overview page.",
         }
     ]}
     direction={"row"}
@@ -306,15 +341,15 @@ After adding a contact they can then configure a reminder for that contact and t
     images={[
         {
             src: reply_screen,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "List of replies to respond to. Urgent text messages are at the top.",
         },
         {
             src: generate_reply,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Response generation feature. Select a reply to generate a response.",
         },
         {
             src: response_generated,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Response generation feature. Generates a suggested response based on user input.",
         }
     ]}
     direction={"row"}
