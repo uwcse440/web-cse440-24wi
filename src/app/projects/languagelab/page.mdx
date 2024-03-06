@@ -71,6 +71,10 @@ import fullMockUp2 from "public/images/projects/languagelab/fullMockUp2.png";
 import task1 from "public/images/projects/languagelab/taskOne.png";
 import task2 from "public/images/projects/languagelab/taskTwo.png";
 
+import popup1 from "public/images/projects/languagelab/before_popup.png";
+import popup2 from "public/images/projects/languagelab/after_page.png";
+import confirmRecord from "public/images/projects/languagelab/confirm_record.png";
+import signUp from "public/images/projects/languagelab/signup.png";
 # Language Lab
 
 <ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
@@ -125,7 +129,7 @@ import task2 from "public/images/projects/languagelab/taskTwo.png";
 <ProjectImageBlock
     image={{
         src: peopleTalking,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        alt: "An image of a group of people talking."
     }}
     caption={
         "Everybody wants to feel included, and a huge part of that is learning the native language!"
@@ -175,13 +179,11 @@ mention that as a reason why they aren’t confident in speaking in different la
     images={[
             {
                 src: duolingo,
-                alt: "Every image requires alt text. This should describe the content of that image.",
-                caption: "Caption for just this image. It stays with this image.",
+                alt: "Image of a sad Duolingo bird.",
             },
             {
                 src: googleTranslate,
-                alt: "Every image requires alt text. This should describe the content of that image.",
-                caption: "Caption for just this image. It stays with this image.",
+                alt: "Image of the Google Translate logo.",
             },
         ]}
     direction={"row"}
@@ -211,8 +213,8 @@ might find the privacy of our design to be dubious if not enough work is put in.
 
 In our iterative design process, we decided to follow the following tasks:
 
-Task 1: To practice communicating their ideas or questions
-Task 2: To practice pronunciation
+* Task 1: To practice communicating ideas or questions.
+* Task 2: To practice pronunciation.
 
 Our initial designs included the bare minimum of what we had as we wanted to see what participants expected when
 they tried to access a feature that wasn’t developed. Before that, however, we did a heuristic evaluation and realized
@@ -223,84 +225,86 @@ we received from our participants, which developed the current version of our de
 prototype to the digitized version of it as we finalized what our design looks like and created the color palette
 for the design.
 
-### Title for an Insight
+### Recording Page and Recording Confirmation
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: confirmRecord,
+        alt: "An image of a pop-up, with a question if the user plans to record.",
     }}
     caption={
-        "This is a caption."
+        "The confirmation pop-up that was created in light of the critique."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+During our usability testing done on the paper prototype, users expressed concern that there wasn't a way to avoid an
+accidental recording, which they don't want. To fix this, we added a confirmation pop-up to let the user know that
+they are planning to record. In addition, there are settings that the user can adjust for the specific type of
+conversation they are about to have.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Converting Pop-Up into Full pages
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: popup1,
+        alt: "Image of a pop-up before modification.",
     }}
     caption={
-        "This is a caption."
+        "Before-"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+During usability testing, user's first few clicks would create various pop-ups, for example we had a recent
+conversations pop-up on the front of our home screen above the recording button where we would show user's their last
+three conversations, this was removed due to feeling redundant as the bottom navigation bar already allowed user's to
+view all previous conversation logs. Other pop-up changed were the pronunciation pop-up which was were users would be
+shown a singular word they mispronounced in the conversation and be given the choice to practice pronouncing it, this
+was changed into being a individual screen found in the insights section of a recording. Lastly, pop-up relating to
+conveying ideas was changed into a screen in the insights page where users are able to type into the prompt what they
+had originally intended to say in their native language in order to view possible translations. This originally was a
+pop-up but was changed into a screen due to the amount of interaction, as it was too much for a pop-up to accomplish.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+<ProjectImageBlock
+    image={{
+        src: popup2,
+        alt: "Image of screen created from pop-up",
+    }}
+    caption={
+        "After-"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+### Accessibility for New Learners
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: signUp,
+        alt: "An image of a sign up page.",
     }}
     caption={
-        "This is a caption."
+        "A language option was added at the sign-up page for users to select the language they feel most comfortable with"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+A suggestion brought up during the transition from our paper prototype to our digital mockup was adding the ability to
+have users set the default language to be their native language when the user is creating their account for the first
+time and having a section in the settings where users can go and change the default language used by the application.
+The suggestion was brought up by the CSE 440 team as an evaluation was done and showed that originally no other language
+was set other than English, as during the process we forgot the case when someone is entirely new to the language.
+and has yet to learn to read in English.
 
 </ProjectImageBlock>
 
@@ -310,7 +314,7 @@ adipiscing diam donec adipiscing.
     images={[
         {
             src: fullMockUp1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the first half of our digital mockup.",
         },
     ]}
     direction={"row"}
@@ -325,7 +329,7 @@ adipiscing diam donec adipiscing.
     image={
         {
             src: fullMockUp2,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the second half of our digital mockup.",
             caption: "Two images displaying the full interactive design mockup"
         }
     }
@@ -333,11 +337,14 @@ adipiscing diam donec adipiscing.
     maxHeight={"400px"}
 >
 
-    Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id eu nisl nunc mi ipsum.
-    Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Duis ut diam quam nulla
-    porttitor massa id. Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu feugiat pretium.
-    Lectus magna fringilla urna porttitor rhoncus dolor. Mollis nunc sed id semper risus in. Quis imperdiet massa
-    tincidunt nunc. Sed adipiscing diam donec adipiscing.
+For the final design, we designed an app that does the following:
+
+* Can record a conversation at an moment.
+* Mistakes made in conversations can be easily reviewed.
+* Practicing mistakes can be down at any time.
+* Improve pronunciation of commonly misspoken words.
+
+Below is our two tasks we focused on in the design of our project:
 
 </ProjectImageBlock>
 
@@ -352,7 +359,7 @@ for next time. The digital mockup illustrates the process of fulfilling this tas
     image={
         {
             src: task1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of five screens that complete our first task.",
             caption: "Task 1 flow process"
         }
     }
@@ -386,7 +393,7 @@ the following manner:
     image={
         {
             src: task2,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of five screens that complete our second task.",
             caption: "Task 2 flow process"
         }
     }
