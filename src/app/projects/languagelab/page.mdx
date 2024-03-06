@@ -53,28 +53,28 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/emilio.jpg";
-import imageTeamPerson2 from "public/images/projects/template/team/eric.jpg";
-import imageTeamPerson3 from "public/images/projects/template/team/philip.jpg";
-import imageTeamPerson4 from "public/images/projects/template/team/pablo.jpg";
+import imageTeamPerson1 from "public/images/projects/languagelab/team/emilio.jpg";
+import imageTeamPerson2 from "public/images/projects/languagelab/team/Eric.jpg";
+import imageTeamPerson3 from "public/images/projects/languagelab/team/philip.jpg";
+import imageTeamPerson4 from "public/images/projects/languagelab/team//pablo.jpg";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
-import duolingo from "public/images/projects/languagelab/duolingo.png";
-import peopleTalking from "public/images/projects/languagelab/people talking.jpg";
-import googleTranslate from "public/images/projects/languagelab/googleTranslate.png";
-import fullMockUp1 from "public/images/projects/languagelab/fullMockUp1.png";
-import fullMockUp2 from "public/images/projects/languagelab/fullMockUp2.png";
-import task1 from "public/images/projects/languagelab/taskOne.png";
-import task2 from "public/images/projects/languagelab/taskTwo.png";
+import duolingo from "public/images/projects/languagelab/post/duolingo.png";
+import peopleTalking from "public/images/projects/languagelab/post/people_talking.jpg";
+import fullMockUp1 from "public/images/projects/languagelab/post/fullMockUp1.png";
+import fullMockUp2 from "public/images/projects/languagelab/post/fullMockUp2.png";
+import task1 from "public/images/projects/languagelab/post/taskOne.png";
+import task2 from "public/images/projects/languagelab/post/taskTwo.png";
+import finalProto from "public/images/projects/languagelab/post/finalPrototype.png";
+import popup1 from "public/images/projects/languagelab/post/before_popup.png";
+import popup2 from "public/images/projects/languagelab/post/after_page.png";
+import confirmRecord from "public/images/projects/languagelab/post/confirm_record.png";
+import signUp from "public/images/projects/languagelab/post/signup.png";
 
-import popup1 from "public/images/projects/languagelab/before_popup.png";
-import popup2 from "public/images/projects/languagelab/after_page.png";
-import confirmRecord from "public/images/projects/languagelab/confirm_record.png";
-import signUp from "public/images/projects/languagelab/signup.png";
 ## Language Lab
 
 <ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
@@ -174,31 +174,22 @@ issue of sounding very “American” whenever they speak a different language. 
 mention that as a reason why they aren’t confident in speaking in different languages due to that reason.
 
 ### Time and Convenience
-
-<ProjectImagesBlock
-    images={[
-            {
+<ProjectImageBlock
+    image={{
                 src: duolingo,
                 alt: "Image of a sad Duolingo bird.",
-            },
-            {
-                src: googleTranslate,
-                alt: "Image of the Google Translate logo.",
-            },
-        ]}
-    direction={"row"}
-    width={8}
+    }}
+    width={6}
     maxHeight={"400px"}
 >
-
     Some of our participants mentioned that they couldn’t commit the time to use language apps as they felt that they
     were too busy to commit a portion of their time to learning something that they weren’t required to learn.
     This could be explored further and could help us design our app to seem less of a burden to use. One of our
     participants mentioned that having a conversation with a fluent person to learn would be embarrassing. This might
     stop someone from using our idea since it focuses on giving feedback in the conversation between two people.
     We could look into the idea of providing a mode that allows a person to practice conversations by themselves.
+</ProjectImageBlock>
 
-</ProjectImagesBlock>
 
 ### App Design and Privacy
 
@@ -210,6 +201,19 @@ that they feel like privacy wouldn’t be an issue as long as it’s explicitly 
 might find the privacy of our design to be dubious if not enough work is put in.
 
 ## Iterative Design Process and Key Insights
+
+<ProjectImageBlock
+    image={{
+        src: finalProto,
+        alt: "Image of final prototype design."
+    }}
+    caption={
+        "Final prototype of our design."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
 
 In our iterative design process, we decided to follow the following tasks:
 
