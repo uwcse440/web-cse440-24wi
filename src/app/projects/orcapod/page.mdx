@@ -53,10 +53,10 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
+import nathanielPhoto from "public/images/projects/template/team/photo_nathaniel.png";
+import denisePhoto from "public/images/projects/template/team/photo_denise.png";
 import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import kevinPhoto from "public/images/projects/template/team/photo_kevin.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -83,13 +83,13 @@ import ashleysPod from "public/images/projects/orcapod/post/ashleys_pod.png";
   */}
 <ProjectTeamGallery members={[
     {
-        name: ["Nathaniel Abraham Kassa", "He/Him"],
-        photo: imageTeamPerson1,
+        name: ["Nathaniel Kassa", "He/Him"],
+        photo: nathanielPhoto,
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
         name: ["Denise Mar", "She/Her"],
-        photo: imageTeamPerson2,
+        photo: denisePhoto,
         // A default alt of "Photo of Team Person 2." will be generated.
     },
     {
@@ -225,17 +225,21 @@ virtually when they couldn’t.
 
 ## Iterative Design Process and Key Insights
 
-Our design focus was primarily on enhancing user interaction with the Home HubBoard, 
-specifically by improving communication across different time zones and ensuring 
-clear communication when one party is unavailable. We iteratively refined the alarm 
-setting process, making it more intuitive with a scroll wheel and gridded message 
-boxes for better organization. These design iterations were informed by usability 
-tests that revealed users' preferences for more familiar interaction methods, 
-leading to the inclusion of touchscreen capabilities and voice input to accommodate 
-varying user needs. These changes aimed to streamline the communication process, 
-making it more inclusive and responsive to our user base.
+Our design focus was primarily on enhancing user interaction with a smartboard, specifically 
+by improving communication across different time zones and ensuring clear communication when 
+one party is unavailable. Our iterative design process started with creating an initial paper 
+prototype of our smartboard. We then ran a heuristics evaluation with another group in CSE 440 
+to identify and resolve heuristic violations. Next, we conducted three usability tests with three 
+different participants. Our participants consisted of an international student living in off-campus 
+housing, a student living away from home in off-campus housing, and a parent of a student who lived 
+away from home when they were at college for a bit. We chose these participants because the parent had 
+extremely limited knowledge and familiarity with technology while the college students were able to 
+offer insight as people who were familiar with smartboards and technology. We began each test with 
+a summary of our project, design, and explained the two tasks. Then we had participants attempt to 
+complete both tasks with the paper prototype. From these usability tests, we identified multiple 
+issues with our design and workflow, as discussed below.
 
-### Favorability within Modes in different Demographics
+### Favorability Within Modes in Different Demographics
 
 <ProjectImagesBlock
     images={[
@@ -334,19 +338,14 @@ from the participant's experience.
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+Our resulting design for the OrcaPod Board consisted of a 72”x40” wall-hung smartboard with 
+a built-in microphone and speaker. The microphone and speaker work in tandem for the voice 
+recording and voice messages that people can send with the board. With this application 
+parents and children can keep each other involved in their lives by helping people avoid 
+manually converting time zones and giving them time and space to communicate at their leisure 
+instead of always being connected in what could be stressful times. The participant can use the 
+board to establish a pattern of when people are awake and able to communicate instead of constantly 
+guessing.
 
 </ProjectImagesBlock>
 
