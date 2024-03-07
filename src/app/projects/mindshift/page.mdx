@@ -74,6 +74,8 @@ import paper_notification from "public/images/projects/mindshift/post/paper_noti
 {/* onboarding images */}
 import digital_onboarding from "public/images/projects/mindshift/post/digital_onboarding.png";
 import paper_onboarding from "public/images/projects/mindshift/post/paper_onboarding.jpg";
+import digital_carousel_1 from "public/images/projects/mindshift/post/digital_onboarding_carousel_1.png";
+import digital_carousel_2 from "public/images/projects/mindshift/post/digital_onboarding_carousel_2.png";
 
 {/* overall images */}
 import onboarding_1 from "public/images/projects/mindshift/post/task1_1_1.png";
@@ -217,28 +219,41 @@ We focused on two primary tasks that were essential to our design. The first was
 
 
 ### Clear and Concise Onboarding
+<ProjectImageBlock
+    image={{
+        src: paper_onboarding,
+        alt: "Image of journey dashboard with statistics on usage.",
+    }}
+    caption={
+        "The first rendition of an onboarding session."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+Multiple participants were initially confused by our cluttered 2-page onboarding processes that easily overwhelmed them and did not properly explain how to create and manage mindfulness journeys. Some of them tried to parse through it and failed and one said “I’m not reading this” and skipped right through. To fix the issue we broke down the process into a series of easily-digestible panels that use minimal text to ensure the user gets a basic understanding of the app even if they try to quickly flip through the introduction. Considering the slight complexity of our application, ensuring that the user is knowledgeable on how to navigate it is crucial to ensure that they are quickly able to start their first self-improvement journey. Introducing the core idea of journeys is accomplished via this step-by-steop introduction.
+These guide pages also persist as a "help page" for the user to access whenever.
+
 
 <ProjectImagesBlock
     images={[
         {
-            src: paper_onboarding,
-            alt: "An image of the paper prototype onboarding screens.",
+            src: digital_carousel_1,
+            alt: "Some digital onboarding screens outlining notification allowance and Journeys.",
         },
         {
-            src: digital_onboarding,
-            alt: "An image of the digital prototype onboarding screens.",
+            src: digital_carousel_2,
+            alt: "A continuation of onboarding with tips on priority alerts and other terminology.",
         },
     ]}
-    direction={"row"}
+    direction={"column"}
     caption={
-        "Onboarding screens as they evolved over time."
+        "The final digital onboarding process, as lengthened and evolved via feedback from usability testing participants."
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
-
-Multiple participants were initially confused by our cluttered 2-page onboarding processes that easily overwhelmed them and did not properly explain how to create and manage mindfulness journeys. Some of them tried to parse through it and failed and one said “I’m not reading this” and skipped right through. To fix the issue we broke down the process into a series of easily-digestible panels that use minimal text to ensure the user gets a basic understanding of the app even if they try to quickly flip through the introduction. Considering the slight complexity of our application, ensuring that the user is knowledgeable on how to navigate it is crucial to ensure that they are quickly able to start their first self-improvement journey.
-
 </ProjectImagesBlock>
 
 ### Simplifying Customization
@@ -287,54 +302,6 @@ Initially, our design had two options for when a notification popped up telling 
 ## Resulting Design
 
 A user's journey in our app centers around two tasks: identifying a problematic behavior to improve on (a Journey), and actively breaking this habit when it comes up.
-
-### Onboarding
-<ProjectImagesBlock
-    images={[
-        {
-            src: onboarding_1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: onboarding_2,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: onboarding_3,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: onboarding_4,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "Introducing the core idea of journeys is accomplished via an introduction and enabling of key functionality."
-    }
-    width={10}
-    maxHeight={"600px"}
->
-</ProjectImagesBlock>
-<ProjectImagesBlock
-    images={[
-        {
-            src: onboarding_5,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: onboarding_6,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "Definitions of customization options are provided and accessible even after onboarding."
-    }
-    width={10}
-    maxHeight={"400px"}
->
-</ProjectImagesBlock>
 
 ### Task 1: Finding journeys
 The user receives an array of potential journeys, as well as an array of current statistics about their phone usage. They have the option to create a new journey or to select a suggested on (as prompted by automated analysis of metadata). Within MindShift, the user can monitor and view their usage statistics and feedback on how much they’ve improved using the journey settings, which is focused on in Task 2.
@@ -393,6 +360,7 @@ The user receives an array of potential journeys, as well as an array of current
 </ProjectImagesBlock>
 
 ### Task 2: Interrupting Habits
+After a user has 
 <ProjectImagesBlock
     images={[
         {
