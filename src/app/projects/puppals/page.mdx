@@ -71,6 +71,8 @@ import logo from "public/images/projects/puppals/post/logo.png";
 import privacy_1 from "public/images/projects/puppals/post/privacy_1.png";
 import privacy_2 from "public/images/projects/puppals/post/privacy_2.png";
 import dogs from "public/images/projects/puppals/post/dogs.png";
+import navigation_bar from "public/images/projects/puppals/post/navigation_bar.png";
+import socialization_1 from "public/images/projects/puppals/post/socialization_1.png";
 
 # PupPals
 
@@ -129,7 +131,7 @@ import dogs from "public/images/projects/puppals/post/dogs.png";
         alt: "Black and white logo of dog looking up. This is the icon of for PupPals."
     }}
     caption={
-        "This is our logo. Our goal is to connect our furry friends together!"
+        "Our goal is to connect our furry friends together!"
     }
     width={6}
     maxHeight={"400px"}
@@ -243,7 +245,7 @@ prototype. We then translated the paper prototype into a digital mockup, bringin
     ]}
     direction={"row"}
     caption={
-        "Privacy terms (left), Socialization Preferences (right)."
+        "Privacy Terms (left), Socialization Preferences (right)."
     }
     width={6}
     maxHeight={"400px"}
@@ -263,13 +265,13 @@ import home from "public/images/projects/puppals/post/home.png";
 
 <ProjectImageBlock
     image={{
-        src: home,
-        alt: "Home screen with two critical task pathways of socialization and location tracker.",
+        src: navigation_bar,
+        alt: "Home page of PupPals (left), Socialization Task Pathway (right)",
     }}
     caption={
-        "Home page of PupPals."
+        "Home page and socialization page of PupPals."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
@@ -324,17 +326,16 @@ route using location tracking.
 <ProjectImageBlock
     image={{
         src: onboarding,
-        alt: "Opening screen features a log-in or sign-up option.",
+        alt: "Opening screen features a log-in or sign-up option (left), screen for the users to log in with their username and password if they already have the account.",
     }}
     caption={
-        "Opening screen of the PupPals mobile app."
+        "Opening page (left) and Log In (right)."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
-When users open the PupPals mobile app, they will create an account (if this is their first time using the app), 
-otherwise sign in.
+When users open the PupPals mobile app, they will create an account (if this is their first time using the app), otherwise log in.
 
 </ProjectImageBlock>
 
@@ -375,16 +376,16 @@ which can be edited later on. Lastly, users create a profile for their dog and r
 
 </ProjectImageBlock>
 
-### Task 1: Socialization preferences
+### Task 1: Finding appropriate dogs to play with
 <ProjectImageBlock
     image={{
-        src: home,
+        src: socialization_1,
         alt: "Home screen with two critical task pathways of socialization and location tracker.",
     }}
     caption={
         "Home page of PupPals."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
@@ -396,10 +397,10 @@ Users will be prompted to the home page, where the users will click the “Socia
 <ProjectImageBlock
     image={{
         src: task1,
-        alt: "Screen for inserting the dog’s age (left), Screen for inserting the dog’s personality (middle), Screen for changing/inserting the location (right).",
+        alt: "Screen for inserting the dog’s age (left), Screen for changing/inserting the location (right).",
     }}
     caption={
-        "Age preferences (left), Personality Preferences (middle), and Location (right)."
+        "Age preferences (left) and Location (right)."
     }
     width={9}
     maxHeight={"400px"}
@@ -410,8 +411,6 @@ type. From here, users are asked to input their zip code, city, or use their cur
 find potential playmates who are local to them.
 
 </ProjectImageBlock>
-
-### Task 1: Requesting Friends and Arranging Meetups
 
 Based on the users’ location, profiles of nearby dogs are generated. The users can scroll through 
 each profile and determine potential matches for their dogs to play with. If the users find a playmate 
