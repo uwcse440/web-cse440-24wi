@@ -113,7 +113,7 @@ import dashboard from "public/images/projects/mindshift/post/dashboard.png";
     {
         name: [ "Lianne Kniest"],
         photo: imageTeamPerson2,
-        // A default alt of "Photo of Team Person 3." will be generated.
+        // A default alt of "Photo of Team Person 2." will be generated.
     },
     {
         name: [ "Francis Peng"],
@@ -200,7 +200,7 @@ We focused on two primary tasks that were essential to our design. The first was
     ]}
     direction={"row"}
     caption={
-        "Onboarding screens as they evolved over time."
+        "When a user first installs MindShift, they will be met with a series of onboarding screens that explain the rationale of the application and some of its main functionality. This page in particular explains how the app works as a whole."
     }
     width={6}
     maxHeight={"400px"}
@@ -231,7 +231,7 @@ When exploring available journeys, participants understood most of the straightf
     ]}
     direction={"row"}
     caption={
-        "Notication types screens as they evolved over time."
+        "How our notications have evolved over time - the importance of MindShift notifications lies in their interruptive nature. It should not be easy to ignore MindShift notifications, but it should also not be a chore to read and interpret them."
     }
     width={6}
     maxHeight={"400px"}
@@ -267,7 +267,7 @@ A user's journey in our app centers around two tasks: identifying a problematic 
     ]}
     direction={"row"}
     caption={
-        "Introducing the core idea of journeys is accomplished via an introduction and enabling of key functionality."
+        "When a user enters the application for the first time, they're met with onboarding screens that include a title, an explanation of the MindShift notifications, the overall purpose and functionality of the application, and the concept of user-customizable journeys."
     }
     width={10}
     maxHeight={"600px"}
@@ -286,7 +286,7 @@ A user's journey in our app centers around two tasks: identifying a problematic 
     ]}
     direction={"row"}
     caption={
-        "Definitions of customization options are provided and accessible even after onboarding."
+        "Since journeys are a central component of the application, there are additional onboarding screens and information on how to customize and efficiently use journeys. In particular, components of a journey are highlighted in their own pop-up screens that provide additional information."
     }
     width={10}
     maxHeight={"400px"}
@@ -304,7 +304,7 @@ The user receives an array of potential journeys, as well as an array of current
     ]}
     direction={"row"}
     caption={
-        "'Homescreen' Where the user can click into existing journeys, view suggestions, or create new ones."
+        "When a user is on the primary 'Homescreen' of MindShift, they can view existing journeys that they have already configured, browse suggestions of 'new' journeys based on their recent browsing activities and metadata, or create new journeys from scratch."
     }
     width={10}
     maxHeight={"400px"}
@@ -323,26 +323,7 @@ The user receives an array of potential journeys, as well as an array of current
     ]}
     direction={"row"}
     caption={
-        "Creating a journey based off of a location prompt"
-    }
-    width={10}
-    maxHeight={"400px"}
->
-</ProjectImagesBlock>
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "An image of the journey creation process with no AI suggestions",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "An image of the journey creation process with no AI suggestions",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "Creating a journey from scratch with no AI suggestions (NEED TO RE-RENDER BEFORE FINAL SUBMISSION)"
+        "A user can create a journey out of anything, in this case a user is configuring a geographical location-based journey. They can give their journey a name, priority, and duration, among other customizable features."
     }
     width={10}
     maxHeight={"400px"}
@@ -350,6 +331,7 @@ The user receives an array of potential journeys, as well as an array of current
 </ProjectImagesBlock>
 
 ### Task 2: Interrupting Habits
+The user is able to receive interruptive notifications that align with journeys they configured in the MindShift application. Depending on certain properties of the journeys themselves, users will receive notifications after displaying specific behaviors, such as spending a certain amount of time on the application or opening the application a certain number of times. To dismiss the notification, the user will have to make a mindful decision to snooze a pop-up alert, making it harder to subconsciously continue the harmful digital habit.
 <ProjectImagesBlock
     images={[
         {
