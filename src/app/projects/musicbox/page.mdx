@@ -6,9 +6,9 @@ import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
 import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
+import Alex_pic from "public/images/projects/musicbox/team/Alex.jpg";
+import Andrew_pic from "public/images/projects/musicbox/team/Andrew.png";
+import William_pic from "public/images/projects/musicbox/team/William.png";
 
 import mockup from "public/images/projects/musicbox/post/3d_mockup.png";
 import connected from "public/images/projects/musicbox/post/connected.png";
@@ -34,35 +34,25 @@ import save from "public/images/projects/musicbox/post/save.png";
 import saved from "public/images/projects/musicbox/post/saved.png";
 import select_button from "public/images/projects/musicbox/post/select_button.png";
 
-
-<ProjectImageBlock
-    image={{
-        src: icon,
-        alt: "Our project logo, a phonograph."
-    }}
-    width={4}
-    maxHeight={"150px"}
->
 # Music Box
 
-</ProjectImageBlock>
 
 ## Team
 
 <ProjectTeamGallery members={[
     {
-        name: ["Team", "Person 1"],
-        photo: imageTeamPerson1,
+        name: ["Alex", "Lillian"],
+        photo: Alex_pic,
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
-        name: ["Team", "Person 2"],
-        photo: imageTeamPerson2,
+        name: ["Andrew", "Garzon"],
+        photo: Andrew_pic,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["Team", "Person 3"],
-        photo: imageTeamPerson3,
+        name: ["William", "Travis"],
+        photo: William_pic,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
 ]} />
