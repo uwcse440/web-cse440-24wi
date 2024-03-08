@@ -69,13 +69,14 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 {/* notification images */}
 import digital_notification from "public/images/projects/mindshift/post/digital_notification.png";
-import paper_notification from "public/images/projects/mindshift/post/paper_notification.jpg";
+import paper_notification from "public/images/projects/mindshift/post/paper_initial_notification.jpg";
 
 {/* onboarding images */}
 import digital_onboarding from "public/images/projects/mindshift/post/digital_onboarding.png";
 import paper_onboarding from "public/images/projects/mindshift/post/paper_onboarding.jpg";
 import digital_carousel_1 from "public/images/projects/mindshift/post/digital_onboarding_carousel_1.png";
 import digital_carousel_2 from "public/images/projects/mindshift/post/digital_onboarding_carousel_2.png";
+import from_scratch from "public/images/projects/mindshift/post/new_journey_from_scratch.jpeg";
 
 {/* overall images */}
 import onboarding_1 from "public/images/projects/mindshift/post/task1_1_1.png";
@@ -160,7 +161,7 @@ As a consequence, unwanted addictions to the content on these devices are on the
 1 in 2 adolescents today believe that they have a phone addiction, 
 with unconscious pickups and “doomscrolling” on the rise. 
 
-Our design acknowledges that phones have become instrumental in our dopamine cycles - we look to them for mindless entertainment, relaxation in times of stress, and sources of connection. In order to reverse our gravitation towards these devices and begin to break the habit of constantly looking at them, we need intentional focus and a consistent plan. Mindshift focuses on helping remind our generation when we lean on these ingrained habits. It’s designed to be a “second brain” as we journey towards breaking the unconscious ties to everyday living that our phones have.
+Our design acknowledges that phones have become instrumental in our dopamine cycles - we look to them for mindless entertainment, relaxation in times of stress, and sources of connection. In order to reverse our gravitation towards these devices and begin to break the habit of constantly looking at them, we need intentional focus and a consistent plan. MindShift focuses on helping remind our generation when we lean on these ingrained habits. It’s designed to be a “second brain” as we journey towards breaking the unconscious ties to everyday living that our phones have.
 
 {/* </ProjectImageBlock> */}
 
@@ -178,14 +179,13 @@ Our diary questions asked participants to keep detailed track of when they opene
 
 {/* </ProjectImagesBlock> */}
 
-### Sleep-centric Wsage
+### Sleep-Centric Usage
 
 In addition to heavy phone usage corresponding to stressful situations such as studying, a great deal of phone usage corresponded with timing throughout the day. We noticed in our data that 5 participants out of the 9 had usage graphs that took on the shape of a bimodal bell curve with peaks of usage in the morning, slightly delayed after wake up and 7pm, post dinner. In our exit interviews, when asked about the following piece of data, most participants admitted that it’s a result mostly of habit rather than genuinely fun or productive usage. Participants mentioned that without interference it was super easy to fall into this pattern. Thus in our app we made sure to integrate a reminder feature that could disrupt social media usage at certain times to ensure that users couldn’t absentmindedly scroll through the morning. 
 
 ## Iterative Design Process and Key Insights
 
 We focused on two primary tasks that were essential to our design. The first was “identifying phone usage patterns and tracking which are problematic”. The second was “Interrupting unproductive scrolling”. We focused on these specifically because they worked well together to first get an understanding of the problematic habits of the user, and then to help them reduce their phone usage through notifications. We created an initial paper prototype and then tested it with various participants, as well through 2 separate rounds of inspection. After another iteration of a paper prototype and one more round of user testing, we created a final digital mockup that improved upon all the previously discovered issues.
-
 
 ### Clear and Concise Onboarding
 <ProjectImageBlock
@@ -198,13 +198,9 @@ We focused on two primary tasks that were essential to our design. The first was
     }
     width={12}
     maxHeight={"400px"}
->
-</ProjectImageBlock>
-
-Multiple participants were initially confused by our cluttered 2-page onboarding processes that easily overwhelmed them and did not properly explain how to create and manage mindfulness journeys. Some of them tried to parse through it and failed and one said “I’m not reading this” and skipped right through. To fix the issue we broke down the process into a series of easily-digestible panels that use minimal text to ensure the user gets a basic understanding of the app even if they try to quickly flip through the introduction. Considering the slight complexity of our application, ensuring that the user is knowledgeable on how to navigate it is crucial to ensure that they are quickly able to start their first self-improvement journey. Introducing the core idea of journeys is accomplished via this step-by-steop introduction.
+></ProjectImageBlock>
+Multiple participants were initially confused by our cluttered 2-page onboarding processes that easily overwhelmed them and did not properly explain how to create and manage mindfulness journeys. Some of them tried to parse through it and failed; one participant said “I’m not reading this” and skipped right through. To fix the issue we broke down the process into a series of easily-digestible panels that use minimal text to ensure the user gets a basic understanding of the app even if they try to quickly flip through the introduction. Considering the slight complexity of our application, ensuring that the user is knowledgeable on how to navigate it is crucial to ensure that they are quickly able to start their first self-improvement journey. Introducing the core idea of journeys is accomplished via this step-by-steop introduction.
 These guide pages also persist as a "help page" for the user to access whenever.
-
-
 <ProjectImagesBlock
     images={[
         {
@@ -218,8 +214,7 @@ These guide pages also persist as a "help page" for the user to access whenever.
     ]}
     direction={"column"}
     caption={
-        "When a user first installs MindShift, they will be met with a series of onboarding screens that explain the rationale of the application and some of its main functionality. This page in particular explains how the app works as a whole."+
-        "The final digital onboarding process, as lengthened and evolved via feedback from usability testing participants."
+        "When a user first installs MindShift, they will be met with a series of onboarding screens that explain the rationale of the application and some of its main functionality. This page in particular explains how the app works as a whole. The final digital onboarding process, as lengthened and evolved via feedback from usability testing participants."
     }
     width={12}
     maxHeight={"400px"}
@@ -229,10 +224,23 @@ These guide pages also persist as a "help page" for the user to access whenever.
 ### Simplifying Customization
 
 When exploring available journeys, participants understood most of the straightforward options such as “reducing pickups that lead to Instagram”, but showing them examples such as “reduce Instagram usage in a certain location” led to confusion on how the journeys are generated and what options for customization exist. Some participants glazed over the subject but it was clear they did not fully understand and confused so if pressed further. To fix this we introduced three discrete goals to focus on: pickup count, screen time, and specific app reduction. This change is conveyed in the onboarding and is made very clear when a user is creating a new journey. This is crucial as it eliminates most of the headache that people had trying to understand all the options and easily allows them to create familiar journeys.
+<ProjectImageBlock
+    image={{
+        src: from_scratch,
+        alt: "Image creating a journey from scratch (no AI suggestion)",
+    }}
+    caption={
+        "When creating a Journey from scratch, the customization options were drafted to balance both flexibility and structure. There's enough options to allow true customization but not so many as to be inconsistent or confusing."
+    }
+    width={10}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
 
 {/* </ProjectImageBlock> */}
 
-### Intuitive Notification Options
+### Optimize Notification Options
 
 <ProjectImagesBlock
     images={[
@@ -247,20 +255,17 @@ When exploring available journeys, participants understood most of the straightf
     ]}
     direction={"row"}
     caption={
-        "The importance of MindShift notifications lies in their interruptive nature. It should not be easy to ignore MindShift notifications, but it should also not be a chore to read and interpret them."
+        "The importance of MindShift notifications lies in their interruptive nature. It should not be easy to ignore MindShift notifications, but it should also not be a chore to read and interpret them. Here's the first rendition and the final version."
     }
     width={6}
     maxHeight={"400px"}
 >
-
-Initially, our design had two options for when a notification popped up telling you have been scrolling for too long or too frequently: “work on this” and “this is okay”. Those two options were incredibly unclear on what they would do, and one of our participants was especially confused if he would be taken to the main app or would remain free to scroll instagram if he clicked either of these buttons. We changed the two options to be “Quit Instagram” and “snooze”, with the first button highlighted and the second dimmed. The choices here are far more clear and try to push the user towards quitting the negative task that they are currently doing, which is precisely our overarching goal. 
-
+Initially, we faced two issues with the interruptive phase of our app design. One issue involved the form factor of the banner notifications - as a format that many are used to swiping away and ignoring, the notification did not serve as interruptive as intended. Additionally, our design had two options for when a notification popped up telling you have been scrolling for too long or too frequently: “work on this” and “this is okay”. Those two options were incredibly unclear on what they would do, and one of our participants was especially confused if he would be taken to the main app or would remain free to scroll instagram if he clicked either of these buttons. We changed the two options to be “Quit Instagram” and “snooze”, with the first button highlighted and the second dimmed. The choices here are far more clear and try to push the user towards quitting the negative task that they are currently doing, which is precisely our overarching goal. The "alert" nature of the notification was also selected to be entirely interruptive - you have to choose an option from the provided text and cannot simply swipe the notification away.
 </ProjectImagesBlock>
-
 ## Resulting Design
 
 A user's journey in our app centers around two tasks: identifying a problematic behavior to improve on (a Journey), and actively breaking this habit when it comes up.
-
+{/*
 ### Onboarding
 <ProjectImagesBlock
     images={[
@@ -308,8 +313,8 @@ A user's journey in our app centers around two tasks: identifying a problematic 
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
-
-### Task 1: Finding journeys
+*/}
+### Task 1: Finding Journeys
 The user receives an array of potential journeys, as well as an array of current statistics about their phone usage. They have the option to create a new journey or to select a suggested on (as prompted by automated analysis of metadata). Within MindShift, the user can monitor and view their usage statistics and feedback on how much they’ve improved using the journey settings, which is focused on in Task 2.
 <ProjectImagesBlock
     images={[
