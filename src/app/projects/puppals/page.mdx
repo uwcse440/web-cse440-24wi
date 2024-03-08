@@ -65,12 +65,19 @@ import friend from "public/images/projects/puppals/post/friend.png";
 import location from "public/images/projects/puppals/post/location.png";
 import filter from "public/images/projects/puppals/post/filter.png";
 import tracking from "public/images/projects/puppals/post/tracking.png";
-import acc_1 from "public/images/projects/puppals/post/acc_1.png";
-import acc_2 from "public/images/projects/puppals/post/acc_2.png";
-import logo from "public/images/projects/puppals/post/logo.png";
-import privacy_1 from "public/images/projects/puppals/post/privacy_1.png";
-import privacy_2 from "public/images/projects/puppals/post/privacy_2.png";
+import acc from "public/images/projects/puppals/post/acc.png";
+import choco from "public/images/projects/puppals/post/choco.png";
+import privacy from "public/images/projects/puppals/post/privacy.png";
 import dogs from "public/images/projects/puppals/post/dogs.png";
+import navigation_bar from "public/images/projects/puppals/post/navigation_bar.png";
+import socialization_1 from "public/images/projects/puppals/post/socialization_1.png";
+import socialization_2 from "public/images/projects/puppals/post/socialization_2.png";
+import tracking_1 from "public/images/projects/puppals/post/tracking_1.png";
+import tracking_2 from "public/images/projects/puppals/post/tracking_2.png";
+import tracking_3 from "public/images/projects/puppals/post/tracking_3.png";
+import tracking_4 from "public/images/projects/puppals/post/tracking_4.png";
+import paper from "public/images/projects/puppals/post/paper.png";
+import collar from "public/images/projects/puppals/post/collar.png";
 
 # PupPals
 
@@ -125,13 +132,13 @@ import dogs from "public/images/projects/puppals/post/dogs.png";
 
 <ProjectImageBlock
     image={{
-        src: logo,
-        alt: "Black and white logo of dog looking up. This is the icon of for PupPals."
+        src: choco,
+        alt: "Paper prototype of our collar wearable." 
     }}
     caption={
-        "This is our logo. Our goal is to connect our furry friends together!"
+        "Collar Wearable Paper Prototype."
     }
-    width={6}
+    width={4}
     maxHeight={"400px"}
 >
 
@@ -166,7 +173,7 @@ interviews, we aimed to gain a better understanding of current practices in pet
 care and identify opportunities to improve the welfare of dogs. 
 
 
-### All dog breeds have different needs
+### All Dog Breeds Have Different Needs
 
 After conducting our three interviews, a prevalent theme across the participants was 
 that all dogs have individual needs, with variance across different breeds, ages, and 
@@ -178,15 +185,15 @@ care and socialization. Therefore, our design must accommodate and prioritize fl
 when taking into consideration the different temperaments, energy levels, disability and 
 health considerations, and socialization needs. 
 
-### Proper socialization should be enforced at a young age
+### Proper Socialization Should Be Enforced at a Young Age
 
 <ProjectImageBlock
     image={{
         src: dogs,
-        alt: "Puppies running around",
+        alt: "Dog of each of our participants.",
     }}
     caption={
-        "Cute dogs"
+        "Design Research Participant Dogs."
     }
     width={6}
     maxHeight={"400px"}
@@ -203,7 +210,7 @@ positive social interactions for dogs from a young age.
 
 </ProjectImageBlock>
 
-### Fostering community among dog owners
+### Fostering Community Among Dog Owners
 
 Insights from participants highlighted a strong desire among dog owners to build a healthy 
 and supportive community where they can connect with others who share similar interests and 
@@ -228,22 +235,16 @@ owners with all ranges of expertise, as well as refine our two critical task pat
 Through the feedback and critique received through these tests, we finalized the paper 
 prototype. We then translated the paper prototype into a digital mockup, bringing PupPals to life.
 
-### Mobile application should specify privacy terms and settings
+### Specify Privacy Terms and Settings
 
-<ProjectImagesBlock
-    images={[
+<ProjectImageBlock
+    image={
         {
-            src: privacy_1,
-            alt: "Describes privacy terms of PupPals and what information is being collected.",
-        },
-        {
-            src: privacy_2,
-            alt: "Describes socialization preferences for PupPals.",
-        },
-    ]}
-    direction={"row"}
+            src: privacy,
+            alt: "Describes privacy terms of PupPals and what information is being collected (left), Screen with settings for socialization preferences (right).",
+        }}
     caption={
-        "Privacy terms (left), Socialization Preferences (right)."
+        "Privacy Terms (left), Socialization Preferences (right)."
     }
     width={6}
     maxHeight={"400px"}
@@ -255,21 +256,21 @@ social aspects of the app. This can deter users from the PupPals app. Therefore,
 screen about the app’s privacy terms and the agreement will provide transparency about how 
 the app uses the users’ information. 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 import home from "public/images/projects/puppals/post/home.png";
 
-### Mobile application needs a bottom navigation bar
+### Include a Bottom Navigation Bar
 
 <ProjectImageBlock
     image={{
-        src: home,
-        alt: "Home screen with two critical task pathways of socialization and location tracker.",
+        src: navigation_bar,
+        alt: "Home page of PupPals (left), Socialization Task Pathway (right)",
     }}
     caption={
-        "Home page of PupPals."
+        "Home Page (left), Socialization Page of PupPals (right)."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
@@ -282,22 +283,15 @@ pages easily and quickly.
 
 </ProjectImageBlock>
 
-### Mobile application should implement more accessibility features
+### Implement More Accessibility Features
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: acc_1,
-            alt: "Screen where owners can send messages and pictures, can also use voice-to-text feature.",
-        },
-        {
-            src: acc_2,
-            alt: "Screen where owners can report nearby hazards and dangers, can also use voice-to-text feature.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+            src: acc,
+            alt: "Screen where owners can send messages and pictures, can also use voice-to-text feature (left), Screen for reporting hazards with user location and desription (right).",
+        }}
     caption={
-        "Chat feature between owners (left), Reporting Nearby Hazards (right)."
+        "Chat Feature Between Owners (left), Reporting Nearby Hazards (right)."
     }
     width={6}
     maxHeight={"400px"}
@@ -309,32 +303,62 @@ not have any barriers to physically typing messages on a mobile keyboard and rea
 received from other owners. This would make a key feature of the app very difficult for many users, 
 so we updated our design to include speech-to-text and text-to-speech features in the chat home.
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 ## Resulting Design
 
-Our final design for PupPals involves both a physical collar wearable and a 
-digital mobile application. Our critical aspects of the design follow the primary 
-tasks of finding appropriate dogs to play with and finding a safe and social walking 
-route using location tracking.
+<ProjectImageBlock
+    image={{
+            src: paper,
+            alt: "Overview of Paper Prototype for Mobile Application with most important pages",
+        }}
+    caption={
+        "Overview of Paper Prototype for Mobile Application."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
 
+Our final design for PupPals involves both a physical collar wearable and a
+digital mobile application. We transitioned our paper prototype into a digital mockup using the design
+tool, Figma. Our critical aspects of the design follow the primary tasks of finding appropriate dogs to
+play with and finding a safe and social walking route using location tracking. 
+
+</ProjectImageBlock>
+
+### Collar Wearable
+<ProjectImageBlock
+    image={{
+            src: collar,
+            alt: "Digtal Mockup for Collar Wearable with lights.",
+        }}
+    caption={
+        "Light-up Collar Wearable."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Our digital mockup of the collar wearable features a Bluetooth button to sync the collar to the user’s device. 
+The collar also has a light-up component which changes based on the dog’s location and safety.
+
+</ProjectImageBlock>
 
 ### Onboarding Process
 
 <ProjectImageBlock
     image={{
         src: onboarding,
-        alt: "Opening screen features a log-in or sign-up option.",
+        alt: "Opening screen features a log-in or sign-up option (left), Screen for the users to log in with their username and password if they already have the account.",
     }}
     caption={
-        "Opening screen of the PupPals mobile app."
+        "Opening Page (left), Log In (right)."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
-When users open the PupPals mobile app, they will create an account (if this is their first time using the app), 
-otherwise sign in.
+When users open the PupPals mobile app, they will create an account (if this is their first time using the app), otherwise log in.
 
 </ProjectImageBlock>
 
@@ -344,7 +368,7 @@ otherwise sign in.
         alt: "Screen describing the privacy terms of PupPals and what information is being collected (left), Screen breaking down the step-by-step instructions for connecting the collar wearable to the PupPals app (right).",
     }}
     caption={
-        "Privacy terms (left) and Connecting Device to Collar Wearable (right)"
+        "Privacy Terms (left), Connecting Device to Collar Wearable (right)."
     }
     width={6}
     maxHeight={"400px"}
@@ -363,7 +387,7 @@ They will then connect the collar wearable device with the app via Bluetooth.
         alt: "Screen describing one of the socialization settings of PupPals (left), Screen for editing or adding a new dog’s profile (right).",
     }}
     caption={
-        "Settings page (left) and dog’s profile page (right)."
+        "Settings Page (left), Dog’s Profile Page (right)."
     }
     width={6}
     maxHeight={"400px"}
@@ -375,16 +399,16 @@ which can be edited later on. Lastly, users create a profile for their dog and r
 
 </ProjectImageBlock>
 
-### Task 1: Socialization preferences
+### Task 1: Finding Appropriate Dogs to Play With
 <ProjectImageBlock
     image={{
-        src: home,
-        alt: "Home screen with two critical task pathways of socialization and location tracker.",
+        src: socialization_1,
+        alt: "Home screen with two critical task pathways of socialization and location tracker (left), Screen for starting the socialization, which is by finding nearby friends (right).",
     }}
     caption={
-        "Home page of PupPals."
+        "Home Page of PupPals (left), Socialization Main Page (right)."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
@@ -395,13 +419,13 @@ Users will be prompted to the home page, where the users will click the “Socia
 
 <ProjectImageBlock
     image={{
-        src: task1,
-        alt: "Screen for inserting the dog’s age (left), Screen for inserting the dog’s personality (middle), Screen for changing/inserting the location (right).",
+        src: socialization_2,
+        alt: "Screen for inserting the dog’s age (left), Screen for changing/inserting the location (right).",
     }}
     caption={
-        "Age preferences (left), Personality Preferences (middle), and Location (right)."
+        "Age Preferences (left), Location (right)."
     }
-    width={9}
+    width={6}
     maxHeight={"400px"}
 >
 
@@ -411,40 +435,36 @@ find potential playmates who are local to them.
 
 </ProjectImageBlock>
 
-### Task 1: Requesting Friends and Arranging Meetups
-
-Based on the users’ location, profiles of nearby dogs are generated. The users can scroll through 
-each profile and determine potential matches for their dogs to play with. If the users find a playmate 
-they would like to connect with, they can click the “Send Request” button.
-
 <ProjectImageBlock
     image={{
         src: friend,
         alt: "Screen to find potential friend matches (left), Screen displaying the owner’s friends list (right).",
     }}
     caption={
-        "Potential friends (left) and Friends list (right)."
+        "Potential Friends (left), Friends List (right)."
     }
     width={6}
     maxHeight={"400px"}
 >
-
+Based on the user location, profiles of nearby dogs are generated. The users can scroll through 
+each profile and determine potential matches for their dogs to play with. If the users find a playmate 
+they would like to connect with, they can click the “Send Request” button.
 When a friend request has been accepted, users can view their friends list and use the chat feature to arrange meetups. 
 
 
 </ProjectImageBlock>
 
-### Task 2: Finding a safe and social walking route using location services
+### Task 2: Finding a Safe and Social Walking Route Using Location Services
 
 <ProjectImageBlock
     image={{
-        src: home,
-        alt: "Home screen with two critical task pathways of socialization and location tracker.",
+        src: tracking_1,
+        alt: "Home screen with two critical task pathways of socialization and location tracker (left), Screen with features of location tracker pathway (right).",
     }}
     caption={
-        "Home page of PupPals."
+        "Home Page of PupPals (left), Location Tracking Main Page (right)."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
@@ -454,13 +474,13 @@ Through the home page, users will click the “Location Tracker” button.
 
 <ProjectImageBlock
     image={{
-        src: location,
-        alt: "Screen showing the location tracking features on the PupPals app (left), Screen for finding nearby walking routes (middle), Screen displaying local walking routes based on the nearest location (right).",
+        src: tracking_2,
+        alt: "Screen showing the location tracking features on the PupPals app (left), Screen displaying local walking routes based on the nearest location (right).",
     }}
     caption={
-        "Location features (left), Location (middle), Walking routes based on nearest location (right)."
+        "Location Features (left), Walking Routes Based on Nearest Location (right)."
     }
-    width={9}
+    width={6}
     maxHeight={"400px"}
 >
 
@@ -471,17 +491,17 @@ zip code or city to find local dog-friendly walking routes, and the users will b
 
 <ProjectImageBlock
     image={{
-        src: filter,
-        alt: "Screen for filtering the walking routes for the dog.",
+        src: tracking_3,
+        alt: "Screen for entering zip code or nearest city (left), Screen for filtering the walking routes for the dog (right).",
     }}
     caption={
-        "Filter Routes page."
+        "Enter Zip Code (left), Filter Routes Page (right)."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
-Based on users’ zip code, the users can use the filter option to narrow down the distance 
+Based on the user zip code, owners can use the filter option to narrow down the distance 
 and type of location they would like to visit (dog park, park, walking route). Locations 
 will be generated according to the noted preferences.
 
@@ -490,19 +510,20 @@ will be generated according to the noted preferences.
 
 <ProjectImageBlock
     image={{
-        src: tracking,
-        alt: "Screen for keeping track of the dog and reporting hazards.",
+        src: tracking_4,
+        alt: "Screen for reporting hazards with user location and desription (left), Screen for tracking dog's location (right).",
     }}
     caption={
-        "Track dog and report hazard page."
+        "Report Hazard Page (left), Track Dog's Location (right)."
     }
-    width={3}
+    width={6}
     maxHeight={"400px"}
 >
 
-Based on users’ zip code, the users can use the filter option to narrow down the distance 
-and type of location they would like to visit (dog park, park, walking route). Locations 
-will be generated according to the noted preferences.
+The tracking feature allows users to view their dog’s location in real-time.
+The outlined area will reflect the light-up component on the collar wearable.
+Additionally, users can use the report button to notify other owners of any hazards in the area
+– if the report feature is utilized, this will reflect a red light on the collar wearable. 
 
 
 </ProjectImageBlock>

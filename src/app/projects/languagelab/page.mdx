@@ -65,8 +65,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 import duolingo from "public/images/projects/languagelab/post/duolingo.png";
 import peopleTalking from "public/images/projects/languagelab/post/people_talking.jpg";
-import fullMockUp1 from "public/images/projects/languagelab/post/fullMockUp1.png";
-import fullMockUp2 from "public/images/projects/languagelab/post/fullMockUp2.png";
+import finalMockup from "public/images/projects/languagelab/post/finalMockup.png";
 import task1 from "public/images/projects/languagelab/post/taskOne.png";
 import task2 from "public/images/projects/languagelab/post/taskTwo.png";
 import finalProto from "public/images/projects/languagelab/post/finalPrototype.png";
@@ -142,7 +141,11 @@ import signUp from "public/images/projects/languagelab/post/signup.png";
     While language apps offer some assistance, their capabilities are inherently constrained, leaving learners to
     navigate the complexities of language acquisition largely on their own. In conclusion, despite the hurdles and
     limitations, the journey of learning a new language remains an enriching and worthwhile endeavor for those committed
-    to expanding their linguistic horizons.
+    to expanding their linguistic horizons. Our application provides a quick and easy process for the user to get
+    feedback on their conversational skills. We do this by allowing the user to record their conversations and then
+    providing feedback on their conversation. Then with the newly suggested phrases or words, they can enter our
+    practice mode and practice those newly learned things allowing the user to better their language proficiency
+    through conversation, feedback, and practice.
 
 </ProjectImageBlock>
 
@@ -177,15 +180,19 @@ mention that as a reason why they aren’t confident in speaking in different la
                 src: duolingo,
                 alt: "Image of a sad Duolingo bird.",
     }}
-    width={6}
-    maxHeight={"400px"}
+     caption={
+         "Duolingo, a popular language app."
+     }
+     width={3}
+     maxHeight={"400px"}
 >
     Some of our participants mentioned that they couldn’t commit the time to use language apps as they felt that they
     were too busy to commit a portion of their time to learning something that they weren’t required to learn.
-    This could be explored further and could help us design our app to seem less of a burden to use. One of our
-    participants mentioned that having a conversation with a fluent person to learn would be embarrassing. This might
-    stop someone from using our idea since it focuses on giving feedback in the conversation between two people.
-    We could look into the idea of providing a mode that allows a person to practice conversations by themselves.
+    As an example, Duolingo would make users commit to a lesson, or else their progress would be lost. This would be something
+    to take into consideration when developing our design. One of our participants mentioned that having a
+    conversation with a fluent person to learn would be embarrassing. This might stop someone from using our idea since
+    it focuses on giving feedback in the conversation between two people. We could look into the idea of providing a
+    mode that allows a person to practice conversations by themselves.
 </ProjectImageBlock>
 
 
@@ -208,15 +215,13 @@ might find the privacy of our design to be dubious if not enough work is put in.
     caption={
         "Final prototype of our design."
     }
-    width={12}
-    maxHeight={"400px"}
+    width={6}
+    maxHeight={"800px"}
 >
-</ProjectImageBlock>
-
 In our iterative design process, we decided to follow the following tasks:
 
 * Task 1: To practice communicating ideas or questions.
-* Task 2: To practice pronunciation.
+* Task 2: To practice pronunciation of mispronounced words.
 
 Our initial designs included the bare minimum of what we had as we wanted to see what participants expected when
 they tried to access a feature that wasn’t developed. Before that, however, we did a heuristic evaluation and realized
@@ -226,6 +231,8 @@ usability tests to test the “feel” of the design. At each test, we slowly bu
 we received from our participants, which developed the current version of our design. Finally, we moved from the paper
 prototype to the digitized version of it as we finalized what our design looks like and created the color palette
 for the design.
+</ProjectImageBlock>
+
 
 ### Recording Page and Recording Confirmation
 
@@ -235,10 +242,10 @@ for the design.
         alt: "An image of a pop-up, with a question if the user plans to record.",
     }}
     caption={
-        "The confirmation pop-up that was created in light of the critique."
+        "The confirmation pop-up that was created in light of critique."
     }
-    width={6}
-    maxHeight={"400px"}
+    width={4}
+    maxHeight={"300px"}
 >
 
 During our usability testing done on the paper prototype, users expressed concern that there wasn't a way to avoid an
@@ -249,19 +256,23 @@ conversation they are about to have.
 </ProjectImageBlock>
 
 ### Converting Pop-Up into Full pages
-
-<ProjectImageBlock
-    image={{
-        src: popup1,
-        alt: "Image of a pop-up before modification.",
-    }}
-    caption={
-        "Before-"
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
+<ProjectImagesBlock
+    images={[
+        {
+            src: popup1,
+            alt: "Image of a pop-up before modification.",
+            caption: "Before",
+        },
+        {
+            src: popup2,
+            alt: "Image of screen created from pop-up",
+            caption: "After",
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"2000px"}
+></ProjectImagesBlock>
 During usability testing, user's first few clicks would create various pop-ups, for example we had a recent
 conversations pop-up on the front of our home screen above the recording button where we would show user's their last
 three conversations, this was removed due to feeling redundant as the bottom navigation bar already allowed user's to
@@ -272,21 +283,6 @@ conveying ideas was changed into a screen in the insights page where users are a
 had originally intended to say in their native language in order to view possible translations. This originally was a
 pop-up but was changed into a screen due to the amount of interaction, as it was too much for a pop-up to accomplish.
 
-</ProjectImageBlock>
-
-<ProjectImageBlock
-    image={{
-        src: popup2,
-        alt: "Image of screen created from pop-up",
-    }}
-    caption={
-        "After-"
-    }
-    width={6}
-    maxHeight={"400px"}
->
-</ProjectImageBlock>
-
 ### Accessibility for New Learners
 
 <ProjectImageBlock
@@ -295,12 +291,11 @@ pop-up but was changed into a screen due to the amount of interaction, as it was
         alt: "An image of a sign up page.",
     }}
     caption={
-        "A language option was added at the sign-up page for users to select the language they feel most comfortable with"
+        "A language option was added at the sign-up page for users to select the language they feel most comfortable with."
     }
-    width={6}
-    maxHeight={"400px"}
+    width={4}
+    maxHeight={"500px"}
 >
-
 A suggestion brought up during the transition from our paper prototype to our digital mockup was adding the ability to
 have users set the default language to be their native language when the user is creating their account for the first
 time and having a section in the settings where users can go and change the default language used by the application.
@@ -312,27 +307,12 @@ and has yet to learn to read in English.
 
 ## Resulting Design
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: fullMockUp1,
-            alt: "Image of the first half of our digital mockup.",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        ""
-    }
-    width={12}
-    maxHeight={"400px"}
-></ProjectImagesBlock>
-
 <ProjectImageBlock
     image={
         {
-            src: fullMockUp2,
-            alt: "Image of the second half of our digital mockup.",
-            caption: "Two images displaying the full interactive design mockup"
+            src: finalMockup,
+            alt: "Image of the digital mockup.",
+            caption: "The overall digital mock-up design."
         }
     }
     width={8}
@@ -350,7 +330,7 @@ Below is our two tasks we focused on in the design of our project:
 
 </ProjectImageBlock>
 
-### Task 1: To practice communicating their ideas or questions
+### Task 1: To practice communicating ideas or questions.
 
 An example: Michael is shopping for groceries and stops a worker to ask about an item he is searching for. Although he
 is not fluent in conversational English, he can communicate his intentions after multiple tries and a lot of hand
@@ -361,8 +341,8 @@ for next time. The digital mockup illustrates the process of fulfilling this tas
     image={
         {
             src: task1,
-            alt: "Image of five screens that complete our first task.",
-            caption: "Task 1 flow process"
+            alt: "Image of five screens that complete the first task.",
+            caption: "Task 1 flow process."
         }
     }
     direction={"column"}
@@ -383,7 +363,7 @@ When the user clicks on one of the issues, if the issue is one about the user ha
 or questions then feedback for that issue is shown. Using the feedback shown the user can complete task 1 and use the
 feedback to practice how to better communicate their ideas or questions.
 
-### Task 2: To practice their pronounciation
+### Task 2: To practice pronunciation of mispronounced words.
 
 An example: Patricia is stopped by a stranger asking for directions. Although she is able to communicate the correct
 directions, it takes a while because the stranger does not fully understand some of the words she says. By having
@@ -396,7 +376,7 @@ the following manner:
         {
             src: task2,
             alt: "Image of five screens that complete our second task.",
-            caption: "Task 2 flow process"
+            caption: "Task 2 flow process."
         }
     }
     direction={"column"}
