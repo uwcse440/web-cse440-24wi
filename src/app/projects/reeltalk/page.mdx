@@ -128,20 +128,6 @@ Share the feels! Capture your movie musings in real-time and spark deep discussi
 
 ## Problem and Design Overview
 
-Navigating diverse work schedules and lifestyles among friends/family, including students,
-full-time workers, parents, and those balancing multiple roles, poses a challenge in finding
-time to connect over movies. Despite the desire to share this experience, the limited time
-available often results in gaps in movie recall, prompting the need to spend valuable
-conversation time looking up details or feigning familiarity. To enhance the
-movie-discussion experience, there's a shared aspiration to streamline this process and
-create a space that accommodates diverse schedules, fostering meaningful connections without
-sacrificing the enjoyment of shared cinematic experiences.
-
-Our innovative design seamlessly integrates smartphones and smartwatches, accommodating both
-home and theater environments. Users can record notes vocally, initiated by holding the
-screen on the watch, which are then transcribed and editable via a connected app,
-facilitating concise conversation references.
-
 {/* A ProjectImageBlock displays text with an associated image.
   * - The image is configured through properties on the opening `ProjectImageBlock` tag.
   * - Text is placed within the opening and closing `ProjectImageBlock` tags.
@@ -169,6 +155,21 @@ facilitating concise conversation references.
     }
     width={6}
 >
+
+    Navigating diverse work schedules and lifestyles among friends/family, including students,
+    full-time workers, parents, and those balancing multiple roles, poses a challenge in finding
+    time to connect over movies. Despite the desire to share this experience, the limited time
+    available often results in gaps in movie recall, prompting the need to spend valuable
+    conversation time looking up details or feigning familiarity. To enhance the
+    movie-discussion experience, there's a shared aspiration to streamline this process and
+    create a space that accommodates diverse schedules, fostering meaningful connections without
+    sacrificing the enjoyment of shared cinematic experiences.
+
+    Our innovative design seamlessly integrates smartphones and smartwatches, accommodating both
+    home and theater environments. Users can record notes vocally, initiated by holding the
+    screen on the watch, which are then transcribed and editable via a connected app,
+    facilitating concise conversation references.
+
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
@@ -192,16 +193,6 @@ us deeper insight into how they accomplished tasks.
 
 ### Movie-Watchers Value Recall!
 
-All participants ended up trying to remember how they felt during memorable moments in
-post-movie discussions. Specifically, this took the form of the participants in the couple
-creating statements like “When Barbie cried, I cried. Did you feel that?” Then the other
-participant would then respond with how they remembered that moment, or in this case more
-interestingly, “When was that again?” Or similarly, moments like “What was that song I
-liked again?” This often led to Googling, debate, or skipping over these moments in
-discussion entirely. This type of interaction gave us insight into the problem of needing
-a way to record your experiences and thoughts while you watch instead of afterwards, and
-inspired our design for directly transcribing your notes into the app for later use.
-
 {/* maxHeight={"400px"} */}
 <ProjectImageBlock
     image={{
@@ -213,15 +204,19 @@ inspired our design for directly transcribing your notes into the app for later 
     }
     width={6}
 >
+    All participants ended up trying to remember how they felt during memorable moments in
+    post-movie discussions. Specifically, this took the form of the participants in the couple
+    creating statements like “When Barbie cried, I cried. Did you feel that?” Then the other
+    participant would then respond with how they remembered that moment, or in this case more
+    interestingly, “When was that again?” Or similarly, moments like “What was that song I
+    liked again?” This often led to Googling, debate, or skipping over these moments in
+    discussion entirely. This type of interaction gave us insight into the problem of needing
+    a way to record your experiences and thoughts while you watch instead of afterwards, and
+    inspired our design for directly transcribing your notes into the app for later use.
+
 </ProjectImageBlock>
 
 ### There is a Movie Discussion Flow
-One important insight we gained in our design research was the distinction in phases between
-how participants create their notes (either mentally or physically) , how they conceptualize
-and summarize the notes, and finally how they discuss them with others. This was a consistent
-pattern between all participants that emerged, and inspired our app flow of Record -> Summarize
--> Review.
-
 
 {/* maxHeight={"400px"} */}
 <ProjectImageBlock
@@ -234,19 +229,15 @@ pattern between all participants that emerged, and inspired our app flow of Reco
     }
     width={6}
 >
+    One important insight we gained in our design research was the distinction in phases between
+    how participants create their notes (either mentally or physically) , how they conceptualize
+    and summarize the notes, and finally how they discuss them with others. This was a consistent
+    pattern between all participants that emerged, and inspired our app flow of Record -> Summarize
+    -> Review.
+
 </ProjectImageBlock>
 
 ### Taking Notes is Awkward
-
-From our interview results it quickly became clear that taking notes in a theater or at home
-with your phone, or writing down paper notes with friends around is uncommon and awkward
-especially if others are around. Additionally, the avid and casual movie viewers stated that
-looking down to take notes interrupts the experience of watching a movie, and can lead to missing
-what is currently happening. This insight helped us to decide on a smartwatch interface to deliver
-our note recording/summarizing functionality as seamlessly as possible. Specifically, this design
-is intended to be as if you are whispering your thoughts to a friend!
-
-
 {/* maxHeight={"400px"} */}
 <ProjectImageBlock
     image={{
@@ -258,27 +249,19 @@ is intended to be as if you are whispering your thoughts to a friend!
     }
     width={6}
 >
+
+    From our interview results it quickly became clear that taking notes in a theater or at home
+    with your phone, or writing down paper notes with friends around is uncommon and awkward
+    especially if others are around. Additionally, the avid and casual movie viewers stated that
+    looking down to take notes interrupts the experience of watching a movie, and can lead to missing
+    what is currently happening. This insight helped us to decide on a smartwatch interface to deliver
+    our note recording/summarizing functionality as seamlessly as possible. Specifically, this design
+    is intended to be as if you are whispering your thoughts to a friend!
+
 </ProjectImageBlock>
 
 ## Iterative Design Process and Key Insights
 
-Our design focused on two tasks: highlighting key points of a movie during viewing and
-summarizing notes into an easily accessible guide for leading conversations about memorable
-movie moments. We created paper prototypes for a smartwatch application and a phone application,
-designed to work together. These prototypes underwent multiple rounds of inspection, heuristic
-evaluation, and usability testing with students in CSE 440, who were instructed to imagine
-themselves in a movie theater. We chose these participants because our initial research
-participants were unavailable, and students in CSE 440 were more accessible. We realize that
-this environment isn't completely accurate compared to that of an actual movie theater. However,
-they were not willing to commit time to go to a movie theater and watch an entire movie during
-testing, hence being asked to “imagine.” Also, our paper prototype compared to a digital
-smartwatch screen wouldn't be visible in a dark movie theater. Overall, our choice of participants
-and their environment was based on convenience within a limited time frame, but our process still
-provided valuable insights into user preferences and needs while addressing the challenge of
-participant availability.
-
-
-{/* maxHeight={"400px"} */}
 <ProjectImageBlock
     image={{
         src: textimage6, //
@@ -288,22 +271,28 @@ participant availability.
         "ReelTalk's paper prototype"
     }
     width={6}
+    maxHeight={400}
 >
+
+    Our design focused on two tasks: highlighting key points of a movie during viewing and
+    summarizing notes into an easily accessible guide for leading conversations about memorable
+    movie moments. We created paper prototypes for a smartwatch application and a phone application,
+    designed to work together. These prototypes underwent multiple rounds of inspection, heuristic
+    evaluation, and usability testing with students in CSE 440, who were instructed to imagine
+    themselves in a movie theater. We chose these participants because our initial research
+    participants were unavailable, and students in CSE 440 were more accessible. We realize that
+    this environment isn't completely accurate compared to that of an actual movie theater. However,
+    they were not willing to commit time to go to a movie theater and watch an entire movie during
+    testing, hence being asked to “imagine.” Also, our paper prototype compared to a digital
+    smartwatch screen wouldn't be visible in a dark movie theater. Overall, our choice of participants
+    and their environment was based on convenience within a limited time frame, but our process still
+    provided valuable insights into user preferences and needs while addressing the challenge of
+    participant availability.
+
 </ProjectImageBlock>
 
 
 ### Lacking Key Details for App Utilization
-
-During user testing, it became evident that participants faced challenges in utilizing the app
-due to incomplete information, impeding their navigation and task completion. Users voiced
-confusion regarding certain features and their functionalities, prompting a need for clearer
-guidance. For example, one participant asked about what the purpose of saving notes was after
-recording an audio note. In response, we refined the design by integrating comprehensive
-context-based explanations and instructions across the interface, along with optional help
-buttons, aiming to equip users with the essential information needed for effective interaction.
-This iterative process, driven by user feedback, sought to bridge the information gap and
-enhance overall user experience by facilitating informed navigation and utilization of the app's
-features.
 
 {/* maxHeight={"400px"} */}
 <ProjectImageBlock
@@ -314,20 +303,24 @@ features.
     caption={
         ""
     }
-    width={6}
+    width={7}
+    maxHeight={600}
 >
+
+    During user testing, it became evident that participants faced challenges in utilizing the app
+    due to incomplete information, impeding their navigation and task completion. Users voiced
+    confusion regarding certain features and their functionalities, prompting a need for clearer
+    guidance. For example, one participant asked about what the purpose of saving notes was after
+    recording an audio note. In response, we refined the design by integrating comprehensive
+    context-based explanations and instructions across the interface, along with optional help
+    buttons, aiming to equip users with the essential information needed for effective interaction.
+    This iterative process, driven by user feedback, sought to bridge the information gap and
+    enhance overall user experience by facilitating informed navigation and utilization of the app's
+    features.
+
 </ProjectImageBlock>
 
 ### Designing for Fluid Engagement
-
-User testing unveiled significant navigation hurdles and unpredictable user behavior, revealing
-a mismatch between expected interaction flows and actual user experiences. Participants grappled
-with the absence of intuitive cues, such back buttons or help buttons, and expressed frustration
-with the linear design structure. Consequently, we introduced these features to enhance clarity
-and alleviate the steep learning curve. Furthermore, we pivoted from a rigid, linear layout to a
-more adaptable framework to accommodate non-linear interactions, informed by specific participant
-feedback. These iterative adjustments aimed to align the design with user expectations, ensuring
-a smoother and more engaging user experience.
 
 {/* maxHeight={"400px"} */}
 <ProjectImageBlock
@@ -339,26 +332,21 @@ a smoother and more engaging user experience.
         ""
     }
     width={6}
+    maxHeight={600}
 >
+
+    User testing unveiled significant navigation hurdles and unpredictable user behavior, revealing
+    a mismatch between expected interaction flows and actual user experiences. Participants grappled
+    with the absence of intuitive cues, such back buttons or help buttons, and expressed frustration
+    with the linear design structure. Consequently, we introduced these features to enhance clarity
+    and alleviate the steep learning curve. Furthermore, we pivoted from a rigid, linear layout to a
+    more adaptable framework to accommodate non-linear interactions, informed by specific participant
+    feedback. These iterative adjustments aimed to align the design with user expectations, ensuring
+    a smoother and more engaging user experience.
+
 </ProjectImageBlock>
 
 ### Fixing a Confusing User Flow Between SmartWatch and Phone
-
-One unique challenge of our design was that it consists of two parts: the smartwatch app and
-the phone app. This meant that there needed to be clear indications on when to use each part of
-the design, and when to switch over between the two devices. For our first usability test, we
-were so clear-set on a singular flow for our design that we gave only the smartwatch to the
-participant at first, then gave them the smartphone part of the prototype later. Even with this
-mistake, with no indications on when information got sent over from the smartwatch to the phone
-app, the participant told us that it was unclear when to use each part of the design, and
-expressed surprise that there was a phone app that goes with the smartwatch. With that comment,
-we improved our usability testing structure and for future tests, we gave the participant both
-the smartwatch and the phone at the start. We were then able to improve upon which parts of the
-task in particular was difficult to understand from a user's perspective. To improve our design,
-we made it clear that the phone wasn't supposed to be used at the start by including a screen for
-the base state. We also added system dialogue to clarify when information gets sent from the
-smartwatch to the phone app, and added popups on the phone app to indicate when it was time to
-switch to the phone app.
 
 {/* maxHeight={"400px"} */}
 <ProjectImageBlock
@@ -370,7 +358,24 @@ switch to the phone app.
         ""
     }
     width={6}
+    maxHeight={"600px"}
 >
+    One unique challenge of our design was that it consists of two parts: the smartwatch app and
+    the phone app. This meant that there needed to be clear indications on when to use each part of
+    the design, and when to switch over between the two devices. For our first usability test, we
+    were so clear-set on a singular flow for our design that we gave only the smartwatch to the
+    participant at first, then gave them the smartphone part of the prototype later. Even with this
+    mistake, with no indications on when information got sent over from the smartwatch to the phone
+    app, the participant told us that it was unclear when to use each part of the design, and
+    expressed surprise that there was a phone app that goes with the smartwatch. With that comment,
+    we improved our usability testing structure and for future tests, we gave the participant both
+    the smartwatch and the phone at the start. We were then able to improve upon which parts of the
+    task in particular was difficult to understand from a user's perspective. To improve our design,
+    we made it clear that the phone wasn't supposed to be used at the start by including a screen for
+    the base state. We also added system dialogue to clarify when information gets sent from the
+    smartwatch to the phone app, and added popups on the phone app to indicate when it was time to
+    switch to the phone app.
+
 </ProjectImageBlock>
 
 ## Resulting Design
@@ -378,14 +383,6 @@ switch to the phone app.
 The critical aspects of our design facilitate user ease in achieving our two primary tasks:
 highlighting key points of a movie during viewing and summarizing notes into an easily accessible
 guide for leading conversations about memorable movie moments.
-
-### To record an audio note:
-1. On the smartwatch, open ReelTalk and tap the screen to start.
-2. Tap the "x" button to close the prompt to view the instructions.
-3. Tap the "record audio notes" button.
-4. Raise your smartwatch to your mouth, then whisper your note.
-5. Release the screen to stop the recording.
-6. Your recording will get automatically saved.
 
 {/* maxHeight={"400px"} */}
 <ProjectImageBlock
@@ -398,37 +395,55 @@ guide for leading conversations about memorable movie moments.
     }
     width={6}
 >
+
+    ### To record an audio note:
+    1. On the smartwatch, open ReelTalk and tap the screen to start.
+    2. Tap the "x" button to close the prompt to view the instructions.
+    3. Tap the "record audio notes" button.
+    4. Raise your smartwatch to your mouth, then whisper your note.
+    5. Release the screen to stop the recording.
+    6. Your recording will get automatically saved.
+
 </ProjectImageBlock>
 
-### To summarize your audio notes to use in a conversation later:
-Part 1: The smartwatch app
-1. On the home page of the ReelTalk smartwatch app, tap "summarize notes."
-2. Select the checkboxes of the audio notes you want to summarize.
-3. Scroll down, then hit the "submit" button.
-4. You will receive a prompt on your screen when your notes finish getting summarized.
-
-Part 2: The phone app
-1. After you receive the prompt on your smartwatch screen, open your phone app.
-2. In the popup that new notes have been received, type the title of the movie, then hit the "submit" button.
-3. Under your saved movie notes, tap the title of the movie you want to view notes for.
-4. You will see an overview of your summarized notes for a movie.
-5. Tap a blue hyperlink to view the original audio note associated with a summarized insight.
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: textimage11,
-            alt: "Walk through of how to create an audio note summary on the ReelTalk SmartWatch app.",
-            caption: ""
-        },
-        {
-            src: textimage12,
-            alt: "Walk through of how to create an audio note summary on the ReelTalk SmartPhone app.",
-            caption: "Walk through of how to create an audio note summary on the connected ReelTalk SmartWatch and SmartPhone apps"
-        },
-    ]}
-    direction={"column"}
+<ProjectImageBlock
+    image={{
+        src: textimage11, //
+        alt: "Walk through of how to create an audio note summary on the ReelTalk SmartWatch app."
+    }}
+    caption={
+        "Walk through of how to create an audio note summary on the ReelTalk SmartWatch app."
+    }
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"500px"}
 >
-</ProjectImagesBlock>
+
+    ### To summarize your audio notes to use in a conversation later:
+    Part 1: The smartwatch app
+    1. On the home page of the ReelTalk smartwatch app, tap "summarize notes."
+    2. Select the checkboxes of the audio notes you want to summarize.
+    3. Scroll down, then hit the "submit" button.
+    4. You will receive a prompt on your screen when your notes finish getting summarized.
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: textimage12, //
+        alt: "Walk through of how to create an audio note summary on the ReelTalk SmartPhone app, connected to the SmartWatch app."
+    }}
+    caption={
+        "Walk through of how to create an audio note summary on the ReelTalk SmartPhone app, connected to the SmartWatch app."
+    }
+    width={6}
+    maxHeight={"650px"}
+>
+
+    Part 2: The phone app
+    1. After you receive the prompt on your smartwatch screen, open your phone app.
+    2. In the popup that new notes have been received, type the title of the movie, then hit the "submit" button.
+    3. Under your saved movie notes, tap the title of the movie you want to view notes for.
+    4. You will see an overview of your summarized notes for a movie.
+    5. Tap a blue hyperlink to view the original audio note associated with a summarized insight
+
+</ProjectImageBlock>

@@ -61,14 +61,16 @@ import imageTeamPerson3 from "public/images/projects/mindmii/team/Chris.jpg";
 import lateReply from "public/images/projects/mindmii/post/late_reply.jpg";
 
 {/* Design Research Process and Key Insights */}
-import brenda from "public/images/projects/mindmii/post/brenda.png";
-import ava from "public/images/projects/mindmii/post/ava.png";
+import brenda from "public/images/projects/mindmii/post/brenda_1.png";
+import ava from "public/images/projects/mindmii/post/ava_1.png";
 
 {/* Iterative Design Process and Key Insights */}
 import paperWatch from "public/images/projects/mindmii/post/paper_watch.jpg";
 import paperPhone from "public/images/projects/mindmii/post/paper_phone.jpg";
-import paperClock from "public/images/projects/mindmii/post/urgent_paper_clock.png";
-import paperContact from "public/images/projects/mindmii/post/urgent_paper_contact.png";
+import paperClock1 from "public/images/projects/mindmii/post/paper_watch_clock.png";
+import paperClock2 from "public/images/projects/mindmii/post/paper_watch_urgent_clock.png";
+import paperWatchUrgent1 from "public/images/projects/mindmii/post/paper_watch_urgent_1.png";
+import paperWatchUrgent2 from "public/images/projects/mindmii/post/paper_watch_urgent_2.png";
 import aiComposePaper from "public/images/projects/mindmii/post/ai_compose_paper.png";
 import aiComposePaperOriginal from "public/images/projects/mindmii/post/first_ai_compose_paper.jpg";
 import paperReply from "public/images/projects/mindmii/post/paper_watch_reply.png";
@@ -84,7 +86,10 @@ import popup from "public/images/projects/mindmii/post/popup.png";
 import toneCheck from "public/images/projects/mindmii/post/tone_check.png";
 import reply from "public/images/projects/mindmii/post/reply.png";
 import finalResponse from "public/images/projects/mindmii/post/final_response.png";
-import watch from "public/images/projects/mindmii/post/watch.png";
+import watchOne from "public/images/projects/mindmii/post/watch_1.png";
+import watchTwo from "public/images/projects/mindmii/post/watch_2.png";
+import watchThree from "public/images/projects/mindmii/post/watch_3.png";
+import watchFour from "public/images/projects/mindmii/post/watch_4.png";
 
 {/* Placeholders */}
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
@@ -94,7 +99,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 # MindMii
 
-<ProjectSubtitle>Talk calmly, when you're ready</ProjectSubtitle>
+<ProjectSubtitle>Talk calmly, when you're ready.</ProjectSubtitle>
 
 ## Team
 
@@ -150,59 +155,67 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
     maxHeight={"400px"}
 >
 
-#### MindMii helps you to reply to text messages, not simply read them!
+#### MindMii helps you go beyond reading text messages to replying!
 
-Missed communications pose a real problem for people who use smartphones with real costs. It's not just about feeling disconnected; it can seriously strain our relationships. We've all been there, life gets crazy busy, and before we know it, we've left someone hanging without a reply. It's frustrating for both parties and can leave us wondering what went wrong. This issue is exacerbated by the nuanced nature of digital communication, where the ideal timing of our responses is influenced by various factors, including the closeness of our relationships, urgency of the matter, and proximity to each other.
+Missed communication poses a real problem for people who use smartphones with real costs. Not only do people feel disconnected; missed messages can seriously strain relationships. We've all been there, life gets crazy busy, and before we know it, we've left someone hanging without a reply. It is frustrating for both parties and can leave us wondering what went wrong. This issue is exacerbated by the nuanced nature of digital communication. The ideal timing of our responses is influenced by various factors including: the closeness of our relationships, urgency of the matter, and proximity to each other.
 
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Our initial project concept came from an identified need for better texting management and habits amongst our social circles, which particularly impacted those who are neurodivergent, are overbooked, or who manage long-distance or international connections. The goals of our design research were to uncover contributing factors that create this need, while also seeking potential patterns or lack thereof in habits, experience, and needs across different participants. Doing such research can help us to avoid oversights and assumptions as we move forward with our design.
+Our initial project concept came from an identified need within our social circles for better texting management and habits. In these circles those most impacted are people who identify as neurodivergent, are overbooked, or who manage long-distance/international connections. The goals of our design research were to uncover contributing factors that create this need, while also seeking potential patterns in digital communication habits, lived experiences, and needs across different participants. Exploring the communication needs of others helps us to avoid oversights and assumptions as we move forward with our design.
 
 <ProjectImagesBlock
     images={[
         {
             src: brenda,
-            alt: "A cartoon woman with purple hair and a teal t-shirt appears next to two stats bars. Average Response Failure: 55%, Brenda's Response Failure: 65%",
-            caption: "Participants who identified closely with the Brenda persona ",
+            alt: "A cartoon woman with purple hair and a teal t-shirt appears next to some information. 'Brenda, overbooked professional, occupation: corporate strategist, fashionista, gamer. Personality: extroverted, analytical, busy, organized, team player, active, balances safety with risk.'",
+            caption: "Brenda is a high-profile corporate strategist known for navigating the fast-paced world of business with precision.",
         },
         {
             src: ava,
-            alt: "A cartoon person with black hair and a beard wearing a teal jacket appears next to two stats bars. Average Response Failure: 55%, Ava's Response Failure: 80%",
-            caption: "Participants who identified closely with the Ava persona ",
+            alt: "A cartoon person with black hair and a beard wearing a teal jacket appears next to some information.'Ava, nuerodivergent, occupation: hyper focus (bugs? art? bug art?), highly distractable, 'in-person' kind of person. Personality: introverted, creative, busy, messy, independent, active, risky.'",
+            caption: "Ava is a talented graphic designer with a flair for creativity and a diagnosis of ADHD.",
         },
     ]}
     direction={"column"}
-    width={5}
+    width={4}
     maxHeight={"400px"}
 >
 
-We interviewed six individuals struggling with messaging responses to explore their texting habits. Three underwent three-day contextual inquiries, detailing their past month's texting history, while three participated in a three-day anonymous diary study. From this data, we identified two themes which we created two personas to better describe these trends. Join us as we delve into their messaging experiences and reveal our insights.
+We interviewed six individuals struggling with messaging responses to explore their texting habits. Three of these individuals participated in three-day contextual inquiries, detailing their past month's texting history. The other three participated in a three-day anonymous diary study. From the data gathered, we identified distinct themes and created two unique personas to better describe these trends.
 
 - **Brenda:** *Overlooks small tasks amidst a busy schedule.* 
 
 - **Ava:** *Needing messaging support due to neurodivergence.* 
 
-Our research helped us to identify key insights that helped us to frame specific needs participants had and influences that caused issues the participants faced in texting. Three of these key insights were:
+Our research helped us to identify key insights, allowing us to frame specific needs of participants and influences causing issues the participants were facing with instant messaging. Three of these key insights were:
 
-### Response anxiety prevents responses.
+### Response anxiety prevents responses:
 
-Ava has a tendency to find social interactions stressful, which significantly influences the speed of their responses, especially in less-close connections where the social dynamic in less clear. This situation causes Ava to experience messaging response uncertainty, especially when faced with open-ended questions where there are a lot of possible responses.
+Ava has a tendency to find social interactions stressful, which significantly influences the speed of their responses, especially in less-close connections where the social dynamic is less clear. This situation causes Ava to experience messaging response uncertainty, especially when faced with open-ended questions where there are many possible responses.
 
-### Unclear urgency between real life tasks and digital tasks.
+### Balancing "real-life" tasks and digital tasks is a challenge:
 
-Brenda often has overwhelming demands of her schedule. Brenda's daily tasks, including chores, errands, work, school, healthcare, and social engagements, often take precedence, affecting her ability to respond promptly. Ava also struggled to find a balance between the demands of their daily schedule, and how quickly they needed to respond to a given message. 
+Brenda struggles with the overwhelming demands of her busy schedule. Brenda's daily tasks, including chores, errands, work, school, healthcare, and social engagements, often take precedence. These competing priorities affect her ability to respond promptly. Ava also struggled to find a balance between the demands of their daily schedule and prioritizing responses to messages in a timely manner.
 
-### Phone read notifications are often ignored.
+### Previous read-but-unaddressed notifications are often ignored:
 
-Both Ava and Brenda would swipe away message notifications if they appeared at an inconvenient time. This often resulted in forgetting to respond to the message later, as it was now stashed away with a stack of "unread" messages that are hard to sort through.
+Both Ava and Brenda would swipe away message notifications if they appeared at an inconvenient time. This often resulted in forgetting to respond to the message later because the message was now stashed away under a stack of "unread" messages that are diffcult to sort through.
 
 </ProjectImagesBlock>
 
 ### Our rationale in methodology and participant selection 
 
-Our participants included members of The Huskies for Neurodiversity student group comprised of UW students and faculty identifying as neurodivergent or allies, which connect to our project focus. The Huskies for Neurodiversity group has a discord server that a team member is part of, which could possibly facilitate remote recruitment and study of instant messaging practices. We also selected participants amongst our social circles who face overbooking (i.e., those who have overwhelmingly busy schedules and accordingly robust communication needs). This group represents a diverse range of individuals with busy lives, spanning various age groups, and the research team has the greatest access to this group for conducting contextual inquiries. Studying their messaging habits can reveal the impact of overbooked schedules on response times, response rates, and reveal specific circumstances that contribute to forgetting to reply for this population. A third source of participants informs our focus on long-distance or international communications needs. Studying the experiences of people with international connections provides insights into the complexities of cross-cultural communication and how time zone differences contribute to missed responses. Our choice of diary study research aligns with the preferences of the neurodivergent community, allowing a more comfortable way of providing research data, while also ensuring accessibility. We also request participants provide detailed emotional analyses of their interactions in the diary study, ideally providing further context to observed messaging habits. Meanwhile, the contextual inquiry approach was used to observe day-to-day use, more clearly define habits and issues, and uncover areas of the participant experience that might not be self-disclosed. Contextual inquiries also informed the development of personas that can support our iterative design approaches.
+Our participants included members of The Huskies for Neurodiversity student group, a group comprised of UW students and faculty identifying as neurodivergent or allies, which connects to our project focus. The Huskies for Neurodiversity group has a discord server that Drew is a part of, which facilitated them recruiting and studying instant messaging practices in neurodiverse populations in a remote diary study.
+
+Another source of journal study participants was people who have long-distance/international connections, informing us about their unique communication needs. Studying the experiences of people with international connections provides insights into the complexities of cross-cultural communication and how time zone differences contribute to missed responses. This group had the lowest participation in our diary study, despite coordinated recruitment efforts.
+
+Our choice of a diary study aligns with the preferences of the neurodivergent community, allowing a more comfortable way of providing research data that is accessible for those with auditory processing issues. We requested participants provide detailed emotional analyses of their interactions in the diary study, providing further context to observed messaging habits. 
+
+We selected participants from our social circles who face overbooking for contextual inquiry because a member of the research team had greatest access to this group. We define overbooking as those who have overwhelmingly busy schedules and high communication needs for both work and personal lives. This group represents a diverse range of individuals with busy lives spanning various age groups. Studying their messaging habits has potential to reveal the impact of overbooked schedules on response times, response rates, and specific circumstances that contribute to forgetting to reply for this population. 
+
+The contextual inquiry approach was used to observe day-to-day mobile phone use, more clearly define habits, issues, and uncover areas of the participant experience that may not be self-disclosed. Contextual inquiries informed the development of our two personas. These personas supported and informed our iterative design process.
 
 ## Iterative Design Process and Key Insights
 
@@ -219,49 +232,72 @@ Our participants included members of The Huskies for Neurodiversity student grou
     ]}
     direction={"row"}
     caption={
-        "The paper prototype underwent multiple changes during user testing."
+        "The second revision of the paper prototype, including clearer signifiers for notifications and help available earlier in the messaging process."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-We explored solutions based on our research using MindMii, a mobile app and companion watch app. These paper prototypes focus on two main tasks supporting message management including reminders and response. These two tasks are:
+We explored solutions based on our research to develop MindMii, a mobile app and companion watch app. These paper prototypes focus on two main tasks supporting message management that support remembering and responding. These two tasks are:
 
 - **Easily identify and respond to missed messages**
 - **Respond to a message in an appropriate amount of time**
 
 </ProjectImagesBlock>
 
-In addition to the paper prototype of our mobile app and companion watch app, our design process included usability testing and a high-level inspection process that used our findings from paper prototyping and usability testing to identify other issues such as clarity and availability of features in a more general context throughout our design. Finally, a digital mockup was created after the earlier iterations provided context for improvement by iterative revision. 
+The iterative design process we used includes usability testing, heuristic evaluation, and more usability testing. We found the paper prototype very effective in testing to identify many of the most severe issues in our design, resulting in a broad yet rapid testing and inspection process. 
 
-This iterative design process revealed further key insights which supported continued design improvement. Three of these key insights were:
+In our first paper prototype people found it hard to understand how to interact with MindMii because it did not follow conventions of instant messaging platforms participants were familiar with. An issue that came up in our second paper prototype is clarity around the availability of features earlier in the messaging flow. A digital mockup was created from the earlier iterations, providing context for improvement by iterative revision.
 
-### Watch notification unclear
+Our iterative design process revealed key insights which supported continued design improvement. Three of these key insights were:
+
+### The watch notifications needed more clarity of design and interactivity.
 
 <ProjectImagesBlock
     images={[
         {
-            src: paperClock,
-            alt: "A paper prototype watch face showing the time, and green ring with the MindMii logo, and bold text saying URGENT.",
+            src: paperClock1,
+            alt: "A paper prototype watch face showing the time and green ring.",
         },
         {
-            src: paperContact,
+            src: paperClock2,
+            alt: "A paper prototype watch face showing the time, and green ring with the MindMii logo, and bold text saying URGENT.",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "The right-hand image shows the original paper prototype next to the third final paper prototype where the notification ring indicates it is a MindMii reminder with a logo."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+An issue identified from user testing was confusion about how to interact with the watch notification which appears as a color ring. This confusion was identified by participant feedback during paper prototype testing, when they wanted to know what to do about the color ring and weren't sure if or how to suppress or interact with the notification. To support this issue, we added a bell icon to the color ring which provides a signifier to the to the user indicating that this is a notification, following conventions in this design space.
+
+</ProjectImagesBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: paperWatchUrgent1,
+            alt: "A paper prototype watch face showing the a phone contact with a solid triangle behind it.",
+        },
+        {
+            src: paperWatchUrgent2,
             alt: "A paper prototype watch face showing the a phone contact named Sue and bold text saying URGENT.",
         },
     ]}
     direction={"row"}
     caption={
-        "Digitally edited paper prototype images show our final suggested solution."
+        "The right-hand image shows the original paper prototype next to the third final paper prototype where urgent is marked for better clarity and the contact name is included."
     }
-    width={5}
+    width={6}
     maxHeight={"400px"}
 >
 
-One identified issue was confusion about how to interact with the watch notification which appears as a color ring. This confusion was identified by participant feedback during paper prototype testing, when they wanted to know what to do about the color ring and weren't sure if or how to suppress or interact with the notification. To support this issue, we added a bell avatar to the color ring which provides focused and clear functionality to manage the notification by indicating interactivity to the user. During each of our 3 user tests we received questions regarding the style used to indicate an urgent massage. We decided to use words for the final paper prototype to remove any unclear understandings.
-
+During each of our 3 user tests we received questions regarding the style used to indicate an urgent massage. We decided to use words for the final paper prototype to remove any unclear understandings and lack of conventions regarding color coding.
 </ProjectImagesBlock>
 
-### Lack of options in suggestive help
+### Suggestive features should provide more types of help.
 
 <ProjectImagesBlock
     images={[
@@ -282,11 +318,11 @@ One identified issue was confusion about how to interact with the watch notifica
     maxHeight={"400px"}
 >
 
-Our original suggestive feature only provided texting suggestions and did not provide other types of help, another issue uncovered by paper prototype interaction from participants, as they reached a stage where they wanted to do something other than the options provided. We expanded our suggestive text helper to one that provides general help features.
+Our original suggestive response feature only provided texting suggestions and did not provide other types of help, an issue uncovered during a paper prototype interaction with participants. They found this issue when they performed the task of "identifying and responding to a missed message". The participant wanted send a different message than the options provided by MindMii's suggestive text. We expanded our suggestive text helper to one that provides general help features by accepting a prompt and allowing for regeneration of suggestions.
 
 </ProjectImagesBlock>
 
-### Response options limited and unclear
+### More action options should be provided in more places.
 
 <ProjectImageBlock
     image={{
@@ -300,7 +336,7 @@ Our original suggestive feature only provided texting suggestions and did not pr
     maxHeight={"400px"}
 >
 
-The app's message response management interface focused on replying without offering other options such as accessing help. This was another issue uncovered through paper prototype use by participants (we found the paper prototype very effective in identifying many of the most severe issues in our design). The ability to access features like help were buried too deeply in our design and needed to be hoisted into the earlier parts of interaction as well, and we noticed based on feedback that more types of help should be provided in addition to increased access to the help/AI suggestions. We added assistive buttons to the text screen to provide help as an alternative to drafting a response.
+The initial MindMii prototype's message response interface focused heavily on replying without offering other options such as accessing help or suggestions. This was an issue uncovered through paper prototype testing by participants. The ability to access features like help was buried too deeply in our design and needed to be hoisted into the earlier phases of the interaction. We noticed based on feedback that more types of help should be provided in addition to increased access to help and AI suggestions. We added assistive buttons to the text screen to provide help as an alternative to drafting a response.
 
 </ProjectImageBlock>
 
@@ -342,44 +378,60 @@ The app's message response management interface focused on replying without offe
 
 </ProjectImagesBlock>
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+We made a few updates from the paper prototype when crafting our digital mockup. The AI Message feature is more prominently featured on both mobile and watch versions of MindMii. 
+
+The message hub now follows conventions from iOS and watchOS, notably the watch app no longer has a scroll wheel around the edge. Urgency is now conveyed via orange text and an orange exclamation mark on the watch. These changes were identified as ways to further support participant feedback in our testing.
 
 ### Respond to a Message in an Appropriate Amount of Time
 <ProjectImageBlock
     image={{
-        src: watch,
-        alt: "The MindMii watch face showing the screens for the steps described in the caption.",
+        src: watchOne,
+        alt: "The MindMii watch face showing the screens for the steps described to the left.",
     }}
-    caption={
-        "Let's walk through a watch interaction: Notification of an urgent message from earlier that soon needs reply. -> Person snoozes notification due to other priorities. -> AI observes message has a sensitive response deadline.  Snooze ends after five minutes. The person recognizes this urgency as well due to the re-prompt after snooze. -> The person taps the contact icon on the notification to open the message. -> When they enter into reply mode, suggestive AI mode appears as an option. -> The person composes a message using the keyboard. -> Pressing send delivers the response to the messaging platform the message was from."
-    }
-    width={8}
+    width={4}
     maxHeight={"400px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+Initially, there's an urgent message notification, but it gets snoozed by the person because of other pressing tasks demanding their attention.
 
 </ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: watchTwo,
+        alt: "The MindMii watch face showing the screens for the steps described to the left.",
+    }}
+    width={4}
+    maxHeight={"400px"}
+>
+
+After a brief period, the AI detects that the message has a sensitive response deadline. The snooze expires after five minutes. Both the AI and the person acknowledge the urgency of the message, prompted by the reminder.
+
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: watchThree,
+        alt: "The MindMii watch face showing the screens for the steps described to the left.",
+    }}
+    width={4}
+    maxHeight={"400px"}
+>
+
+The person taps on the contact icon within the notification to access the message. Upon entering the reply mode, they notice an option for the suggestive AI mode.
+
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: watchFour,
+        alt: "The MindMii watch face showing the screens for the steps described to the left.",
+    }}
+    width={4}
+    maxHeight={"400px"}
+>
+
+Using the keyboard, the person drafts a response to the message. Upon completion, they hit "send," delivering the response directly to the messaging platform from which the original message originated.
+
+</ProjectImageBlock>
+
+Examining our other task to respond to a message in an appropriate amount of time, our scenario has MindMii notifying the person of an urgent message from earlier that needs a reply soon. The person decides to snooze the message since they are busy, but the app AI recognizes this message is time-sensitive and limits the snooze to five minutes. Following this, it re-prompts the person about this message and they realize the urgency of the message. 
+
+The person opens the message and enters into reply mode. AI is there to support with suggestions, but the user composes a message of their own using the keyboard and presses send. The response is routed to the platform the message is native to. The notification is cleared from the lock screen. Messages are no longer forgotten with MindMii!
