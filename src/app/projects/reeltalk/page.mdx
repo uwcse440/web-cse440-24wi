@@ -66,10 +66,23 @@ import textimage4_1 from "public/images/projects/reeltalk/post/summarizing.png";
 import textimage4_2 from "public/images/projects/reeltalk/post/release to stop recording.png";
 import textimage5 from "public/images/projects/reeltalk/post/drp-awkward.png";
 import textimage6 from "public/images/projects/reeltalk/post/overview.jpg";
+
+import initial_help from "public/images/projects/reeltalk/post/initial tap.jpg";
+import updated_help_0 from "public/images/projects/reeltalk/post/record 3.png";
+import updated_help_1 from "public/images/projects/reeltalk/post/record 1.png";
+
+import initial_notes from "public/images/projects/reeltalk/post/initial notes.jpg";
+import updated_notes from "public/images/projects/reeltalk/post/summarize 1.png";
+
+import initial_flow_0 from "public/images/projects/reeltalk/post/initial flow watch.jpg";
+import initial_flow_1 from "public/images/projects/reeltalk/post/initial flow phone.jpg";
+import updated_flow_0 from "public/images/projects/reeltalk/post/summarize 4.png";
+import updated_flow_1 from "public/images/projects/reeltalk/post/summarize 5.png";
+
+
 import textimage7 from "public/images/projects/reeltalk/post/keyInsights-lackingDetails.png";
 import textimage8 from "public/images/projects/reeltalk/post/keyInsights-fluidEngagement.png";
 import textimage9 from "public/images/projects/reeltalk/post/keyInsights-userFlow.png";
-import textimage10 from "public/images/projects/reeltalk/post/resultingDesign-recordNote.png";
 
 import record_0 from "public/images/projects/reeltalk/post/record 0.png";
 import record_1 from "public/images/projects/reeltalk/post/record 1.png";
@@ -320,17 +333,17 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
 {/* maxHeight={"400px"} */}
 <ProjectImageBlock
     image={{
-        src: textimage7, //
-        alt: "Table showing differences between paper prototype and digital mockup for first insight"
-    }}
-    caption={
-        ""
-    }
-    width={7}
-    maxHeight={600}
+            src: initial_help,
+            alt: "Paper prototype with no help for a new user",
+            
+        }}
+        caption={
+            "Initial: No prompts for help or instructions for new users."
+        } 
+        width={4}
+        maxHeight={300}
 >
-
-    During user testing, it became evident that participants faced challenges in utilizing the app
+ During user testing, it became evident that participants faced challenges in utilizing the app
     due to incomplete information, impeding their navigation and task completion. Users voiced
     confusion regarding certain features and their functionalities, prompting a need for clearer
     guidance. For example, one participant asked about what the purpose of saving notes was after
@@ -340,22 +353,44 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
     This iterative process, driven by user feedback, sought to bridge the information gap and
     enhance overall user experience by facilitating informed navigation and utilization of the app's
     features.
-
 </ProjectImageBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: updated_help_0,
+            alt: "Updated digital prototype with help prompts",
+            caption: "Updated: Added a question mark (help) button in the top right corner of most screens so a user could quickly access context-based instructions if they were confused."
+        },
+        {
+            src: updated_help_1,
+            alt: "Updated digital prototype with help prompts",
+            caption: "Updated: Added a popup to view instructions upon launching the app for first-time users, or anyone needing a refresher on how to use the app."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"400px"}
+/>
 
 ### Enhancing Clarity and Learning
 
 {/* maxHeight={"400px"} */}
-<ProjectImageBlock
-    image={{
-        src: textimage8, //
-        alt: "Table showing differences between paper prototype and digital mockup for second insight"
-    }}
-    caption={
-        ""
-    }
-    width={6}
-    maxHeight={600}
+<ProjectImagesBlock
+    images={[
+        {
+            src: initial_notes,
+            alt: "Initial notes",
+            caption: "Initial: No back buttons."
+        },
+        {
+            src: updated_notes,
+            alt: "Updated notes",
+            caption: "Updated: Added back buttons so a user could choose to go back to their initial screen after navigating to a screen."
+        }
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"300px"}
 >
 
     User testing unveiled significant navigation hurdles and unpredictable user behavior, revealing
@@ -367,21 +402,27 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
     feedback. These iterative adjustments aimed to align the design with user expectations, ensuring
     a smoother and more engaging user experience.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Fixing a Confusing User Flow Between SmartWatch and Phone
 
 {/* maxHeight={"400px"} */}
-<ProjectImageBlock
-    image={{
-        src: textimage9, //
-        alt: "Table showing differences between paper prototype and digital mockup for third insight"
-    }}
-    caption={
-        ""
-    }
-    width={6}
-    maxHeight={"600px"}
+<ProjectImagesBlock
+    images={[
+        {
+            src: initial_flow_1,
+            alt: "Initial flow 1",
+            caption: "Initial: No prompts on when notes got sent over from the smartwatch to the phone app."
+        },
+        {
+            src: updated_flow_1,
+            alt: "Updated flow 1",
+            caption: "Updated: Added a popup so users know exactly when information got moved from the smartwatch to the phone."
+        }
+    ]}
+    direction={"column"}
+    width={7}
+    maxHeight={"300px"}
 >
     One unique challenge of our design was that it consists of two parts: the smartwatch app and
     the phone app. This meant that there needed to be clear indications on when to use each part of
@@ -398,8 +439,24 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
     the base state. We also added system dialogue to clarify when information gets sent from the
     smartwatch to the phone app, and added popups on the phone app to indicate when it was time to
     switch to the phone app.
+</ProjectImagesBlock>
 
-</ProjectImageBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: initial_flow_0,
+            alt: "Initial flow 0",
+            caption: "Initial: No prompts on what to do after summarizing notes."
+        },
+        {
+            src: updated_flow_0,
+            alt: "Updated flow 0",
+            caption: "Updated: Added prompts so a user knows to go to the phone app after summarizing notes."
+        },
+    ]}
+    direction={"row"}
+    maxHeight={"300px"}
+/>
 
 ## Resulting Design
 
@@ -439,7 +496,7 @@ guide for leading conversations about memorable movie moments.
 />
 <ProjectImagesBlock
     images={[
-        { src: summarize_3, alt: "Summarize 3", caption: "4. Wait for the watch to do its magic." },
+        { src: summarize_3, alt: "Summarize 3", caption: "4. Wait for the watch to summarize the notes." },
         { src: summarize_4, alt: "Summarize 4", caption: "5. Your notes will get sent to your phone!" },
     ]}
 />
