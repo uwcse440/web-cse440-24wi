@@ -66,6 +66,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 {/* Project overview */}
 
 import problemDesignOverview from "public/images/projects/orcapod/post/long_distant_fish.png";
+import theGlobe from "public/images/projects/orcapod/post/theglobe.png";
 
 {/* 3 Process Insights */}
 
@@ -81,8 +82,12 @@ import byransPod from "public/images/projects/orcapod/post/bryans_pod.png";
 import elizasPod from "public/images/projects/orcapod/post/elizas_pod.png";
 
 import fppGridlines from "public/images/projects/orcapod/post/fpp_gridlines.png";
-import ippGridlines from "public/images/projects/orcapod/post/ipp_gridlines.png";
 import digitalGridlines from "public/images/projects/orcapod/post/digital_gridlines.png";
+
+import fppError from "public/images/projects/orcapod/post/fpp_error.png";
+import digitalError from "public/images/projects/orcapod/post/digital_error.png";
+
+import ippGridlines from "public/images/projects/orcapod/post/ipp_gridlines.png";
 
 {/* Design Results */}
 
@@ -186,25 +191,11 @@ stay connected even if they may not be able to physically see each other.
 
 ## Design Research Process and Key Insights
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: fppGridlines,
-            alt: "Initial paper prototype no navigation prompts",
-            caption: "Initial paper prototype with no navigational prompts or labels.",
-        },
-        {
-            src: fppGridlines,
-            alt: "Final paper prototype gridlines",
-            caption: "Final paper prototype added gridlines to assist with participant's navigations.",
-        },
-        {
-            src: digitalGridlines,
-            alt: "The pod screen Elizabeth sees for Ashley.",
-            caption: "Digital prototype added gridbox to assist with participant's navigation.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: theGlobe,
+        alt: "PNG Long Distant Fish"
+    }}
     width={12}
     maxHeight={"400px"}
 >
@@ -238,7 +229,7 @@ from home, and parents of students away from home. This gave us a dual problem
 approach to navigating how to bridge communication issues between parents and 
 students who live away from home.
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 ### Technological Knowledge Differences
 
@@ -268,10 +259,10 @@ virtually when they couldn’t.
 <ProjectImageBlock
     image={{
         src: ippOverview,
-        alt: "PNG Long Distant Fish"
+        alt: "Initial Paper Prototype Overview"
     }}
     caption={
-        "Being apart highlights the importance of maintaining frequent connections."
+        "Initial Paper Prototype Overview."
     }
     width={12}
     maxHeight={"800px"}
@@ -296,10 +287,10 @@ issues with our design and workflow, as discussed below.
 <ProjectImageBlock
     image={{
         src: fppOverview,
-        alt: "PNG Long Distant Fish"
+        alt: "Final Paper Prototype Overview"
     }}
     caption={
-        "Being apart highlights the importance of maintaining frequent connections."
+        "Final Paper Prototype Overview."
     }
     width={12}
     maxHeight={"800px"}
@@ -309,10 +300,10 @@ issues with our design and workflow, as discussed below.
 <ProjectImageBlock
     image={{
         src: digitalOverview,
-        alt: "PNG Long Distant Fish"
+        alt: "Digital Mock Up Overview"
     }}
     caption={
-        "Being apart highlights the importance of maintaining frequent connections."
+        "Digital Mock Up Overview."
     }
     width={12}
     maxHeight={"800px"}
@@ -381,14 +372,15 @@ harder to use.
 <ProjectImagesBlock
     images={[
         {
-            src: fppGridlines,
-            alt: "Final paper prototype gridlines",
-            caption: "Final paper prototype added gridlines to assist with participant's navigations.",
+            src: fppError,
+            alt: "Final paper prototype for error and prevention",
+            caption: "Final paper prototype added a way for the participant to hide/show, blur/unblur, and delete messages.",
         },
         {
-            src: digitalGridlines,
-            alt: "The pod screen Elizabeth sees for Ashley.",
-            caption: "Digital prototype added gridbox to assist with participant's navigation.",
+            src: digitalError,
+            alt: "Digital mock up for error and prevention.",
+            caption: "In addition to what has already been added in the final paper prototype, " + 
+            "the digital mock up added a way for the participant to edit their messages.",
         },
     ]}
     direction={"row"}
@@ -414,9 +406,9 @@ the smartboard, and this took away from the participant's experience.
     ]}
     direction={"row"}
     caption={
-        "During our design we had numerous iterations. Here we showcase the board's ability to 
-        hide, blur, or delete messages, switch between connected boards easily, allow users to use 
-        a prefer messagae sending type, and provide guidance on where to write messages."
+        "During our design we had numerous iterations. Here we showcase the board's ability to " 
+        + "hide, blur, or delete messages, switch between connected boards easily, allow users to use " 
+        + "a prefer messagae sending type, and provide guidance on where to write messages."
     }
     width={12}
     maxHeight={"400px"}
@@ -439,16 +431,16 @@ guessing.
     images={[
         {
             src: task1_one,
-            alt: "The connected screen showing that the user is setting an alarm for when it reaches 
-            8 AM in Portugal and for the alarm to last three hours.",
-            caption: "The participant can set an alarm for the board to notify them when it reaches
-            a certain time of either their child or parent's time zone."
+            alt: "The connected screen showing that the user is setting an alarm for when it reaches "
+            + "8 AM in Portugal and for the alarm to last three hours.",
+            caption: "The participant can set an alarm for the board to notify them when it reaches"
+            + "a certain time of either their child or parent's time zone."
         },
         {
             src: task1_two,
             alt: "A white board depicting a conversation between a parent and a child.",
-            caption: "After the alarm is set, the parent can continue with their day until the alarm 
-            goes off."
+            caption: "After the alarm is set, the parent can continue with their day until the alarm "
+            + "goes off."
         },
     ]}
     direction={"row"}
@@ -490,10 +482,10 @@ and reply accordingly.
         },
         {
             src: task1_four,
-            alt: "A green keyboard appears on the board for the person to write, type, or record their 
-            message with.",
-            caption: "The parent is able to write, type, or send a voice message to the child. They 
-            know that their child is awake now because of the alarm."
+            alt: "A green keyboard appears on the board for the person to write, type, or record their "
+            + "message with.",
+            caption: "The parent is able to write, type, or send a voice message to the child. They "
+            + "know that their child is awake now because of the alarm."
         },
     ]}
     direction={"row"}
@@ -508,14 +500,14 @@ and reply accordingly.
         {
             src: task1_five,
             alt: "A green text bubble saying good morning appears on the board.",
-            caption: "The parent sends a good morning message to their child in Portugal when it is 
-            8 AM there."
+            caption: "The parent sends a good morning message to their child in Portugal when it is "
+            + "8 AM there."
         },
         {
             src: task1_six,
             alt: "A purple text bubble saying good morning appears on the board.",
-            caption: "The child sends a corresponding good morning message to the parent after they
-            have seen the message."
+            caption: "The child sends a corresponding good morning message to the parent after they"
+            + "have seen the message."
         },
     ]}
     direction={"row"}
@@ -536,8 +528,8 @@ and reply accordingly.
         },
         {
             src: task2_two,
-            alt: "A red text bubble saying that the child is busy with midterms and unable to 
-            communicate right now appears on the board.",
+            alt: "A red text bubble saying that the child is busy with midterms and unable to "
+            + "communicate right now appears on the board.",
             caption: "The board boxes and highlights the new message from the child."
         },
     ]}
@@ -568,8 +560,8 @@ or delete their message, and the other party will receive a notification on thei
     images={[
         {
             src: task2_three,
-            alt: "A green keyboard appears on the board for the person to write, type, or send
-            a voice recording.",
+            alt: "A green keyboard appears on the board for the person to write, type, or send "
+            + "a voice recording.",
             caption: "The parent can either type, write, or send a voice message to the child."
         },
         {
