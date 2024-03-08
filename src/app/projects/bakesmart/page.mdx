@@ -59,16 +59,19 @@ import imageTeamPerson3 from "public/images/projects/bakesmart/team/danno.jpg";
 import imageTeamPerson4 from "public/images/projects/bakesmart/team/Colin.jpg";
 
 import imagePlaceholder1200x8002 from "public/images/projects/bakesmart/post/feedback.png";
+import imagePlaceholder1200x8004 from "public/images/projects/bakesmart/post/1200x800.png";
 import imagePlaceholder1200x800 from "public/images/projects/bakesmart/post/bakesmart.jpg";
-import imagePlaceholder400x4001 from "public/images/projects/bakesmart/post/test2.png";
+import imagePlaceholder400x4001 from "public/images/projects/bakesmart/post/400x4001.png";
+import imagePlaceholder400x4002 from "public/images/projects/bakesmart/post/400x4002new.png";
 import imagePlaceholder1200x8003 from "public/images/projects/bakesmart/post/community.png";
 import imagePlaceholder300x6001 from "public/images/projects/bakesmart/post/difficulty300x600.png";
 import imagePlaceholder300x6002 from "public/images/projects/bakesmart/post/skill300x600.png";
-import imagePlaceholder600x3001 from "public/images/projects/bakesmart/post/feedback600x300.png";
+import imagePlaceholder600x3001 from "public/images/projects/bakesmart/post/600x3002.png";
 import imagePlaceholder1200x8001 from "public/images/projects/bakesmart/post/iterative_design.png";
-
-import imagePlaceholder400x4002 from "public/images/projects/bakesmart/post/400x4002.png";
-import imagePlaceholder600x3002 from "public/images/projects/bakesmart/post/task1.png";
+import imagePlaceholder600x3002 from "public/images/projects/bakesmart/post/600x3001.png";
+import imagePlaceholder600x3003 from "public/images/projects/bakesmart/post/feedback600x300.png";
+import imagePlaceholder600x3004 from "public/images/projects/bakesmart/post/600x3004.png";
+import imagePlaceholder600x3005 from "public/images/projects/bakesmart/post/600x3005.png";
 
 
 
@@ -126,6 +129,11 @@ import imagePlaceholder600x3002 from "public/images/projects/bakesmart/post/task
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+Baking, while therapeutic for many, can also be a source of frustration and anxiety due to its demanding requirements 
+of precision and the need for proper tools. This dichotomy highlights the critical role of community support in the baking 
+journey. Recognizing this need, there arises a constant demand for a flexible learning platform tailored to bakers of all 
+skill levels, aimed at fostering personalized skill development in the art of baking.
+
 <ProjectImageBlock
     image={{
         src: imagePlaceholder1200x800,
@@ -137,11 +145,6 @@ import imagePlaceholder600x3002 from "public/images/projects/bakesmart/post/task
     width={6}
     maxHeight={"400px"}
 >
-
-Baking, while therapeutic for many, can also be a source of frustration and anxiety due to its demanding requirements 
-of precision and the need for proper tools. This dichotomy highlights the critical role of community support in the baking 
-journey. Recognizing this need, there arises a constant demand for a flexible learning platform tailored to bakers of all 
-skill levels, aimed at fostering personalized skill development in the art of baking.
 
 Enter BakeSmart - a comprehensive solution in the form of an app – designed to address the challenges faced by the baking community. 
 Through extensive research and interviews, our team identified a significant gap: the absence of a unified platform that seamlessly 
@@ -155,49 +158,103 @@ ensuring that the passion for baking thrives under the guidance of professionals
 
 ## Design Research Process and Key Insights
 
-The overall goal of our design research is better understanding the baking processes 
-among professional, novice, and non bakers, focusing on how our project can help 
-bridge the gap between different levels of bakers, ultimately demystifying the 
-complexities of baking. Our research method involves conducting interviews with bakers
-of different skill levels, and baking observations with novice bakers. The interviews 
-among the bakers allowed us to examine the unique perspectives and consider the diverse 
-needs and expectations of our intended users. By directly observing the novice bakers, 
-we can gain a comprehensive understanding of their behaviors and thought process in 
-the act of baking. Through our design research, we have found the overarching themes 
-to be centered around the need for a structured approach to baking for novices, inspired 
-by the methodologies of professional bakers to bridge the gap between novices and professionals. 
-Novices would benefit from a community to discuss outcomes and user-friendly ways to record their 
-baking sessions, which could accelerate their learning curve. The three key insights that could 
-provide novice bakers the proper structure to aid their journey to baking expertise are:
+The overall goal of our design research is better understanding the baking processes among bakers, 
+focusing on how our project can help bridge the gap between them, ultimately demystifying the complexities 
+of baking. Our research method involves conducting interviews with bakers of different skill levels, and 
+baking observations with novice bakers. Thus, our participants include:
+- Beth, a professional baker with 10+ years of experience
+- Baljeet, Bailey, and Bjorn, novice bakers with 2-3 years of experience
+- Brent, a non-baker with no experience
 
-### The Methodical Approach
+Researching among the variety of bakers allows us to compare the likeness and difference of the baking process 
+between bakers. In addition, the interviews let us examine the unique perspectives and consider the diverse 
+needs and expectations of our intended users. By directly observing the novice bakers, we can gain a 
+comprehensive understanding of their behaviors and thought process in the act of baking. Through our design 
+research, we have found the overarching themes to be centered around the need for a structured approach to 
+baking for novices, inspired by the methodologies of professional bakers to bridge the gap between novices and 
+professionals. Novices would benefit from a community to discuss outcomes and user-friendly ways to record their 
+baking sessions, which could accelerate their learning curve. The three key insights that could provide novice 
+bakers the proper structure to aid their journey to baking expertise are:
 
-Echoing the discipline of professional bakers, there is an urgent need for novices to adopt, 
-or have access to a platform that offers, a more methodical approach to their baking endeavors.
-
-### User-Friendly Documentation
+{/*
 
 <ProjectImagesBlock
     images={[
         {
             src: imagePlaceholder400x4001,
-            alt: "Methodical approach for users to follow as they start baking something.",
-            caption: "Methodical approach for users to follow as they start baking something.",
+            alt: "",
+            caption: "Initial design idea: A methodical approach where user gets to record 
+                      themselves & compare their videos with a professional one and based 
+                      on their self ratings, they get to go through a progression tree.",
         },
         {
             src: imagePlaceholder400x4002,
-            alt: "User Friendly documentation for the users to continue on the journey easily.",
-            caption: "User Friendly documentation for the users to continue on the journey easily.",
+            alt: "",
+            caption: "Initial design idea that included a user friendly documentation process where user can find help through voice over, language, note, help icons.",
         },
     ]}
     direction={"row"}
     width={8}
     maxHeight={"400px"}
 >
+*/}
+
+### The Methodical Approach
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x8004,
+        alt: "Initial design idea: A methodical approach where user gets to record themselves, compare their videos with a professional one, and based on their self ratings, they get to go through a progression tree.",
+    }}
+    caption={
+        "Initial design idea: A methodical approach where user gets to record themselves, compare their videos with a professional one, and based on their self ratings, they get to go through a progression tree."
+    }
+    width={7}
+    maxHeight={"400px"}
+>
+
+Echoing the discipline of professional bakers, there is an urgent need for novices to adopt, 
+or have access to a platform that offers, a more methodical approach to their baking endeavors.
+It includes having step by step guidance, the small details that professionals follow but somehow
+overlooked by novices, and a gamified approach to make the process enjoyable. The interviewees 
+expressed a significant need of building something that would keep them encouraged to continue 
+in the long run. To ensure this, we initiated an approach where user can compare their every 
+progress and can compare it with a professional one.
+
+</ProjectImageBlock>
+
+{/* </ProjectImagesBlock> */}
+
+### User-Friendly Documentation
 
 The path to perfection is paved with the notes of past experiments. 
 Facilitating a user-friendly way to document (and easily review) their baking process 
-will empower novices to find their way to success.
+will empower novices to find their way to success. We decided to have more usability & accessibility for 
+people from all across the world and non tech savvy backgrounds through incorporating more common used icons
+instead of just relying on a lot of writings. And for recipes having a voice over option to help the users
+in various ways.
+
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder400x4002,
+            alt: "Initial design idea: User friendly documentation on the interface with more usage of commonly used icons of videos, mood board, and notes.",
+            caption: "Initial design idea: User friendly documentation on the interface with more usage of commonly used icons of videos, mood board, and notes.",
+        },
+        {
+            src: imagePlaceholder400x4001,
+            alt: "Initial design idea: User friendly documentation on the interface with more usage of commonly used icons of voice over, language, and help.",
+            caption: "Initial design idea: User friendly documentation on the interface with more usage of commonly used icons of voice over, language, and help.",
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+
+
+
 
 </ProjectImagesBlock>
 
@@ -232,7 +289,7 @@ Engagement, and Simple Recipe Editing Process.
     caption={
         "We have gradually improved from confusing tree progression to linear progression that locks the previous progress levels as the user finishes it."
     }
-    width={6}
+    width={8}
     maxHeight={"400px"}
 >
 
@@ -245,7 +302,7 @@ in other mobile educational applications, improving the usability of the design.
 
 </ProjectImageBlock>
 
-### Accesibility towards Community Engagement
+### Accessibility towards Community Engagement
 
 <ProjectImageBlock
     image={{
@@ -255,7 +312,7 @@ in other mobile educational applications, improving the usability of the design.
     caption={
         "Our community page before usability testing (on paper) and after testing (digital version)"
     }
-    width={6}
+    width={8}
     maxHeight={"400px"}
 >
 
@@ -278,7 +335,7 @@ page that would link to a discussion board on the recipe the baker just made.
     caption={
         "Final paper prototype that shows how users can get help from community experts and refine their recipe!"
     }
-    width={6}
+    width={7}
     maxHeight={"400px"}
 >
 
@@ -295,25 +352,6 @@ for the editing in our digital design.
 
 ## Resulting Design
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x6002,
-            alt: "Different steps of a recipe and to choose from for the users and they can rate their difficulty level for each steps.",
-        },
-        {
-            src: imagePlaceholder300x6001,
-            alt: "Different steps of a recipe and to choose from for the users and they can rate their difficulty level for each steps.",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "Different steps of a recipe and to choose from for the users and they can rate their difficulty level for each steps."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
 The latest iteration of our digital interface reveals a user-centric design that streamlines the 
 culinary journey, featuring a linear baking quest path to enhance navigation and engagement. 
 The revamped interface includes a nuanced star rating system for recipe complexity, allowing users 
@@ -321,8 +359,42 @@ to intuitively select recipes that match their skill level, as showcased in the 
 The user experience is elevated through a simplified feedback process, enabling bakers to provide and
 view responses with ease, as illustrated in the accompanying images.
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder300x6002,
+            alt: "Task 1A: Different options of steps in Baking Skill to choose from for users and led to a recipe of various difficulties.",
+        },
+        {
+            src: imagePlaceholder300x6001,
+            alt: "Task 1A: Different options of steps in Baking Skill to choose from for users and led to a recipe of various difficulties.",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Task 1A: Different options of steps in Baking Skill to choose from for users and led to a recipe of various difficulties."
+    }
+    width={6.5}
+    maxHeight={"400px"}
+>
+
+### Task 1: Choosing to work on a baking skill or Baking Quest
+
+**1A: Choosing a recipe from a Baking Skill:** 
+
+The user journey begins with selecting "Work A Skill" on the first screen [shown in the very top picture], 
+leading to a scrollable list of baking skills with a search function. Users can choose 
+multiple skills, and upon confirmation with a green checkmark, they're directed to a list 
+of matching recipes, sorted by popularity. These recipes can be further refined by difficulty 
+using star ratings. Each recipe offers options to view a video tutorial or user-submitted 
+photos. Selecting a recipe takes the user to a detailed step-by-step guide, with an option 
+to view the recipe overview at any time. Progression through the recipe steps is managed by 
+clicking "finish" after each step.
+
 </ProjectImagesBlock>
 
+
+{/*
 <ProjectImagesBlock
     images={[
         {
@@ -334,12 +406,89 @@ view responses with ease, as illustrated in the accompanying images.
             src: imagePlaceholder600x3001,
             alt: "Users get to connect with community and refine the recipes according to the suggestions!",
             caption: "Users get to connect with community and refine the recipes according to the suggestions!"
-        },
+        }
     ]}
     direction={"column"}
     width={6}
     maxHeight={"200px"}
 >
+</ProjectImagesBlock>
+*/}
+**1B: Choosing a recipe from a Baking Quest:**
+
+Selecting "Baking Quest" offers users options to 'Continue Quest', 'Start New Quest', or 'See Quest History'. 
+Choosing to continue, they're shown a scrollable list with their goal recipe at the top and subsequent 
+recipes listed in recommended order. Selecting a recipe reveals a progress map highlighting the goal and 
+any prerequisites. A further click provides recipe details similar to Task 1A, leading directly into the 
+first step of the recipe.
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder600x3001,
+        alt: "Task 1B: Digital mockup of what happens when a user chooses a recipe from baking quest.",
+    }}
+    caption={
+        "Task 1B: Digital mockup of what happens when a user chooses a recipe from baking quest."
+    }
+    width={12}
+    maxHeight={"500px"}
+>
+</ProjectImageBlock>
+
+### Task 2: Baking and Refining a Recipe
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder600x3004,
+        alt: "Task 2A: User starts baking and they have different assistant tools for perfect measurement, temperature etc.",
+    }}
+    caption={
+        "Task 2A: User starts baking and they have different assistant tools for perfect measurement, temperature etc."
+    }
+    width={7.5}
+    maxHeight={"300px"}
+>
+**2A: Baking a Recipe:**
+As the user starts one of the recipes of their choice, they are guided through each step and only 
+proceed to the next one after completing the previous one. For example, if the first step is measuring, 
+the pop up button will remain on until the user clicks on the button – and gets proceeded to the next step. 
+The user would also have the option to go to one of the previous steps by hitting the back arrow button in 
+the upper-left corner. Each of the steps would have it’s own integral functionality like having smart tools 
+integrated with the measure step and also there will be a timer pop up when something is baking. Once the user 
+has finished all the steps, they get to the DONE! Page and has the option to connect to a community and give 
+feedback.
+
+</ProjectImageBlock>
+
+**2B: Refining a Recipe:**
+When a user clicks on the Ingredient or Step button, it takes them to a 
+separate screen that shows the specific steps or ingredients needed for the recipe.
+The step button allows the user a specific step they wish to edit, and lets them to document the changes and 
+leave a reasoning as to why they wish to change the recipe step in the form of notes.
+The Ingredient button lets them edit the ingredients list, document changes and leave constructive 
+feedback. Once a user finishes editing the ingredients, it will take them back to 
+the Step or Ingredient tab, where it now shows the modified step or ingredients list, as well as 
+a note tab that shows the user feedback.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder600x3005,
+            alt: "Task 2B: Users get to refine a step in their recipe or ingredient according to their own suggestions!",
+            caption: "Task 2B: Users get to refine a step in their recipe or ingredient according to their own suggestions!"
+        },
+        {
+            src: imagePlaceholder600x3003,
+            alt: "Task 2B: Users get to connect with community and refine the recipes according to the suggestions!",
+            caption: "Task 2B: Users get to connect with community and refine the recipes according to the suggestions!"
+        }
+    ]}
+    direction={"row"}
+    width={13}
+    maxHeight={"300px"}
+>
+
+</ProjectImagesBlock>
 
 In the refined feedback section, bakers can now gauge their performance alongside the recipe's 
 effectiveness, supported by a dual-rating system captured in the screenshots. This allows for targeted
@@ -348,4 +497,4 @@ scale interface, as depicted, integrates technology with traditional baking, off
 efficiency. Altogether, these digital advancements form a comprehensive baking assistant, enriching 
 the connection between the baker and the broader cooking community.
 
-</ProjectImagesBlock>
+
