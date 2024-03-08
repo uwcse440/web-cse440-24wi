@@ -68,6 +68,21 @@ import imagePlaceholder7 from "public/images/projects/fitquest/post/watch_protot
 import imagePlaceholder8 from "public/images/projects/fitquest/post/detached.png";
 import imagePlaceholder9 from "public/images/projects/fitquest/post/watch_prototype.png";
 import imagePlaceholder10 from "public/images/projects/fitquest/post/detached.png";
+import imagePlaceholder11 from "public/images/projects/fitquest/post/logo.png";
+import imagePlaceholder12 from "public/images/projects/fitquest/post/initialsketch.png";
+import imagePlaceholder13 from "public/images/projects/fitquest/post/injuryprevention.jpeg";
+import imagePlaceholder14 from "public/images/projects/fitquest/post/food.png";
+import imagePlaceholder15 from "public/images/projects/fitquest/post/feedback.png";
+import imagePlaceholder16 from "public/images/projects/fitquest/post/initial.png";
+import imagePlaceholder17 from "public/images/projects/fitquest/post/storyboard1.png";
+import imagePlaceholder18 from "public/images/projects/fitquest/post/storyboard2.png";
+import imagePlaceholder19 from "public/images/projects/fitquest/post/diffdays.png";
+import imagePlaceholder20 from "public/images/projects/fitquest/post/barpathfeedback.png";
+import imagePlaceholder21 from "public/images/projects/fitquest/post/digital1.png";
+import imagePlaceholder22 from "public/images/projects/fitquest/post/Sketches1.png";
+import imagePlaceholder23 from "public/images/projects/fitquest/post/sketches2.png";
+import imagePlaceholder24 from "public/images/projects/fitquest/post/mockupfinal1.png";
+import imagePlaceholder25 from "public/images/projects/fitquest/post/mockupfinal2.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -86,22 +101,22 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   */}
 <ProjectTeamGallery members={[
     {
-        name: ["FitQuest", "Beemnet"],
+        name: ["FitQuest", "Beemnet Yimam"],
         photo: imageTeamPerson1,
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
-        name: ["FitQuest", "Karim"],
+        name: ["FitQuest", "Karim Maftoun"],
         photo: imageTeamPerson2,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["FitQuest", "Majid"],
+        name: ["FitQuest", "Majid Ali"],
         photo: imageTeamPerson3,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["FitQuest", "Arjan"],
+        name: ["FitQuest", "Jasarjan Singh"],
         photo: imageTeamPerson4,
         alt: "Photo of Team Person 4, looking cool with their additional image description."
     },
@@ -128,167 +143,242 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: imagePlaceholder11,
+        alt: "FitQuest Logo"
     }}
     caption={
 
-        "Our initial measurements for the generating pre workout, " +
-        "workout, and post workout routines."
+        "FitQuest: Elevate your fitness with AI guidance and real-time form feedback for maximum results!"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={4}
+    maxHeight={"300px"}
 >
 
-Many individuals, particularly those new to the gym, often lack knowledge of effective and safe training methods that are key to avoiding injuries at the gym. This lack of knowledge can lead to major injuries if someone is exercising in bad form and can be a limiting factor that prevents someone from going to the gym. Many people turn to fitness experts like personal trainers to help make a routine for them and teach them the correct form. This is a solution to the lack of knowledge but is very costly and adds another barrier to the gym.  We asked ourselves, how can we put the knowledge of a personal trainer into the hands of everyone?
+Entering the gym world can be intimidating, especially for beginners lacking knowledge of safe and effective training methods. This knowledge gap not only increases the risk of injury but also acts as a deterrent for many eager to improve their fitness. Seeking guidance from personal trainers is a common solution, but it often comes at a significant cost and may create additional barriers to gym participation. Recognizing this challenge, we developed FitQuest—an accessible fitness application that harnesses artificial intelligence (AI) and wearable sensor technology to provide real-time feedback on exercise form. FitQuest also crafts personalized workout plans tailored to individual goals and schedules, maximizing users' potential and fostering a safer, more inclusive gym experience.
 
-FitQuest is an all-in-one fitness application that designs a workout plan around your goals and helps you stay safe at the gym. We wanted to incorporate AI to replace a personal trainer that could give real-time feedback on your exercise. With our accompanying wearable sensor, you can analyze each repetition and know if you are having bad form. A person can see their bar and, for example, how well they perform squats. Also, FitQuest helps maximize one's potential by generating a workout plan based on personal goals and availability. 
+FitQuest revolutionizes fitness training by seamlessly integrating cutting-edge technology with expert guidance, making personalized training accessible to all. Utilizing AI algorithms and wearable sensors, FitQuest emulates the role of a personal trainer, delivering instant feedback on exercise form to users. With each repetition, users receive actionable insights to refine their technique and reduce the risk of injury. This feedback loop is complemented by FitQuest's ability to generate bespoke workout plans based on users' goals and availability. Whether aiming to build strength, improve endurance, or enhance flexibility, FitQuest adapts to individual preferences, ensuring optimal results. By placing the knowledge and support of a personal trainer directly into users' hands, FitQuest empowers individuals of all fitness levels to pursue their goals confidently and safely, transforming the fitness experience.
+</ProjectImageBlock>
+
+
+## Design Research Process and Key Insights
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder16,
+        alt: "Initial Sketches",
+    }}
+    caption={
+        "Our intial sketches of a hollistic fitness app encompassing workouts, nutrition, and recovery"
+    }
+    width={4}
+    maxHeight={"500px"}
+  >
+
+We aimed to comprehensively understand and cater to the needs of individuals who are new to the gym or seeking to enhance their gym experience. Our primary focus was on identifying these needs, the challenges they face, and opportunities for our design to improve their preparation for entering the gym, optimize their workout experience, and reduce the risk of injury. Recognizing a significant surge in interest in gym-related activities post-COVID, we noted a lack of guidance on staying safe and adequately prepared for gym sessions. This realization guided our research approach, which employed a multi-faceted strategy, including interviews with a diverse group of participants. We strategically selected participants representing varied backgrounds and experiences: a competitive bodybuilder proficient in powerlifting, a fitness coach with extensive coaching experience in powerlifting, and a novice gym-goer with limited experience. Each participant archetype was chosen to offer distinct perspectives: the competitive bodybuilder provided insights into achieving success in bodybuilding, the coach shared common mistakes made by beginners and how to prevent injuries, and the beginner offered insights into what motivates newcomers in the gym. Interviews served as our primary research method due to their capacity for in-depth, face-to-face interaction, allowing us to get personal insights into participants' gym routines, pain points, preparations, and more. This approach facilitated the collection of detailed information on how individuals of diverse backgrounds engage with the gym environment, their activities outside the gym, the shortcomings of existing gym apps, and their self-management strategies during gym sessions. We conducted design research in various gym environments, including our apartment gym and the IMA. This approach allowed us to observe firsthand the interactions between participants and gym equipment, as well as the atmosphere and social dynamics within different gym settings.
 
 </ProjectImageBlock>
 
-## Design Research Process and Key Insights
-
-We aimed to understand and address the needs of individuals who are new to the gym or want to enhance their gym experience. Our focus was on identifying needs, challenges, and opportunities for our design to improve the preparation to enter the gym, improve the workout, and decrease the likelihood of injury. We realized there was a huge increase in searches about the gym since COVID, but a lack of knowledge on how to stay safe and prepared for the gym. This led us to our research approach, we used a multi-faceted research approach that included interviews with a diverse group of participants:  a competitive bodybuilder with experience in powerlifting, a fitness coach with a background in powerlifting and extensive coaching experience, and a beginner gym-goer with minimal gym attendance. We strategically chose these participants to get the biggest range of perspectives and experiences. The competitive bodybuilder to get their experience on how they got to be a successful bodybuilder, the coach to learn mistakes beginners make and how to avoid injuries, and the beginner will learn what they need to be motivated in the gym. We used interviews as our primary method of research because of the face-to-face interaction and personal insights into the participants' gym routines, pain points, preparations, etc. This approach enabled us to gather detailed information on how different individuals interact with the gym environment, how they interact with the gym outside of the gym, what they find is missing from most gym apps, and how they manage themselves in the gym. 
-
 ### Warm-up Routines Lower the Risk of Injury and Increase Performance in the Gym
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder13,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
+    caption={
+        "Injury Prevention"
+    }
+    width={3}
+    maxHeight={"200px"}
+  >
 
 We found that warm-up routines were not common knowledge for our beginner participants. The competitive bodybuilder and the fitness coach both knew the importance of warming up, the beginner felt like they could just jump into the main workout and leave. Our experienced gymgoers mentioned they experienced injuries because of the lack of preparation before intense workouts, mainly as a beginner themselves. We learned this is usually a lesson people learn through experience, which is what we want to avoid. Getting an injury early in your gym experience will deter people away from the gym. The fitness coach emphasized the benefits of accessory lifts as part of a warm-up routine to prepare the body for main lifts. The interviews showed us the need for guidance on effective warm-up techniques. This shows the education that beginners need to have an effective and safe workout is not being taught to them. This leads us to prioritize a feature in our app that provides tailored warm-up routines based on the day's workout to reduce the risk of injury.
 
-### Nutrition as a Foundation for Fitness Success and Recovery. 
+</ProjectImageBlock>
 
+### Nutrition as a Foundation for Fitness Success and Recovery.
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder14,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
+    caption={
+        "Nutrition"
+    }
+    width={3}
+    maxHeight={"200px"}
+  >
+
+From our interviews, we learned the importance of nutrition. The competitive bodybuilder emphasized that working out is not enough to reach their goals inside the gym. The hidden factor is nutrition. They have a detailed plan of all the macronutrients they need to eat before they enter the gym and after they exit the gym. For example, strategic use of high-carb meals before intense workouts to fuel performance. If you are working out and this is a personal best day you will be better off fueling and preparing earlier with proper carbs and protein. This will allow you to perform at your best. Nutrition is also the way to recover from the strain inside the gym, our research shows stories of participants experiencing plateaus in their fitness progress, attributing these stalls to bad dietary management. The participants needed more protein and calories throughout the day which led to a lack of motivation to go back into the gym. Deficiency in protein and calories will increase tiredness and increase the risk of injury because your body has not had the right nutrients to repair itself after the workout. We learned there is a direct link between diet, recovery, and performance.
+
+</ProjectImageBlock>
+
+### Real Time Feedback
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder15,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
+    caption={
+        "Feedback"
+    }
+    width={3}
+    maxHeight={"200px"}
+  >
+
+We learned from our participants that when they felt pain from their workouts they would continue the movement and tough it out, this led to a pivotal realization in our research. “Toughing it out” can lead to a lower-quality workout and injuries. This came from the beginner gym goer, which emphasized the need for real-time feedback on form and exertion levels. This would give the people a coach inside their pockets to help correct the workout and decrease the risk of injury. Our other participants like the fitness coach who was huge on adjusting workouts in real time accepted well this idea based on how the body felt on that specific day. Along with the app, a sensor that could track movement so we could teach in real-time to make informed decisions about their workouts, leading to a safe and more productive experience. 
+
+
+</ProjectImageBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder2,
+            src: imagePlaceholder18,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Our initial sketches for the nutrition plan and goal tracker #1",
         },
-        { 
-            src: imagePlaceholder3,
+        {
+            src: imagePlaceholder17,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Our initial sketches for the nutrition plan and goal tracker #2",
         },
     ]}
     direction={"row"}
-    width={8}
-    maxHeight={"400px"}
+    caption={
+        "Storyboards of how FitQuest and our sensor help to create a guided and effective workout"
+    }
+    width={12}
+    maxHeight={"1200px"}
 >
 
-From our interviews, we learned the importance of nutrition. The competitive bodybuilder emphasized that working out is not enough to reach their goals inside the gym. The hidden factor is nutrition. They have a detailed plan of all the macronutrients they need to eat before they enter the gym and after they exit the gym. For example, strategic use of high-carb meals before intense workouts to fuel performance. If you are working out and this is a personal best day you will be better off fueling and preparing earlier with proper carbs and protein. This will allow you to perform at your best. Nutrition is also the way to recover from the strain inside the gym, our research shows stories of participants experiencing plateaus in their fitness progress, attributing these stalls to bad dietary management. The participants needed more protein and calories throughout the day which led to a lack of motivation to go back into the gym. Deficiency in protein and calories will increase tiredness and increase the risk of injury because your body has not had the right nutrients to repair itself after the workout. We learned there is a direct link between diet, recovery, and performance.
 </ProjectImagesBlock>
-
-### Real TIme Feedback
-
-We learned from our participants that when they felt pain from their workouts they would continue the movement and tough it out, this led to a pivotal realization in our research. “Toughing it out” can lead to a lower-quality workout and injuries. This came from the beginner gym goer, which emphasized the need for real-time feedback on form and exertion levels. This would give the people a coach inside their pockets to help correct the workout and decrease the risk of injury. Our other participants like the fitness coach who was huge on adjusting workouts in real time accepted well this idea based on how the body felt on that specific day. Along with the app, a sensor that could track movement so we could teach in real-time to make informed decisions about their workouts, leading to a safe and more productive experience. 
 
 ## Iterative Design Process and Key Insights
 
-After we considered our goals for our product, we chose to focus on two tasks. 
-1. Understanding Personal Goals  
-2. Sharing and Teaching Proper Exercise Forms and Techniques for Safe and Effective Workouts. 
-
-In the design process, paper prototyping initially helped visualize the app's features and layout. Through heuristic evaluations and usability testing, potential usability issues were identified and addressed, leading to significant revisions such as adding educational content and improving goal-setting flexibility. Finally, digital mockups were created to refine the app's design, incorporating peoples feedback for a more human-centered approach. 
-
-
-### Lack of Education
+FitQuest doesn't just understand your fitness goals; it helps you clearly express and track them. This personalized approach ensures that your fitness plan aligns with your aspirations.
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder4,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: imagePlaceholder22,
+        alt: "Paper Prototype Storyboard P1",
+    }}
+    maxHeight={"800px"}
+  >
+  </ProjectImageBlock>
+  <ProjectImageBlock
+    image={{
+        src: imagePlaceholder23,
+        alt: "Paper Prototype Storyboard P1",
     }}
     caption={
-        "Personalized workout plan with education on movement."
+        "Our paper prototype in our envisioned usability process"
+    }
+    maxHeight={"800px"}
+  >
+  </ProjectImageBlock>
+
+After we considered our goals for our product, we chose to focus on two tasks. 
+1. Facilitating Clarity on Personal Fitness Goals
+2. Providing Comprehensive Guidance on Exercise Form and Techniques for Safe and Effective Workouts
+
+In our iterative design process for the fitness app, we prioritized a user-centered approach by involving a diverse range of participants, including fitness enthusiasts, novices, trainers, and individuals with specific fitness goals. Usability testing was conducted in real gym settings, where participants interacted with the paper prototype's features, set fitness goals, accessed educational materials, and followed exercise routines. By observing their interactions and gathering feedback, we gained valuable insights into the app's usability, effectiveness, and overall user experience. Testing in gym environments ensured that the app's performance was evaluated in contextually relevant scenarios, allowing us to identify and address usability issues effectively. In the design process, paper prototyping initially helped visualize the app's features and layout. Through heuristic evaluations and usability testing, potential usability issues were identified and addressed, leading to significant revisions such as adding educational content and improving goal-setting flexibility. Finally, digital mockups were created to refine the app's design, incorporating peoples feedback for a more human-centered approach.
+
+### Lack of Education
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder4,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: imagePlaceholder21,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Paper prototype and digital mock up providing helpful information regarding the workout"
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"350px"}
 >
 
 There is a strong need for educational content. In our initial concepts and designs, we thought the sensor and bar tracking would be enough to help the people with their forms. However participants, especially beginners expressed that they needed to know how to perform the exercise or the sensor wouldn't help. Initially, the app had minimal instructional content, assuming people had a basic understanding of gym exercises, we needed to remove this assumption. Our design lacked what the beginners needed, more feedback showed us that the people using the apps wanted guidance on proper form to prevent injuries while getting feedback on if they were performing it well. We used this to incorporate detailed exercise demonstrations. Videos, step-by-step instructions, and feedback.
 
-</ProjectImageBlock>
+
+</ProjectImagesBlock>
 
 ### Flexibility in Workout Planning 
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder5,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "Workout plan with ability to change days."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Feedback from the iterative design process showed us the importance of freedom within the app. Initially, the app had a strict uneditable workout schedule. This is another assumption we made, we did not consider people’s fluctuating availabilities/schedules or changing fitness goals. Our participants showed us that the app had a one-size-fits-all approach that would not work well with their changing lifestyles. We incorporated a new design that would allow people to build their workout schedule and workouts if they needed to. The one the app builds would be shown as a “recommended plan” This gives freedom to the people using the app and it enhances the app's adaptability.
-
-</ProjectImageBlock>
-
-### Feedback
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder6,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "Feedback based on movement."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Our participants were also confused about the bar path page. Initially, our only way of feedback came in the way of the target zone. If the sensor stayed in the correct path for the specific exercise you would know if the exercise was performed correctly. The difficulty came when you did not perform it well. The participants felt the target zone potentially would not give enough feedback to help out everyone. Now the bar path page has feedback in words along with the target zone. It will give where you went from and tips on how to avoid the mistake. Along with this, we performed more heuristic evaluations and included an educational page on how to line up the sensor with the bar, machine, or dumbbell to avoid people guessing where the sensor should be placed. 
-
-</ProjectImageBlock>
-
-## Resulting Design
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: imagePlaceholder5,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder300x600,
+            src: imagePlaceholder19,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block spans the set of images."
+        "Paper prototype and digital mock up showing the flexibility in workout planning"
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"350px"}
 >
 
-Fitquest transforms the difficult journey into fitness into a personalized/interactive experience. The first step is understanding personal goals. This begins the moment people log in and create their profile. The app uses a quick registration process where you input essential details like weight, height, age, and fitness objectives. The app also combines these figures with your available days, creating a workout schedule uniquely. This design even caters to unpredictable schedules, ensuring flexibility for people. Also, progress and personal statistics are continuously updated and displayed, offering a transparent/motivating overview of their journey.
-
-The second task focuses on imparting knowledge about proper exercise forms and techniques, this is very important for safe and effective workouts. Fitquest approach uses a mix of visual aids and real-time feedback. When you select a workout, the app displays detailed videos demonstrating correct exercise techniques. These are augmented by the use of a wearable sensor, providing immediate feedback on your form and performance. As you perform exercises, like squats, the sensor tracks your movement, offering insights on areas of improvement. The app has undergone significant enhancements. Changes include integrating verbal feedback with visual cues, simplifying the UI by combining goals and availability into a single page, and introducing a convenient feature to add personal notes and access instructional videos directly from the workout routine. These improvements not only enrich people's experience but also emphasize our goal to make fitness accessible, understandable, and personalized.
-
+Feedback from the iterative design process showed us the importance of freedom within the app. Initially, the app had a strict uneditable workout schedule. This is another assumption we made, we did not consider people’s fluctuating availabilities/schedules or changing fitness goals. Our participants showed us that the app had a one-size-fits-all approach that would not work well with their changing lifestyles. We incorporated a new design that would allow people to build their workout schedule and workouts if they needed to. The one the app builds would be shown as a “recommended plan” This gives freedom to the people using the app and it enhances the app's adaptability.
 
 </ProjectImagesBlock>
+
+### Feedback
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder9,
-            alt: "",
-            caption: "Sensor to track bar path to ensure good form and ideal weight movement relative to your body."
+            src: imagePlaceholder6,
+            alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder10,
-            alt: "",
-            caption: "Detached for certain movements(dumbbell, squats, etc)"
+            src: imagePlaceholder20,
+            alt: "Every image requires alt text. This should describe the content of that image.",
         },
     ]}
-    direction={"column"}
+    direction={"row"}
+    caption={
+        "Paper prototype and digital mock up providing feedback and bar path tracking"
+    }
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"350px"}
 >
 
+Our participants were also confused about the bar path page. Initially, our only way of feedback came in the way of the target zone. If the sensor stayed in the correct path for the specific exercise you would know if the exercise was performed correctly. The difficulty came when you did not perform it well. The participants felt the target zone potentially would not give enough feedback to help out everyone. Now the bar path page has feedback in words along with the target zone. It will give where you went from and tips on how to avoid the mistake. Along with this, we performed more heuristic evaluations and included an educational page on how to line up the sensor with the bar, machine, or dumbbell to avoid people guessing where the sensor should be placed. 
+
 </ProjectImagesBlock>
+
+## Resulting Design
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder24,
+        alt: "Paper Prototype Storyboard P1",
+    }}
+    maxHeight={"800px"}
+  >
+  </ProjectImageBlock>
+  <ProjectImageBlock
+    image={{
+        src: imagePlaceholder25,
+        alt: "Paper Prototype Storyboard P1",
+    }}
+    caption={
+        "Here is a walkthrough of FitQuest, where we demonstrate how each feature works in sync to provide you with a seamless fitness experience"
+    }
+    maxHeight={"800px"}
+  >
+  </ProjectImageBlock>
+Fitquest transforms the difficult journey into fitness into a personalized/interactive experience. The first step is understanding personal goals. This begins the moment people log in and create their profile. The app uses a quick registration process where you input essential details like weight, height, age, and fitness objectives. The app also combines these figures with your available days, creating a workout schedule uniquely. This design even caters to unpredictable schedules, ensuring flexibility for people. Also, progress and personal statistics are continuously updated and displayed, offering a transparent/motivating overview of their journey.
+
+The second task focuses on imparting knowledge about proper exercise forms and techniques, this is very important for safe and effective workouts. Fitquest approach uses a mix of visual aids and real-time feedback. When you select a workout, the app displays detailed videos demonstrating correct exercise techniques. These are augmented by the use of a wearable sensor, providing immediate feedback on your form and performance. As you perform exercises, like squats, the sensor tracks your movement, offering insights on areas of improvement. The app has undergone significant enhancements. Changes include integrating verbal feedback with visual cues, simplifying the UI by combining goals and availability into a single page, and introducing a convenient feature to add personal notes and access instructional videos directly from the workout routine. These improvements not only enrich people's experience but also emphasize our goal to make fitness accessible, understandable, and personalized.
+
