@@ -55,7 +55,7 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
 import nathanielPhoto from "public/images/projects/orcapod/team/photo_nathaniel.png";
 import denisePhoto from "public/images/projects/orcapod/team/photo_denise.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
+import karenPhoto from "public/images/projects/orcapod/team/photo_karen.png";
 import kevinPhoto from "public/images/projects/orcapod/team/photo_kevin.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
@@ -63,13 +63,46 @@ import imagePlaceholder400x400 from "public/images/projects/template/post/400x40
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
+{/* Project overview */}
+
 import problemDesignOverview from "public/images/projects/orcapod/post/long_distant_fish.png";
+
+{/* 3 Process Insights */}
+
+
+{/* Design Overview */}
+import ippOverview from "public/images/projects/orcapod/post/ipp_overview.png";
+import fppOverview from "public/images/projects/orcapod/post/fpp_overview.png";
+import digitalOverview from "public/images/projects/orcapod/post/digital_mockup_overview.png";
+
+{/* 3 Design Insights */}
 
 import byransPod from "public/images/projects/orcapod/post/bryans_pod.png";
 import elizasPod from "public/images/projects/orcapod/post/elizas_pod.png";
 
 import fppGridlines from "public/images/projects/orcapod/post/fpp_gridlines.png";
-import ashleysPod from "public/images/projects/orcapod/post/ashleys_pod.png";
+import ippGridlines from "public/images/projects/orcapod/post/ipp_gridlines.png";
+import ashleypodGridlines from "public/images/projects/orcapod/post/ashleypod_gridlines.png";
+
+{/* Design Results */}
+
+import finalDesign from "public/images/projects/orcapod/post/digital_mockup_insights.png";
+
+{/* Task 1 */}
+
+import task1_one from "public/images/projects/orcapod/post/setup.png";
+import task1_two from "public/images/projects/orcapod/post/homepod_eliza.png";
+import task1_three from "public/images/projects/orcapod/post/updatepod_eliza.png";
+import task1_four from "public/images/projects/orcapod/post/typingpod_eliza.png";
+import task1_five from "public/images/projects/orcapod/post/sentpod_eliza.png";
+import task1_six from "public/images/projects/orcapod/post/finishpod_eliza.png";
+
+{/* Task 2 */}
+
+import task2_one from "public/images/projects/orcapod/post/homepod_eliza2.png";
+import task2_two from "public/images/projects/orcapod/post/messagepod_eliza2.png";
+import task2_three from "public/images/projects/orcapod/post/typingpod_eliza2.png";
+import task2_four from "public/images/projects/orcapod/post/sentpod_eliza2.png";
 
 # OrcaPod
 
@@ -94,7 +127,7 @@ import ashleysPod from "public/images/projects/orcapod/post/ashleys_pod.png";
     },
     {
         name: ["Karen Ma", "She/Her"],
-        photo: imageTeamPerson3,
+        photo: karenPhoto,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
@@ -166,7 +199,7 @@ stay connected even if they may not be able to physically see each other.
             caption: "Final paper prototype added gridlines to assist with participant's navigations.",
         },
         {
-            src: ashleysPod,
+            src: ashleypodGridlines,
             alt: "The pod screen Elizabeth sees for Ashley.",
             caption: "Digital prototype added gridbox to assist with participant's navigation.",
         },
@@ -253,7 +286,7 @@ virtually when they couldn’t.
 
 <ProjectImageBlock
     image={{
-        src: problemDesignOverview,
+        src: ippOverview,
         alt: "PNG Long Distant Fish"
     }}
     caption={
@@ -277,6 +310,32 @@ a summary of our project, design, and explained the two tasks. Then we had parti
 complete both tasks with the paper prototype. From these usability tests, we identified multiple 
 issues with our design and workflow, as discussed below.
 
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: fppOverview,
+        alt: "PNG Long Distant Fish"
+    }}
+    caption={
+        "Being apart highlights the importance of maintaining frequent connections."
+    }
+    width={12}
+    maxHeight={"800px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: digitalOverview,
+        alt: "PNG Long Distant Fish"
+    }}
+    caption={
+        "Being apart highlights the importance of maintaining frequent connections."
+    }
+    width={12}
+    maxHeight={"800px"}
+>
 </ProjectImageBlock>
 
 ### Favorability Within Modes in Different Demographics
@@ -312,7 +371,7 @@ features for text input.
 <ProjectImagesBlock
     images={[
         {
-            src: fppGridlines,
+            src: ippGridlines,
             alt: "Initial paper prototype no navigation prompts",
             caption: "Initial paper prototype with no navigational prompts or labels.",
         },
@@ -322,14 +381,14 @@ features for text input.
             caption: "Final paper prototype added gridlines to assist with participant's navigations.",
         },
         {
-            src: ashleysPod,
+            src: ashleypodGridlines,
             alt: "The pod screen Elizabeth sees for Ashley.",
             caption: "Digital prototype added gridbox to assist with participant's navigation.",
         },
     ]}
     direction={"row"}
     width={12}
-    maxHeight={"400px"}
+    maxHeight={"800px"}
 >
 
 Across all our usability tests, participants often lacked guidance on what actions to take. 
@@ -356,7 +415,7 @@ harder to use.
             caption: "Final paper prototype added gridlines to assist with participant's navigations.",
         },
         {
-            src: ashleysPod,
+            src: ashleypodGridlines,
             alt: "The pod screen Elizabeth sees for Ashley.",
             caption: "Digital prototype added gridbox to assist with participant's navigation.",
         },
@@ -378,19 +437,15 @@ the smartboard, and this took away from the participant's experience.
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: finalDesign,
             alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
+        }
     ]}
     direction={"row"}
     caption={
         "This caption for the entire block spans the set of images."
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
 
@@ -410,19 +465,19 @@ guessing.
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
+            src: task1_one,
             alt: "Every image requires alt text. This should describe the content of that image.",
             caption: "A top image caption."
         },
         {
-            src: imagePlaceholder600x300,
+            src: task1_two,
             alt: "Every image requires alt text. This should describe the content of that image.",
             caption: "A bottom image caption."
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
 >
 
 Here our two participants, named Elizabeth and Ashley for convenience, Elizabeth wants to set 
@@ -450,24 +505,64 @@ and reply accordingly.
 
 </ProjectImagesBlock>
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1_two,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "A bottom image caption."
+        },
+        {
+            src: task1_four,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "A top image caption."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1_five,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "A bottom image caption."
+        },
+        {
+            src: task1_six,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "A bottom image caption."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+
+</ProjectImagesBlock>
+
 ### Communicating When the Other Party is Unavailable
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
+            src: task2_one,
             alt: "Every image requires alt text. This should describe the content of that image.",
             caption: "A top image caption."
         },
         {
-            src: imagePlaceholder600x300,
+            src: task2_two,
             alt: "Every image requires alt text. This should describe the content of that image.",
             caption: "A bottom image caption."
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
 >
 
 Bryan is struggling with balancing midterms and keeping Elizabeth involved in their life at the moment. 
@@ -486,4 +581,23 @@ message.
 Once the message has been posted, the participant has the option to hide, blur, 
 or delete their message, and the other party will receive a notification on their board.
 
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2_three,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "A bottom image caption."
+        },
+        {
+            src: task2_four,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "A bottom image caption."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
 </ProjectImagesBlock>
