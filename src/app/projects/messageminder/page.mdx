@@ -57,7 +57,7 @@ import faraz from "public/images/projects/messageminder/team/faraz.png";
 import lillian from "public/images/projects/messageminder/team/lillian.png";
 import hugh from "public/images/projects/messageminder/team/hugh.png";
 import tim from "public/images/projects/messageminder/team/tim.png";
-import overview from "public/images/projects/messageminder/post/summary.png";
+import overview from "public/images/projects/messageminder/post/homepage.png";
 import analytics from "public/images/projects/messageminder/post/contactAnalytics.png"
 import reminder from "public/images/projects/messageminder/post/reminderSetting.png"
 import contact from "public/images/projects/messageminder/post/contact.png"
@@ -70,6 +70,8 @@ import generate_reply from "public/images/projects/messageminder/post/generate_r
 import logo from "public/images/projects/messageminder/post/messageminder-logo.png";
 import infographic from "public/images/projects/messageminder/post/infographic.png";
 import bulkadd  from "public/images/projects/messageminder/post/bulkadd.png";
+import task1 from "public/images/projects/messageminder/post/task1-walkthrough.png";
+import task2 from "public/images/projects/messageminder/post/task2-walkthrough.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -134,16 +136,16 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
         src: logo,
         alt: "MessageMinder logo: brain/chat bubble"
     }}
- 
+
     width={6}
     maxHeight={"400px"}
 >
 
-In an era where rapid online communication is vital, it's surprisingly easy to overlook replying to messages. 
-Studies reveal that while 50% of electronic replies occur within an hour, the remainder can extend to days, 
-leading to unintentional neglect. In the case of loved ones and close friends this can then start to 
-strain relationships. Our project, Mindful Messenger, aims to address this issue by helping users 
-become more aware of their response times, thereby improving their communication habits and reducing the stress 
+In an era where rapid online communication is vital, it's surprisingly easy to overlook replying to messages.
+Studies reveal that while 50% of electronic replies occur within an hour, the remainder can extend to days,
+leading to unintentional neglect. In the case of loved ones and close friends this can then start to
+strain relationships. Our project, Mindful Messenger, aims to address this issue by helping users
+become more aware of their response times, thereby improving their communication habits and reducing the stress
 of digital interactions.
 
 </ProjectImageBlock>
@@ -155,6 +157,16 @@ of digital interactions.
 We embarked on a comprehensive study involving interviews and surveys with computer science students, aiming to delve
 into the underlying reasons behind poor texting habits. This approach provided both qualitative insights from interviews
 and quantitative data from surveys, helping to validate initial observations and uncover patterns in texting behavior.
+
+Our four participants for the interviews were all Computer Science majors at the University of Washington. All of our participants 
+are taking a higher workload, consisting of about 16-18 credits, and are involved in a variety of extracurricular activities and jobs
+ such as on-campus organizations, teaching assistant roles, and research. Our participants varied in their perception of their text 
+ response speeds and also differed in opinion regarding the correlation between their busy workloads and text response levels. 
+ Overall, they demonstrated interest in the project concept as a whole and agreed that this is a relevant problem sphere to explore.
+The survey participants came from the same demographic background as the four previously described interview participants. We posted
+ the survey on Instagram and also asked specifically via word of mouth and text to known Computer Science students. The survey aimed 
+ to achieve a wider pool of data at a more quantitative level, enabling us to draw patterns that help validate initial insights 
+ gathered from our interviews.
 
 ### Key Insights
 
@@ -212,7 +224,26 @@ supports both of our tasks well and our app will be in close proximity to where 
 primary tasks our app supports are:
 
 1. Tracking message response times in a conversation with a new acquaintance
+
+<ProjectImageBlock
+    image={{
+      src: task1,
+      alt: "Navigate to contacts page and click the plus sign to add a contact. Fill in name and phone number, press continue, and set reminders to add a contact. Now on the contacts page, view text conversation analytics by clicking their contact card."
+    }}
+
+    width={12}
+/>
+
 2. Getting advice for specific responses to a difficult conversation topic
+
+<ProjectImageBlock
+    image={{
+      src: task2,
+      alt: "Navigate to replies page and click on the reply we want to generate a response for. Click generate, then click refresh until the desired response is generated. Then click send."
+    }}
+
+    width={12}
+/>
 
 ### Process
 
@@ -321,15 +352,23 @@ Our final design includes two key tasks:
     ]}
     direction={"row"}
     caption={
-        "Taken from MessageMinder figma prototype"
+        "These images show the workflow of task 1. A User can go from the homepage to the contact list, add a new contact, set reminders for that contact, and view contact-specific analytics."
     }
     width={12}
-    maxHeight={"250px"}
+    maxHeight={"275px"}
 >
 
-Users are able to view a dashboard of their analytics and set goals for their response times. The app will then track their progress and provide reminders to respond to messages.
-As we see in the images to the right, the user can first view their dashboard, click on the analytics widget to track their stats. They can then choose to add a contact.
-After adding a contact they can then configure a reminder for that contact and then view their analytics with that person. 
+Streamlined Bulk Usability
+
+- During the initial rounds of the paper prototype testing process, our participants posed the question: How can I add multiple contacts? This lack of functionality in our feature space was hugely overlooked during our rapid design process, and this realization drove the development of a significant amount of new pages and components that leaned into the flexibility and efficiency of use heuristics. Additionally, during the second round of paper prototype usability testing, a similar idea was mentioned that individually customizing the reminder setting thresholds for each new contact would be inefficient. From this, we added our bulk select, group reminder setting editing, and editing features that are pieces of functionality that are now core to our design.
+
+Clarity of the Reply Space
+
+- Another uncovered aspect when conducting the second round of paper prototype testing was a lack of clarity in how one can access and view existing messages that are in need of responses. One of our participants voiced confusion about where the actual response generation button was, and also how to even navigate to the specific message in the first place. Initially, we only had four main app page tabs, yet after careful ideation when iterating our design into the digital mockup form, we realized that adding another page that housed solely the replies created a stronger clarity towards the reply generation feature for users.
+
+Technology Context Integration
+
+- We were solely focused on developing the reply generation process during our initial iterations that we overlooked the notion that our users may simply need an opportunity to navigate from a reply message into the native messaging application. This “Go To Message” functionality in conjunction with the core generation feature was a suggestion that one of our paper prototype usability testing participants suggested, and it felt like such a clear and meaningful addition to our design. This idea leans into the notion of MessageMinder functioning more as a tool that empowers users to navigate to responding to messages at a consistent level, and it was interesting to discover how we overlooked this core idea in our initial design.
 
 </ProjectImagesBlock>
 
@@ -354,16 +393,15 @@ After adding a contact they can then configure a reminder for that contact and t
     ]}
     direction={"row"}
     caption={
-        "Taken from MessageMinder figma prototype"
+        "These images depict task 2. A user can view the conversation they want to respond to, click on the reply button, see what type of response they want to use, and then generate a response to that conversation. If they don't like it they can refresh until they are satisfied."
     }
     width={12}
     maxHeight={"500px"}
 >
 
-Oftentimes users do not want to respond since the conversation requires too much thinking activation power to overcome. This 
-task is designed to enable users to generate a response to a difficult conversation topic. As we see in the images to the right, 
-users can view the conversation they want to respond to, click on the reply button, see what type of response they want to use, and then 
-generate a response to that conversation. If they don't like it they can refresh until they are satisfied. 
+Oftentimes users do not want to respond since the conversation requires too much thinking activation power to overcome. This
+task is designed to enable users to generate a response to a difficult conversation topic. As we see in the images to the right,
+users can view the conversation they want to respond to, click on the reply button, see what type of response they want to use, and then
+generate a response to that conversation. If they don't like it they can refresh until they are satisfied.
 
 </ProjectImagesBlock>
-
