@@ -74,6 +74,8 @@ import paper_notification from "public/images/projects/mindshift/post/paper_noti
 {/* onboarding images */}
 import digital_onboarding from "public/images/projects/mindshift/post/digital_onboarding.png";
 import paper_onboarding from "public/images/projects/mindshift/post/paper_onboarding.jpg";
+import digital_carousel_1 from "public/images/projects/mindshift/post/digital_onboarding_carousel_1.png";
+import digital_carousel_2 from "public/images/projects/mindshift/post/digital_onboarding_carousel_2.png";
 
 {/* overall images */}
 import onboarding_1 from "public/images/projects/mindshift/post/task1_1_1.png";
@@ -106,22 +108,22 @@ import dashboard from "public/images/projects/mindshift/post/dashboard.png";
   */}
 <ProjectTeamGallery members={[
     {
-        name: [ "Audrey"],
+        name: [ "Audrey Craig"],
         photo: imageTeamPerson1,
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
-        name: [ "Lianne"],
+        name: [ "Lianne Kniest"],
         photo: imageTeamPerson2,
-        // A default alt of "Photo of Team Person 3." will be generated.
+        // A default alt of "Photo of Team Person 2." will be generated.
     },
     {
-        name: [ "Francis"],
+        name: [ "Francis Peng"],
         photo: imageTeamPerson3,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: [ "Marius"],
+        name: [ "Marius Rakickas"],
         photo: imageTeamPerson4,
         alt: "Photo of Team Person 4, looking cool with their additional image description."
     },
@@ -144,19 +146,6 @@ import dashboard from "public/images/projects/mindshift/post/dashboard.png";
   *
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
-{/* 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
-> */}
 
 The ubiquity of smartphones in the United States has fundamentally changed 
 the way that we interact with technology. Differences in these changes vary 
@@ -183,31 +172,13 @@ A vast amount of recent research has been performed confirming the problematic n
 
 The most common negative sentiment uncovered in our research revolved around the idea of looking to social media and short-form video as a place to alleviate boredom and then putting their phone down dissatisfied. Within the diary entries one participant mentioned “flicking through 5 different apps to pass time and not finding [the happiness] that I wanted” and hopping between apps to “see if more messages/content to interact with had come in”. Exit interviews revealed that these usage pathways had provided happiness and excitement in the past; often though, picking up their phone to recreate these experiences led to dissatisfaction and a sense of futility. This insight was the main inspiration for our journey-driven app, which allows users to set specific goals such as reduce app screen time. They can set up a journey after a particularly unhappy session, so that in future sessions they are stopped from anxiously scrolling around.  
 
-### Distraction while focusing
-
-{/* <ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
-> */}
+### Distraction While Focusing
 
 Our diary questions asked participants to keep detailed track of when they opened their phone, and thus we discovered that many users reported using short-form entertainment (i.e. TikTok) as a “brain break” during intense focus periods while studying. This aligns with our expectations of usage, since it can easily be used to distract someone from a stressful situation, a category that studying falls into. Furthermore, we uncovered a trend that ~60% of all social media time occurred on campus despite only ~40% of student participant days being spent on campus. These findings were utilized in the creation of our geotracking features in the application, which allow users to keep track of the places they heavily use their phone and allow them to minimize their usage in locations that should not have heavy phone usage, such as studying
 
 {/* </ProjectImagesBlock> */}
 
-### Sleep-centric usage
+### Sleep-centric Wsage
 
 In addition to heavy phone usage corresponding to stressful situations such as studying, a great deal of phone usage corresponded with timing throughout the day. We noticed in our data that 5 participants out of the 9 had usage graphs that took on the shape of a bimodal bell curve with peaks of usage in the morning, slightly delayed after wake up and 7pm, post dinner. In our exit interviews, when asked about the following piece of data, most participants admitted that it’s a result mostly of habit rather than genuinely fun or productive usage. Participants mentioned that without interference it was super easy to fall into this pattern. Thus in our app we made sure to integrate a reminder feature that could disrupt social media usage at certain times to ensure that users couldn’t absentmindedly scroll through the morning. 
 
@@ -217,43 +188,45 @@ We focused on two primary tasks that were essential to our design. The first was
 
 
 ### Clear and Concise Onboarding
+<ProjectImageBlock
+    image={{
+        src: paper_onboarding,
+        alt: "Image of journey dashboard with statistics on usage.",
+    }}
+    caption={
+        "The first rendition of an onboarding session."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+Multiple participants were initially confused by our cluttered 2-page onboarding processes that easily overwhelmed them and did not properly explain how to create and manage mindfulness journeys. Some of them tried to parse through it and failed and one said “I’m not reading this” and skipped right through. To fix the issue we broke down the process into a series of easily-digestible panels that use minimal text to ensure the user gets a basic understanding of the app even if they try to quickly flip through the introduction. Considering the slight complexity of our application, ensuring that the user is knowledgeable on how to navigate it is crucial to ensure that they are quickly able to start their first self-improvement journey. Introducing the core idea of journeys is accomplished via this step-by-steop introduction.
+These guide pages also persist as a "help page" for the user to access whenever.
+
 
 <ProjectImagesBlock
     images={[
         {
-            src: paper_onboarding,
-            alt: "An image of the paper prototype onboarding screens.",
+            src: digital_carousel_1,
+            alt: "Some digital onboarding screens outlining notification allowance and Journeys.",
         },
         {
-            src: digital_onboarding,
-            alt: "An image of the digital prototype onboarding screens.",
+            src: digital_carousel_2,
+            alt: "A continuation of onboarding with tips on priority alerts and other terminology.",
         },
     ]}
-    direction={"row"}
+    direction={"column"}
     caption={
-        "Onboarding screens as they evolved over time."
+        "When a user first installs MindShift, they will be met with a series of onboarding screens that explain the rationale of the application and some of its main functionality. This page in particular explains how the app works as a whole."+
+        "The final digital onboarding process, as lengthened and evolved via feedback from usability testing participants."
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
-
-Multiple participants were initially confused by our cluttered 2-page onboarding processes that easily overwhelmed them and did not properly explain how to create and manage mindfulness journeys. Some of them tried to parse through it and failed and one said “I’m not reading this” and skipped right through. To fix the issue we broke down the process into a series of easily-digestible panels that use minimal text to ensure the user gets a basic understanding of the app even if they try to quickly flip through the introduction. Considering the slight complexity of our application, ensuring that the user is knowledgeable on how to navigate it is crucial to ensure that they are quickly able to start their first self-improvement journey.
-
 </ProjectImagesBlock>
 
 ### Simplifying Customization
-
-{/* <ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
-> */}
 
 When exploring available journeys, participants understood most of the straightforward options such as “reducing pickups that lead to Instagram”, but showing them examples such as “reduce Instagram usage in a certain location” led to confusion on how the journeys are generated and what options for customization exist. Some participants glazed over the subject but it was clear they did not fully understand and confused so if pressed further. To fix this we introduced three discrete goals to focus on: pickup count, screen time, and specific app reduction. This change is conveyed in the onboarding and is made very clear when a user is creating a new journey. This is crucial as it eliminates most of the headache that people had trying to understand all the options and easily allows them to create familiar journeys.
 
@@ -274,7 +247,7 @@ When exploring available journeys, participants understood most of the straightf
     ]}
     direction={"row"}
     caption={
-        "Notication types screens as they evolved over time."
+        "The importance of MindShift notifications lies in their interruptive nature. It should not be easy to ignore MindShift notifications, but it should also not be a chore to read and interpret them."
     }
     width={6}
     maxHeight={"400px"}
@@ -293,24 +266,24 @@ A user's journey in our app centers around two tasks: identifying a problematic 
     images={[
         {
             src: onboarding_1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of the title screen",
         },
         {
             src: onboarding_2,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of the onboarding notifications screen",
         },
         {
             src: onboarding_3,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of the onboarding information screen",
         },
         {
             src: onboarding_4,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of the onboarding journeys screen",
         },
     ]}
     direction={"row"}
     caption={
-        "Introducing the core idea of journeys is accomplished via an introduction and enabling of key functionality."
+        "When a user enters the application for the first time, they're met with onboarding screens that include a title, an explanation of the MindShift notifications, the overall purpose and functionality of the application, and the concept of user-customizable journeys."
     }
     width={10}
     maxHeight={"600px"}
@@ -320,16 +293,16 @@ A user's journey in our app centers around two tasks: identifying a problematic 
     images={[
         {
             src: onboarding_5,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of the onboarding journey customization",
         },
         {
             src: onboarding_6,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of the onboarding priority popup",
         },
     ]}
     direction={"row"}
     caption={
-        "Definitions of customization options are provided and accessible even after onboarding."
+        "Since journeys are a central component of the application, there are additional onboarding screens and information on how to customize and efficiently use journeys. In particular, components of a journey are highlighted in their own pop-up screens that provide additional information."
     }
     width={10}
     maxHeight={"400px"}
@@ -342,12 +315,12 @@ The user receives an array of potential journeys, as well as an array of current
     images={[
         {
             src: carousel,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of the carousel menu",
         },
     ]}
     direction={"row"}
     caption={
-        "'Homescreen' Where the user can click into existing journeys, view suggestions, or create new ones."
+        "When a user is on the primary 'Homescreen' of MindShift, they can view existing journeys that they have already configured, browse suggestions of 'new' journeys based on their recent browsing activities and metadata, or create new journeys from scratch."
     }
     width={10}
     maxHeight={"400px"}
@@ -357,51 +330,33 @@ The user receives an array of potential journeys, as well as an array of current
     images={[
         {
             src: custom_1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of the journey creation process",
         },
         {
             src: custom_2,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of customizing components of the journey creation process",
         },
     ]}
     direction={"row"}
     caption={
-        "Creating a journey based off of a location prompt"
-    }
-    width={10}
-    maxHeight={"400px"}
->
-</ProjectImagesBlock>
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "Creating a journey from scratch with no AI suggestions (NEED TO RE-RENDER BEFORE FINAL SUBMISSION)"
+        "A user can create a journey out of anything, in this case a user is configuring a geographical location-based journey. They can give their journey a name, priority, and duration, among other customizable features."
     }
     width={10}
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
 
-### Task 2: Interrupting habits
+### Task 2: Interrupting Habits
+The user is able to receive interruptive notifications that align with journeys they configured in the MindShift application. Depending on certain properties of the journeys themselves, users will receive notifications after displaying specific behaviors, such as spending a certain amount of time on the application or opening the application a certain number of times. To dismiss the notification, the user will have to make a mindful decision to snooze a pop-up alert, making it harder to subconsciously continue the harmful digital habit.
 <ProjectImagesBlock
     images={[
         {
             src: interrupt_1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of an Instagram homepage",
         },
         {
             src: interrupt_2,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "An image of a MindShift notification on top of the Instagram page",
         },
     ]}
     direction={"row"}
