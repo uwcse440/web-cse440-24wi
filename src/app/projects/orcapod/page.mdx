@@ -53,23 +53,61 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import nathanielPhoto from "public/images/projects/orcapod/team/photo_nathaniel.png";
+import denisePhoto from "public/images/projects/orcapod/team/photo_denise.png";
+import karenPhoto from "public/images/projects/orcapod/team/photo_karen.png";
+import kevinPhoto from "public/images/projects/orcapod/team/photo_kevin.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
+{/* Project overview */}
+
 import problemDesignOverview from "public/images/projects/orcapod/post/long_distant_fish.png";
+import theGlobe from "public/images/projects/orcapod/post/theglobe.png";
+
+{/* 3 Process Insights */}
+
+
+{/* Design Overview */}
+import ippOverview from "public/images/projects/orcapod/post/ipp_overview.png";
+import fppOverview from "public/images/projects/orcapod/post/fpp_overview.png";
+import digitalOverview from "public/images/projects/orcapod/post/digital_mockup_overview.png";
+
+{/* 3 Design Insights */}
 
 import byransPod from "public/images/projects/orcapod/post/bryans_pod.png";
 import elizasPod from "public/images/projects/orcapod/post/elizas_pod.png";
 
 import fppGridlines from "public/images/projects/orcapod/post/fpp_gridlines.png";
-import ashleysPod from "public/images/projects/orcapod/post/ashleys_pod.png";
+import digitalGridlines from "public/images/projects/orcapod/post/digital_gridlines.png";
+
+import fppError from "public/images/projects/orcapod/post/fpp_error.png";
+import digitalError from "public/images/projects/orcapod/post/digital_error.png";
+
+import ippGridlines from "public/images/projects/orcapod/post/ipp_gridlines.png";
+
+{/* Design Results */}
+
+import finalDesign from "public/images/projects/orcapod/post/digital_mockup_insights.png";
+
+{/* Task 1 */}
+
+import task1_one from "public/images/projects/orcapod/post/setup.png";
+import task1_two from "public/images/projects/orcapod/post/homepod_eliza.png";
+import task1_three from "public/images/projects/orcapod/post/updatepod_eliza.png";
+import task1_four from "public/images/projects/orcapod/post/typingpod_eliza.png";
+import task1_five from "public/images/projects/orcapod/post/sentpod_eliza.png";
+import task1_six from "public/images/projects/orcapod/post/finishpod_eliza.png";
+
+{/* Task 2 */}
+
+import task2_one from "public/images/projects/orcapod/post/homepod_eliza2.png";
+import task2_two from "public/images/projects/orcapod/post/messagepod_eliza2.png";
+import task2_three from "public/images/projects/orcapod/post/typingpod_eliza2.png";
+import task2_four from "public/images/projects/orcapod/post/sentpod_eliza2.png";
 
 # OrcaPod
 
@@ -83,23 +121,23 @@ import ashleysPod from "public/images/projects/orcapod/post/ashleys_pod.png";
   */}
 <ProjectTeamGallery members={[
     {
-        name: ["Nathaniel Abraham Kassa", "He/Him"],
-        photo: imageTeamPerson1,
+        name: ["Nathaniel Kassa", "He/Him"],
+        photo: nathanielPhoto,
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
         name: ["Denise Mar", "She/Her"],
-        photo: imageTeamPerson2,
+        photo: denisePhoto,
         // A default alt of "Photo of Team Person 2." will be generated.
     },
     {
         name: ["Karen Ma", "She/Her"],
-        photo: imageTeamPerson3,
+        photo: karenPhoto,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
         name: ["Kevin Hwang", "He/Him"],
-        photo: imageTeamPerson4,
+        photo: kevinPhoto,
         alt: "Photo of Team Person 4, looking cool with their additional image description."
     },
 ]} />
@@ -153,6 +191,15 @@ stay connected even if they may not be able to physically see each other.
 
 ## Design Research Process and Key Insights
 
+<ProjectImageBlock
+    image={{
+        src: theGlobe,
+        alt: "PNG Long Distant Fish"
+    }}
+    width={12}
+    maxHeight={"400px"}
+>
+
 When designing our solution, we focused on three main things during the 
 research process: problems, reasons, and solutions. In a more in-depth 
 approach, identifying issues that lead to a lack of communication between 
@@ -182,6 +229,8 @@ from home, and parents of students away from home. This gave us a dual problem
 approach to navigating how to bridge communication issues between parents and 
 students who live away from home.
 
+</ProjectImageBlock>
+
 ### Technological Knowledge Differences
 
 During our interview with the student who lived away from home in Washington, 
@@ -191,29 +240,11 @@ understanding of technology.
 
 ### Lack of Emotions and Depth when Texting
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
-
 From our interview with the international student, we found out that they struggled 
 with fully expressing their emotions through texts and wished for a better way to 
 communicate their thoughts and emotions with their parents from across the world. 
 
-</ProjectImagesBlock>
+{/* </ProjectImagesBlock> */}
 
 ### Holidays and Traditions at the Core of Some Family Dynamics
 
@@ -225,17 +256,61 @@ virtually when they couldn’t.
 
 ## Iterative Design Process and Key Insights
 
-Our design focus was primarily on enhancing user interaction with the Home HubBoard, 
-specifically by improving communication across different time zones and ensuring 
-clear communication when one party is unavailable. We iteratively refined the alarm 
-setting process, making it more intuitive with a scroll wheel and gridded message 
-boxes for better organization. These design iterations were informed by usability 
-tests that revealed users' preferences for more familiar interaction methods, 
-leading to the inclusion of touchscreen capabilities and voice input to accommodate 
-varying user needs. These changes aimed to streamline the communication process, 
-making it more inclusive and responsive to our user base.
+<ProjectImageBlock
+    image={{
+        src: ippOverview,
+        alt: "Initial Paper Prototype Overview"
+    }}
+    caption={
+        "Initial Paper Prototype Overview."
+    }
+    width={12}
+    maxHeight={"800px"}
+>
 
-### Favorability within Modes in different Demographics
+Our design focus was primarily on enhancing user interaction with a smartboard, specifically 
+by improving communication across different time zones and ensuring clear communication when 
+one party is unavailable. Our iterative design process started with creating an initial paper 
+prototype of our smartboard. We then ran a heuristics evaluation with another group in CSE 440 
+to identify and resolve heuristic violations. Next, we conducted three usability tests with three 
+different participants. Our participants consisted of an international student living in off-campus 
+housing, a student living away from home in off-campus housing, and a parent of a student who lived 
+away from home when they were at college for a bit. We chose these participants because the parent had 
+extremely limited knowledge and familiarity with technology while the college students were able to 
+offer insight as people who were familiar with smartboards and technology. We began each test with 
+a summary of our project, design, and explained the two tasks. Then we had participants attempt to 
+complete both tasks with the paper prototype. From these usability tests, we identified multiple 
+issues with our design and workflow, as discussed below.
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: fppOverview,
+        alt: "Final Paper Prototype Overview"
+    }}
+    caption={
+        "Final Paper Prototype Overview."
+    }
+    width={12}
+    maxHeight={"800px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: digitalOverview,
+        alt: "Digital Mock Up Overview"
+    }}
+    caption={
+        "Digital Mock Up Overview."
+    }
+    width={12}
+    maxHeight={"800px"}
+>
+</ProjectImageBlock>
+
+### Favorability Within Modes in Different Demographics
 
 <ProjectImagesBlock
     images={[
@@ -251,11 +326,11 @@ making it more inclusive and responsive to our user base.
         },
     ]}
     direction={"row"}
-    width={8}
+    width={12}
     maxHeight={"400px"}
 >
 
-Based on our usability tests, we found that younger participants prefer touch 
+Based on the first and second usability tests, we found that younger participants prefer touch 
 functionality, while older participants favor stylus functionality when using 
 the smartboard or tablet. Additionally, younger users prefer using a keyboard to 
 input text, whereas older participants prefer a combination of writing and voice 
@@ -273,17 +348,17 @@ features for text input.
             caption: "Final paper prototype added gridlines to assist with participant's navigations.",
         },
         {
-            src: ashleysPod,
+            src: digitalGridlines,
             alt: "The pod screen Elizabeth sees for Ashley.",
             caption: "Digital prototype added gridbox to assist with participant's navigation.",
         },
     ]}
     direction={"row"}
-    width={8}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"800px"}
 >
 
-During our prototype testing, participants often lacked guidance on what actions to take. 
+Across all our usability tests, participants often lacked guidance on what actions to take. 
 There were many questions regarding the functions and meanings of various buttons on 
 our smartboard. Our design offered too much freedom and caused participants to become 
 lost and struggle with navigation. Allowing participants to input anything on the 
@@ -294,91 +369,209 @@ harder to use.
 
 ### Error Prevention & Option to Undo
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: fppError,
+            alt: "Final paper prototype for error and prevention",
+            caption: "Final paper prototype added a way for the participant to hide/show, blur/unblur, and delete messages.",
+        },
+        {
+            src: digitalError,
+            alt: "Digital mock up for error and prevention.",
+            caption: "In addition to what has already been added in the final paper prototype, " + 
+            "the digital mock up added a way for the participant to edit their messages.",
+        },
+    ]}
+    direction={"row"}
+    width={12}
     maxHeight={"400px"}
 >
 
-There were moments we discovered where the participants entered unexpected numbers or 
-words because our design lacked restrictions on input. We lacked a method to undo these 
-messages, which meant they remained permanently on the smartboard, and this took away 
-from the participant's experience.
+During our third usability test there were moments we discovered where the participants 
+entered unexpected numbers or words because our design lacked restrictions on input. 
+We lacked a method to undo these messages, which meant they remained permanently on 
+the smartboard, and this took away from the participant's experience.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ## Resulting Design
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
+            src: finalDesign,
+            alt: "A white board with four yellowing boxes highlighting different aspects of the board.",
+        }
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block spans the set of images."
+        "During our design we had numerous iterations. Here we showcase the board's ability to " 
+        + "hide, blur, or delete messages, switch between connected boards easily, allow users to use " 
+        + "a prefer messagae sending type, and provide guidance on where to write messages."
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+Our resulting design for the OrcaPod Board consisted of a 72”x40” wall-hung smartboard with 
+a built-in microphone and speaker. The microphone and speaker work in tandem for the voice 
+recording and voice messages that people can send with the board. With this application 
+parents and children can keep each other involved in their lives by helping people avoid 
+manually converting time zones and giving them time and space to communicate at their leisure 
+instead of always being connected in what could be stressful times. The participant can use the 
+board to establish a pattern of when people are awake and able to communicate instead of constantly 
+guessing.
+
+</ProjectImagesBlock>
+
+### Practicing and Tracking Conversations Through Time Zones
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1_one,
+            alt: "The connected screen showing that the user is setting an alarm for when it reaches "
+            + "8 AM in Portugal and for the alarm to last three hours.",
+            caption: "The participant can set an alarm for the board to notify them when it reaches"
+            + "a certain time of either their child or parent's time zone."
+        },
+        {
+            src: task1_two,
+            alt: "A white board depicting a conversation between a parent and a child.",
+            caption: "After the alarm is set, the parent can continue with their day until the alarm "
+            + "goes off."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+
+Here our two participants, named Elizabeth and Ashley for convenience, Elizabeth wants to set 
+an alarm that will notify them when Ashley’s time zone has reached 8 AM. Since they know that 
+Ashley is up at that time and will be able to talk.
+
+The participant goes through the set-up phase and sets their desired time and duration for 
+the other party. Once that has been finalized, they click "Finish."
+
+Afterward, we arrive at the home page and proceed to the smartboard interface by tapping or 
+clicking the respective folder.
+
+Once the time has struck, the participant will click on the box or push the flag down to 
+make the notification disappear. After acknowledging that they've seen the alert, the 
+participant will then proceed to write a message by tapping or using the stylus anywhere 
+on the board.
+
+A keyboard screen will pop up near where the participant taps and can have the option to 
+write, type, or vocalize their message. Once confirmed, the participant can tap or click 
+"Finish" to finalize their message.
+
+Once the message has been sent, they will have the option to delete, hide, or blur their 
+message by tapping the option below it. Once finalized, the other party can see the message 
+and reply accordingly.
 
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
+            src: task1_three,
+            alt: "The time for Portugal has a yellow box around it now since it has reached 8 AM there.",
+            caption: "When the alarm time is reached, the time is boxed and highlighted on the board."
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
+            src: task1_four,
+            alt: "A green keyboard appears on the board for the person to write, type, or record their "
+            + "message with.",
+            caption: "The parent is able to write, type, or send a voice message to the child. They "
+            + "know that their child is awake now because of the alarm."
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+</ProjectImagesBlock>
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1_five,
+            alt: "A green text bubble saying good morning appears on the board.",
+            caption: "The parent sends a good morning message to their child in Portugal when it is "
+            + "8 AM there."
+        },
+        {
+            src: task1_six,
+            alt: "A purple text bubble saying good morning appears on the board.",
+            caption: "The child sends a corresponding good morning message to the parent after they"
+            + "have seen the message."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+
+</ProjectImagesBlock>
+
+### Communicating When the Other Party is Unavailable
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2_one,
+            alt: "A white board depicting a conversation between a parent and a child.",
+            caption: "The hub page for a pod member."
+        },
+        {
+            src: task2_two,
+            alt: "A red text bubble saying that the child is busy with midterms and unable to "
+            + "communicate right now appears on the board.",
+            caption: "The board boxes and highlights the new message from the child."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+
+Bryan is struggling with balancing midterms and keeping Elizabeth involved in their life at the moment. 
+
+The participant goes through the set-up phase and once everything has been finalized, 
+they click "Finish” and arrive at the home page. Once at the home page, we can proceed to the 
+smartboard interface by tapping or clicking the folder. The participant will see a new message 
+indicating that the other party may not be available and push the flag down, click, or tap the box 
+to remove their notification.
+
+Then the participant can write their message by tapping or using the stylus anywhere on the board. 
+A keyboard screen will pop up near where the participant taps and can have the option to write, type, 
+or vocalize their message. Once confirmed, the participant can tap or click "Finish" to finalize their 
+message.
+
+Once the message has been posted, the participant has the option to hide, blur, 
+or delete their message, and the other party will receive a notification on their board.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2_three,
+            alt: "A green keyboard appears on the board for the person to write, type, or send "
+            + "a voice recording.",
+            caption: "The parent can either type, write, or send a voice message to the child."
+        },
+        {
+            src: task2_four,
+            alt: "The parent has sent a good luck message to the child for their midterms.",
+            caption: "End result after the parent sends a good luck message."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
 </ProjectImagesBlock>
