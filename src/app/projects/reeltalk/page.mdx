@@ -331,7 +331,7 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
 ### Adding Key Details for App Utilization
 
 {/* maxHeight={"400px"} */}
-<ProjectImageBlock
+{/*<ProjectImageBlock
     image={{
             src: initial_help,
             alt: "Paper prototype with no help for a new user",
@@ -342,7 +342,8 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
         } 
         width={4}
         maxHeight={300}
->
+> */}
+
  During user testing, it became evident that participants faced challenges in utilizing the app
     due to incomplete information, impeding their navigation and task completion. Users voiced
     confusion regarding certain features and their functionalities, prompting a need for clearer
@@ -353,10 +354,14 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
     This iterative process, driven by user feedback, sought to bridge the information gap and
     enhance overall user experience by facilitating informed navigation and utilization of the app's
     features.
-</ProjectImageBlock>
 
 <ProjectImagesBlock
     images={[
+        {
+            src: initial_help,
+            alt: "Paper prototype with no help for a new user",
+            caption: "Initial: No prompts for help or instructions for new users."
+        },
         {
             src: updated_help_0,
             alt: "Updated digital prototype with help prompts",
@@ -369,7 +374,6 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
         }
     ]}
     direction={"row"}
-    maxHeight={"400px"}
 />
 
 ### Enhancing Clarity and Learning
@@ -390,13 +394,14 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
     ]}
     direction={"row"}
     width={8}
-    maxHeight={"300px"}
 >
 
     User testing unveiled significant navigation hurdles and unpredictable user behavior, revealing
     a mismatch between expected interaction flows and actual user experiences. Participants grappled
     with the absence of intuitive cues, such back buttons or help buttons, and expressed frustration
-    with the linear design structure. Consequently, we introduced these features to enhance clarity
+    with the linear design structure. 
+    
+    Consequently, we introduced these features to enhance clarity
     and alleviate the steep learning curve. Furthermore, we pivoted from a rigid, linear layout to a
     more adaptable framework to accommodate non-linear interactions, informed by specific participant
     feedback. These iterative adjustments aimed to align the design with user expectations, ensuring
@@ -407,6 +412,28 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
 ### Fixing a Confusing User Flow Between SmartWatch and Phone
 
 {/* maxHeight={"400px"} */}
+    One unique challenge of our design was that it consists of two parts: the smartwatch app and
+    the phone app. This meant that there needed to be clear indications on when to use each part of
+    the design, and when to switch over between the two devices. 
+    
+    For our first usability test, we
+    were so clear-set on a singular flow for our design that we gave only the smartwatch to the
+    participant at first, then gave them the smartphone part of the prototype later. Even with this
+    mistake, with no indications on when information got sent over from the smartwatch to the phone
+    app, the participant told us that it was unclear when to use each part of the design, and
+    expressed surprise that there was a phone app that goes with the smartwatch. 
+    
+    With that comment,
+    we improved our usability testing structure and for future tests, we gave the participant both
+    the smartwatch and the phone at the start. We were then able to improve upon which parts of the
+    task in particular was difficult to understand from a user's perspective. 
+    
+    To improve our design,
+    we made it clear that the phone wasn't supposed to be used at the start by including a screen for
+    the base state. We also added system dialogue to clarify when information gets sent from the
+    smartwatch to the phone app, and added popups on the phone app to indicate when it was time to
+    switch to the phone app.
+
 <ProjectImagesBlock
     images={[
         {
@@ -418,31 +445,7 @@ Our design focused on two tasks: highlighting key points of a movie during viewi
             src: updated_flow_1,
             alt: "Updated flow 1",
             caption: "Updated: Added a popup so users know exactly when information got moved from the smartwatch to the phone."
-        }
-    ]}
-    direction={"column"}
-    width={7}
-    maxHeight={"300px"}
->
-    One unique challenge of our design was that it consists of two parts: the smartwatch app and
-    the phone app. This meant that there needed to be clear indications on when to use each part of
-    the design, and when to switch over between the two devices. For our first usability test, we
-    were so clear-set on a singular flow for our design that we gave only the smartwatch to the
-    participant at first, then gave them the smartphone part of the prototype later. Even with this
-    mistake, with no indications on when information got sent over from the smartwatch to the phone
-    app, the participant told us that it was unclear when to use each part of the design, and
-    expressed surprise that there was a phone app that goes with the smartwatch. With that comment,
-    we improved our usability testing structure and for future tests, we gave the participant both
-    the smartwatch and the phone at the start. We were then able to improve upon which parts of the
-    task in particular was difficult to understand from a user's perspective. To improve our design,
-    we made it clear that the phone wasn't supposed to be used at the start by including a screen for
-    the base state. We also added system dialogue to clarify when information gets sent from the
-    smartwatch to the phone app, and added popups on the phone app to indicate when it was time to
-    switch to the phone app.
-</ProjectImagesBlock>
-
-<ProjectImagesBlock
-    images={[
+        },
         {
             src: initial_flow_0,
             alt: "Initial flow 0",
