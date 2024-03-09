@@ -329,7 +329,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-03-05", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Studio",
-      slides: "https://canvas.uw.edu/files/117252175/"
+      slides: "https://canvas.uw.edu/files/117252175/",
     },
     {
       type: "studio",

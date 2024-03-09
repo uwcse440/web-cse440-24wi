@@ -223,7 +223,6 @@ These guide pages also persist as a "help page" for the user to access whenever.
 
 ### Simplifying Customization
 
-When exploring available journeys, participants understood most of the straightforward options such as “reducing pickups that lead to Instagram”, but showing them examples such as “reduce Instagram usage in a certain location” led to confusion on how the journeys are generated and what options for customization exist. Some participants glazed over the subject but it was clear they did not fully understand and confused so if pressed further. To fix this we introduced three discrete goals to focus on: pickup count, screen time, and specific app reduction. This change is conveyed in the onboarding and is made very clear when a user is creating a new journey. This is crucial as it eliminates most of the headache that people had trying to understand all the options and easily allows them to create familiar journeys.
 <ProjectImageBlock
     image={{
         src: from_scratch,
@@ -232,9 +231,10 @@ When exploring available journeys, participants understood most of the straightf
     caption={
         "When creating a Journey from scratch, the customization options were drafted to balance both flexibility and structure. There's enough options to allow true customization but not so many as to be inconsistent or confusing."
     }
-    width={10}
+    width={6}
     maxHeight={"400px"}
 >
+When exploring available journeys, participants understood most of the straightforward options such as “reducing pickups that lead to Instagram”, but showing them examples such as “reduce Instagram usage in a certain location” led to confusion on how the journeys are generated and what options for customization exist. Some participants glazed over the subject but it was clear they did not fully understand and confused so if pressed further. To fix this we introduced three discrete goals to focus on: pickup count, screen time, and specific app reduction. This change is conveyed in the onboarding and is made very clear when a user is creating a new journey. This is crucial as it eliminates most of the headache that people had trying to understand all the options and easily allows them to create familiar journeys.
 </ProjectImageBlock>
 
 
@@ -316,6 +316,27 @@ A user's journey in our app centers around two tasks: identifying a problematic 
 */}
 ### Task 1: Finding Journeys
 The user receives an array of potential journeys, as well as an array of current statistics about their phone usage. They have the option to create a new journey or to select a suggested on (as prompted by automated analysis of metadata). Within MindShift, the user can monitor and view their usage statistics and feedback on how much they’ve improved using the journey settings, which is focused on in Task 2.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: carousel,
+            alt: "An image of the carousel menu",
+            caption: "When a user is on the primary 'Homescreen' of MindShift, they can view existing journeys that they have already configured, browse suggestions of 'new' journeys based on their recent browsing activities and metadata, or create new journeys from scratch.",
+        },
+        {
+            src: custom_2,
+            alt: "An image of customizing components of the journey creation process",
+            caption: "A user can create a journey out of anything, in this case a user is configuring a geographical location-based journey. They can give their journey a name, priority, and duration, among other customizable features."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"300px"}
+>
+</ProjectImagesBlock>
+
+{/*
 <ProjectImagesBlock
     images={[
         {
@@ -350,9 +371,31 @@ The user receives an array of potential journeys, as well as an array of current
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
+*/}
 
 ### Task 2: Interrupting Habits
 The user is able to receive interruptive notifications that align with journeys they configured in the MindShift application. Depending on certain properties of the journeys themselves, users will receive notifications after displaying specific behaviors, such as spending a certain amount of time on the application or opening the application a certain number of times. To dismiss the notification, the user will have to make a mindful decision to snooze a pop-up alert, making it harder to subconsciously continue the harmful digital habit.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: interrupt_2,
+            alt: "An image of a MindShift notification on top of the Instagram page",
+            caption: "When a user is scrolling instagram, they get an alert based on the configurations they set within MindShift, which will interrupt their scrolling based on their usage pattern. They’re given a chance to quit the actual application."
+        },
+        {
+            src: dashboard,
+            alt: "Image of journey dashboard with statistics on usage.",
+            caption: "After choosing to exit the usage pattern that was part of the journey, the user lands back at the Journey Dashboard, with the ability to see their recent stats (as in Task 1) as context."
+        }
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"300px"}
+>
+</ProjectImagesBlock>
+
+{/*
 <ProjectImagesBlock
     images={[
         {
@@ -386,3 +429,4 @@ The user is able to receive interruptive notifications that align with journeys 
     maxHeight={"400px"}
 >
 </ProjectImageBlock>
+*/}
