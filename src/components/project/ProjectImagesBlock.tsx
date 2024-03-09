@@ -43,6 +43,7 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                   display: "flex",
                   flexDirection: "row",
                   justifyContent: "center",
+                  flexBasis: "100%",
                 }}
                 key={projectImage.src}
               >
@@ -50,32 +51,42 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                   sx={{
                     display: "flex",
                     flexDirection: "column",
+                    alignItems: "center",
                     justifyContent: "start",
+                    width: "100%",
                   }}
                 >
-                  <Paper
+                  <Box
                     sx={{
-                      marginX: 1,
-                      marginTop: 2,
-                      padding: 1,
-                      paddingBottom: "4px", // Minus border radius
-                      width: "auto",
+                      display: "flex",
+                      flexDirection: "row",
                     }}
                   >
-                    <Image
-                      basePath={Paths.basePath}
-                      src={projectImage.src}
-                      style={{
-                        height: "auto",
-                        maxHeight:
-                          props.maxHeight === undefined
-                            ? "400px"
-                            : props.maxHeight,
-                        maxWidth: "100%",
+                    <Paper
+                      sx={{
+                        marginX: 1,
+                        marginTop: 2,
+                        padding: 1,
+                        paddingBottom: "4px", // Minus border radius
                       }}
-                      alt={projectImage.alt}
-                    />
-                  </Paper>
+                    >
+                      <Image
+                        basePath={Paths.basePath}
+                        src={projectImage.src}
+                        style={{
+                          height: "auto",
+                          maxHeight:
+                            props.maxHeight === undefined
+                              ? "400px"
+                              : props.maxHeight,
+                          objectFit: "scale-down",
+                          maxWidth: "100%",
+                          width: "auto",
+                        }}
+                        alt={projectImage.alt}
+                      />
+                    </Paper>
+                  </Box>
                   {projectImage.caption != undefined && (
                     <React.Fragment>
                       <Box
