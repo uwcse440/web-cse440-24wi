@@ -64,12 +64,10 @@ import imagePlaceholder600x300 from "public/images/projects/template/post/600x30
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
 {/* Project overview */}
-
-import problemDesignOverview from "public/images/projects/orcapod/post/long_distant_fish.png";
-import theGlobe from "public/images/projects/orcapod/post/theglobe.png";
+import logo from "public/images/projects/orcapod/post/orcapod_logo.png";
+import problemDesignOverview from "public/images/projects/orcapod/post/theglobe.png";
 
 {/* 3 Process Insights */}
-
 
 {/* Design Overview */}
 import ippOverview from "public/images/projects/orcapod/post/ipp_overview.png";
@@ -86,8 +84,6 @@ import digitalGridlines from "public/images/projects/orcapod/post/digital_gridli
 
 import fppError from "public/images/projects/orcapod/post/fpp_error.png";
 import digitalError from "public/images/projects/orcapod/post/digital_error.png";
-
-import ippGridlines from "public/images/projects/orcapod/post/ipp_gridlines.png";
 
 {/* Design Results */}
 
@@ -109,9 +105,19 @@ import task2_two from "public/images/projects/orcapod/post/messagepod_eliza2.png
 import task2_three from "public/images/projects/orcapod/post/typingpod_eliza2.png";
 import task2_four from "public/images/projects/orcapod/post/sentpod_eliza2.png";
 
-# OrcaPod
+<ProjectImageBlock
+    image={{
+        src: logo,
+        alt: "Orcapod Logo"
+    }}
+    width={3.7}
+    maxHeight={"80px"}
+>
 
+# OrcaPod
 <ProjectSubtitle>Keeping Pod-uctive Harmony in Your Family!</ProjectSubtitle>
+
+</ProjectImageBlock>
 
 ## Team
 
@@ -191,15 +197,6 @@ stay connected even if they may not be able to physically see each other.
 
 ## Design Research Process and Key Insights
 
-<ProjectImageBlock
-    image={{
-        src: theGlobe,
-        alt: "PNG Long Distant Fish"
-    }}
-    width={12}
-    maxHeight={"400px"}
->
-
 When designing our solution, we focused on three main things during the 
 research process: problems, reasons, and solutions. In a more in-depth 
 approach, identifying issues that lead to a lack of communication between 
@@ -228,8 +225,6 @@ We chose to focus on international college students, students who live away
 from home, and parents of students away from home. This gave us a dual problem 
 approach to navigating how to bridge communication issues between parents and 
 students who live away from home.
-
-</ProjectImageBlock>
 
 ### Technological Knowledge Differences
 
@@ -433,7 +428,7 @@ guessing.
             src: task1_one,
             alt: "The connected screen showing that the user is setting an alarm for when it reaches "
             + "8 AM in Portugal and for the alarm to last three hours.",
-            caption: "The participant can set an alarm for the board to notify them when it reaches"
+            caption: "The participant can set an alarm for the board to notify them when it reaches "
             + "a certain time of either their child or parent's time zone."
         },
         {
