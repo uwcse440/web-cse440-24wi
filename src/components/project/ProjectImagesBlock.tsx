@@ -56,37 +56,30 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                     width: "100%",
                   }}
                 >
-                  <Box
+                  <Paper
                     sx={{
-                      display: "flex",
-                      flexDirection: "row",
+                      marginX: 1,
+                      marginTop: 2,
+                      padding: 1,
+                      paddingBottom: "4px", // Minus border radius
                     }}
                   >
-                    <Paper
-                      sx={{
-                        marginX: 1,
-                        marginTop: 2,
-                        padding: 1,
-                        paddingBottom: "4px", // Minus border radius
+                    <Image
+                      basePath={Paths.basePath}
+                      src={projectImage.src}
+                      style={{
+                        height: "auto",
+                        maxHeight:
+                          props.maxHeight === undefined
+                            ? "400px"
+                            : props.maxHeight,
+                        objectFit: "scale-down",
+                        maxWidth: "100%",
+                        width: "auto",
                       }}
-                    >
-                      <Image
-                        basePath={Paths.basePath}
-                        src={projectImage.src}
-                        style={{
-                          height: "auto",
-                          maxHeight:
-                            props.maxHeight === undefined
-                              ? "400px"
-                              : props.maxHeight,
-                          objectFit: "scale-down",
-                          maxWidth: "100%",
-                          width: "auto",
-                        }}
-                        alt={projectImage.alt}
-                      />
-                    </Paper>
-                  </Box>
+                      alt={projectImage.alt}
+                    />
+                  </Paper>
                   {projectImage.caption != undefined && (
                     <React.Fragment>
                       <Box
