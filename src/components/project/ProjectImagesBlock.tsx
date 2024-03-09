@@ -43,6 +43,7 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                   display: "flex",
                   flexDirection: "row",
                   justifyContent: "center",
+                  flexBasis: "100%",
                 }}
                 key={projectImage.src}
               >
@@ -50,7 +51,9 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                   sx={{
                     display: "flex",
                     flexDirection: "column",
+                    alignItems: "center",
                     justifyContent: "start",
+                    width: "100%",
                   }}
                 >
                   <Paper
@@ -59,7 +62,6 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                       marginTop: 2,
                       padding: 1,
                       paddingBottom: "4px", // Minus border radius
-                      width: "auto",
                     }}
                   >
                     <Image
@@ -71,6 +73,7 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                           props.maxHeight === undefined
                             ? "400px"
                             : props.maxHeight,
+                        objectFit: "contain",
                         maxWidth: "100%",
                       }}
                       alt={projectImage.alt}

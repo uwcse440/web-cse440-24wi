@@ -32,6 +32,10 @@
   * If you find the provided components insufficient, we encourage you to check in with the course staff.
   */}
 
+import { Paths } from "@/paths.mjs";
+import { Box, Grid, Paper, Typography } from "@mui/material";
+import Image from "next-image-export-optimizer";
+
 import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
 import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
 import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
@@ -53,10 +57,28 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import imageTeamPerson1 from "public/images/projects/cookease/team/nathan.png";
+import imageTeamPerson2 from "public/images/projects/cookease/team/vadym.png";
+import imageTeamPerson3 from "public/images/projects/cookease/team/feny.png";
+import imageTeamPerson4 from "public/images/projects/cookease/team/nila.png";
+
+
+import welcome from "public/images/projects/cookease/team/welcome.png";
+import iterative1_before from "public/images/projects/cookease/team/iterative1_before.png";
+import iterative1_after from "public/images/projects/cookease/team/iterative1_after.png";
+import iterative2_before from "public/images/projects/cookease/team/iterative2_before.png";
+import iterative2_after from "public/images/projects/cookease/team/iterative2_after.png";
+import iterative3_before from "public/images/projects/cookease/team/iterative3_before.png";
+import iterative3_after from "public/images/projects/cookease/team/iterative3_after.png";
+
+import resulting_design_all from "public/images/projects/cookease/team/resulting_design_all.png";
+import resulting_design_1 from "public/images/projects/cookease/team/resulting_design_1.png";
+import resulting_design_2 from "public/images/projects/cookease/team/resulting_design_2.png";
+import resulting_design_3 from "public/images/projects/cookease/team/resulting_design_3.png";
+import resulting_design_4 from "public/images/projects/cookease/team/resulting_design_4.png";
+import resulting_design_5 from "public/images/projects/cookease/team/resulting_design_5.png";
+import resulting_design_6 from "public/images/projects/cookease/team/resulting_design_6.png";
+import resulting_design_7 from "public/images/projects/cookease/team/resulting_design_7.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -65,7 +87,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 # CookEase
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>Cooking can be easy.</ProjectSubtitle>
 
 ## Team
 
@@ -75,22 +97,22 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   */}
 <ProjectTeamGallery members={[
     {
-        name: ["Team", "Person 1"],
+        name: ["Nathan Ryan Sidik"],
         photo: imageTeamPerson1,
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
-        name: ["Team", "Person 2"],
+        name: ["Vadym Denysenko"],
         photo: imageTeamPerson2,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["Team", "Person 3"],
+        name: ["Feny Graciella Dai"],
         photo: imageTeamPerson3,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["Team", "Person 4"],
+        name: ["Nila Keri"],
         photo: imageTeamPerson4,
         alt: "Photo of Team Person 4, looking cool with their additional image description."
     },
@@ -114,264 +136,236 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+<Box sx={{width: '100%'}}>
+    <Image
+        basePath={Paths.basePath}
+        src={welcome}
+        alt={"Welcome page for the CookEase AR application"}
+        style={{
+            float: "right",
+            height: "auto",
+            width: "50%",
+            padding: "0 0 5px 30px",
+            minWidth: 400,
+        }}
+    />
+The number of Gen Z and Millennials who cook is declining compared to previous generations. According to Morning Consult, only 40% of Gen Z and 50% of Millennials prepare meals from scratch each Sunday, compared to higher percentages in older generations. Some of the reasons why the disparity is so high is because of lack of time, insufficient skills, or the sheer convenience of alternatives, such as food delivery services. Shockingly, the average American spends around 37 minutes per day cooking according to AgCon, so what if those 37 minutes can be used to master and learn valuable cooking techniques? This is where CookEase, a next-generation Augmented Reality (AR) cooking application, comes in. By leveraging AR capabilities, CookEase transforms the meal preparation experience by seamlessly integrating digital instructions and assistive features into the user’s kitchen space, thereby reducing the time and skill barriers associated with meal preparation. This innovative solution aims to rekindle the joy of home cooking, making those 37 minutes spent in the kitchen not just more productive, but also a delightful learning experience.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
-
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
-
-</ProjectImageBlock>
+</Box>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+In our design research, we aimed to explore the cooking experiences of diverse participants, focusing on individuals with varying skill levels, dietary restrictions, and preferences to better understand the needs of our customer base. We conducted two contextual inquiries in the participants' own kitchens to gain deeper insights into their cooking routines, recognizing that this method offers a deeper understanding than traditional interviews. Additionally, we carried out a survey with 30 individuals from the Millennial and Gen Z demographics to broaden our perspective. Our mixed-method research covered their entire cooking process, from how they find recipes to their preparation and actual cooking techniques. This approach was intended to provide a comprehensive view of cooking behaviors, addressing both specific user experiences and broader trends.
 
-### Title for an Insight
+Our questions started out with broad questions about their cooking background. From there we asked the following questions involving their kitchen experience.
+- Could you please guide me through how you find a recipe?
+- Could you please guide me how your preparation process is before starting to cook?
+- Could you please guide me through how you cook?
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
 
-### Title for an Insight
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
+### Dealing with Unfamiliar Techniques
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+Most of our participants reported being intimidated and lacking confidence in certain cooking techniques, which can significantly hinder their willingness to try new recipes. Addressing the challenge of unfamiliar cooking techniques, CookEase focuses on demystifying key culinary methods like boiling and frying, which are foundational yet often misunderstood by many home cooks. The unfamiliarity with such techniques can be a significant barrier, leading to hesitation and reluctance in trying new recipes. CookEase aims to bridge this gap by providing clear, accessible guidance on these valuable techniques, ensuring users understand not just the 'how' but also the 'why' behind each method. By mastering these core techniques, users can unlock a vast array of recipes, transforming their cooking experience from daunting to delightful. CookEase's approach is designed to build confidence and competence, encouraging users to explore a broader spectrum of culinary possibilities with ease and enthusiasm.
 
-</ProjectImagesBlock>
+### Buying Single-use Ingredients for a Recipe is Highly Inefficient
 
-### Title for an Insight
+The inefficiency of purchasing single-use ingredients for recipes is a common frustration among home cooks, as highlighted by a participant who questioned the practicality of buying turmeric powder for a one-time use. This sentiment underscores a broader issue where individuals are deterred from trying new recipes due to the impracticality of accumulating rarely used items. To address this concern in our design, we developed a feature that combines both automation, including voice and haptic touch responsiveness, and manual checklists for efficiency. For ingredients often considered niche or single-use, like turmeric powder, CookEase intelligently suggests ingredient alternatives, thereby maximizing the utility of every purchase. and encouraging culinary exploration without the wastefulness or inconvenience of accumulating unused ingredients. This approach not only enhances efficiency and sustainability in the kitchen but also broadens users' culinary horizons by integrating diverse ingredients into their cooking.
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+
+### No Real-time Guidance When it Comes to Cooking
+
+The lack of real-time guidance in traditional cooking instructions, such as the ambiguous directive "salt to taste," often leaves users uncertain and can detract from the overall cooking experience. This ambiguity was highlighted by a participant who found such instructions particularly challenging, underscoring the need for more precise, interactive guidance. Addressing this, CookEase introduces an innovative solution through its augmented reality (AR) feature, which bridges the gap between virtual instructions and real-world cooking. CookEase AR provides users with real-time, interactive guidance, offering clear visual cues and step-by-step assistance tailored to the dish at hand. This advanced feature eliminates guesswork, allowing users to make adjustments with confidence and achieve the desired flavor profile. Many individuals struggle with understanding the specifics of new methods, fearing the possibility of failure or wasted ingredients.
+
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+Our iterative design process was centered around the following tasks:
 
-### Title for an Insight
+- Guidance During Exploration of New Culinary Techniques
+- Recipe Flexibility with Possibility for Ingredient Alternatives 
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+We decided to pursue these tasks as they were goals the users wanted to achieve when it comes to cooking, especially for the beginner level cooks we had a chance to survey and hold contextual inquiries with. We incorporated these into an initial paper prototype, which was then revised based on the feedback received from the 3 Heuristic Valuations and 4 Usability Tests that we performed with a diverse group of users who come from different age groups, varying cooking levels and have varying diets with and without dietary restrictions. Throughout this process, we revised the flaws of our design as well as opened our imagination to new and optimized features which would extend the usability of our prototype to larger groups of people and make our design more intuitive to first time users. Following the adjustments that were made in our final paper prototype led us into converting our prototype to digital form in Figma. In this step, we had to come up with ways our app would be convenient inside AR settings, which meant revising the design elements which would otherwise negatively impact user safety, usability and comprehension of available features. Throughout the entire iterative design process, the three major insights which changed the course of our AR app for the better are captured below.
 
-</ProjectImageBlock>
 
-### Title for an Insight
+### Simplifying Two Design Workflows into One
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
-
-</ProjectImageBlock>
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-</ProjectImageBlock>
-
-## Resulting Design
+Prior to narrowing down from two design workflows into one, the design was split into two modes: “Preparation” and “Start Cooking”. These were separate workflows addressing two different tasks and the user had to make a choice between which one they wanted to use after the “Welcome” screen and the cooking technique, difficulty and recipe selection. The choice to narrow down to one workflow from here came during the usability testing. Throughout our 4 usability tests, 2 of the 4 participants appeared to be confused when reaching the “Select Mode” tab. When asked to think out loud on the step, one of the participants stated that “[they] don’t know the difference between those two so [they] will just pick the first one”. This led to a realization that first time users have no background knowledge of what each mode does, making it difficult to choose between the two. To remove this roadblock, we decided to streamline navigation of the AR app by having one longer workflow instead of the two. Since the users tend to have an ingredient and tool preparation process (“Preparation” mode) before cooking (“Start Cooking” mode) in majority of cases, the single workflow would just cut out navigational troubles, simplifying the completion of both tasks as a result.
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: iterative1_before,
+            alt: "Image showing the design before simplifying two workflows into one.",
+            caption: "Before: Two branch workflow, splitting at the  “Preparation” and “Start Cooking” modes."
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: iterative1_after,
+            alt: "Image showing the design after simplifying two workflows into one.",
+            caption: "After: Single branch workflow encapsulating both preparation and cooking process."
         },
     ]}
-    direction={"row"}
-    caption={
-        "This caption for the entire block spans the set of images."
-    }
-    width={6}
-    maxHeight={"400px"}
+    direction={"column"}
+    width={12}
+    maxHeight={"800px"}
 >
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
 
 </ProjectImagesBlock>
 
+
+### Moving Away from Automation in Favor of Assistive AR Features
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
+            src: iterative2_before,
+            alt: "Image showing the design before moving away from automation in favor of assistive AR features.",
+            caption: "Before: Mandatory fridge scanning tool for ingredients."
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
+            src: iterative2_after,
+            alt: "Image showing the design after moving away from automation in favor of assistive AR features.",
+            caption: "After: AR assistance to accommodate both manual and automated cooking preparation preferences."
         },
     ]}
     direction={"column"}
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"800px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+Prior to moving away from automation, the design included a “Cooking Preparation” tab which included a mandatory fridge scanning tool for determining whether the user has ingredients mentioned in the recipe. Our original line of thought was that this feature would allow for hands-free automatic cooking preparation, leaving the user with less manual work. However, during the usability testing, 2 of the 4 users found this tool to be unnecessary and cumbersome, preferring manual checklists for efficiency and accuracy. From here, we made a choice to switch to a manual checklist as half of our users preferred this method of cooking preparation for our final paper prototype. But what about the other half? To accommodate the users who prefer automation, we decided to introduce AR assistance during our switch to the digital mockup. The assistive AR feature would navigate (using blue arrows) the users to the ingredients & equipment it detects in their POV, however, it would be up to the user to make use of that feature. As a result, the introduction of this assistive AR feature would serve as a compromise between fully automatic mandatory AR scanning and fully manual ingredient selection.
 
 </ProjectImagesBlock>
+
+### Removing Assumptions Regarding User Cooking Motivation
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: iterative3_before,
+            alt: "Image showing the design before addressing the cooking motivation assumptions in the design.",
+            caption: "Before: ‘Avoid’ section includes ingredients removed from the recipe based on user’s dietary restrictions."
+        },
+        {
+            src: iterative3_after,
+            alt: "Image showing the design after addressing the cooking motivation assumptions in the design.",
+            caption: "After: Users have the ability to override avoided ingredients."
+        },
+    ]}
+    direction={"column"}
+    width={6}
+    maxHeight={"800px"}
+>
+
+Throughout the majority of our prototyping and usability testing, we unintentionally assumed that the participants were cooking for themselves. Following that logic, we designed our interface to automatically avoid the ingredients that the user is allergic to or has other dietary restrictions that prevent them from consuming a certain ingredient. However, after conducting usability testing with one of the participants, we stumbled across another viewpoint that contradicted our assumption. The participant, although lactose intolerant, often cooks with his girlfriend, who does not have any dietary restrictions. When they cook, the favorite culinary technique they particularly enjoy is baking. Since baking usually involves milk, the participant often cooks recipes with his girlfriend which at the end of the day he is not able to consume. When asked why, the participant answered: “It’s mainly a way to connect with my girlfriend and food is just what comes out of it”. Therefore, to make our app more inclusive, we decided to give all users an option to override problematic ingredients (using the “Edit” button) so they can still cook a meal with them if they desire. Afterall, we don’t know if the user is cooking for themselves or for others and it should be in their control to make final ingredient choices.
+
+</ProjectImagesBlock>
+
+## Resulting Design
+
+### Digital Mockup Overview
+<ProjectImageBlock
+    image={{
+        src: resulting_design_all,
+        alt: "Image showing the overview of the entire digital mockup.",
+        caption: ""
+    }}
+    width={12}
+    maxHeight={"800px"}
+>
+</ProjectImageBlock>
+
+### Digital Prototype Workflow
+<ProjectImagesBlock
+    images={[
+        {
+            src: welcome,
+            alt: "Welcome page for the CookEase AR application.",
+            caption: "Welcome Tab."
+        },
+        {
+            src: resulting_design_1,
+            alt: "Image showing the tab for selecting cooking technique.",
+            caption: "Tab for Selecting Technique to Learn."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"800px"}
+>
+
+Before reaching the tasks workflow, the user selects a technique, difficulty and recipe from option menus appearing one after another. Note: Buttons are voice and haptic touch responsive.
+</ProjectImagesBlock>
+
+#### Recipe Flexibility with Possibility for Ingredient Alternatives
+<ProjectImagesBlock
+    images={[
+        {
+            src: resulting_design_2,
+            alt: "Image showing a tab with cooking preparation process information uncluding equipment.",
+            caption: "Preparation Tab Showcasing Recipe Equipment and Ingredients List."
+        },
+        {
+            src: resulting_design_3,
+            alt: "Image showing a tab with cooking preparation process information including ingredients.",
+            caption: "Preparation Tab Showcasing Customized Ingredients List Through Inclusion of Alternatives."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"800px"}
+>
+Next, the selected recipe will be displayed. Users can individually check off gathered ingredients and equipment or use the "Check All'' option for faster selection. Additionally, AR goggles will guide the user on any tools or ingredients it detects in the user’s POV using blue arrows. To override the “Avoid” category ingredients, the user can use the “Edit” button. Replaceable ingredients are underlined. Users can hover over them to find alternative ingredient suggestions, if desired.
+</ProjectImagesBlock>
+
+#### Guidance During Exploration of New Culinary Techniques
+<ProjectImageBlock
+    image={{
+        src: resulting_design_4,
+        alt: "Image showing a tab with Step 1 displayed and AR assistance for the step."
+    }}
+    width={7}
+    maxHeight={"800px"}
+>
+After preparing for the cooking process, the users will be guided to start cooking. By default, users enter AR 'Assist Mode.' With “Assist Mode” turned on, “Step” tab would display. Additionally, AR goggles will guide the user through the steps using blue arrows in the user's POV.
+</ProjectImageBlock>
+
+####
+<ProjectImageBlock
+    image={{
+        src: resulting_design_5,
+        alt: "Image showing a tab with Step 2 displayed and optional timer for the step."
+    }}
+    width={7}
+    maxHeight={"800px"}
+>
+If a step could benefit from a kitchen timer (e.g., frying), a suggestion to use the built-in timer feature will appear.
+</ProjectImageBlock>
+
+####
+<ProjectImageBlock
+    image={{
+        src: resulting_design_6,
+        alt: "Image showing a tab with Step 2 displayed and cooking tips for the step."
+    }}
+    width={7}
+    maxHeight={"800px"}
+>
+If AR glasses sense unusual rapid motion (indicating mistake) or any sizable deviation from the recipe, the “Helpful Tips” button would appear in the user's POV.
+</ProjectImageBlock>
+
+####
+<ProjectImageBlock
+    image={{
+        src: resulting_design_7,
+        alt: "Image showing a tab with Complete message, indicating the end of a workflow."
+    }}
+    width={7}
+    maxHeight={"800px"}
+>
+After going through all the steps, the “Steps” tab would display a complete message. 
+</ProjectImageBlock>
+
+####
+Our AR design encapsulates the essence of our mission, "Cooking Made Easy," and directly addresses our goal of bridging the culinary gap between Gen Z and Millennials and other generations  through our CookEase AR application. By integrating interactive, real-time guidance and offering solutions for recipe flexibility and ingredient substitutions, we make cooking more accessible and enjoyable. This approach aligns perfectly with the lifestyle and needs of younger generations, aiming to reduce the intimidation of culinary exploration and empower them with confidence and creativity in the kitchen.

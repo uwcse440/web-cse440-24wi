@@ -53,19 +53,53 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+{/* person images */}
+import imageTeamPerson1 from "public/images/projects/mindshift/team/audrey.jpg";
+import imageTeamPerson2 from "public/images/projects/mindshift/team/lianne_k.jpg";
+import imageTeamPerson3 from "public/images/projects/mindshift/team/francis.jpg";
+import imageTeamPerson4 from "public/images/projects/mindshift/team/marius.jpg";
 
+
+{/* placeholder images */}
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
+
+{/* notification images */}
+import digital_notification from "public/images/projects/mindshift/post/digital_notification.png";
+import paper_notification from "public/images/projects/mindshift/post/paper_initial_notification.jpg";
+
+{/* onboarding images */}
+import digital_onboarding from "public/images/projects/mindshift/post/digital_onboarding.png";
+import paper_onboarding from "public/images/projects/mindshift/post/paper_onboarding.jpg";
+import digital_carousel_1 from "public/images/projects/mindshift/post/digital_onboarding_carousel_1.png";
+import digital_carousel_2 from "public/images/projects/mindshift/post/digital_onboarding_carousel_2.png";
+import from_scratch from "public/images/projects/mindshift/post/new_journey_from_scratch.jpeg";
+
+{/* overall images */}
+import onboarding_1 from "public/images/projects/mindshift/post/task1_1_1.png";
+import onboarding_2 from "public/images/projects/mindshift/post/task1_1_2.png";
+import onboarding_3 from "public/images/projects/mindshift/post/task1_1_3.png";
+import onboarding_4 from "public/images/projects/mindshift/post/task1_1_4.png";
+import onboarding_5 from "public/images/projects/mindshift/post/task1_2_1.png";
+import onboarding_6 from "public/images/projects/mindshift/post/task1_3_1.png";
+
+{/* task 1 */}
+import custom_1 from "public/images/projects/mindshift/post/custom_1.png";
+import custom_2 from "public/images/projects/mindshift/post/custom_2.png";
+import carousel from "public/images/projects/mindshift/post/carousel.png";
+
+{/* task 2 */}
+import interrupt_1 from "public/images/projects/mindshift/post/interrupt_1.png";
+import interrupt_2 from "public/images/projects/mindshift/post/interrupt_2.png";
+import dashboard from "public/images/projects/mindshift/post/dashboard.png";
+
+
 # MindShift
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+{/*<ProjectSubtitle>Optional Subtitle</ProjectSubtitle> */}
 
 ## Team
 
@@ -75,22 +109,22 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   */}
 <ProjectTeamGallery members={[
     {
-        name: ["Team", "Person 1"],
+        name: [ "Audrey Craig"],
         photo: imageTeamPerson1,
         // A default alt of "Photo of Team Person 1." will be generated.
     },
     {
-        name: ["Team", "Person 2"],
+        name: [ "Lianne Kniest"],
         photo: imageTeamPerson2,
-        // A default alt of "Photo of Team Person 3." will be generated.
+        // A default alt of "Photo of Team Person 2." will be generated.
     },
     {
-        name: ["Team", "Person 3"],
+        name: [ "Francis Peng"],
         photo: imageTeamPerson3,
         // A default alt of "Photo of Team Person 3." will be generated.
     },
     {
-        name: ["Team", "Person 4"],
+        name: [ "Marius Rakickas"],
         photo: imageTeamPerson4,
         alt: "Photo of Team Person 4, looking cool with their additional image description."
     },
@@ -114,264 +148,285 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+The ubiquity of smartphones in the United States has fundamentally changed 
+the way that we interact with technology. Differences in these changes vary 
+person to person, but the largest shift has been generational. 
+Having a phone on hand is almost necessary to function in modern society as a 
+young student or working professional. For those that grew up with 
+ready access to smartphones, it’s almost impossible to avoid an overwhelming 
+sense of reliance on phones. 
+Simultaneously, content creators are more accurate than ever in targeting 
+our attention once we pick up our phones. 
+As a consequence, unwanted addictions to the content on these devices are on the rise. 
+1 in 2 adolescents today believe that they have a phone addiction, 
+with unconscious pickups and “doomscrolling” on the rise. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+Our design acknowledges that phones have become instrumental in our dopamine cycles - we look to them for mindless entertainment, relaxation in times of stress, and sources of connection. In order to reverse our gravitation towards these devices and begin to break the habit of constantly looking at them, we need intentional focus and a consistent plan. MindShift focuses on helping remind our generation when we lean on these ingrained habits. It’s designed to be a “second brain” as we journey towards breaking the unconscious ties to everyday living that our phones have.
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
-
-</ProjectImageBlock>
+{/* </ProjectImageBlock> */}
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+A vast amount of recent research has been performed confirming the problematic nature of phone usage in younger generations. Rather than seeking to confirm this, we looked to see what kinds of factors, algorithmic content, and lifestyles might be relevant to building healthy browsing habits. In general, our primary target stakeholders were those under the age of 30, those that would have grown up with ready access to a smartphone. As we explored, the guiding question was “what precipitates their unwanted phone usage?”. We recruited one participant over the age of 50 to compare and contrast our observations with to see if we were looking in the right direction. Our chosen method was a diary study interspersed with experience sampling, all topped off with an exit interview with our participants about the process. The diary study, which tracked overall phone pickups, screen time, and specific entries when usage was unsatisfactory, was the cornerstone due to the ability to collect details over longer periods of time, context necessary for such a holistic topic. To avoid possible participant-introduced sampling bias (as they decide what phone pickups to send), we also sent periodic prompts to our participants to diary no matter what. The exit interview proved high-yield as well, where we discussed the entries with the participant, compared the study period to their normal habits for context, and filled in the blanks that weren’t fully covered by our diary prompts and therefore didn’t get explicitly logged.
 
-### Title for an Insight
+### Usage Dissatisfaction
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+The most common negative sentiment uncovered in our research revolved around the idea of looking to social media and short-form video as a place to alleviate boredom and then putting their phone down dissatisfied. Within the diary entries one participant mentioned “flicking through 5 different apps to pass time and not finding [the happiness] that I wanted” and hopping between apps to “see if more messages/content to interact with had come in”. Exit interviews revealed that these usage pathways had provided happiness and excitement in the past; often though, picking up their phone to recreate these experiences led to dissatisfaction and a sense of futility. This insight was the main inspiration for our journey-driven app, which allows users to set specific goals such as reduce app screen time. They can set up a journey after a particularly unhappy session, so that in future sessions they are stopped from anxiously scrolling around.  
 
-### Title for an Insight
+### Distraction While Focusing
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
+Our diary questions asked participants to keep detailed track of when they opened their phone, and thus we discovered that many users reported using short-form entertainment (i.e. TikTok) as a “brain break” during intense focus periods while studying. This aligns with our expectations of usage, since it can easily be used to distract someone from a stressful situation, a category that studying falls into. Furthermore, we uncovered a trend that ~60% of all social media time occurred on campus despite only ~40% of student participant days being spent on campus. These findings were utilized in the creation of our geotracking features in the application, which allow users to keep track of the places they heavily use their phone and allow them to minimize their usage in locations that should not have heavy phone usage, such as studying
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+{/* </ProjectImagesBlock> */}
 
-</ProjectImagesBlock>
+### Sleep-Centric Usage
 
-### Title for an Insight
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+In addition to heavy phone usage corresponding to stressful situations such as studying, a great deal of phone usage corresponded with timing throughout the day. We noticed in our data that 5 participants out of the 9 had usage graphs that took on the shape of a bimodal bell curve with peaks of usage in the morning, slightly delayed after wake up and 7pm, post dinner. In our exit interviews, when asked about the following piece of data, most participants admitted that it’s a result mostly of habit rather than genuinely fun or productive usage. Participants mentioned that without interference it was super easy to fall into this pattern. Thus in our app we made sure to integrate a reminder feature that could disrupt social media usage at certain times to ensure that users couldn’t absentmindedly scroll through the morning. 
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+We focused on two primary tasks that were essential to our design. The first was “identifying phone usage patterns and tracking which are problematic”. The second was “Interrupting unproductive scrolling”. We focused on these specifically because they worked well together to first get an understanding of the problematic habits of the user, and then to help them reduce their phone usage through notifications. We created an initial paper prototype and then tested it with various participants, as well through 2 separate rounds of inspection. After another iteration of a paper prototype and one more round of user testing, we created a final digital mockup that improved upon all the previously discovered issues.
 
-### Title for an Insight
+### Clear and Concise Onboarding
+<ProjectImageBlock
+    image={{
+        src: paper_onboarding,
+        alt: "Image of journey dashboard with statistics on usage.",
+    }}
+    caption={
+        "The first rendition of an onboarding session."
+    }
+    width={12}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+Multiple participants were initially confused by our cluttered 2-page onboarding processes that easily overwhelmed them and did not properly explain how to create and manage mindfulness journeys. Some of them tried to parse through it and failed; one participant said “I’m not reading this” and skipped right through. To fix the issue we broke down the process into a series of easily-digestible panels that use minimal text to ensure the user gets a basic understanding of the app even if they try to quickly flip through the introduction. Considering the slight complexity of our application, ensuring that the user is knowledgeable on how to navigate it is crucial to ensure that they are quickly able to start their first self-improvement journey. Introducing the core idea of journeys is accomplished via this step-by-steop introduction.
+These guide pages also persist as a "help page" for the user to access whenever.
+<ProjectImagesBlock
+    images={[
+        {
+            src: digital_carousel_1,
+            alt: "Some digital onboarding screens outlining notification allowance and Journeys.",
+        },
+        {
+            src: digital_carousel_2,
+            alt: "A continuation of onboarding with tips on priority alerts and other terminology.",
+        },
+    ]}
+    direction={"column"}
+    caption={
+        "When a user first installs MindShift, they will be met with a series of onboarding screens that explain the rationale of the application and some of its main functionality. This page in particular explains how the app works as a whole. The final digital onboarding process, as lengthened and evolved via feedback from usability testing participants."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+### Simplifying Customization
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: from_scratch,
+        alt: "Image creating a journey from scratch (no AI suggestion)",
     }}
     caption={
-        "This is a caption."
+        "When creating a Journey from scratch, the customization options were drafted to balance both flexibility and structure. There's enough options to allow true customization but not so many as to be inconsistent or confusing."
     }
     width={6}
     maxHeight={"400px"}
 >
-
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
-
+When exploring available journeys, participants understood most of the straightforward options such as “reducing pickups that lead to Instagram”, but showing them examples such as “reduce Instagram usage in a certain location” led to confusion on how the journeys are generated and what options for customization exist. Some participants glazed over the subject but it was clear they did not fully understand and confused so if pressed further. To fix this we introduced three discrete goals to focus on: pickup count, screen time, and specific app reduction. This change is conveyed in the onboarding and is made very clear when a user is creating a new journey. This is crucial as it eliminates most of the headache that people had trying to understand all the options and easily allows them to create familiar journeys.
 </ProjectImageBlock>
 
-### Title for an Insight
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+{/* </ProjectImageBlock> */}
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
-
-</ProjectImageBlock>
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-</ProjectImageBlock>
-
-## Resulting Design
+### Optimize Notification Options
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: paper_notification,
+            alt: "An image of the paper prototype interruption notification.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: digital_notification,
+            alt: "An image of the digital prototype interruption notification.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block spans the set of images."
+        "The importance of MindShift notifications lies in their interruptive nature. It should not be easy to ignore MindShift notifications, but it should also not be a chore to read and interpret them. Here's the first rendition and the final version."
     }
     width={6}
     maxHeight={"400px"}
 >
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
-
+Initially, we faced two issues with the interruptive phase of our app design. One issue involved the form factor of the banner notifications - as a format that many are used to swiping away and ignoring, the notification did not serve as interruptive as intended. Additionally, our design had two options for when a notification popped up telling you have been scrolling for too long or too frequently: “work on this” and “this is okay”. Those two options were incredibly unclear on what they would do, and one of our participants was especially confused if he would be taken to the main app or would remain free to scroll instagram if he clicked either of these buttons. We changed the two options to be “Quit Instagram” and “snooze”, with the first button highlighted and the second dimmed. The choices here are far more clear and try to push the user towards quitting the negative task that they are currently doing, which is precisely our overarching goal. The "alert" nature of the notification was also selected to be entirely interruptive - you have to choose an option from the provided text and cannot simply swipe the notification away.
 </ProjectImagesBlock>
+## Resulting Design
+
+A user's journey in our app centers around two tasks: identifying a problematic behavior to improve on (a Journey), and actively breaking this habit when it comes up.
+{/*
+### Onboarding
+<ProjectImagesBlock
+    images={[
+        {
+            src: onboarding_1,
+            alt: "An image of the title screen",
+        },
+        {
+            src: onboarding_2,
+            alt: "An image of the onboarding notifications screen",
+        },
+        {
+            src: onboarding_3,
+            alt: "An image of the onboarding information screen",
+        },
+        {
+            src: onboarding_4,
+            alt: "An image of the onboarding journeys screen",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "When a user enters the application for the first time, they're met with onboarding screens that include a title, an explanation of the MindShift notifications, the overall purpose and functionality of the application, and the concept of user-customizable journeys."
+    }
+    width={10}
+    maxHeight={"600px"}
+>
+</ProjectImagesBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: onboarding_5,
+            alt: "An image of the onboarding journey customization",
+        },
+        {
+            src: onboarding_6,
+            alt: "An image of the onboarding priority popup",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Since journeys are a central component of the application, there are additional onboarding screens and information on how to customize and efficiently use journeys. In particular, components of a journey are highlighted in their own pop-up screens that provide additional information."
+    }
+    width={10}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+*/}
+### Task 1: Finding Journeys
+The user receives an array of potential journeys, as well as an array of current statistics about their phone usage. They have the option to create a new journey or to select a suggested on (as prompted by automated analysis of metadata). Within MindShift, the user can monitor and view their usage statistics and feedback on how much they’ve improved using the journey settings, which is focused on in Task 2.
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
+            src: carousel,
+            alt: "An image of the carousel menu",
+            caption: "When a user is on the primary 'Homescreen' of MindShift, they can view existing journeys that they have already configured, browse suggestions of 'new' journeys based on their recent browsing activities and metadata, or create new journeys from scratch.",
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
+            src: custom_2,
+            alt: "An image of customizing components of the journey creation process",
+            caption: "A user can create a journey out of anything, in this case a user is configuring a geographical location-based journey. They can give their journey a name, priority, and duration, among other customizable features."
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    width={12}
+    maxHeight={"300px"}
+>
+</ProjectImagesBlock>
+
+{/*
+<ProjectImagesBlock
+    images={[
+        {
+            src: carousel,
+            alt: "An image of the carousel menu",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "When a user is on the primary 'Homescreen' of MindShift, they can view existing journeys that they have already configured, browse suggestions of 'new' journeys based on their recent browsing activities and metadata, or create new journeys from scratch."
+    }
+    width={10}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: custom_1,
+            alt: "An image of the journey creation process",
+        },
+        {
+            src: custom_2,
+            alt: "An image of customizing components of the journey creation process",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "A user can create a journey out of anything, in this case a user is configuring a geographical location-based journey. They can give their journey a name, priority, and duration, among other customizable features."
+    }
+    width={10}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+*/}
+
+### Task 2: Interrupting Habits
+The user is able to receive interruptive notifications that align with journeys they configured in the MindShift application. Depending on certain properties of the journeys themselves, users will receive notifications after displaying specific behaviors, such as spending a certain amount of time on the application or opening the application a certain number of times. To dismiss the notification, the user will have to make a mindful decision to snooze a pop-up alert, making it harder to subconsciously continue the harmful digital habit.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: interrupt_2,
+            alt: "An image of a MindShift notification on top of the Instagram page",
+            caption: "When a user is scrolling instagram, they get an alert based on the configurations they set within MindShift, which will interrupt their scrolling based on their usage pattern. They’re given a chance to quit the actual application."
+        },
+        {
+            src: dashboard,
+            alt: "Image of journey dashboard with statistics on usage.",
+            caption: "After choosing to exit the usage pattern that was part of the journey, the user lands back at the Journey Dashboard, with the ability to see their recent stats (as in Task 1) as context."
+        }
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"300px"}
+>
+</ProjectImagesBlock>
+
+{/*
+<ProjectImagesBlock
+    images={[
+        {
+            src: interrupt_1,
+            alt: "An image of an Instagram homepage",
+        },
+        {
+            src: interrupt_2,
+            alt: "An image of a MindShift notification on top of the Instagram page",
+        },
+    ]}
+    direction={"row"}
+    width={10}
+    caption={
+      "When a user is scrolling instagram, they get an alert based on the configurations they set within MindShift, which will interrupt their scrolling based on their usage pattern. They’re given a chance to quit the actual application."
+    }
+    maxHeight={"600px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
-
 </ProjectImagesBlock>
+
+<ProjectImageBlock
+    image={{
+        src: dashboard,
+        alt: "Image of journey dashboard with statistics on usage.",
+    }}
+    caption={
+        "After choosing to exit the usage pattern that was part of the journey, the user lands back at the Journey Dashboard, with the ability to see their recent stats (as in Task 1) as context."
+    }
+    width={10}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+*/}
