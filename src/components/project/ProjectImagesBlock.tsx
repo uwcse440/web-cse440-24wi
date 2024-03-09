@@ -73,9 +73,8 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                           props.maxHeight === undefined
                             ? "400px"
                             : props.maxHeight,
-                        objectFit: "scale-down",
+                        objectFit: "contain",
                         maxWidth: "100%",
-                        width: "auto",
                       }}
                       alt={projectImage.alt}
                     />
