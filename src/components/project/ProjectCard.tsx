@@ -29,7 +29,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = (props) => {
             basePath={Paths.basePath}
             height="150"
             width="150"
-            alt={"Project Logo: " + props.name}
+            alt="" // Treat as decorative, because name is read above
           />
         </Stack>
       </AppLink>

@@ -63,7 +63,7 @@ export const ProjectTeamGallery: FunctionComponent<ProjectTeamGalleryProps> = (
                     alt={
                       teamMemberProps.alt
                         ? teamMemberProps.alt
-                        : `Photo of ${teamMemberProps.name.join(" ")}.`
+                        : "" // Treat as decorative, because name is read above
                     }
                   />
                 </Stack>
